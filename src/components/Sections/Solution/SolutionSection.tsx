@@ -1,0 +1,941 @@
+import {
+    ArrowDown,
+    ArrowRight,
+    Check,
+    ChevronRight,
+    ShieldCheck,
+    Sparkles,
+    X,
+} from 'lucide-react';
+import Link from 'next/link';
+import { FC } from 'react';
+
+import {
+    capabilities,
+    interviewCallItems,
+    oldCourseItems,
+} from '@/utils/solutionItems';
+
+const SolutionSection: FC = () => {
+    return (
+        <section
+            id="solution"
+            className="
+                scroll-mt-25
+                overflow-hidden
+                bg-(--solution-section-bg)
+                px-5
+                py-14
+                sm:px-7
+                sm:py-16
+                lg:px-10
+                lg:py-20
+                xl:px-14
+                xl:py-24
+            "
+        >
+            <div className="mx-auto w-full max-w-345">
+                {/* =====================================================
+                    SECTION HEADER
+                ====================================================== */}
+                <header
+                    className="
+                        max-w-265
+                        text-left
+                        lg:mx-auto
+                        lg:text-center
+                    "
+                >
+                    {/* Desktop badge */}
+                    <div
+                        className="
+                            hidden
+                            min-h-9.5
+                            items-center
+                            justify-center
+                            rounded-full
+                            border
+                            border-(--solution-section-header-border)
+                            bg-(--solution-section-header-bg)
+                            px-8
+                            text-[20px]
+                            font-medium
+                            uppercase
+                            tracking-[-2%]
+                            text-(--solution-section-header-text)
+                            lg:inline-flex
+                        "
+                    >
+                        Why InterviewCall
+                    </div>
+
+                    {/* Mobile and tablet eyebrow */}
+                    <p
+                        className="
+                            text-[17px]
+                            font-medium
+                            uppercase
+                            tracking-normal
+                            leading-none
+                            text-(--solution-section-title-text-end)
+                            lg:hidden
+                        "
+                    >
+                        Why InterviewCall
+                    </p>
+
+                    {/* Desktop heading */}
+                    <h2
+                        className="
+                            mt-4
+                            hidden
+                            text-[clamp(4rem,6.2vw,5.125rem)]
+                            font-semibold
+                            leading-[0.94]
+                            tracking-[1%]
+                            text-(--solution-section-title-text)
+                            lg:block
+                        "
+                    >
+                        Built Different for
+                        <span className="block">
+                            the{' '}
+                            <span className="text-(--solution-section-title-text-end)">
+                                AI-Era Engineer
+                            </span>
+                        </span>
+                    </h2>
+
+                    {/* Mobile and tablet heading */}
+                    <h2
+                        className="
+                            mt-4
+                            text-[clamp(2.5rem,10vw,4rem)]
+                            font-bold
+                            leading-[1.11]
+                            tracking-[-1%]
+                            text-(--solution-section-title-text)
+                            lg:hidden
+                        "
+                    >
+                        Built for the
+
+                        <span
+                            className="
+                                block
+                                text-(--solution-section-title-text-end)
+                            "
+                        >
+                            AI-Era Engineer
+                        </span>
+                    </h2>
+
+                    {/* Desktop description */}
+                    <p
+                        className="
+                            mx-auto
+                            mt-5
+                            hidden
+                            max-w-240
+                            text-[22px]
+                            font-semibold
+                            leading-normal
+                            tracking-[1%]
+                            text-center
+                            text-(--solution-section-subtitle-text)
+                            lg:block
+                        "
+                    >
+                        Most courses teach content. InterviewCall builds
+                        judgment, context, practice, and proof — the skills
+                        serious engineers need when AI becomes standard.
+                    </p>
+
+                    {/* Mobile and tablet description */}
+                    <p
+                        className="
+                            mt-5
+                            max-w-155
+                            text-[15px]
+                            leading-[1.55]
+                            text-(--solution-section-subtitle-text)
+                            sm:text-[19px]
+                            lg:hidden
+                        "
+                    >
+                        Most courses teach content. InterviewCall builds
+                        judgment, context, practice, and proof.
+                    </p>
+                </header>
+
+                {/* =====================================================
+                    DESKTOP COMPARISON
+                ====================================================== */}
+                <div
+                    className="
+                        mt-10
+                        hidden
+                        overflow-hidden
+                        rounded-2xl
+                        border
+                        border-(--solution-section-different-box-border)
+                        bg-(--solution-section-different-box-bg)
+                        px-6
+                        pb-4
+                        pt-5
+                        lg:block
+                    "
+                >
+                    {/* Comparison headings */}
+                    <div
+                        className="
+                            grid
+                            grid-cols-[minmax(0,1fr)_110px_minmax(0,1.08fr)]
+                            items-center
+                            gap-5
+                            px-5
+                            pb-4
+                        "
+                    >
+                        <h3
+                            className="
+                                text-center
+                                text-[22px]
+                                font-semibold
+                                leading-[1.34]
+                                uppercase
+                                tracking-[2%]
+                                text-(--solution-section-different-box-left-title)
+                            "
+                        >
+                            Old Course Model
+                        </h3>
+
+                        <div aria-hidden="true" />
+
+                        <h3
+                            className="
+                                text-center
+                                text-[22px]
+                                font-semibold
+                                leading-[1.34]
+                                uppercase
+                                tracking-[2%]
+                                text-(--solution-section-different-box-right-title)
+                            "
+                        >
+                            InterviewCall Model
+                        </h3>
+                    </div>
+
+                    {/* Comparison rows */}
+                    <div className="space-y-2">
+                        {oldCourseItems.map((oldItem, index) => {
+                            const OldIcon = oldItem.icon;
+                            const newItem = interviewCallItems[index];
+                            const NewIcon = newItem.icon;
+
+                            return (
+                                <div
+                                    key={oldItem.desktopText}
+                                    className="
+                                        grid
+                                        grid-cols-[minmax(0,1fr)_110px_minmax(0,1.08fr)]
+                                        items-center
+                                        gap-5
+                                    "
+                                >
+                                    {/* Old model row */}
+                                    <div
+                                        className="
+                                            flex
+                                            min-h-21
+                                            items-center
+                                            gap-6
+                                            rounded-xl
+                                            border
+                                            border-(--solution-section-different-box-left-point-border)
+                                            bg-(--solution-section-different-box-left-point-bg)
+                                            px-5
+                                            py-4
+                                        "
+                                    >
+                                        <span
+                                            className="
+                                                flex
+                                                h-14.5
+                                                w-14.5
+                                                shrink-0
+                                                items-center
+                                                justify-center
+                                                rounded-full
+                                                border
+                                                border-(--solution-section-different-box-left-point-border)
+                                                bg-(--solution-section-different-box-arrow-box-bg)
+                                                text-(--solution-section-different-box-left-point-icon)
+                                            "
+                                        >
+                                            <OldIcon
+                                                aria-hidden="true"
+                                                className="h-8 w-8"
+                                                strokeWidth={1.6}
+                                            />
+                                        </span>
+
+                                        <p
+                                            className="
+                                                text-[22px]
+                                                font-semibold
+                                                leading-[1.80]
+                                                tracking-[-1%]
+                                                text-(--solution-section-different-box-left-point-text)
+                                            "
+                                        >
+                                            {oldItem.desktopText}
+                                        </p>
+                                    </div>
+
+                                    {/* Transformation arrow */}
+                                    <div
+                                        className="
+                                            flex
+                                            items-center
+                                            justify-center
+                                        "
+                                    >
+                                        <span
+                                            className="
+                                                flex
+                                                h-15
+                                                w-15
+                                                items-center
+                                                justify-center
+                                                rounded-full
+                                                border
+                                                border-(--solution-section-different-box-arrow-box-border)
+                                                bg-(--solution-section-different-box-arrow-box-bg)
+                                                text-(--solution-section-different-box-arrow-bg)
+                                            "
+                                        >
+                                            <ArrowRight
+                                                aria-hidden="true"
+                                                className="h-8 w-8"
+                                                strokeWidth={1.7}
+                                            />
+                                        </span>
+                                    </div>
+
+                                    {/* InterviewCall model row */}
+                                    <div
+                                        className="
+                                            flex
+                                            min-h-21
+                                            items-center
+                                            gap-6
+                                            rounded-xl
+                                            border
+                                            border-(--solution-section-different-box-right-point-border)
+                                            bg-(--solution-section-different-box-right-point-bg)
+                                            px-5
+                                            py-4
+                                        "
+                                    >
+                                        <span
+                                            className="
+                                                flex
+                                                h-14.5
+                                                w-14.5
+                                                shrink-0
+                                                items-center
+                                                justify-center
+                                                rounded-full
+                                                border
+                                                border-(--solution-section-different-box-right-point-border)
+                                                bg-(--solution-section-feature-icon-bg)
+                                                text-(--solution-section-different-box-right-point-icon)
+                                            "
+                                        >
+                                            <NewIcon
+                                                aria-hidden="true"
+                                                className="h-8 w-8"
+                                                strokeWidth={1.7}
+                                            />
+                                        </span>
+
+                                        <p
+                                            className="
+                                                text-[22px]
+                                                font-semibold
+                                                leading-[1.40]
+                                                tracking-[-1%]
+                                                text-(--solution-section-different-box-right-point-text)
+                                            "
+                                        >
+                                            {newItem.desktopText}
+                                        </p>
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+
+                    {/* Transformation footer */}
+                    <div
+                        className="
+                            mt-4
+                            flex
+                            items-center
+                            justify-center
+                            gap-6
+                            text-[17px]
+                            font-semibold
+                            uppercase
+                            leading-[1.34]
+                            tracking-[7%]
+                        "
+                    >
+                        <span className="text-(--solution-section-different-box-footer-from-text)">
+                            From Content Consumption
+                        </span>
+
+                        <ArrowRight
+                            aria-hidden="true"
+                            className="
+                                h-6
+                                w-6
+                                text-(--solution-section-different-box-footer-from-arrow)
+                            "
+                            strokeWidth={1.8}
+                        />
+
+                        <span className="text-(--solution-section-different-box-footer-to-text)">
+                            Engineering Transformation
+                        </span>
+                    </div>
+                </div>
+
+                {/* =====================================================
+                    MOBILE AND TABLET COMPARISON
+                ====================================================== */}
+                <div className="mt-8 lg:hidden">
+                    {/* Old course card */}
+                    <article
+                        className="
+                            border
+                            border-(--solution-section-different-box-left-point-border)
+                            bg-[#051024]
+                            px-5
+                            py-5
+                            sm:px-7
+                            sm:py-7
+                        "
+                    >
+                        <h3
+                            className="
+                                text-[20px]
+                                font-semibold
+                                text-(--solution-section-different-box-left-title)
+                                sm:text-[23px]
+                            "
+                        >
+                            Old Course Model
+                        </h3>
+
+                        <div className="mt-4">
+                            {oldCourseItems.map((item, index) => (
+                                <div
+                                    key={item.mobileText}
+                                    className={`
+                                        flex
+                                        items-center
+                                        gap-4
+                                        py-3
+                                        ${
+                                            index <
+                                            oldCourseItems.length - 1
+                                                ? 'border-b border-(--solution-section-different-box-divider)'
+                                                : ''
+                                        }
+                                    `}
+                                >
+                                    <span
+                                        className="
+                                            flex
+                                            h-9
+                                            w-9
+                                            shrink-0
+                                            items-center
+                                            justify-center
+                                            rounded-full
+                                            bg-[#151F37]
+                                            text-white
+                                        "
+                                    >
+                                        <X
+                                            aria-hidden="true"
+                                            className="h-5 w-5"
+                                            strokeWidth={2}
+                                        />
+                                    </span>
+
+                                    <p
+                                        className="
+                                            text-[16px]
+                                            leading-[1.4]
+                                            text-(--solution-section-different-box-left-point-text)
+                                            sm:text-[18px]
+                                        "
+                                    >
+                                        {item.mobileText}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
+                    </article>
+
+                    {/* Vertical transformation */}
+                    <div
+                        className="
+                            flex
+                            flex-col
+                            items-center
+                            justify-center
+                            py-6
+                            text-center
+                        "
+                    >
+                        <p
+                            className="
+                                text-[15px]
+                                font-semibold
+                                text-(--solution-section-different-box-left-title)
+                            "
+                        >
+                            From content consumption
+                        </p>
+
+                        <span
+                            className="
+                                my-4
+                                flex
+                                h-10
+                                w-10
+                                items-center
+                                justify-center
+                                rounded-full
+                                bg-[#00196F]
+                                text-white
+                            "
+                        >
+                            <ArrowDown
+                                aria-hidden="true"
+                                className="h-6 w-6"
+                                strokeWidth={1.8}
+                            />
+                        </span>
+
+                        <p
+                            className="
+                                text-[15px]
+                                font-semibold
+                                text-(--solution-section-different-box-footer-to-text)
+                            "
+                        >
+                            Engineering transformation
+                        </p>
+                    </div>
+
+                    {/* InterviewCall card */}
+                    <article
+                        className="
+                            border
+                            border-(--solution-section-different-box-right-point-border)
+                            bg-[#051024]
+                            px-5
+                            py-5
+                            sm:px-7
+                            sm:py-7
+                        "
+                    >
+                        <h3
+                            className="
+                                text-[20px]
+                                font-semibold
+                                text-(--solution-section-different-box-right-title)
+                                sm:text-[23px]
+                            "
+                        >
+                            InterviewCall Model
+                        </h3>
+
+                        <div className="mt-4">
+                            {interviewCallItems.map((item, index) => (
+                                <div
+                                    key={item.mobileText}
+                                    className={`
+                                        flex
+                                        items-center
+                                        gap-4
+                                        py-3
+                                        ${
+                                            index <
+                                            interviewCallItems.length - 1
+                                                ? 'border-b border-(--solution-section-different-box-divider)'
+                                                : ''
+                                        }
+                                    `}
+                                >
+                                    <span
+                                        className="
+                                            flex
+                                            h-9
+                                            w-9
+                                            shrink-0
+                                            items-center
+                                            justify-center
+                                            rounded-full
+                                            bg-[#002488]
+                                            text-white
+                                        "
+                                    >
+                                        <Check
+                                            aria-hidden="true"
+                                            className="h-5 w-5"
+                                            strokeWidth={2}
+                                        />
+                                    </span>
+
+                                    <p
+                                        className="
+                                            text-[16px]
+                                            leading-[1.4]
+                                            text-(--solution-section-different-box-right-point-text)
+                                            sm:text-[18px]
+                                        "
+                                    >
+                                        {item.mobileText}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
+                    </article>
+                </div>
+
+                {/* =====================================================
+                    CAPABILITY PILLARS — DESKTOP
+                ====================================================== */}
+                <div
+                    className="
+                        mt-4
+                        hidden
+                        grid-cols-3
+                        gap-4
+                        lg:grid
+                    "
+                >
+                    {capabilities.map((capability) => {
+                        const Icon = capability.icon;
+
+                        return (
+                            <article
+                                key={capability.title}
+                                className="
+                                    flex
+                                    min-h-29
+                                    items-center
+                                    gap-6
+                                    rounded-xl
+                                    border
+                                    border-(--solution-section-different-box-border)
+                                    bg-(--solution-section-different-box-bg)
+                                    px-6
+                                    py-5
+                                "
+                            >
+                                <Icon
+                                    aria-hidden="true"
+                                    className="
+                                        h-14.5
+                                        w-14.5
+                                        shrink-0
+                                        text-(--solution-section-feature-icon-color)
+                                    "
+                                    strokeWidth={1.5}
+                                />
+
+                                <div>
+                                    <h3
+                                        className="
+                                            text-[24px]
+                                            font-semibold
+                                            text-(--solution-section-feature-title)
+                                            tracking-[2%]
+                                            leading-[1.35]
+                                        "
+                                    >
+                                        {capability.title}
+                                    </h3>
+
+                                    <p
+                                        className="
+                                            mt-1
+                                            text-[20px]
+                                            leading-[1.35]
+                                            text-(--solution-section-feature-text)
+                                            tracking-[-1%]
+                                        "
+                                    >
+                                        {capability.desktopDescription.map(
+                                            (line) => (
+                                                <span
+                                                    key={line}
+                                                    className="block"
+                                                >
+                                                    {line}
+                                                </span>
+                                            ),
+                                        )}
+                                    </p>
+                                </div>
+                            </article>
+                        );
+                    })}
+                </div>
+
+                {/* =====================================================
+                    CAPABILITY PILLARS — MOBILE AND TABLET
+                ====================================================== */}
+                <div
+                    className="
+                        mt-4
+                        border
+                        border-(--solution-section-different-box-border)
+                        bg-[#051024]
+                        px-5
+                        lg:hidden
+                    "
+                >
+                    {capabilities.map((capability, index) => {
+                        const Icon = capability.icon;
+
+                        return (
+                            <article
+                                key={capability.title}
+                                className={`
+                                    grid
+                                    grid-cols-[44px_minmax(90px,auto)_minmax(0,1fr)_20px]
+                                    items-center
+                                    gap-3
+                                    py-4
+                                    ${
+                                        index < capabilities.length - 1
+                                            ? 'border-b border-(--solution-section-different-box-divider)'
+                                            : ''
+                                    }
+                                `}
+                            >
+                                <Icon
+                                    aria-hidden="true"
+                                    className="
+                                        h-9
+                                        w-9
+                                        text-(--solution-section-feature-icon-color)
+                                    "
+                                    strokeWidth={1.5}
+                                />
+
+                                <h3
+                                    className="
+                                        text-[16px]
+                                        font-medium
+                                        text-(--solution-section-feature-title)
+                                        tracking-[-3%]
+                                        leading-none
+                                    "
+                                >
+                                    {capability.title}
+                                </h3>
+
+                                <p
+                                    className="
+                                        text-[13px]
+                                        leading-[1.39]
+                                        tracking-normal
+                                        text-(--solution-section-feature-text)
+                                        sm:text-[15px]
+                                    "
+                                >
+                                    {capability.mobileDescription}
+                                </p>
+
+                                <ChevronRight
+                                    aria-hidden="true"
+                                    className="
+                                        h-5
+                                        w-5
+                                        text-(--solution-section-feature-text)
+                                    "
+                                    strokeWidth={1.5}
+                                />
+                            </article>
+                        );
+                    })}
+                </div>
+
+                {/* =====================================================
+                    FINAL TRANSFORMATION CTA
+                ====================================================== */}
+                <div
+                    className="
+                        mt-4
+                        border
+                        border-(--solution-section-different-box-border)
+                        bg-(--solution-section-different-box-bg)
+                        max-lg:bg-[#051024]
+                        p-5
+                        sm:p-7
+                        lg:grid
+                        lg:grid-cols-[minmax(0,1fr)_360px]
+                        lg:items-center
+                        lg:gap-8
+                        lg:rounded-xl
+                        lg:px-7
+                        lg:py-5
+                        xl:grid-cols-[minmax(0,1fr)_410px]
+                        xl:gap-10
+                        xl:px-8
+                    "
+                >
+                    <div
+                        className="
+                            flex
+                            items-start
+                            gap-5
+                            lg:items-center
+                        "
+                    >
+                        {/* Mobile icon */}
+                        <Sparkles
+                            aria-hidden="true"
+                            className="
+                                mt-1
+                                h-12
+                                w-12
+                                shrink-0
+                                text-(--solution-section-feature-icon-color)
+                                lg:hidden
+                            "
+                            strokeWidth={1.5}
+                        />
+
+                        {/* Desktop icon */}
+                        <ShieldCheck
+                            aria-hidden="true"
+                            className="
+                                hidden
+                                h-20.5
+                                w-20.5
+                                shrink-0
+                                text-(--solution-section-feature-icon-color)
+                                lg:block
+                            "
+                            strokeWidth={1.5}
+                        />
+
+                        <div
+                            className="
+                                lg:border-l
+                                lg:border-(--solution-section-different-box-divider)
+                                lg:pl-7
+                                xl:pl-8
+                            "
+                        >
+                            <h3
+                                className="
+                                    text-[22px]
+                                    font-semibold
+                                    leading-[0.94]
+                                    text-(--solution-section-title-text)
+                                    lg:text-[28px]
+                                    xl:text-[28px]
+                                    tracking-normal
+                                "
+                            >
+                                AI can write code.
+                            </h3>
+
+                            <p
+                                className="
+                                    mt-1
+                                    text-[20px]
+                                    font-medium
+                                    leading-[1.28]
+                                    text-(--solution-section-title-text-end)
+                                    lg:max-w-155
+                                    lg:text-[26px]
+                                    xl:max-w-167.5
+                                    xl:text-[26px]
+                                    tracking-[1%]
+                                "
+                            >
+                                We build engineers who can think, decide, and
+                                ship with confidence.
+                            </p>
+                        </div>
+                    </div>
+
+                    <Link
+                        href="#career-path"
+                        className="
+                            group
+                            mt-6
+                            inline-flex
+                            min-h-14
+                            w-full
+                            items-center
+                            justify-center
+                            gap-4
+                            rounded-[7px]
+                            bg-(--solution-section-button-bg)
+                            px-6
+                            text-center
+                            text-[16px]
+                            font-medium
+                            text-(--solution-section-button-text)
+                            transition-all
+                            duration-200
+                            hover:-translate-y-0.5
+                            hover:bg-(--solution-section-button-hover-bg)
+                            focus-visible:outline-none
+                            focus-visible:ring-4
+                            focus-visible:ring-(--focus-ring-color)
+                            sm:text-[18px]
+                            lg:mt-0
+                            lg:min-h-15
+                            lg:text-[20px]
+                            xl:min-h-16
+                            xl:text-[20px]
+                        "
+                    >
+                        <span>Explore What Makes It Different</span>
+
+                        <ArrowRight
+                            aria-hidden="true"
+                            className="
+                                h-6
+                                w-6
+                                shrink-0
+                                transition-transform
+                                duration-200
+                                group-hover:translate-x-1
+                            "
+                            strokeWidth={1.8}
+                        />
+                    </Link>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default SolutionSection;

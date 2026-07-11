@@ -1,15 +1,946 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* =========================================================
+     01. CORE BRAND PALETTE
+  ========================================================= */
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-brand-50: #f2f8fe;
+  --color-brand-100: #e9f2fe;
+  --color-brand-200: #d0defd;
+  --color-brand-300: #a9c3fc;
+  --color-brand-400: #5f8dff;
+  --color-brand-500: #1e5cff;
+  --color-brand-600: #0a53f2;
+  --color-brand-700: #094de7;
+  --color-brand-800: #004af2;
+  --color-brand-900: #003df0;
+  --color-brand-950: #002bba;
+
+  --color-navy-50: #f4f7fe;
+  --color-navy-100: #e4ecfd;
+  --color-navy-200: #cdd9f0;
+  --color-navy-300: #aab8d6;
+  --color-navy-400: #838ca8;
+  --color-navy-500: #616c8f;
+  --color-navy-600: #3d4762;
+  --color-navy-700: #2f394f;
+  --color-navy-800: #101b35;
+  --color-navy-850: #081638;
+  --color-navy-900: #040d57;
+  --color-navy-925: #011139;
+  --color-navy-950: #010d2f;
+  --color-navy-975: #01081b;
+  --color-navy-1000: #000819;
+
+  /* =========================================================
+     02. NEUTRAL SURFACES AND BORDERS
+  ========================================================= */
+
+  --color-surface-primary: #ffffff;
+  --color-surface-secondary: #fafbfe;
+  --color-surface-tertiary: #f8f9fd;
+  --color-surface-muted: #f4f7fe;
+  --color-surface-blue: #f2f8fe;
+  --color-surface-blue-strong: #e9f2fe;
+
+  --color-border-light: #edf1f9;
+  --color-border-default: #dde5fc;
+  --color-border-medium: #cdd9f0;
+  --color-border-dark: #aab8d6;
+
+  --color-text-primary: #0b1122;
+  --color-text-heading: #081638;
+  --color-text-secondary: #2f394f;
+  --color-text-muted: #3d4762;
+  --color-text-soft: #616c8f;
+  --color-text-disabled: #838ca8;
+
+  /* =========================================================
+     03. SUPPORTING ACCENT COLORS
+  ========================================================= */
+
+  --color-blue: #0a53f2;
+  --color-blue-dark: #0043fb;
+  --color-blue-soft: #edf4ff;
+
+  --color-cyan: #0891d1;
+  --color-cyan-soft: #eaf8ff;
+
+  --color-green: #179b67;
+  --color-green-soft: #eaf8f2;
+
+  --color-purple: #7256e8;
+  --color-purple-soft: #f2efff;
+
+  --color-orange: #e98318;
+  --color-orange-soft: #fff4e8;
+
+  --color-pink: #db4e88;
+  --color-pink-soft: #fff0f6;
+
+  --color-red: #dc4c5b;
+  --color-red-soft: #fff1f3;
+
+  --color-yellow: #d99800;
+  --color-yellow-soft: #fff8df;
+
+  /* =========================================================
+     04. GLOBAL PAGE COLORS
+  ========================================================= */
+
+  --background: var(--color-white);
+  --foreground: var(--color-text-primary);
+
+  --page-bg: var(--color-white);
+  --page-text: var(--color-text-primary);
+  --page-heading: var(--color-text-heading);
+  --page-subtitle: var(--color-text-muted);
+
+  --section-light-bg: var(--color-white);
+  --section-soft-bg: var(--color-surface-secondary);
+  --section-blue-bg: var(--color-surface-blue);
+  --section-dark-bg: var(--color-navy-1000);
+
+  --card-bg: var(--color-white);
+  --card-soft-bg: var(--color-surface-secondary);
+  --card-border: var(--color-border-default);
+
+  --focus-ring-color: rgba(10, 83, 242, 0.28);
+  --overlay-dark: rgba(0, 8, 25, 0.72);
+  --overlay-light: rgba(255, 255, 255, 0.86);
+
+  /* =========================================================
+     05. SHARED BUTTON COLORS
+  ========================================================= */
+
+  --button-primary-bg: var(--color-brand-700);
+  --button-primary-bg-hover: var(--color-brand-950);
+  --button-primary-text: var(--color-white);
+  --button-primary-border: var(--color-brand-700);
+
+  --button-secondary-bg: var(--color-white);
+  --button-secondary-bg-hover: var(--color-brand-50);
+  --button-secondary-text: #0f1337;
+  --button-secondary-border: var(--color-navy-500);
+
+  --button-dark-bg: var(--color-navy-950);
+  --button-dark-bg-hover: var(--color-navy-800);
+  --button-dark-text: var(--color-white);
+
+  /* =========================================================
+     06. NAVBAR
+  ========================================================= */
+
+  --navbar-one-bg: #004af2;
+  --navbar-one-text: var(--color-white);
+  --navbar-one-link-hover-bg: rgba(255, 255, 255, 0.12);
+
+  --navbar-two-bg: var(--color-white);
+  --navbar-two-text: #040d57;
+  --navbar-two-muted-text: var(--color-navy-600);
+  --navbar-two-border: #4358b2;
+  --navbar-two-divider: var(--color-border-light);
+
+  --navbar-button-bg: var(--color-brand-700);
+  --navbar-button-hover-bg: var(--color-brand-950);
+  --navbar-button-text: var(--color-white);
+
+  --mobile-menu-bg: var(--color-white);
+  --mobile-menu-overlay: rgba(0, 8, 25, 0.64);
+  --mobile-menu-border: var(--color-border-default);
+
+  /* =========================================================
+     07. HERO SECTION
+  ========================================================= */
+
+  --hero-section-bg: #ffffff;
+
+  --hero-section-badge-bg: #edf4ff;
+  --hero-section-badge-border: #d0defd;
+  --hero-section-badge-text: #0542f7;
+  --hero-section-badge-dot: #8eb6ff;
+
+  --hero-section-title-one-text: #0b1122;
+  --hero-section-title-two-text-mobile: #0c96ee;
+  --hero-section-title-two-text-desktop: #094DE7;
+
+  --hero-section-title-gradient-mobile:
+    linear-gradient(
+      90deg,
+      #0371e7 0%,
+      #0c96ee 52%,
+      #06b0e8 100%
+    );
+
+  --hero-section-subtitle-text: #2f394f;
+
+  --hero-section-button-one-bg: #0542f7;
+  --hero-section-button-one-hover-bg: #0935b4;
+  --hero-section-button-one-text: #ffffff;
+
+  --hero-section-button-gradient:
+    linear-gradient(
+      135deg,
+      #0542f7 0%,
+      #0935b4 100%
+    );
+
+  --hero-section-button-gradient-hover:
+    linear-gradient(
+      135deg,
+      #0935b4 0%,
+      #0542f7 100%
+    );
+
+  --hero-section-button-two-bg: #ffffff;
+  --hero-section-button-two-hover-bg: #edf4ff;
+  --hero-section-button-two-border: #d0defd;
+  --hero-section-button-two-text: #0542f7;
+
+  --hero-section-proof-icon: #0542f7;
+  --hero-section-proof-text: #3d4762;
+
+  --hero-section-download-icon-bg: #edf4ff;
+  --hero-section-download-icon-border: #d0defd;
+  --hero-section-download-icon: #0542f7;
+  --hero-section-download-text: #0542f7;
+  --hero-section-download-divider: #dde5fc;
+
+  --hero-video-card-bg: #000819;
+
+  --focus-ring-color: rgba(5, 66, 247, 0.25);
+
+  /* =========================================================
+     08. ASSESSMENT BANNER
+  ========================================================= */
+
+  --assessment-banner-bg: #fafbfe;
+  --assessment-banner-border: #dde5fc;
+
+  --assessment-banner-icon-bg: #edf4ff;
+  --assessment-banner-icon-color: #0a53f2;
+
+  --assessment-banner-title-text: #09183c;
+  --assessment-banner-subtitle-text: #000000;
+  --assessment-banner-point-text: #3d4762;
+  --assessment-banner-point-bg: #0a53f2;
+
+  --assessment-banner-divider: #dde5fc;
+
+  --assessment-banner-button-bg: #0043fb;
+  --assessment-banner-button-hover-bg: #003df0;
+  --assessment-banner-button-text: var(--color-white);
+
+  /* =========================================================
+     09. WHY NOW SECTION
+  ========================================================= */
+
+  --why-now-section-bg: var(--color-white);
+
+  --why-now-section-header-bg: #e9f2fe;
+  --why-now-section-header-text: #033df0;
+
+  --why-now-section-title-text: #081638;
+  --why-now-section-title-highlight: #094de7;
+  --why-now-section-subtitle-text: #3d4463;
+
+  --why-now-section-left-box-bg: #f4f7fe;
+  --why-now-section-left-box-border: #e4ecfd;
+  --why-now-section-left-box-title-text: #010232;
+  --why-now-section-left-box-subtitle-text: #2f394f;
+  --why-now-section-left-box-divider: #0a37fb;
+
+  --why-now-section-right-box-bg: #fefefd;
+  --why-now-section-right-box-border: #e8edf9;
+
+  --why-now-section-right-box-sub-box-one-title: #000012;
+  --why-now-section-right-box-sub-box-one-bg: #f9f8f9;
+  --why-now-section-right-box-sub-box-one-border: #e4ecfd;
+  --why-now-section-right-box-sub-box-one-point-text: #090d37;
+  --why-now-section-right-box-sub-box-one-divider: #cdd9f0;
+
+  --why-now-section-right-box-sub-box-middle-upper-text: #474e68;
+  --why-now-section-right-box-sub-box-middle-down-text: #014af4;
+  --why-now-section-right-box-sub-box-middle-arrow: #0a53f2;
+
+  --why-now-section-right-box-sub-box-two-title: #0245fa;
+  --why-now-section-right-box-sub-box-two-bg: #f2f8fe;
+  --why-now-section-right-box-sub-box-two-border: #e4ecfd;
+  --why-now-section-right-box-sub-box-two-point-text: #090d37;
+
+  /* =========================================================
+     10. PROGRAM OUTCOME BAR
+  ========================================================= */
+
+  --program-outcome-bar-bg: #fafbfe;
+  --program-outcome-bar-border: #dde5fc;
+  --program-outcome-bar-divider: #dde5fc;
+
+  --program-outcome-bar-title-text: #091447;
+  --program-outcome-bar-title-middle-text: #0541fe;
+  --program-outcome-bar-icon: var(--color-brand-600);
+  --program-outcome-bar-icon-bg: var(--color-brand-50);
+
+  /* =========================================================
+     11. SOLUTION / BUILT DIFFERENT SECTION
+  ========================================================= */
+
+  --solution-section-bg: #000819;
+  --solution-section-bg-secondary: #010d2f;
+
+  --solution-section-header-bg: #010817;
+  --solution-section-header-border: #063188;
+  --solution-section-header-text: #d3e2f4;
+
+  --solution-section-title-text: var(--color-white);
+  --solution-section-title-text-end: #175aed;
+  --solution-section-subtitle-text: #c4cde1;
+
+  --solution-section-different-box-bg: #01081b;
+  --solution-section-different-box-border: #13213f;
+
+  --solution-section-different-box-left-title: #838ca8;
+  --solution-section-different-box-right-title: #175aed;
+
+  --solution-section-different-box-left-point-bg: #01081b;
+  --solution-section-different-box-left-point-border: #1a2747;
+  --solution-section-different-box-left-point-text: var(--color-white);
+  --solution-section-different-box-left-point-icon: #838ca8;
+
+  --solution-section-different-box-right-point-bg: #01081b;
+  --solution-section-different-box-right-point-border: #1a2747;
+  --solution-section-different-box-right-point-text: var(--color-white);
+  --solution-section-different-box-right-point-icon: #175aed;
+
+  --solution-section-different-box-divider: #1a2747;
+
+  --solution-section-different-box-arrow-box-bg: #030d22;
+  --solution-section-different-box-arrow-box-border: #1b2745;
+  --solution-section-different-box-arrow-bg: #0d61e8;
+  --solution-section-different-box-arrow-color: var(--color-white);
+
+  --solution-section-different-box-footer-from-text: var(--color-white);
+  --solution-section-different-box-footer-from-arrow: #0d61e8;
+  --solution-section-different-box-footer-to-text: #1c69fe;
+
+  --solution-section-feature-icon-bg: #031633;
+  --solution-section-feature-icon-border: #17366f;
+  --solution-section-feature-icon-color: #1e68ff;
+  --solution-section-feature-title: var(--color-white);
+  --solution-section-feature-text: #aab8d6;
+
+  --solution-section-button-bg: #0a53f2;
+  --solution-section-button-hover-bg: #1e68ff;
+  --solution-section-button-text: var(--color-white);
+
+  /* =========================================================
+     12. CAREER PATH SECTION
+  ========================================================= */
+
+  --career-path-section-bg: var(--color-white);
+
+  --career-path-section-eyebrow-bg: var(--color-brand-100);
+  --career-path-section-eyebrow-text: var(--color-brand-700);
+
+  --career-path-section-title-text: var(--color-text-heading);
+  --career-path-section-title-highlight: var(--color-brand-700);
+  --career-path-section-subtitle-text: var(--color-text-muted);
+
+  --career-path-tab-bg: var(--color-white);
+  --career-path-tab-border: var(--color-border-default);
+  --career-path-tab-text: var(--color-text-muted);
+
+  --career-path-tab-active-bg: var(--color-brand-50);
+  --career-path-tab-active-border: var(--color-brand-600);
+  --career-path-tab-active-text: var(--color-brand-700);
+
+  --career-path-sidebar-bg: var(--color-surface-secondary);
+  --career-path-sidebar-border: var(--color-border-default);
+  --career-path-sidebar-item-text: var(--color-text-secondary);
+
+  --career-path-sidebar-item-active-bg: var(--color-brand-50);
+  --career-path-sidebar-item-active-text: var(--color-brand-700);
+  --career-path-sidebar-item-active-border: var(--color-brand-600);
+
+  --career-path-card-bg: var(--color-white);
+  --career-path-card-border: var(--color-border-default);
+  --career-path-card-title: var(--color-text-heading);
+  --career-path-card-text: var(--color-text-muted);
+  --career-path-card-icon: var(--color-brand-600);
+  --career-path-card-divider: var(--color-border-medium);
+
+  /* =========================================================
+     13. STRUCTURED JOURNEY SECTION
+  ========================================================= */
+
+  --journey-section-bg: var(--color-surface-secondary);
+
+  --journey-section-eyebrow-bg: var(--color-brand-100);
+  --journey-section-eyebrow-text: var(--color-brand-700);
+
+  --journey-section-title-text: var(--color-text-heading);
+  --journey-section-title-highlight: var(--color-brand-700);
+  --journey-section-subtitle-text: var(--color-text-muted);
+
+  --journey-section-card-bg: var(--color-white);
+  --journey-section-card-border: var(--color-border-default);
+  --journey-section-card-title: var(--color-text-heading);
+  --journey-section-card-text: var(--color-text-muted);
+
+  --journey-section-timeline-line: var(--color-border-medium);
+  --journey-section-timeline-active-line: var(--color-brand-600);
+
+  --journey-section-phase-one-bg: var(--color-blue-soft);
+  --journey-section-phase-one-color: var(--color-blue);
+
+  --journey-section-phase-two-bg: var(--color-purple-soft);
+  --journey-section-phase-two-color: var(--color-purple);
+
+  --journey-section-phase-three-bg: var(--color-green-soft);
+  --journey-section-phase-three-color: var(--color-green);
+
+  --journey-section-phase-four-bg: var(--color-orange-soft);
+  --journey-section-phase-four-color: var(--color-orange);
+
+  /* =========================================================
+     14. GUIDED SYSTEM SECTION
+  ========================================================= */
+
+  --guided-system-section-bg: var(--color-white);
+
+  --guided-system-section-eyebrow-bg: var(--color-brand-100);
+  --guided-system-section-eyebrow-text: var(--color-brand-700);
+
+  --guided-system-section-title-text: var(--color-text-heading);
+  --guided-system-section-title-highlight: var(--color-brand-700);
+  --guided-system-section-subtitle-text: var(--color-text-muted);
+
+  --guided-system-step-bg: var(--color-white);
+  --guided-system-step-border: var(--color-border-default);
+  --guided-system-step-number-bg: var(--color-brand-50);
+  --guided-system-step-number-text: var(--color-brand-700);
+  --guided-system-step-icon: var(--color-brand-600);
+  --guided-system-step-title: var(--color-text-heading);
+  --guided-system-step-text: var(--color-text-muted);
+  --guided-system-step-connector: var(--color-border-medium);
+
+  --guided-system-tool-bar-bg: var(--color-surface-secondary);
+  --guided-system-tool-bar-border: var(--color-border-default);
+  --guided-system-tool-icon: var(--color-brand-600);
+  --guided-system-tool-text: var(--color-text-secondary);
+
+  /* =========================================================
+     15. PRACTICE SYSTEM SECTION
+  ========================================================= */
+
+  --practice-section-bg: var(--color-surface-secondary);
+
+  --practice-section-eyebrow-bg: var(--color-brand-100);
+  --practice-section-eyebrow-text: var(--color-brand-700);
+
+  --practice-section-title-text: var(--color-text-heading);
+  --practice-section-title-highlight: var(--color-brand-700);
+  --practice-section-subtitle-text: var(--color-text-muted);
+
+  --practice-section-board-bg: var(--color-white);
+  --practice-section-board-border: var(--color-border-default);
+
+  --practice-section-tab-bg: var(--color-white);
+  --practice-section-tab-text: var(--color-text-soft);
+  --practice-section-tab-border: var(--color-border-default);
+
+  --practice-section-tab-active-bg: var(--color-brand-50);
+  --practice-section-tab-active-text: var(--color-brand-700);
+  --practice-section-tab-active-border: var(--color-brand-600);
+
+  --practice-section-card-bg: var(--color-white);
+  --practice-section-card-border: var(--color-border-default);
+  --practice-section-card-title: var(--color-text-heading);
+  --practice-section-card-text: var(--color-text-muted);
+
+  --practice-section-progress-track: #e4ecfd;
+  --practice-section-progress-fill: var(--color-brand-600);
+
+  --practice-section-success-bg: var(--color-green-soft);
+  --practice-section-success-text: var(--color-green);
+
+  --practice-section-warning-bg: var(--color-orange-soft);
+  --practice-section-warning-text: var(--color-orange);
+
+  --practice-section-review-bg: var(--color-purple-soft);
+  --practice-section-review-text: var(--color-purple);
+
+  /* =========================================================
+     16. CAPSTONE PROOF SECTION
+  ========================================================= */
+
+  --proof-section-bg: var(--color-white);
+
+  --proof-section-eyebrow-bg: var(--color-brand-100);
+  --proof-section-eyebrow-text: var(--color-brand-700);
+
+  --proof-section-title-text: var(--color-text-heading);
+  --proof-section-title-highlight: var(--color-brand-700);
+  --proof-section-subtitle-text: var(--color-text-muted);
+
+  --proof-section-left-accent: var(--color-brand-600);
+
+  --proof-section-card-bg: var(--color-white);
+  --proof-section-card-border: var(--color-border-default);
+  --proof-section-card-title: var(--color-text-heading);
+  --proof-section-card-text: var(--color-text-muted);
+
+  --proof-section-code-bg: #071123;
+  --proof-section-code-border: #1a2747;
+  --proof-section-code-text: #d3e2f4;
+
+  --proof-section-blue-bg: var(--color-blue-soft);
+  --proof-section-blue-text: var(--color-blue);
+
+  --proof-section-green-bg: var(--color-green-soft);
+  --proof-section-green-text: var(--color-green);
+
+  --proof-section-purple-bg: var(--color-purple-soft);
+  --proof-section-purple-text: var(--color-purple);
+
+  --proof-section-orange-bg: var(--color-orange-soft);
+  --proof-section-orange-text: var(--color-orange);
+
+  /* =========================================================
+     17. SPECIALISTS / MENTORS SECTION
+  ========================================================= */
+
+  --specialists-section-bg: var(--color-surface-secondary);
+
+  --specialists-section-eyebrow-bg: var(--color-brand-100);
+  --specialists-section-eyebrow-text: var(--color-brand-700);
+
+  --specialists-section-title-text: var(--color-text-heading);
+  --specialists-section-title-highlight: var(--color-brand-700);
+  --specialists-section-subtitle-text: var(--color-text-muted);
+
+  --specialists-section-info-card-bg: var(--color-white);
+  --specialists-section-info-card-border: var(--color-border-default);
+  --specialists-section-info-card-title: var(--color-text-heading);
+  --specialists-section-info-card-text: var(--color-text-muted);
+
+  --specialist-card-bg: var(--color-white);
+  --specialist-card-border: var(--color-border-default);
+  --specialist-card-name: var(--color-text-heading);
+  --specialist-card-role: var(--color-text-muted);
+
+  --specialist-card-company-bg: var(--color-surface-secondary);
+  --specialist-card-company-text: var(--color-text-secondary);
+
+  --specialist-card-skill-bg: var(--color-brand-50);
+  --specialist-card-skill-text: var(--color-brand-700);
+
+  --specialist-card-green-bg: var(--color-green-soft);
+  --specialist-card-green-text: var(--color-green);
+
+  --specialist-card-purple-bg: var(--color-purple-soft);
+  --specialist-card-purple-text: var(--color-purple);
+
+  --specialist-card-orange-bg: var(--color-orange-soft);
+  --specialist-card-orange-text: var(--color-orange);
+
+  /* =========================================================
+     18. REAL PROGRESS SECTION
+  ========================================================= */
+
+  --progress-section-bg: var(--color-white);
+
+  --progress-section-eyebrow-bg: var(--color-brand-100);
+  --progress-section-eyebrow-text: var(--color-brand-700);
+
+  --progress-section-title-text: var(--color-text-heading);
+  --progress-section-title-highlight: var(--color-brand-700);
+  --progress-section-subtitle-text: var(--color-text-muted);
+
+  --progress-section-card-bg: var(--color-white);
+  --progress-section-card-border: var(--color-border-default);
+  --progress-section-card-title: var(--color-text-heading);
+  --progress-section-card-text: var(--color-text-muted);
+
+  --progress-section-card-one-bg: var(--color-blue-soft);
+  --progress-section-card-one-accent: var(--color-blue);
+
+  --progress-section-card-two-bg: var(--color-purple-soft);
+  --progress-section-card-two-accent: var(--color-purple);
+
+  --progress-section-card-three-bg: var(--color-green-soft);
+  --progress-section-card-three-accent: var(--color-green);
+
+  --progress-section-card-four-bg: var(--color-orange-soft);
+  --progress-section-card-four-accent: var(--color-orange);
+
+  --progress-section-check-bg: var(--color-green-soft);
+  --progress-section-check-color: var(--color-green);
+
+  /* =========================================================
+     19. CAREER INSIGHTS SECTION
+  ========================================================= */
+
+  --career-insights-section-bg: var(--color-surface-secondary);
+
+  --career-insights-section-eyebrow-bg: var(--color-brand-100);
+  --career-insights-section-eyebrow-text: var(--color-brand-700);
+
+  --career-insights-section-title-text: var(--color-text-heading);
+  --career-insights-section-title-highlight: var(--color-brand-700);
+  --career-insights-section-subtitle-text: var(--color-text-muted);
+
+  --career-insights-video-bg: var(--color-navy-1000);
+  --career-insights-video-border: #172749;
+  --career-insights-video-text: var(--color-white);
+  --career-insights-video-muted-text: #c4cde1;
+  --career-insights-video-play-bg: var(--color-white);
+  --career-insights-video-play-icon: var(--color-brand-700);
+
+  --career-insights-card-bg: var(--color-white);
+  --career-insights-card-border: var(--color-border-default);
+  --career-insights-card-title: var(--color-text-heading);
+  --career-insights-card-text: var(--color-text-muted);
+
+  --career-insights-card-purple-bg: var(--color-purple-soft);
+  --career-insights-card-purple-accent: var(--color-purple);
+
+  --career-insights-card-green-bg: var(--color-green-soft);
+  --career-insights-card-green-accent: var(--color-green);
+
+  --career-insights-card-orange-bg: var(--color-orange-soft);
+  --career-insights-card-orange-accent: var(--color-orange);
+
+  --career-insights-card-blue-bg: var(--color-blue-soft);
+  --career-insights-card-blue-accent: var(--color-blue);
+
+  /* =========================================================
+     20. PROGRAM AT A GLANCE
+  ========================================================= */
+
+  --program-glance-section-bg: var(--color-white);
+
+  --program-glance-section-title-text: var(--color-text-heading);
+  --program-glance-section-subtitle-text: var(--color-text-muted);
+
+  --program-glance-main-card-bg: var(--color-navy-1000);
+  --program-glance-main-card-border: #17305c;
+  --program-glance-main-card-title: var(--color-white);
+  --program-glance-main-card-text: #c4cde1;
+
+  --program-glance-stage-one: #0a53f2;
+  --program-glance-stage-two: #0891d1;
+  --program-glance-stage-three: #7256e8;
+  --program-glance-stage-four: #1e68ff;
+
+  --program-glance-info-card-bg: var(--color-white);
+  --program-glance-info-card-border: var(--color-border-default);
+  --program-glance-info-card-title: var(--color-text-heading);
+  --program-glance-info-card-text: var(--color-text-muted);
+
+  --program-glance-blue-bg: var(--color-blue-soft);
+  --program-glance-blue-accent: var(--color-blue);
+
+  --program-glance-green-bg: var(--color-green-soft);
+  --program-glance-green-accent: var(--color-green);
+
+  --program-glance-purple-bg: var(--color-purple-soft);
+  --program-glance-purple-accent: var(--color-purple);
+
+  --program-glance-orange-bg: var(--color-orange-soft);
+  --program-glance-orange-accent: var(--color-orange);
+
+  /* =========================================================
+     21. BUILD YOUR PROOF / ENROLLMENT SECTION
+  ========================================================= */
+
+  --build-proof-section-bg: var(--color-surface-secondary);
+
+  --build-proof-section-eyebrow-bg: var(--color-brand-100);
+  --build-proof-section-eyebrow-text: var(--color-brand-700);
+
+  --build-proof-section-title-text: var(--color-text-heading);
+  --build-proof-section-title-highlight: var(--color-brand-700);
+  --build-proof-section-subtitle-text: var(--color-text-muted);
+
+  --build-proof-showcase-bg: var(--color-navy-1000);
+  --build-proof-showcase-border: #17305c;
+  --build-proof-showcase-title: var(--color-white);
+  --build-proof-showcase-text: #c4cde1;
+
+  --build-proof-showcase-blue-bg: #092e76;
+  --build-proof-showcase-blue-icon: #5f8dff;
+
+  --build-proof-showcase-green-bg: #073c31;
+  --build-proof-showcase-green-icon: #42c693;
+
+  --build-proof-showcase-purple-bg: #2a205f;
+  --build-proof-showcase-purple-icon: #a38bff;
+
+  --build-proof-enrollment-bg: var(--color-white);
+  --build-proof-enrollment-border: var(--color-border-default);
+  --build-proof-enrollment-title: var(--color-text-heading);
+  --build-proof-enrollment-text: var(--color-text-muted);
+
+  --build-proof-check-bg: var(--color-blue-soft);
+  --build-proof-check-color: var(--color-brand-700);
+
+  --build-proof-button-bg: var(--color-brand-700);
+  --build-proof-button-hover-bg: var(--color-brand-950);
+  --build-proof-button-text: var(--color-white);
+
+  --build-proof-trust-bar-bg: var(--color-white);
+  --build-proof-trust-bar-border: var(--color-border-default);
+  --build-proof-trust-bar-text: var(--color-text-muted);
+
+  /* =========================================================
+     22. ECOSYSTEM SECTION
+  ========================================================= */
+
+  --ecosystem-section-bg: var(--color-white);
+
+  --ecosystem-section-eyebrow-bg: var(--color-brand-100);
+  --ecosystem-section-eyebrow-text: var(--color-brand-700);
+
+  --ecosystem-section-title-text: var(--color-text-heading);
+  --ecosystem-section-title-highlight: var(--color-brand-700);
+  --ecosystem-section-subtitle-text: var(--color-text-muted);
+
+  --ecosystem-resource-card-bg: var(--color-white);
+  --ecosystem-resource-card-border: var(--color-border-default);
+  --ecosystem-resource-card-title: var(--color-text-heading);
+  --ecosystem-resource-card-text: var(--color-text-muted);
+
+  --ecosystem-resource-blue-bg: var(--color-blue-soft);
+  --ecosystem-resource-blue-icon: var(--color-blue);
+
+  --ecosystem-resource-green-bg: var(--color-green-soft);
+  --ecosystem-resource-green-icon: var(--color-green);
+
+  --ecosystem-resource-purple-bg: var(--color-purple-soft);
+  --ecosystem-resource-purple-icon: var(--color-purple);
+
+  --ecosystem-community-bg: var(--color-navy-1000);
+  --ecosystem-community-border: #17305c;
+  --ecosystem-community-title: var(--color-white);
+  --ecosystem-community-text: #c4cde1;
+
+  --ecosystem-community-card-bg: #06163a;
+  --ecosystem-community-card-border: #18366f;
+  --ecosystem-community-card-icon-bg: #0b3b9d;
+  --ecosystem-community-card-icon: #75a0ff;
+  --ecosystem-community-card-title: var(--color-white);
+  --ecosystem-community-card-text: #b5c3df;
+
+  --ecosystem-community-button-bg: var(--color-brand-600);
+  --ecosystem-community-button-hover-bg: var(--color-brand-500);
+  --ecosystem-community-button-text: var(--color-white);
+
+  /* =========================================================
+     23. FAQ SECTION
+  ========================================================= */
+
+  --faq-section-bg: var(--color-surface-secondary);
+
+  --faq-section-eyebrow-bg: var(--color-brand-100);
+  --faq-section-eyebrow-text: var(--color-brand-700);
+
+  --faq-section-title-text: var(--color-text-heading);
+  --faq-section-subtitle-text: var(--color-text-muted);
+
+  --faq-accordion-bg: var(--color-white);
+  --faq-accordion-border: var(--color-border-default);
+  --faq-accordion-title: var(--color-text-heading);
+  --faq-accordion-text: var(--color-text-muted);
+  --faq-accordion-icon: var(--color-brand-700);
+
+  --faq-accordion-active-bg: var(--color-brand-50);
+  --faq-accordion-active-border: var(--color-brand-600);
+  --faq-accordion-active-title: var(--color-brand-950);
+
+  --faq-support-card-bg: var(--color-white);
+  --faq-support-card-border: var(--color-border-default);
+  --faq-support-card-title: var(--color-text-heading);
+  --faq-support-card-text: var(--color-text-muted);
+  --faq-support-card-icon-bg: var(--color-brand-50);
+  --faq-support-card-icon: var(--color-brand-700);
+
+  --faq-support-button-bg: var(--color-brand-700);
+  --faq-support-button-hover-bg: var(--color-brand-950);
+  --faq-support-button-text: var(--color-white);
+
+  /* =========================================================
+     24. FINAL CTA BAR
+  ========================================================= */
+
+  --final-cta-wrapper-bg: var(--color-navy-1000);
+
+  --final-cta-bg: var(--color-white);
+  --final-cta-border: var(--color-border-default);
+
+  --final-cta-icon-bg: var(--color-brand-50);
+  --final-cta-icon-color: var(--color-brand-700);
+
+  --final-cta-title: var(--color-text-heading);
+  --final-cta-text: var(--color-text-muted);
+
+  --final-cta-primary-button-bg: var(--color-brand-700);
+  --final-cta-primary-button-hover-bg: var(--color-brand-950);
+  --final-cta-primary-button-text: var(--color-white);
+
+  --final-cta-secondary-button-bg: var(--color-white);
+  --final-cta-secondary-button-hover-bg: var(--color-brand-50);
+  --final-cta-secondary-button-border: var(--color-border-default);
+  --final-cta-secondary-button-text: var(--color-brand-700);
+
+  /* =========================================================
+     25. FOOTER
+  ========================================================= */
+
+  --footer-bg: #011139;
+  --footer-bg-bottom: #000819;
+  --footer-border: #17305c;
+
+  --footer-logo-text: var(--color-white);
+  --footer-description-text: #aab8d6;
+
+  --footer-heading-text: var(--color-white);
+  --footer-link-text: #b5c3df;
+  --footer-link-hover-text: #5f8dff;
+
+  --footer-social-bg: #06163a;
+  --footer-social-border: #18366f;
+  --footer-social-icon: #8fb0ff;
+  --footer-social-hover-bg: var(--color-brand-700);
+  --footer-social-hover-icon: var(--color-white);
+
+  --footer-newsletter-bg: #06163a;
+  --footer-newsletter-border: #18366f;
+  --footer-newsletter-input-bg: #010d2f;
+  --footer-newsletter-input-text: var(--color-white);
+  --footer-newsletter-input-placeholder: #838ca8;
+
+  --footer-newsletter-button-bg: var(--color-brand-700);
+  --footer-newsletter-button-hover-bg: var(--color-brand-500);
+  --footer-newsletter-button-text: var(--color-white);
+
+  --footer-copyright-text: #838ca8;
+  --footer-legal-link-text: #aab8d6;
+  --footer-legal-link-hover-text: var(--color-white);
+
+  /* =========================================================
+     26. STATUS AND UTILITY COLORS
+  ========================================================= */
+
+  --status-success-bg: var(--color-green-soft);
+  --status-success-text: var(--color-green);
+  --status-success-border: #bce9d4;
+
+  --status-warning-bg: var(--color-orange-soft);
+  --status-warning-text: var(--color-orange);
+  --status-warning-border: #f4d6b2;
+
+  --status-error-bg: var(--color-red-soft);
+  --status-error-text: var(--color-red);
+  --status-error-border: #f0c3c9;
+
+  --status-info-bg: var(--color-blue-soft);
+  --status-info-text: var(--color-blue);
+  --status-info-border: var(--color-brand-200);
+
+  /* =========================================================
+     27. GRADIENTS
+  ========================================================= */
+
+  --gradient-brand:
+    linear-gradient(
+      135deg,
+      #004af2 0%,
+      #1e5cff 100%
+    );
+
+  --gradient-brand-soft:
+    linear-gradient(
+      135deg,
+      #f2f8fe 0%,
+      #e9f2fe 100%
+    );
+
+  --gradient-dark:
+    linear-gradient(
+      180deg,
+      #000819 0%,
+      #011139 100%
+    );
+
+  --gradient-dark-card:
+    linear-gradient(
+      135deg,
+      #01081b 0%,
+      #031633 100%
+    );
+
+  /* =========================================================
+     28. BACKWARD-COMPATIBILITY ALIASES
+
+     These aliases support the misspelled "differnt" variable
+     names from your existing CSS. New CSS should use "different".
+  ========================================================= */
+
+  --solution-section-differnt-box-bg:
+    var(--solution-section-different-box-bg);
+
+  --solution-section-differnt-box-left-title:
+    var(--solution-section-different-box-left-title);
+
+  --solution-section-differnt-box-right-title:
+    var(--solution-section-different-box-right-title);
+
+  --solution-section-differnt-box-left-point-bg:
+    var(--solution-section-different-box-left-point-bg);
+
+  --solution-section-differnt-box-left-point-border:
+    var(--solution-section-different-box-left-point-border);
+
+  --solution-section-differnt-box-left-point-text:
+    var(--solution-section-different-box-left-point-text);
+
+  --solution-section-differnt-box-right-point-bg:
+    var(--solution-section-different-box-right-point-bg);
+
+  --solution-section-differnt-box-right-point-border:
+    var(--solution-section-different-box-right-point-border);
+
+  --solution-section-differnt-box-right-point-text:
+    var(--solution-section-different-box-right-point-text);
+
+  --solution-section-differnt-box-arrow-box-bg:
+    var(--solution-section-different-box-arrow-box-bg);
+
+  --solution-section-differnt-box-arrow-box-border:
+    var(--solution-section-different-box-arrow-box-border);
+
+  --solution-section-differnt-box-arrow-bg:
+    var(--solution-section-different-box-arrow-bg);
+
+  --solution-section-differnt-box-footer-from-text:
+    var(--solution-section-different-box-footer-from-text);
+
+  --solution-section-differnt-box-footer-from-arrow:
+    var(--solution-section-different-box-footer-from-arrow);
+
+  --solution-section-differnt-box-footer-to-text:
+    var(--solution-section-different-box-footer-to-text);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-inter: var(--font-inter);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +951,7 @@
 }
 
 body {
-  background: var(--background);
+  background: #ffffff;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
 }
