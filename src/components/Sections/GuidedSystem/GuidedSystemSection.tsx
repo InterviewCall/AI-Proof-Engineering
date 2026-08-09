@@ -6,7 +6,6 @@ import {
     ClipboardCheck,
     Code2,
     Download,
-    FileText,
     FlaskConical,
     type LucideIcon,
     Mic,
@@ -180,8 +179,8 @@ const GuidedSystemSection: FC = () => {
         <section
             id="guided-system"
             className="
-                scroll-mt-[100px]
-                bg-[var(--guided-system-section-bg)]
+                scroll-mt-25
+                bg-(--guided-system-section-bg)
                 px-4
                 py-14
                 sm:px-6
@@ -191,29 +190,30 @@ const GuidedSystemSection: FC = () => {
                 xl:px-12
             "
         >
-            <div className="mx-auto w-full max-w-[1380px]">
+            <div className="mx-auto w-full max-w-345">
                 {/* Header */}
-                <header className="mx-auto max-w-[1120px] text-center">
+                <header className="mx-auto max-w-280 text-center">
                     <div
                         className="
                             mx-auto
                             inline-flex
-                            min-h-[40px]
+                            min-h-10
                             items-center
                             justify-center
                             gap-3
                             rounded-full
                             border
-                            border-[var(--guided-system-section-eyebrow-text)]
-                            bg-[var(--guided-system-section-eyebrow-bg)]
+                            border-(--guided-system-section-eyebrow-text)
+                            bg-(--guided-system-section-eyebrow-bg)
                             px-6
                             text-[16px]
                             font-semibold
                             uppercase
-                            tracking-[-0.01em]
-                            text-[var(--guided-system-section-eyebrow-text)]
+                            tracking-[-2%]
+                            leading-[1.58]
+                            text-(--guided-system-section-eyebrow-text)
                             sm:text-[20px]
-                            lg:text-[18px]
+                            lg:text-[20px]
                         "
                     >
                         <PlayCircle
@@ -230,17 +230,17 @@ const GuidedSystemSection: FC = () => {
                             mt-5
                             text-[clamp(3rem,10vw,4.5rem)]
                             font-bold
-                            leading-[1.04]
-                            tracking-[-0.05em]
-                            text-[var(--guided-system-section-title-text)]
-                            lg:text-[clamp(4rem,5.4vw,5.2rem)]
+                            leading-[1.03]
+                            tracking-[-2%]
+                            text-(--guided-system-section-title-text)
+                            lg:text-[clamp(4rem,5.4vw,4.2rem)]
                         "
                     >
                         <span className="hidden lg:inline">
                             A Guided System From
                             <span className="block">
                                 Diagnosis to{' '}
-                                <span className="text-[var(--guided-system-section-title-highlight)]">
+                                <span className="text-(--guided-system-section-title-highlight)">
                                     Capstone Proof
                                 </span>
                             </span>
@@ -248,7 +248,7 @@ const GuidedSystemSection: FC = () => {
 
                         <span className="lg:hidden">
                             From Diagnosis to
-                            <span className="block text-[var(--guided-system-section-title-highlight)]">
+                            <span className="block text-(--guided-system-section-title-highlight)">
                                 Capstone Proof
                             </span>
                         </span>
@@ -258,11 +258,11 @@ const GuidedSystemSection: FC = () => {
                         className="
                             mx-auto
                             mt-5
-                            max-w-[850px]
+                            max-w-212.5
                             text-[20px]
                             font-semibold
-                            leading-[1.35]
-                            text-[var(--guided-system-section-subtitle-text)]
+                            leading-[1.32]
+                            text-(--guided-system-section-subtitle-text)
                             lg:text-[22px]
                         "
                     >
@@ -284,10 +284,9 @@ const GuidedSystemSection: FC = () => {
                     className="
                         mt-8
                         hidden
-                        grid-cols-2
                         gap-5
                         lg:grid
-                        xl:grid-cols-4
+                        lg:grid-cols-4
                     "
                 >
                     {guidedSteps.map((step, index) => {
@@ -298,14 +297,14 @@ const GuidedSystemSection: FC = () => {
                                 key={step.id}
                                 className="
                                     relative
+                                    min-h-87.5
                                     rounded-[18px]
                                     border
-                                    border-[var(--guided-system-step-border)]
-                                    bg-[var(--guided-system-step-bg)]
+                                    border-(--guided-system-step-border)
+                                    bg-(--guided-system-step-bg)
                                     px-4
                                     pb-4
                                     pt-4
-                                    xl:min-h-[350px]
                                 "
                             >
                                 <span
@@ -314,15 +313,15 @@ const GuidedSystemSection: FC = () => {
                                         left-4
                                         top-4
                                         flex
-                                        h-[54px]
-                                        w-[54px]
+                                        h-13.5
+                                        w-13.5
                                         items-center
                                         justify-center
                                         rounded-full
-                                        bg-[var(--guided-system-step-number-bg)]
+                                        bg-(--guided-system-step-number-bg)
                                         text-[24px]
                                         font-semibold
-                                        text-[var(--guided-system-step-number-text)]
+                                        text-(--guided-system-step-number-text)
                                     "
                                 >
                                     {step.id}
@@ -334,16 +333,16 @@ const GuidedSystemSection: FC = () => {
                                             aria-hidden="true"
                                             className="
                                                 absolute
-                                                right-[-30px]
+                                                -right-7.5
                                                 top-1/2
                                                 z-10
                                                 hidden
                                                 h-px
-                                                w-[44px]
+                                                w-11
                                                 border-t
                                                 border-dashed
-                                                border-[var(--guided-system-step-connector)]
-                                                xl:block
+                                                border-(--guided-system-step-connector)
+                                                lg:block
                                             "
                                         />
 
@@ -351,7 +350,7 @@ const GuidedSystemSection: FC = () => {
                                             aria-hidden="true"
                                             className="
                                                 absolute
-                                                right-[-42px]
+                                                -right-10.5
                                                 top-1/2
                                                 z-20
                                                 hidden
@@ -362,10 +361,10 @@ const GuidedSystemSection: FC = () => {
                                                 justify-center
                                                 rounded-full
                                                 border
-                                                border-[var(--guided-system-step-border)]
+                                                border-(--guided-system-step-border)
                                                 bg-white
-                                                text-[var(--guided-system-step-icon)]
-                                                xl:flex
+                                                text-(--guided-system-step-icon)
+                                                lg:flex
                                             "
                                         >
                                             <ArrowRight
@@ -380,15 +379,15 @@ const GuidedSystemSection: FC = () => {
                                     <span
                                         className="
                                             flex
-                                            h-[82px]
-                                            w-[82px]
+                                            h-20.5
+                                            w-20.5
                                             items-center
                                             justify-center
                                             rounded-[14px]
                                             border
-                                            border-[var(--guided-system-step-border)]
-                                            bg-[var(--guided-system-step-number-bg)]
-                                            text-[var(--guided-system-step-icon)]
+                                            border-(--guided-system-step-border)
+                                            bg-(--guided-system-step-number-bg)
+                                            text-(--guided-system-step-icon)
                                         "
                                     >
                                         <Icon
@@ -405,8 +404,8 @@ const GuidedSystemSection: FC = () => {
                                         text-center
                                         text-[20px]
                                         font-bold
-                                        leading-[1.25]
-                                        text-[var(--guided-system-step-title)]
+                                        leading-tight
+                                        text-(--guided-system-step-title)
                                     "
                                 >
                                     {step.title}
@@ -416,12 +415,12 @@ const GuidedSystemSection: FC = () => {
                                     className="
                                         mx-auto
                                         mt-4
-                                        max-w-[270px]
+                                        max-w-67.5
                                         text-center
                                         text-[15px]
                                         font-medium
                                         leading-[1.6]
-                                        text-[var(--guided-system-step-text)]
+                                        text-(--guided-system-step-text)
                                     "
                                 >
                                     {step.desktopDescription}
@@ -431,12 +430,12 @@ const GuidedSystemSection: FC = () => {
                                     className="
                                         mt-6
                                         grid
-                                        min-h-[68px]
+                                        min-h-17
                                         items-center
-                                        rounded-[8px]
+                                        rounded-lg
                                         border
-                                        border-[var(--guided-system-step-border)]
-                                        bg-[var(--guided-system-tool-bar-bg)]
+                                        border-(--guided-system-step-border)
+                                        bg-(--guided-system-tool-bar-bg)
                                         px-2
                                     "
                                     style={{
@@ -464,7 +463,7 @@ const GuidedSystemSection: FC = () => {
                                                             step.desktopItems
                                                                 .length -
                                                                 1
-                                                                ? 'border-r border-[var(--guided-system-tool-bar-border)]'
+                                                                ? 'border-r border-(--guided-system-tool-bar-border)'
                                                                 : ''
                                                         }
                                                     `}
@@ -474,7 +473,7 @@ const GuidedSystemSection: FC = () => {
                                                         className="
                                                             h-6
                                                             w-6
-                                                            text-[var(--guided-system-tool-icon)]
+                                                            text-(--guided-system-tool-icon)
                                                         "
                                                         strokeWidth={1.8}
                                                     />
@@ -484,7 +483,7 @@ const GuidedSystemSection: FC = () => {
                                                             text-[11px]
                                                             font-semibold
                                                             leading-[1.15]
-                                                            text-[var(--guided-system-tool-text)]
+                                                            text-(--guided-system-tool-text)
                                                         "
                                                     >
                                                         {item.label}
@@ -505,13 +504,13 @@ const GuidedSystemSection: FC = () => {
                         aria-hidden="true"
                         className="
                             absolute
-                            left-[35px]
+                            left-8.75
                             top-8
                             bottom-8
                             w-px
                             border-l
                             border-dotted
-                            border-[var(--guided-system-step-connector)]
+                            border-(--guided-system-step-connector)
                         "
                     />
 
@@ -533,15 +532,15 @@ const GuidedSystemSection: FC = () => {
                                         <span
                                             className="
                                                 flex
-                                                h-[64px]
-                                                w-[64px]
+                                                h-16
+                                                w-16
                                                 items-center
                                                 justify-center
                                                 rounded-full
-                                                bg-[var(--guided-system-step-number-bg)]
+                                                bg-(--guided-system-step-number-bg)
                                                 text-[24px]
                                                 font-semibold
-                                                text-[var(--guided-system-step-number-text)]
+                                                text-(--guided-system-step-number-text)
                                             "
                                         >
                                             {step.id}
@@ -550,10 +549,10 @@ const GuidedSystemSection: FC = () => {
 
                                     <div
                                         className="
-                                            rounded-[16px]
+                                            rounded-2xl
                                             border
-                                            border-[var(--guided-system-step-border)]
-                                            bg-[var(--guided-system-step-bg)]
+                                            border-(--guided-system-step-border)
+                                            bg-(--guided-system-step-bg)
                                             px-6
                                             py-6
                                         "
@@ -569,15 +568,15 @@ const GuidedSystemSection: FC = () => {
                                             <span
                                                 className="
                                                     flex
-                                                    h-[110px]
-                                                    w-[110px]
+                                                    h-27.5
+                                                    w-27.5
                                                     items-center
                                                     justify-center
-                                                    rounded-[16px]
+                                                    rounded-2xl
                                                     border
-                                                    border-[var(--guided-system-step-border)]
-                                                    bg-[var(--guided-system-step-number-bg)]
-                                                    text-[var(--guided-system-step-icon)]
+                                                    border-(--guided-system-step-border)
+                                                    bg-(--guided-system-step-number-bg)
+                                                    text-(--guided-system-step-icon)
                                                 "
                                             >
                                                 <Icon
@@ -594,7 +593,7 @@ const GuidedSystemSection: FC = () => {
                                                         font-bold
                                                         leading-[1.2]
                                                         tracking-[-0.03em]
-                                                        text-[var(--guided-system-step-title)]
+                                                        text-(--guided-system-step-title)
                                                     "
                                                 >
                                                     {step.title}
@@ -606,7 +605,7 @@ const GuidedSystemSection: FC = () => {
                                                         text-[18px]
                                                         font-semibold
                                                         leading-[1.55]
-                                                        text-[var(--guided-system-step-text)]
+                                                        text-(--guided-system-step-text)
                                                     "
                                                 >
                                                     {step.mobileDescription}
@@ -617,8 +616,8 @@ const GuidedSystemSection: FC = () => {
                                         <div
                                             className="
                                                 mt-6
-                                                rounded-[12px]
-                                                bg-[var(--guided-system-tool-bar-bg)]
+                                                rounded-xl
+                                                bg-(--guided-system-tool-bar-bg)
                                                 px-5
                                                 py-3
                                             "
@@ -631,7 +630,7 @@ const GuidedSystemSection: FC = () => {
                                                     text-[18px]
                                                     font-medium
                                                     leading-[1.45]
-                                                    text-[var(--guided-system-step-text)]
+                                                    text-(--guided-system-step-text)
                                                 "
                                             >
                                                 <CheckCircle2
@@ -641,7 +640,7 @@ const GuidedSystemSection: FC = () => {
                                                         h-6
                                                         w-6
                                                         shrink-0
-                                                        text-[var(--guided-system-step-icon)]
+                                                        text-(--guided-system-step-icon)
                                                     "
                                                     strokeWidth={1.8}
                                                 />
@@ -664,14 +663,14 @@ const GuidedSystemSection: FC = () => {
                     className="
                         mt-7
                         hidden
-                        rounded-[12px]
+                        rounded-xl
                         border
-                        border-[var(--guided-system-tool-bar-border)]
-                        bg-[var(--guided-system-tool-bar-bg)]
+                        border-(--guided-system-tool-bar-border)
+                        bg-(--guided-system-tool-bar-bg)
                         px-5
                         py-4
                         lg:grid
-                        lg:grid-cols-[330px_minmax(0,1fr)]
+                        lg:grid-cols-[290px_minmax(0,1fr)]
                         xl:grid-cols-[360px_minmax(0,1fr)]
                     "
                 >
@@ -679,13 +678,13 @@ const GuidedSystemSection: FC = () => {
                         <span
                             className="
                                 flex
-                                h-[76px]
-                                w-[76px]
+                                h-19
+                                w-19
                                 shrink-0
                                 items-center
                                 justify-center
-                                rounded-[12px]
-                                bg-[var(--button-primary-bg)]
+                                rounded-xl
+                                bg-(--button-primary-bg)
                                 text-white
                             "
                         >
@@ -701,12 +700,12 @@ const GuidedSystemSection: FC = () => {
                                 className="
                                     text-[20px]
                                     font-bold
-                                    leading-[1.25]
-                                    text-[var(--guided-system-step-title)]
+                                    leading-tight
+                                    text-(--guided-system-step-title)
                                 "
                             >
                                 The InterviewCall
-                                <span className="block text-[var(--guided-system-step-icon)]">
+                                <span className="block text-(--guided-system-step-icon)">
                                     Operating System
                                 </span>
                             </h3>
@@ -714,11 +713,11 @@ const GuidedSystemSection: FC = () => {
                             <p
                                 className="
                                     mt-2
-                                    max-w-[240px]
+                                    max-w-60
                                     text-[15px]
                                     font-medium
                                     leading-[1.4]
-                                    text-[var(--guided-system-step-text)]
+                                    text-(--guided-system-step-text)
                                 "
                             >
                                 A continuous cycle of improvement and readiness.
@@ -726,40 +725,36 @@ const GuidedSystemSection: FC = () => {
                         </div>
                     </div>
 
-                    <div
-                        className="
-                            flex
-                            items-center
-                            justify-between
-                            gap-3
-                        "
-                    >
+                    <div className="flex items-start">
                         {operatingSystemItems.map((item, index) => {
                             const Icon = item.icon;
+                            const isLast =
+                                index === operatingSystemItems.length - 1;
 
                             return (
                                 <div
                                     key={item.label}
-                                    className="
+                                    className={`
                                         flex
-                                        min-w-0
-                                        items-center
-                                        gap-3
-                                    "
+                                        items-start
+                                        gap-2
+                                        ${isLast ? '' : 'flex-1'}
+                                    `}
                                 >
-                                    <div className="flex min-w-[78px] flex-col items-center text-center">
+                                    <div className="flex w-19.5 shrink-0 flex-col items-center text-center">
                                         <span
                                             className="
                                                 flex
-                                                h-[62px]
-                                                w-[62px]
+                                                h-15.5
+                                                w-15.5
+                                                shrink-0
                                                 items-center
                                                 justify-center
                                                 rounded-full
                                                 border
-                                                border-[var(--guided-system-step-border)]
+                                                border-(--guided-system-step-border)
                                                 bg-white
-                                                text-[var(--guided-system-step-icon)]
+                                                text-(--guided-system-step-icon)
                                             "
                                         >
                                             <Icon
@@ -774,25 +769,26 @@ const GuidedSystemSection: FC = () => {
                                                 mt-2
                                                 text-[12px]
                                                 font-semibold
-                                                leading-[1.25]
-                                                text-[var(--guided-system-step-title)]
+                                                leading-tight
+                                                text-(--guided-system-step-title)
                                             "
                                         >
                                             {item.label}
                                         </span>
                                     </div>
 
-                                    {index <
-                                        operatingSystemItems.length - 1 && (
-                                        <ArrowRight
+                                    {!isLast && (
+                                        <span
                                             aria-hidden="true"
                                             className="
-                                                h-6
-                                                w-6
-                                                shrink-0
-                                                text-[var(--guided-system-step-icon)]
+                                                mt-7.75
+                                                h-px
+                                                min-w-4
+                                                flex-1
+                                                border-t
+                                                border-dashed
+                                                border-(--guided-system-step-connector)
                                             "
-                                            strokeWidth={1.8}
                                         />
                                     )}
                                 </div>
@@ -810,8 +806,8 @@ const GuidedSystemSection: FC = () => {
                         gap-5
                         rounded-[14px]
                         border
-                        border-[var(--guided-system-tool-bar-border)]
-                        bg-[var(--guided-system-tool-bar-bg)]
+                        border-(--guided-system-tool-bar-border)
+                        bg-(--guided-system-tool-bar-bg)
                         px-5
                         py-4
                         lg:hidden
@@ -820,14 +816,14 @@ const GuidedSystemSection: FC = () => {
                     <span
                         className="
                             flex
-                            h-[80px]
-                            w-[80px]
+                            h-20
+                            w-20
                             shrink-0
                             items-center
                             justify-center
                             rounded-full
                             bg-white
-                            text-[var(--guided-system-step-icon)]
+                            text-(--guided-system-step-icon)
                         "
                     >
                         <Route
@@ -842,27 +838,27 @@ const GuidedSystemSection: FC = () => {
                             text-[22px]
                             font-medium
                             leading-[1.55]
-                            text-[var(--guided-system-step-title)]
+                            text-(--guided-system-step-title)
                         "
                     >
                         Assessment{' '}
-                        <span className="text-[var(--guided-system-step-icon)]">
+                        <span className="text-(--guided-system-step-icon)">
                             →
                         </span>{' '}
                         Classes{' '}
-                        <span className="text-[var(--guided-system-step-icon)]">
+                        <span className="text-(--guided-system-step-icon)">
                             →
                         </span>{' '}
                         Labs{' '}
-                        <span className="text-[var(--guided-system-step-icon)]">
+                        <span className="text-(--guided-system-step-icon)">
                             →
                         </span>{' '}
                         Reviews{' '}
-                        <span className="text-[var(--guided-system-step-icon)]">
+                        <span className="text-(--guided-system-step-icon)">
                             →
                         </span>{' '}
                         Mocks{' '}
-                        <span className="text-[var(--guided-system-step-icon)]">
+                        <span className="text-(--guided-system-step-icon)">
                             →
                         </span>{' '}
                         Capstone
@@ -875,10 +871,10 @@ const GuidedSystemSection: FC = () => {
                         mx-auto
                         mt-6
                         grid
-                        max-w-[720px]
+                        max-w-180
                         gap-3
                         lg:mt-7
-                        lg:max-w-[700px]
+                        lg:max-w-175
                         lg:grid-cols-[1.2fr_1fr]
                         lg:gap-6
                     "
@@ -888,13 +884,13 @@ const GuidedSystemSection: FC = () => {
                         className="
                             group
                             inline-flex
-                            min-h-[70px]
+                            min-h-17.5
                             w-full
                             items-center
                             justify-center
                             gap-4
-                            rounded-[8px]
-                            bg-[var(--button-primary-bg)]
+                            rounded-lg
+                            bg-(--button-primary-bg)
                             px-6
                             text-center
                             text-[22px]
@@ -903,11 +899,11 @@ const GuidedSystemSection: FC = () => {
                             transition-all
                             duration-200
                             hover:-translate-y-0.5
-                            hover:bg-[var(--button-primary-bg-hover)]
+                            hover:bg-(--button-primary-bg-hover)
                             focus-visible:outline-none
                             focus-visible:ring-4
-                            focus-visible:ring-[var(--focus-ring-color)]
-                            lg:min-h-[64px]
+                            focus-visible:ring-(--focus-ring-color)
+                            lg:min-h-16
                             lg:text-[20px]
                         "
                     >
@@ -926,28 +922,28 @@ const GuidedSystemSection: FC = () => {
                         className="
                             group
                             inline-flex
-                            min-h-[56px]
+                            min-h-14
                             w-full
                             items-center
                             justify-center
                             gap-4
-                            rounded-[8px]
+                            rounded-lg
                             bg-white
                             px-6
                             text-center
                             text-[21px]
                             font-semibold
-                            text-[var(--guided-system-step-icon)]
+                            text-(--guided-system-step-icon)
                             transition-all
                             duration-200
                             hover:-translate-y-0.5
-                            hover:bg-[var(--guided-system-tool-bar-bg)]
+                            hover:bg-(--guided-system-tool-bar-bg)
                             focus-visible:outline-none
                             focus-visible:ring-4
-                            focus-visible:ring-[var(--focus-ring-color)]
-                            lg:min-h-[64px]
+                            focus-visible:ring-(--focus-ring-color)
+                            lg:min-h-16
                             lg:border
-                            lg:border-[var(--guided-system-step-border)]
+                            lg:border-(--guided-system-step-border)
                             lg:text-[20px]
                         "
                     >

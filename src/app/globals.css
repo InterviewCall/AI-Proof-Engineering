@@ -9,7 +9,7 @@
   --color-black: #000000;
 
   --color-brand-50: #f2f8fe;
-  --color-brand-100: #e9f2fe;
+  --color-brand-100: #FBFCFE;
   --color-brand-200: #d0defd;
   --color-brand-300: #a9c3fc;
   --color-brand-400: #5f8dff;
@@ -539,6 +539,9 @@
   --specialist-card-skill-bg: var(--color-brand-50);
   --specialist-card-skill-text: var(--color-brand-700);
 
+  --specialist-card-blue-bg: var(--color-blue-soft);
+  --specialist-card-blue-text: var(--color-blue);
+
   --specialist-card-green-bg: var(--color-green-soft);
   --specialist-card-green-text: var(--color-green);
 
@@ -547,6 +550,23 @@
 
   --specialist-card-orange-bg: var(--color-orange-soft);
   --specialist-card-orange-text: var(--color-orange);
+
+  --specialists-sidebar-eyebrow-text: var(--color-brand-700);
+  --specialists-sidebar-title-text: var(--color-text-heading);
+  --specialists-sidebar-text: var(--color-text-muted);
+  --specialists-sidebar-divider: var(--color-border-default);
+  --specialists-sidebar-icon-bg: var(--color-brand-600);
+  --specialists-sidebar-icon-text: var(--color-white);
+
+  --specialists-strip-bg: var(--color-white);
+  --specialists-strip-border: var(--color-border-default);
+  --specialists-strip-title-text: var(--color-text-heading);
+  --specialists-strip-text: var(--color-text-muted);
+
+  --specialists-mobile-strip-bg: var(--color-brand-50);
+  --specialists-mobile-strip-divider: var(--color-border-default);
+
+  --specialists-mobile-chevron: var(--color-brand-500);
 
   /* =========================================================
      18. REAL PROGRESS SECTION
@@ -581,6 +601,30 @@
   --progress-section-check-bg: var(--color-green-soft);
   --progress-section-check-color: var(--color-green);
 
+  --progress-section-sidebar-bg: var(--color-surface-secondary);
+  --progress-section-sidebar-eyebrow-text: var(--color-brand-700);
+  --progress-section-sidebar-title-text: var(--color-text-heading);
+  --progress-section-sidebar-highlight-text: var(--color-brand-700);
+  --progress-section-sidebar-text: var(--color-text-muted);
+  --progress-section-sidebar-divider: var(--color-border-default);
+  --progress-section-sidebar-icon-bg: var(--color-brand-600);
+  --progress-section-sidebar-icon-text: var(--color-white);
+
+  --progress-section-before-bg: var(--color-blue-soft);
+  --progress-section-before-text: var(--color-blue);
+  --progress-section-after-bg: var(--color-green-soft);
+  --progress-section-after-text: var(--color-green);
+
+  --progress-section-strip-bg: var(--color-white);
+  --progress-section-strip-border: var(--color-border-default);
+  --progress-section-strip-title-text: var(--color-text-heading);
+  --progress-section-strip-text: var(--color-text-muted);
+
+  --progress-section-mobile-eyebrow-text: var(--color-brand-700);
+  --progress-section-mobile-before-bg: var(--color-orange-soft);
+  --progress-section-mobile-before-text: var(--color-orange);
+  --progress-section-mobile-strip-bg: var(--color-brand-50);
+
   /* =========================================================
      19. CAREER INSIGHTS SECTION
   ========================================================= */
@@ -600,11 +644,19 @@
   --career-insights-video-muted-text: #c4cde1;
   --career-insights-video-play-bg: var(--color-white);
   --career-insights-video-play-icon: var(--color-brand-700);
+  --career-insights-video-badge-bg: var(--color-blue);
+  --career-insights-video-badge-text: var(--color-white);
+  --career-insights-video-accent-bar: var(--color-brand-400);
+  --career-insights-video-waveform: var(--color-brand-400);
+  --career-insights-video-tag-bg: #101d3a;
+  --career-insights-video-tag-border: #26385c;
+  --career-insights-video-tag-text: var(--color-white);
 
   --career-insights-card-bg: var(--color-white);
   --career-insights-card-border: var(--color-border-default);
   --career-insights-card-title: var(--color-text-heading);
   --career-insights-card-text: var(--color-text-muted);
+  --career-insights-card-bookmark: var(--color-text-muted);
 
   --career-insights-card-purple-bg: var(--color-purple-soft);
   --career-insights-card-purple-accent: var(--color-purple);
@@ -618,11 +670,23 @@
   --career-insights-card-blue-bg: var(--color-blue-soft);
   --career-insights-card-blue-accent: var(--color-blue);
 
+  --career-insights-strip-bg: var(--color-white);
+  --career-insights-strip-border: var(--color-border-default);
+  --career-insights-strip-title-text: var(--color-text-heading);
+  --career-insights-strip-text: var(--color-text-muted);
+
+  --career-insights-mobile-eyebrow-text: var(--color-brand-700);
+  --career-insights-mobile-strip-bg: var(--color-brand-50);
+  --career-insights-mobile-chevron: var(--color-brand-500);
+
   /* =========================================================
      20. PROGRAM AT A GLANCE
   ========================================================= */
 
   --program-glance-section-bg: var(--color-white);
+
+  --program-glance-eyebrow-bg: var(--color-brand-100);
+  --program-glance-eyebrow-text: var(--color-brand-700);
 
   --program-glance-section-title-text: var(--color-text-heading);
   --program-glance-section-subtitle-text: var(--color-text-muted);
@@ -631,11 +695,7 @@
   --program-glance-main-card-border: #17305c;
   --program-glance-main-card-title: var(--color-white);
   --program-glance-main-card-text: #c4cde1;
-
-  --program-glance-stage-one: #0a53f2;
-  --program-glance-stage-two: #0891d1;
-  --program-glance-stage-three: #7256e8;
-  --program-glance-stage-four: #1e68ff;
+  --program-glance-main-card-highlight: var(--color-brand-400);
 
   --program-glance-info-card-bg: var(--color-white);
   --program-glance-info-card-border: var(--color-border-default);
@@ -653,6 +713,19 @@
 
   --program-glance-orange-bg: var(--color-orange-soft);
   --program-glance-orange-accent: var(--color-orange);
+
+  --program-glance-audience-bg: var(--color-white);
+  --program-glance-audience-border: var(--color-border-default);
+  --program-glance-audience-icon-bg: var(--color-blue-soft);
+  --program-glance-audience-icon-text: var(--color-blue);
+  --program-glance-audience-text: var(--color-text-heading);
+
+  --program-glance-pill-bg: var(--color-surface-secondary);
+  --program-glance-pill-border: var(--color-border-default);
+  --program-glance-pill-text: var(--color-text-heading);
+  --program-glance-pill-icon: var(--color-brand-600);
+
+  --program-glance-mobile-chevron: var(--color-brand-500);
 
   /* =========================================================
      21. BUILD YOUR PROOF / ENROLLMENT SECTION
@@ -696,6 +769,28 @@
   --build-proof-trust-bar-bg: var(--color-white);
   --build-proof-trust-bar-border: var(--color-border-default);
   --build-proof-trust-bar-text: var(--color-text-muted);
+  --build-proof-trust-bar-title: var(--color-text-heading);
+  --build-proof-trust-bar-divider: var(--color-border-default);
+  --build-proof-trust-bar-icon-bg: var(--color-blue-soft);
+  --build-proof-trust-bar-icon-text: var(--color-blue);
+
+  --build-proof-chip-blue-bg: var(--color-blue-soft);
+  --build-proof-chip-blue-icon: var(--color-blue);
+
+  --build-proof-chip-green-bg: var(--color-green-soft);
+  --build-proof-chip-green-icon: var(--color-green);
+
+  --build-proof-chip-purple-bg: var(--color-purple-soft);
+  --build-proof-chip-purple-icon: var(--color-purple);
+
+  --build-proof-chip-orange-bg: var(--color-orange-soft);
+  --build-proof-chip-orange-icon: var(--color-orange);
+
+  --build-proof-mobile-chevron: var(--color-brand-500);
+  --build-proof-mobile-trust-bg: var(--color-blue-soft);
+  --build-proof-mobile-trust-text: var(--color-text-heading);
+
+  --build-proof-legend-line: #26385c;
 
   /* =========================================================
      22. ECOSYSTEM SECTION
@@ -740,6 +835,25 @@
   --ecosystem-community-button-hover-bg: var(--color-brand-500);
   --ecosystem-community-button-text: var(--color-white);
 
+  --ecosystem-updates-chevron: var(--color-blue);
+  --ecosystem-updates-divider: var(--color-border-default);
+
+  --ecosystem-strip-bg: var(--color-white);
+  --ecosystem-strip-border: var(--color-border-default);
+  --ecosystem-strip-icon-bg: var(--color-blue-soft);
+  --ecosystem-strip-icon-text: var(--color-blue);
+  --ecosystem-strip-title-text: var(--color-text-heading);
+
+  --ecosystem-newsletter-bg: var(--color-white);
+  --ecosystem-newsletter-border: var(--color-border-default);
+  --ecosystem-newsletter-icon-bg: var(--color-blue-soft);
+  --ecosystem-newsletter-icon-text: var(--color-blue);
+  --ecosystem-newsletter-title: var(--color-text-heading);
+  --ecosystem-newsletter-text: var(--color-text-muted);
+  --ecosystem-newsletter-input-border: var(--color-border-default);
+  --ecosystem-newsletter-input-bg: var(--color-white);
+  --ecosystem-newsletter-input-text: var(--color-text-heading);
+
   /* =========================================================
      23. FAQ SECTION
   ========================================================= */
@@ -757,10 +871,14 @@
   --faq-accordion-title: var(--color-text-heading);
   --faq-accordion-text: var(--color-text-muted);
   --faq-accordion-icon: var(--color-brand-700);
+  --faq-accordion-divider: var(--color-border-default);
 
   --faq-accordion-active-bg: var(--color-brand-50);
   --faq-accordion-active-border: var(--color-brand-600);
   --faq-accordion-active-title: var(--color-brand-950);
+
+  --faq-item-icon-bg: var(--color-brand-50);
+  --faq-item-icon: var(--color-blue);
 
   --faq-support-card-bg: var(--color-white);
   --faq-support-card-border: var(--color-border-default);
@@ -773,29 +891,52 @@
   --faq-support-button-hover-bg: var(--color-brand-950);
   --faq-support-button-text: var(--color-white);
 
+  --faq-sidebar-bg: var(--color-surface-secondary);
+  --faq-sidebar-border: var(--color-border-default);
+  --faq-sidebar-title: var(--color-text-heading);
+  --faq-sidebar-text: var(--color-text-muted);
+  --faq-sidebar-icon-bg: var(--color-white);
+  --faq-sidebar-icon: var(--color-blue);
+  --faq-sidebar-divider: var(--color-border-default);
+  --faq-sidebar-highlight: var(--color-blue);
+
+  --faq-support-option-icon-bg: var(--color-blue-soft);
+  --faq-support-option-icon: var(--color-blue);
+  --faq-support-option-title: var(--color-text-heading);
+  --faq-support-option-text: var(--color-text-muted);
+
+  --faq-trust-bg: var(--color-white);
+  --faq-trust-border: var(--color-border-default);
+  --faq-trust-icon-bg: var(--color-blue-soft);
+  --faq-trust-icon-text: var(--color-blue);
+  --faq-trust-title: var(--color-text-heading);
+  --faq-trust-text: var(--color-text-muted);
+  --faq-trust-divider: var(--color-border-default);
+  --faq-trust-pill-bg: var(--color-blue-soft);
+  --faq-trust-pill-icon: var(--color-blue);
+  --faq-trust-pill-text: var(--color-text-heading);
+
   /* =========================================================
-     24. FINAL CTA BAR
+     24. FOOTER CTA BANNER
   ========================================================= */
 
-  --final-cta-wrapper-bg: var(--color-navy-1000);
+  --footer-cta-bg: var(--color-white);
+  --footer-cta-border: var(--color-border-default);
 
-  --final-cta-bg: var(--color-white);
-  --final-cta-border: var(--color-border-default);
+  --footer-cta-icon-bg: var(--color-brand-50);
+  --footer-cta-icon-color: var(--color-brand-700);
 
-  --final-cta-icon-bg: var(--color-brand-50);
-  --final-cta-icon-color: var(--color-brand-700);
+  --footer-cta-title: var(--color-text-heading);
+  --footer-cta-text: var(--color-text-muted);
 
-  --final-cta-title: var(--color-text-heading);
-  --final-cta-text: var(--color-text-muted);
+  --footer-cta-primary-button-bg: var(--color-brand-700);
+  --footer-cta-primary-button-hover-bg: var(--color-brand-950);
+  --footer-cta-primary-button-text: var(--color-white);
 
-  --final-cta-primary-button-bg: var(--color-brand-700);
-  --final-cta-primary-button-hover-bg: var(--color-brand-950);
-  --final-cta-primary-button-text: var(--color-white);
-
-  --final-cta-secondary-button-bg: var(--color-white);
-  --final-cta-secondary-button-hover-bg: var(--color-brand-50);
-  --final-cta-secondary-button-border: var(--color-border-default);
-  --final-cta-secondary-button-text: var(--color-brand-700);
+  --footer-cta-secondary-button-bg: var(--color-white);
+  --footer-cta-secondary-button-hover-bg: var(--color-brand-50);
+  --footer-cta-secondary-button-border: var(--color-border-default);
+  --footer-cta-secondary-button-text: var(--color-brand-700);
 
   /* =========================================================
      25. FOOTER
@@ -807,8 +948,12 @@
 
   --footer-logo-text: var(--color-white);
   --footer-description-text: #aab8d6;
+  --footer-brand-underline: var(--color-blue);
+  --footer-tagline-text: #8fb0ff;
+  --footer-tagline-dot: #3a5089;
 
   --footer-heading-text: var(--color-white);
+  --footer-heading-underline: var(--color-blue);
   --footer-link-text: #b5c3df;
   --footer-link-hover-text: #5f8dff;
 
@@ -818,15 +963,15 @@
   --footer-social-hover-bg: var(--color-brand-700);
   --footer-social-hover-icon: var(--color-white);
 
-  --footer-newsletter-bg: #06163a;
-  --footer-newsletter-border: #18366f;
-  --footer-newsletter-input-bg: #010d2f;
-  --footer-newsletter-input-text: var(--color-white);
-  --footer-newsletter-input-placeholder: #838ca8;
-
-  --footer-newsletter-button-bg: var(--color-brand-700);
-  --footer-newsletter-button-hover-bg: var(--color-brand-500);
-  --footer-newsletter-button-text: var(--color-white);
+  --footer-help-card-bg: #06163a;
+  --footer-help-card-border: #18366f;
+  --footer-help-icon-bg: var(--color-brand-700);
+  --footer-help-icon-color: var(--color-white);
+  --footer-help-title-text: var(--color-white);
+  --footer-help-underline: var(--color-blue);
+  --footer-help-text: #aab8d6;
+  --footer-help-link-text: #5f8dff;
+  --footer-help-link-hover-text: #8fb0ff;
 
   --footer-copyright-text: #838ca8;
   --footer-legal-link-text: #aab8d6;
