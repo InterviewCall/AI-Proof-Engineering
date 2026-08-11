@@ -29,7 +29,7 @@ const Footer: FC = () => {
                 className="
                     mx-auto
                     w-full
-                    max-w-345
+                    max-w-395
                     px-4
                     py-12
                     sm:px-6
@@ -58,6 +58,7 @@ const Footer: FC = () => {
                         lg:justify-between
                         lg:gap-8
                         lg:text-left
+                        lg:py-12
                     "
                 >
                     <div
@@ -207,7 +208,7 @@ const Footer: FC = () => {
                     <div className="sm:col-span-2 lg:col-span-1">
                         <Link href="/" className="flex items-center gap-3">
                             <Image
-                                src="/images/optimized-svg/company-logo.svg"
+                                src="/images/optimized-svg/company-new-logo.svg"
                                 alt=""
                                 width={44}
                                 height={60}
@@ -582,13 +583,13 @@ const Footer: FC = () => {
                     {/* Brand */}
                     <div className="mt-8">
                         <Link href="/" className="flex items-center gap-3">
-                            <Image
-                                src="/images/optimized-svg/company-logo.svg"
+                            {/* <Image
+                                src="/images/optimized-svg/company-new-logo.svg"
                                 alt=""
                                 width={44}
                                 height={60}
                                 className="h-9 w-auto"
-                            />
+                            /> */}
 
                             <span
                                 className="

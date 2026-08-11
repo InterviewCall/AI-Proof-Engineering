@@ -40,7 +40,7 @@ const Navbar: FC = () => {
                     onClick={closeMobileMenu}
                 >
                     <Image
-                        src="/images/optimized-svg/company-logo.svg"
+                        src="/images/optimized-svg/company-new-logo.svg"
                         alt=""
                         width={62}
                         height={84}

@@ -943,34 +943,35 @@
   ========================================================= */
 
   --footer-bg: #011139;
-  --footer-bg-bottom: #000819;
+  --footer-bg-bottom: #011139;
   --footer-border: #17305c;
 
   --footer-logo-text: var(--color-white);
+  --footer-cta-bg: #F4F7FE;
   --footer-description-text: #aab8d6;
   --footer-brand-underline: var(--color-blue);
-  --footer-tagline-text: #8fb0ff;
-  --footer-tagline-dot: #3a5089;
+  --footer-tagline-text: #0451EA;
+  --footer-tagline-dot: #0451EA;
 
   --footer-heading-text: var(--color-white);
   --footer-heading-underline: var(--color-blue);
   --footer-link-text: #b5c3df;
   --footer-link-hover-text: #5f8dff;
 
-  --footer-social-bg: #06163a;
+  --footer-social-bg: #002254;
   --footer-social-border: #18366f;
-  --footer-social-icon: #8fb0ff;
+  --footer-social-icon: #ffffff;
   --footer-social-hover-bg: var(--color-brand-700);
   --footer-social-hover-icon: var(--color-white);
 
-  --footer-help-card-bg: #06163a;
-  --footer-help-card-border: #18366f;
+  --footer-help-card-bg: #0C1B43;
+  --footer-help-card-border: #17274D;
   --footer-help-icon-bg: var(--color-brand-700);
   --footer-help-icon-color: var(--color-white);
   --footer-help-title-text: var(--color-white);
   --footer-help-underline: var(--color-blue);
   --footer-help-text: #aab8d6;
-  --footer-help-link-text: #5f8dff;
+  --footer-help-link-text: #004DF9;
   --footer-help-link-hover-text: #8fb0ff;
 
   --footer-copyright-text: #838ca8;
