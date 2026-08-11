@@ -31,10 +31,10 @@ const FaqSection: FC = () => {
                 px-4
                 py-14
                 sm:px-6
-                sm:py-16
+                sm:py-6
                 lg:px-8
-                lg:py-20
-                xl:px-12
+                lg:py-6
+                xl:px-8
             "
         >
             <div className="mx-auto w-full max-w-370">

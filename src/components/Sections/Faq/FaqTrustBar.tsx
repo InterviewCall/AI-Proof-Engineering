@@ -28,7 +28,7 @@ const FaqTrustBar: FC = () => {
                     gap-4
                     border-(--faq-trust-divider)
                     pb-6
-                    lg:max-w-90
+                    lg:max-w-120
                     lg:border-r
                     lg:pr-8
                     lg:pb-0
@@ -37,8 +37,8 @@ const FaqTrustBar: FC = () => {
                 <span
                     className="
                         flex
-                        h-12
-                        w-12
+                        h-16
+                        w-16
                         shrink-0
                         items-center
                         justify-center
@@ -49,7 +49,7 @@ const FaqTrustBar: FC = () => {
                 >
                     <ShieldCheck
                         aria-hidden="true"
-                        className="h-6 w-6"
+                        className="h-9 w-9"
                         strokeWidth={1.8}
                     />
                 </span>
@@ -74,8 +74,7 @@ const FaqTrustBar: FC = () => {
                             text-(--faq-trust-text)
                         "
                     >
-                        Every phase, review, and payment term is documented
-                        upfront, so there are no surprises after you enroll.
+                        Built around skills, practice, feedback, capstone proof, and career readiness.
                     </p>
                 </div>
             </div>
@@ -91,16 +90,15 @@ const FaqTrustBar: FC = () => {
                                 flex
                                 items-center
                                 gap-2.5
-                                rounded-xl
-                                bg-(--faq-trust-pill-bg)
                                 px-4
                                 py-3
+                                
                             "
                         >
-                            <span className="flex h-5 w-5 shrink-0 items-center justify-center text-(--faq-trust-pill-icon)">
+                            <span className="flex rounded-full h-14 w-14 shrink-0 items-center justify-center bg-(--faq-trust-pill-bg) text-(--faq-trust-pill-icon)">
                                 <Icon
                                     aria-hidden="true"
-                                    className="h-5 w-5"
+                                    className="h-8 w-8"
                                     strokeWidth={1.9}
                                 />
                             </span>
