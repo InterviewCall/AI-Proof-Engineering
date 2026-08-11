@@ -28,7 +28,6 @@ const FaqSection: FC = () => {
             id="faq"
             className="
                 scroll-mt-25
-                bg-(--faq-section-bg)
                 px-4
                 py-14
                 sm:px-6
@@ -38,7 +37,7 @@ const FaqSection: FC = () => {
                 xl:px-12
             "
         >
-            <div className="mx-auto w-full max-w-320">
+            <div className="mx-auto w-full max-w-370">
                 {/* Desktop */}
                 <div className="hidden lg:block">
                     <header className="mx-auto max-w-220 text-center">
@@ -54,6 +53,8 @@ const FaqSection: FC = () => {
                                 bg-(--faq-section-eyebrow-bg)
                                 px-5
                                 text-[13px]
+                                border
+                                border-[#B1C8FD]
                                 font-semibold
                                 uppercase
                                 tracking-[-1%]
@@ -108,7 +109,7 @@ const FaqSection: FC = () => {
                                 border-(--faq-accordion-border)
                                 bg-(--faq-accordion-bg)
                                 px-2
-                                sm:px-3
+                                sm:p-5
                             "
                         >
                             {faqItems.map((item, index) => (

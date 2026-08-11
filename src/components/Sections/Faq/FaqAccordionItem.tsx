@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { Minus, Plus } from 'lucide-react';
 import { FC } from 'react';
 
@@ -20,13 +21,11 @@ const FaqAccordionItem: FC<FaqAccordionItemProps> = ({
 
     return (
         <div
-            className={
-                isOpen
-                    ? 'my-2 overflow-hidden rounded-xl border border-(--faq-accordion-active-border) bg-(--faq-accordion-active-bg)'
-                    : !isLast
-                      ? 'border-b border-(--faq-accordion-divider)'
-                      : ''
-            }
+            className={clsx(
+                isOpen && 'my-2 overflow-hidden rounded-xl',
+                !isLast && 'border-b border-(--faq-accordion-divider)',
+                'border rounded-xl'
+            )}
         >
             <button
                 type="button"
@@ -78,23 +77,12 @@ const FaqAccordionItem: FC<FaqAccordionItemProps> = ({
                 </span>
 
                 <span
-                    className="
-                        flex
-                        h-8
-                        w-8
-                        shrink-0
-                        items-center
-                        justify-center
-                        rounded-full
-                        border
-                        border-(--faq-accordion-border)
-                        text-(--faq-accordion-icon)
-                    "
+                    className={clsx('flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-(--faq-accordion-border) text-(--faq-accordion-icon)', isOpen && 'bg-[#0043FB] text-white')}
                 >
                     {isOpen ? (
-                        <Minus aria-hidden="true" className="h-4 w-4" strokeWidth={2} />
+                        <Minus aria-hidden="true" className="h-5 w-5" strokeWidth={3} />
                     ) : (
-                        <Plus aria-hidden="true" className="h-4 w-4" strokeWidth={2} />
+                        <Plus aria-hidden="true" className="h-5 w-5" strokeWidth={3} />
                     )}
                 </span>
             </button>

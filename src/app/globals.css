@@ -875,7 +875,7 @@
 
   --faq-accordion-active-bg: var(--color-brand-50);
   --faq-accordion-active-border: var(--color-brand-600);
-  --faq-accordion-active-title: var(--color-brand-950);
+  --faq-accordion-active-title: #0043FB;
 
   --faq-item-icon-bg: var(--color-brand-50);
   --faq-item-icon: var(--color-blue);
