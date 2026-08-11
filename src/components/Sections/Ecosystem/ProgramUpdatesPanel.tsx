@@ -11,17 +11,19 @@ const ProgramUpdatesPanel: FC = () => {
                 flex
                 h-full
                 flex-col
+                gap-y-10
                 rounded-2xl
                 border
                 border-(--ecosystem-resource-card-border)
                 bg-(--ecosystem-resource-card-bg)
                 p-6
-                sm:p-8
+                sm:px-8
+                sm:py-8
             "
         >
             <h3
                 className="
-                    text-[24px]
+                    text-[28px]
                     font-bold
                     leading-tight
                     tracking-[-1%]
@@ -31,7 +33,7 @@ const ProgramUpdatesPanel: FC = () => {
                 Latest Program Updates
             </h3>
 
-            <div className="mt-2">
+            <div>
                 {programUpdates.map((update, index) => (
                     <ProgramUpdateRow
                         key={update.title}

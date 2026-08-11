@@ -27,7 +27,7 @@ const ProgramUpdateRow: FC<{ update: ProgramUpdate; isLast: boolean }> = ({
         <div
             className={`
                 flex
-                items-start
+                items-center
                 gap-4
                 py-5
                 first:pt-0
@@ -38,8 +38,8 @@ const ProgramUpdateRow: FC<{ update: ProgramUpdate; isLast: boolean }> = ({
             <span
                 className={`
                     flex
-                    h-14
-                    w-14
+                    h-24
+                    w-24
                     shrink-0
                     items-center
                     justify-center
@@ -47,14 +47,14 @@ const ProgramUpdateRow: FC<{ update: ProgramUpdate; isLast: boolean }> = ({
                     ${iconStyles[update.accent]}
                 `}
             >
-                <Icon aria-hidden="true" className="h-6.5 w-6.5" strokeWidth={1.7} />
+                <Icon aria-hidden="true" className="h-12.5 w-12.5" strokeWidth={1.7} />
             </span>
 
             <div className="min-w-0 flex-1">
                 <span
                     className={`
-                        text-[12px]
-                        font-bold
+                        text-[15px]
+                        font-semibold
                         uppercase
                         tracking-[0.03em]
                         ${categoryStyles[update.accent]}
@@ -66,7 +66,7 @@ const ProgramUpdateRow: FC<{ update: ProgramUpdate; isLast: boolean }> = ({
                 <h3
                     className="
                         mt-1
-                        text-[17px]
+                        text-[19px]
                         font-bold
                         leading-tight
                         text-(--ecosystem-resource-card-title)
@@ -78,7 +78,7 @@ const ProgramUpdateRow: FC<{ update: ProgramUpdate; isLast: boolean }> = ({
                 <p
                     className="
                         mt-1.5
-                        text-[13.5px]
+                        text-[14.7px]
                         leading-[1.5]
                         text-(--ecosystem-resource-card-text)
                     "
@@ -89,7 +89,7 @@ const ProgramUpdateRow: FC<{ update: ProgramUpdate; isLast: boolean }> = ({
 
             <ChevronRight
                 aria-hidden="true"
-                className="mt-1 h-5 w-5 shrink-0 text-(--ecosystem-updates-chevron)"
+                className="mt-1 h-8 w-8 shrink-0 text-(--ecosystem-updates-chevron)"
                 strokeWidth={2.2}
             />
         </div>

@@ -819,15 +819,15 @@
   --ecosystem-resource-purple-bg: var(--color-purple-soft);
   --ecosystem-resource-purple-icon: var(--color-purple);
 
-  --ecosystem-community-bg: var(--color-navy-1000);
+  --ecosystem-community-bg: #001543;
   --ecosystem-community-border: #17305c;
   --ecosystem-community-title: var(--color-white);
-  --ecosystem-community-text: #c4cde1;
+  --ecosystem-community-text: #F5F4F6;
 
-  --ecosystem-community-card-bg: #06163a;
-  --ecosystem-community-card-border: #18366f;
-  --ecosystem-community-card-icon-bg: #0b3b9d;
-  --ecosystem-community-card-icon: #75a0ff;
+  --ecosystem-community-card-bg: #021F52;
+  --ecosystem-community-card-border: #08316E;
+  --ecosystem-community-card-icon-bg: #0043FB;
+  --ecosystem-community-card-icon: #ffffff;
   --ecosystem-community-card-title: var(--color-white);
   --ecosystem-community-card-text: #b5c3df;
 

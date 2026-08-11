@@ -13,6 +13,7 @@ const EcosystemPanel: FC = () => {
                 flex
                 h-full
                 flex-col
+                gap-y-2
                 rounded-2xl
                 border
                 border-(--ecosystem-community-border)
@@ -23,7 +24,7 @@ const EcosystemPanel: FC = () => {
         >
             <h3
                 className="
-                    text-[24px]
+                    text-[28px]
                     font-bold
                     leading-tight
                     tracking-[-1%]
@@ -41,6 +42,7 @@ const EcosystemPanel: FC = () => {
                     text-[14.5px]
                     leading-[1.55]
                     text-(--ecosystem-community-text)
+                    max-w-lg
                 "
             >
                 A structured support layer for engineers moving from learning
@@ -68,7 +70,7 @@ const EcosystemPanel: FC = () => {
                         bg-(--ecosystem-community-button-bg)
                         px-6
                         text-center
-                        text-[15px]
+                        text-[20px]
                         font-semibold
                         text-(--ecosystem-community-button-text)
                         transition-all

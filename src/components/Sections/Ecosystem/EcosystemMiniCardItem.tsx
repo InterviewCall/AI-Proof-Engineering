@@ -8,6 +8,9 @@ const EcosystemMiniCardItem: FC<{ card: EcosystemMiniCard }> = ({ card }) => {
     return (
         <div
             className="
+                flex
+                items-start
+                gap-x-5
                 rounded-xl
                 border
                 border-(--ecosystem-community-card-border)
@@ -18,8 +21,9 @@ const EcosystemMiniCardItem: FC<{ card: EcosystemMiniCard }> = ({ card }) => {
             <span
                 className="
                     flex
-                    h-10
-                    w-10
+                    h-12
+                    w-12
+                    shrink-0
                     items-center
                     justify-center
                     rounded-full
@@ -27,31 +31,32 @@ const EcosystemMiniCardItem: FC<{ card: EcosystemMiniCard }> = ({ card }) => {
                     text-(--ecosystem-community-card-icon)
                 "
             >
-                <Icon aria-hidden="true" className="h-5 w-5" strokeWidth={1.8} />
+                <Icon aria-hidden="true" className="h-7 w-7" strokeWidth={1.8} />
             </span>
 
-            <h4
-                className="
-                    mt-3
-                    text-[15px]
-                    font-bold
-                    leading-tight
-                    text-(--ecosystem-community-card-title)
-                "
-            >
-                {card.title}
-            </h4>
+            <div>
+                <h4
+                    className="
+                        text-[15px]
+                        font-bold
+                        leading-tight
+                        text-(--ecosystem-community-card-title)
+                    "
+                >
+                    {card.title}
+                </h4>
 
-            <p
-                className="
-                    mt-1.5
-                    text-[13px]
-                    leading-[1.45]
-                    text-(--ecosystem-community-card-text)
-                "
-            >
-                {card.description}
-            </p>
+                <p
+                    className="
+                        mt-1.5
+                        text-[13px]
+                        leading-[1.45]
+                        text-(--ecosystem-community-card-text)
+                    "
+                >
+                    {card.description}
+                </p>
+            </div>
         </div>
     );
 };

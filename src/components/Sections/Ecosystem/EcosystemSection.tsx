@@ -17,17 +17,16 @@ const EcosystemSection: FC = () => {
             id="ecosystem"
             className="
                 scroll-mt-25
-                bg-(--ecosystem-section-bg)
                 px-4
                 py-14
                 sm:px-6
-                sm:py-16
+                sm:py-6
                 lg:px-8
-                lg:py-20
-                xl:px-12
+                lg:py-6
+                xl:px-8
             "
         >
-            <div className="mx-auto w-full max-w-345">
+            <div className="mx-auto w-full max-w-370">
                 {/* Header */}
                 <header className="mx-auto max-w-280 text-center">
                     <div
@@ -111,11 +110,11 @@ const EcosystemSection: FC = () => {
                             hidden
                             max-w-220
                             text-[16px]
-                            font-medium
+                            font-semibold
                             leading-[1.5]
                             text-(--ecosystem-section-subtitle-text)
                             lg:block
-                            lg:text-[19px]
+                            lg:text-[20px]
                         "
                     >
                         Explore program updates, engineering resources, and

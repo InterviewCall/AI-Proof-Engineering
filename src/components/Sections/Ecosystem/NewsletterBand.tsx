@@ -24,8 +24,8 @@ const NewsletterBand: FC = () => {
                 <span
                     className="
                         flex
-                        h-13
-                        w-13
+                        h-16
+                        w-16
                         shrink-0
                         items-center
                         justify-center
@@ -34,7 +34,7 @@ const NewsletterBand: FC = () => {
                         text-(--ecosystem-newsletter-icon-text)
                     "
                 >
-                    <Mail aria-hidden="true" className="h-6 w-6" strokeWidth={1.8} />
+                    <Mail aria-hidden="true" className="h-8 w-8" strokeWidth={1.8} />
                 </span>
 
                 <div>
@@ -51,8 +51,8 @@ const NewsletterBand: FC = () => {
 
                     <p
                         className="
-                            mt-1
-                            max-w-100
+                            mt-2
+                            max-w-200
                             text-[13.5px]
                             leading-[1.4]
                             text-(--ecosystem-newsletter-text)
