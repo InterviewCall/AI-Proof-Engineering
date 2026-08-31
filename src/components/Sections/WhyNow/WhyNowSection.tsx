@@ -22,15 +22,15 @@ const WhyNowSection: FC = () => {
                 overflow-hidden
                 bg-white
                 px-4
-                py-14
+                py-8
                 sm:px-6
-                sm:py-16
-                lg:px-10
-                lg:py-20
-                xl:px-14
+                sm:py-10
+                lg:px-8
+                lg:py-12
+                xl:px-10
             '
         >
-            <div className='mx-auto w-full max-w-345'>
+            <div className='mx-auto w-full max-w-[1409px]'>
                 {/* Section header */}
                 <div className='mx-auto max-w-240 text-center'>
                     <div
@@ -66,8 +66,8 @@ const WhyNowSection: FC = () => {
                             tracking-[-0.042em]
                             text-(--why-now-section-title-text)
                             [text-shadow:0_6px_14px_rgba(1,13,47,0.18)]
-                            sm:text-[43px]
-                            lg:text-[50px]
+                            sm:text-[38px]
+                            lg:text-[42px]
                         '
                     >
                         AI Has Already Changed How Many Engineering Teams
@@ -97,12 +97,12 @@ const WhyNowSection: FC = () => {
                 {/* Main content */}
                 <div
                     className='
-                        mt-10
+                        mt-8
                         grid
                         items-stretch
-                        gap-5
-                        xl:grid-cols-[0.76fr_1.24fr]
-                        xl:gap-6
+                        gap-4
+                        xl:grid-cols-[0.78fr_1.22fr]
+                        xl:gap-5
                     '
                 >
                     {/* Left automation visual */}
@@ -533,10 +533,10 @@ const WhyNowSection: FC = () => {
                             border
                             border-(--why-now-section-right-box-border)
                             bg-(--why-now-section-right-box-bg)
-                            p-5
+                            p-4
                             shadow-[0_16px_24px_rgba(1,13,47,0.18),0_2px_7px_rgba(1,13,47,0.10)]
                             xl:block
-                            2xl:p-6
+                            2xl:p-5
                         '
                     >
                         <div
@@ -545,8 +545,8 @@ const WhyNowSection: FC = () => {
                                 h-full
                                 items-stretch
                                 gap-4
-                                xl:grid-cols-[minmax(0,1fr)_115px_minmax(0,1fr)]
-                                2xl:grid-cols-[minmax(0,1fr)_130px_minmax(0,1fr)]
+                                xl:grid-cols-[minmax(0,1fr)_90px_minmax(0,1fr)]
+2xl:                            grid-cols-[minmax(0,1fr)_105px_minmax(0,1fr)]
                             '
                         >
                             {/* Desktop execution-only engineer */}
