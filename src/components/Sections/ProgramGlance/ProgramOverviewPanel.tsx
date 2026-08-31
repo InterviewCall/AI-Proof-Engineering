@@ -7,6 +7,7 @@ const ProgramOverviewPanel: FC = () => {
             className="
                 relative
                 isolate
+                aspect-[768/554]
                 overflow-hidden
                 rounded-2xl
                 border
@@ -27,23 +28,27 @@ const ProgramOverviewPanel: FC = () => {
 
             <h3
                 className="
-                    max-w-90
-                    text-[26px]
+                    text-[20px]
                     font-bold
                     leading-[1.2]
                     tracking-[-1%]
                     text-(--program-glance-main-card-title)
                     sm:text-[30px]
+                    lg:text-[38px]
+                    lg:font-semibold
+                    lg:leading-[1.32]
+                    lg:tracking-[0%]
                 "
             >
-                AI-Proof Engineer Program
+                <span className="block whitespace-nowrap">AI-Proof</span>
+                <span className="block whitespace-nowrap">Engineer Program</span>
             </h3>
 
             <p
                 className="
                     mt-3
                     max-w-90
-                    text-[16px]
+                    text-[14px]
                     font-semibold
                     leading-[1.4]
                     text-(--program-glance-main-card-highlight)
@@ -66,8 +71,8 @@ const ProgramOverviewPanel: FC = () => {
             <p
                 className="
                     mt-3
-                    max-w-80
-                    text-[14px]
+                    max-w-56
+                    text-[12px]
                     leading-[1.6]
                     text-(--program-glance-main-card-text)
                 "
@@ -77,7 +82,7 @@ const ProgramOverviewPanel: FC = () => {
                 capstone work.
             </p>
 
-            <p
+        {/* <p
                 className="
                     mt-4
                     max-w-90
@@ -108,7 +113,7 @@ const ProgramOverviewPanel: FC = () => {
                     →
                 </span>{' '}
                 Career Readiness
-            </p>
+            </p>   */}
         </div>
     );
 };

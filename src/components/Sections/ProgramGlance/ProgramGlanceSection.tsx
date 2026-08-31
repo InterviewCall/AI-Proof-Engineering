@@ -77,7 +77,8 @@ const ProgramGlanceSection: FC = () => {
                     <h2
                         className="
                             mt-4
-                            text-[clamp(2.5rem,7.5vw,3.75rem)]
+                            whitespace-nowrap
+                            text-[clamp(2rem,6vw,3.75rem)]
                             font-bold
                             leading-[1.06]
                             tracking-[-2%]
