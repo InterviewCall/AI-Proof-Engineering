@@ -33,6 +33,7 @@ const MobileProgramOverviewPanel: FC = () => {
                     font-bold
                     leading-[1.2]
                     tracking-[-1%]
+                    whitespace-nowrap
                     text-(--program-glance-main-card-title)
                 "
             >
@@ -41,11 +42,12 @@ const MobileProgramOverviewPanel: FC = () => {
 
             <p
                 className="
-                    mt-2
-                    text-[15px]
-                    font-semibold
-                    leading-[1.4]
-                    text-(--program-glance-main-card-highlight)
+                    mt-0.5
+                    text-[10px]
+                    font-medium
+                    leading-[1.8]
+                    tracking-[-2%]
+                    text-[#46D2FD]
                 "
             >
                 Skills. Practice Feedback. Proof.
@@ -62,7 +64,7 @@ const MobileProgramOverviewPanel: FC = () => {
                 "
             />
 
-            <p
+          { /*  <p
                 className="
                     mt-3
                     max-w-70
@@ -85,9 +87,9 @@ const MobileProgramOverviewPanel: FC = () => {
                     →
                 </span>{' '}
                 Capstone
-            </p>
+            </p>  */}
         </div>
     );
-};
+};  
 
 export default MobileProgramOverviewPanel;
