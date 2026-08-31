@@ -13,12 +13,12 @@ const AssessmentBanner: FC = () => {
                 scroll-mt-27.5
                 bg-white
                 px-4
-                py-8
+                py-5
                 sm:px-6
-                sm:py-10
-                lg:px-10
-                lg:py-12
-                xl:px-14
+                sm:py-6
+                lg:px-8
+                lg:py-8
+                xl:px-10
             "
         >
             <div
@@ -26,23 +26,23 @@ const AssessmentBanner: FC = () => {
                     mx-auto
                     grid
                     w-full
-                    max-w-345
+                    max-w-[1542px]
                     grid-cols-1
                     overflow-hidden
-                    rounded-[26px]
+                    rounded-[20px]
                     border
                     border-(--assessment-banner-border)
                     bg-(--assessment-banner-bg)
-                    px-6
-                    py-8
-                    sm:px-8
-                    sm:py-10
-                    xl:min-h-75
-                    xl:grid-cols-[220px_minmax(0,1fr)_320px]
+                    px-5
+                    py-6
+                    sm:px-6
+                    sm:py-7
+                    xl:min-h-60
+                    xl:grid-cols-[190px_minmax(0,1fr)_280px]
                     xl:grid-rows-[auto_auto]
                     xl:items-center
-                    xl:px-8
-                    xl:py-10
+                    xl:px-7
+                    xl:py-7
                 "
             >
                 {/* Assessment image */}
@@ -71,9 +71,9 @@ const AssessmentBanner: FC = () => {
                             rounded-[25px]
                             sm:h-30
                             sm:w-30
-                            xl:h-41.25
-                            xl:w-41.25
-                            xl:rounded-[28px]
+                            xl:h-32
+                            xl:w-32
+                            xl:rounded-[20px]
                         "
                     >
                         <Image
@@ -94,8 +94,8 @@ const AssessmentBanner: FC = () => {
                         xl:col-start-2
                         xl:row-start-1
                         xl:mt-0
-                        xl:px-10
-                        2xl:px-10
+                        xl:px-8
+                        2xl:px-8
                     "
                 >
                     <h2
@@ -107,9 +107,9 @@ const AssessmentBanner: FC = () => {
                             tracking-[-4%]
                             text-(--assessment-banner-title-text)
                             max-md:font-extrabold
-                            sm:text-[48px]
-                            xl:text-[38px]
-                            2xl:text-[34px]
+                            sm:text-[32px]
+                            xl:text-[32px]
+                            2xl:text-[32px]
                             max-md:tracking-[-2%]
                             max-md:leading-[1.3]
                         "
@@ -119,17 +119,16 @@ const AssessmentBanner: FC = () => {
 
                     <p
                         className="
-                            mt-6
+                             mt-3
                             max-w-212.5
-                            text-[clamp(0.45rem,6vw,1.25rem)]
-                            leading-[1.65]
+                            text-[16px]
+                            leading-[1.5]
                             text-(--assessment-banner-point-text)
-                            sm:text-[28px]
-                            xl:mt-5
-                            xl:text-[23px]
-                            2xl:text-[24px]
-                            tracking-[-3%]
-                            max-md:tracking-[-2%]
+                            sm:text-[18px]
+                            xl:mt-3
+                            xl:text-[16px]
+                            2xl:text-[17px]
+                            tracking-[-1%]
                         "
                     >
                         Take the assessment and get a track recommendation
@@ -163,7 +162,7 @@ const AssessmentBanner: FC = () => {
                             w-full
                             items-center
                             justify-center
-                            gap-4
+                            gap-2
                             rounded-xl
                             bg-(--assessment-banner-button-bg)
                             px-6
@@ -182,9 +181,9 @@ const AssessmentBanner: FC = () => {
                             focus-visible:ring-(--focus-ring-color)
                             sm:min-h-19.5
                             sm:text-[25px]
-                            xl:min-h-16
-                            xl:max-w-[320px]
-                            xl:text-[18px]
+                            xl:min-h-14
+                            xl:max-w-[250px]
+                            xl:text-[16px]
                         "
                     >
                         <span className="xl:hidden">

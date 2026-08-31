@@ -16,14 +16,14 @@ const HeroSection: FC = () => {
                 scroll-mt-25
                 overflow-hidden
                 bg-(--hero-section-bg)
-                px-5
-                py-10
-                sm:px-7
-                sm:py-14
-                lg:px-10
-                lg:py-16
-                xl:px-14
-                xl:py-20
+                px-4
+                py-6
+                sm:px-6
+                sm:py-8
+                lg:px-8
+                lg:py-10
+                xl:px-10
+                xl:py-12
             "
         >
             <div
@@ -31,13 +31,12 @@ const HeroSection: FC = () => {
                     mx-auto
                     grid
                     w-full
-                    max-w-375
+                    max-w-[1542px]
                     items-center
-                    gap-10
-                    lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)]
-                    lg:gap-10
-                    xl:gap-14
-                    2xl:gap-16
+                    gap-6
+                    lg:grid-cols-[0.9fr_1.1fr]
+                    lg:gap-8
+                    xl:gap-10
                 "
             >
                 {/* =====================================================
@@ -120,7 +119,7 @@ const HeroSection: FC = () => {
                                 tracking-[-3%]
                                 text-(--hero-section-title-one-text)
                                 md:tracking-[-4%]
-                                lg:text-[58px]
+                                lg:text-[52px]
                             "
                         >
                             AI writes more of the code now.
@@ -129,16 +128,17 @@ const HeroSection: FC = () => {
                         <span
                             className="
                                 mt-2
-                                block
-                                bg-clip-text
-                                text-[clamp(2.55rem,7.5vw,4rem)]
-                                font-bold
-                                tracking-[-3%]
-                                text-(--hero-section-title-two-text-desktop)
-                                max-md:hidden
-                                md:text-[52px]
-                                md:tracking-[-4%]
-                                lg:mt-3
+                            block
+                            bg-clip-text
+                            text-[clamp(2.55rem,7.5vw,4rem)]
+                            font-bold
+                            tracking-[-3%]
+                            text-(--hero-section-title-two-text-desktop)
+                            max-md:hidden
+                            md:text-[48px]
+                            md:tracking-[-4%]
+                            lg:mt-2
+                            xl:text-[52px]
                             "
                         >
                             Someone still has to check it.
@@ -171,7 +171,7 @@ const HeroSection: FC = () => {
                     <p
                         className="
                             mx-auto
-                            mt-6
+                            mt-4
                             block
                             max-w-155
                             text-[17px]
@@ -181,8 +181,8 @@ const HeroSection: FC = () => {
                             max-md:hidden
                             sm:text-[19px]
                             lg:mx-0
-                            lg:text-[18px]
-                            xl:text-[20px]
+                            lg:text-[17px]
+                            xl:text-[18px]
                             xl:leading-[1.65]
                         "
                     >
@@ -205,8 +205,8 @@ const HeroSection: FC = () => {
                             max-md:block
                             sm:text-[19px]
                             lg:mx-0
-                            lg:text-[18px]
-                            xl:text-[20px]
+                            lg:text-[17px]
+                            xl:text-[18px]
                             xl:leading-[1.65]
                         "
                     >
@@ -220,12 +220,12 @@ const HeroSection: FC = () => {
                     <div
                         className="
                             mx-auto
-                            mt-7
+                            mt-5
                             flex
                             w-full
                             max-w-142.5
                             flex-col
-                            gap-4
+                            gap-3
                             lg:mx-0
                             lg:max-w-none
                             lg:flex-row
@@ -260,9 +260,9 @@ const HeroSection: FC = () => {
                                 sm:min-h-16
                                 sm:text-[18px]
                                 lg:w-auto
-                                lg:min-w-75
+                                lg:min-w-65
                                 lg:px-6
-                                xl:min-w-82.5
+                                xl:min-w-70
                                 xl:px-8
                             "
                             style={{
@@ -388,15 +388,15 @@ const HeroSection: FC = () => {
                 {/* =====================================================
                     RIGHT VISUAL
                 ====================================================== */}
-                <div className="mx-auto w-full max-w-245">
+                <div className="mx-auto w-full max-w-[720px]">
                     <div
                         className="
                             relative
                             overflow-hidden
-                            rounded-2xl
+                            rounded-xl
                             bg-(--hero-video-card-bg)
                             shadow-[0_22px_60px_rgba(4,13,87,0.13)]
-                            sm:rounded-[20px]
+                            sm:rounded-[16px]
                         "
                     >
                         <Image
