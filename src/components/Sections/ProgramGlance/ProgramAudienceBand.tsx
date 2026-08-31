@@ -3,6 +3,8 @@ import { FC } from 'react';
 
 import { audiencePills } from '@/utils/programGlanceItems';
 
+
+
 const ProgramAudienceBand: FC = () => {
     return (
         <div
@@ -10,7 +12,7 @@ const ProgramAudienceBand: FC = () => {
                 flex
                 flex-col
                 gap-5
-                rounded-2xl
+                rounded-[15px]
                 border
                 border-(--program-glance-audience-border)
                 bg-(--program-glance-audience-bg)
@@ -54,7 +56,10 @@ const ProgramAudienceBand: FC = () => {
                 </p>
             </div>
 
-            <div className="flex flex-wrap gap-2.5">
+            
+          
+         
+            <div className="flex flex-nowrap gap-2.5">
                 {audiencePills.map((pill) => {
                     const Icon = pill.icon;
 
@@ -63,26 +68,29 @@ const ProgramAudienceBand: FC = () => {
                             key={pill.label}
                             className="
                                 inline-flex
-                                min-h-9
+                                h-[65px]
+                                w-fit
+                                max-w-[220px]
+                                shrink-0
                                 items-center
                                 gap-2
-                                rounded-full
+                                rounded-[15px]
                                 border
                                 border-(--program-glance-pill-border)
                                 bg-(--program-glance-pill-bg)
                                 px-3.5
                                 text-[13px]
                                 font-semibold
-                                whitespace-nowrap
+                                leading-[1.3]
                                 text-(--program-glance-pill-text)
                             "
                         >
                             <Icon
                                 aria-hidden="true"
-                                className="h-4 w-4 text-(--program-glance-pill-icon)"
+                                className="h-4 w-4 shrink-0 text-(--program-glance-pill-icon)"
                                 strokeWidth={1.9}
                             />
-                            {pill.label}
+                            <span>{pill.label}</span>
                         </span>
                     );
                 })}

@@ -5,11 +5,12 @@ export type GlanceAccent = 'blue' | 'green' | 'purple' | 'orange';
 export type GlanceInfoCard = {
     title: string;
     description: string;
-    icon: LucideIcon;
+    icon: LucideIcon | string; 
     accent: GlanceAccent;
 };
 
 export type GlanceAudiencePill = {
     label: string;
     icon: LucideIcon;
+    width?: number;
 };

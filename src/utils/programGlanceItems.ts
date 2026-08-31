@@ -88,7 +88,7 @@ export const mobileGlanceInfoCards: GlanceInfoCard[] = [
 
 export const audiencePills: GlanceAudiencePill[] = [
     {
-        label: '0–2 YOE',
+        label: '0–2 YOE ',
         icon: User,
     },
     {
