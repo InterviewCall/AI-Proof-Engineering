@@ -1,30 +1,18 @@
 import { FC } from 'react';
 
-import { capstoneFeatureStrip } from '@/utils/capstoneProofItems';
+import { type CapstoneFeatureItem } from '@/types/capstoneProof';
+import {
+    capstoneFeatureStrip,
+    mobileCapstoneFeatureStrip,
+} from '@/utils/capstoneProofItems';
 
-const CapstoneFeatureStrip: FC = () => {
+const FeatureStripGrid: FC<{
+    items: CapstoneFeatureItem[];
+    className: string;
+}> = ({ items, className }) => {
     return (
-        <div
-            className="
-                grid
-                grid-cols-2
-                gap-x-4
-                gap-y-6
-                rounded-2xl
-                border
-                border-(--proof-section-card-border)
-                bg-(--proof-section-card-bg)
-                px-5
-                py-6
-                sm:grid-cols-3
-                sm:px-8
-                lg:grid-cols-6
-                lg:divide-x
-                lg:divide-(--proof-section-card-border)
-                lg:py-7
-            "
-        >
-            {capstoneFeatureStrip.map((item) => {
+        <div className={className}>
+            {items.map((item) => {
                 const Icon = item.icon;
 
                 return (
@@ -75,6 +63,54 @@ const CapstoneFeatureStrip: FC = () => {
                 );
             })}
         </div>
+    );
+};
+
+const CapstoneFeatureStrip: FC = () => {
+    return (
+        <>
+            {/* Mobile / tablet — trimmed to 4 components */}
+            <FeatureStripGrid
+                items={mobileCapstoneFeatureStrip}
+                className="
+                    grid
+                    grid-cols-2
+                    gap-x-4
+                    gap-y-6
+                    rounded-2xl
+                    border
+                    border-(--proof-section-card-border)
+                    bg-(--proof-section-card-bg)
+                    px-5
+                    py-6
+                    sm:grid-cols-4
+                    sm:px-8
+                    lg:hidden
+                "
+            />
+
+            {/* Desktop — full 6 components */}
+            <FeatureStripGrid
+                items={capstoneFeatureStrip}
+                className="
+                    hidden
+                    gap-x-4
+                    gap-y-6
+                    rounded-2xl
+                    border
+                    border-(--proof-section-card-border)
+                    bg-(--proof-section-card-bg)
+                    px-5
+                    py-6
+                    sm:px-8
+                    lg:grid
+                    lg:grid-cols-6
+                    lg:divide-x
+                    lg:divide-(--proof-section-card-border)
+                    lg:py-7
+                "
+            />
+        </>
     );
 };
 

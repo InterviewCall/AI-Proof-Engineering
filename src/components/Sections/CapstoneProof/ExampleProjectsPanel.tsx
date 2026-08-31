@@ -28,21 +28,26 @@ const ExampleProjectsPanel: FC = () => {
             </span>
 
             <div className="mt-4 space-y-3">
-                {exampleProjects.map((project) => {
+                {exampleProjects.map((project, index) => {
                     const Icon = project.icon;
+                    const isMobileHidden = index >= 2;
 
                     return (
                         <article
                             key={project.title}
-                            className="
-                                flex
+                            className={`
                                 items-start
                                 gap-3.5
                                 rounded-xl
                                 border
                                 border-(--proof-section-card-border)
                                 p-4
-                            "
+                                ${
+                                    isMobileHidden
+                                        ? 'hidden lg:flex'
+                                        : 'flex'
+                                }
+                            `}
                         >
                             <span
                                 className={`
@@ -90,6 +95,21 @@ const ExampleProjectsPanel: FC = () => {
                     );
                 })}
             </div>
+
+            <p
+                className="
+                    mt-4
+                    text-[13px]
+                    leading-[1.45]
+                    text-(--proof-section-card-text)
+                "
+            >
+                Your track and interests decide the direction.{' '}
+                <span className="hidden lg:inline">
+                    These four are examples.
+                </span>
+                <span className="lg:hidden">These are examples.</span>
+            </p>
         </div>
     );
 };

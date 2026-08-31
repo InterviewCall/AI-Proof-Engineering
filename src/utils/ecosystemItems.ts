@@ -18,25 +18,22 @@ import {
 export const programUpdates: ProgramUpdate[] = [
     {
         category: 'Curriculum Update',
-        title: 'AI-Assisted Engineering Workflows',
-        description:
-            'AI workflow practice is built into the program structure with review, debugging, and judgment checkpoints.',
+        title: 'Phase 03 revised as AI tools and workflows change.',
+        description: '',
         icon: BookOpen,
         accent: 'blue',
     },
     {
         category: 'Practice System',
-        title: 'Labs, Reviews, and Mock Feedback',
-        description:
-            'Learners move through structured assignments, mentor reviews, mock interviews, and readiness improvement loops.',
+        title: 'New labs added for system design and debugging.',
+        description: '',
         icon: Code2,
         accent: 'green',
     },
     {
         category: 'Career Desk',
-        title: 'Engineering Career Frameworks',
-        description:
-            'Founder-led insights and practical frameworks on AI-era careers, system design, interviews, and proof-building.',
+        title: 'New pieces on hiring and interview prep.',
+        description: '',
         icon: UserRound,
         accent: 'purple',
     },
@@ -50,7 +47,7 @@ export const ecosystemMiniCards: EcosystemMiniCard[] = [
         icon: BookOpen,
     },
     {
-        title: 'Practice + Labs System',
+        title: 'Practice + Labs',
         description:
             'Assignments, debugging tasks, AI workflow practice, and project work.',
         icon: CalendarCheck,
@@ -62,7 +59,7 @@ export const ecosystemMiniCards: EcosystemMiniCard[] = [
         icon: UsersRound,
     },
     {
-        title: 'Career Readiness Support',
+        title: 'Career Readiness',
         description:
             'Profile review, role-readiness guidance, and career communication support.',
         icon: Briefcase,
@@ -71,7 +68,7 @@ export const ecosystemMiniCards: EcosystemMiniCard[] = [
 
 export const mobileEcosystemItems: MobileEcosystemItem[] = [
     {
-        label: 'AI-Proof Program',
+        label: 'AI-Proof Engineer Program',
         icon: BookOpen,
     },
     {

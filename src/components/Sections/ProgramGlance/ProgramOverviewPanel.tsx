@@ -76,6 +76,39 @@ const ProgramOverviewPanel: FC = () => {
                 AI-assisted engineering, system design mocks, reviews, and
                 capstone work.
             </p>
+
+            <p
+                className="
+                    mt-4
+                    max-w-90
+                    text-[13px]
+                    font-semibold
+                    leading-[1.5]
+                    text-(--program-glance-main-card-highlight)
+                "
+            >
+                Curriculum{' '}
+                <span className="text-(--program-glance-main-card-text)">
+                    →
+                </span>{' '}
+                Practice{' '}
+                <span className="text-(--program-glance-main-card-text)">
+                    →
+                </span>{' '}
+                Reviews{' '}
+                <span className="text-(--program-glance-main-card-text)">
+                    →
+                </span>{' '}
+                Mocks{' '}
+                <span className="text-(--program-glance-main-card-text)">
+                    →
+                </span>{' '}
+                Capstone{' '}
+                <span className="text-(--program-glance-main-card-text)">
+                    →
+                </span>{' '}
+                Career Readiness
+            </p>
         </div>
     );
 };

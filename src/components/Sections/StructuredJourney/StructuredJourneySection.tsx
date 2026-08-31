@@ -20,7 +20,7 @@ import { PhaseDetails } from './PhaseDetails';
 
 const StructuredJourneySection: FC = () => {
     const [activePhaseId, setActivePhaseId] =
-        useState<PhaseId>('01');
+        useState<PhaseId>('03');
 
     const [showAllMobilePhases, setShowAllMobilePhases] =
         useState<boolean>(false);
@@ -91,13 +91,11 @@ const StructuredJourneySection: FC = () => {
                             lg:block
                         "
                     >
-                        A Structured Journey to{' '}
-
+                        The{' '}
                         <span className="text-(--journey-section-title-highlight)">
-                            AI-Proof
-                        </span>{' '}
-
-                        <span>Engineering</span>
+                            Curriculum
+                        </span>
+                        , Phase by Phase
                     </h2>
 
                     <h2
@@ -113,14 +111,13 @@ const StructuredJourneySection: FC = () => {
                             lg:hidden
                         "
                     >
-                        <span className="block">10 Phases to</span>
-
                         <span className="block">
                             <span className="text-(--journey-section-title-highlight)">
-                                AI-Proof
-                            </span>{' '}
-                            <span>Engineering</span>
+                                The Curriculum,
+                            </span>
                         </span>
+
+                        <span className="block">Phase by Phase</span>
                     </h2>
 
                     <p
@@ -139,14 +136,13 @@ const StructuredJourneySection: FC = () => {
                         "
                     >
                         <span className="hidden lg:inline">
-                            Move from fundamentals to AI-assisted engineering,
-                            system design, real-world projects, mocks, reviews,
-                            and capstone proof.
+                            Ten phases, each ending in something you build
+                            and someone reviews.
                         </span>
 
                         <span className="lg:hidden">
-                            Move from fundamentals to AI workflows, system
-                            design, mocks, reviews and capstone proof.
+                            Ten phases, each ending in something you build
+                            and someone reviews.
                         </span>
                     </p>
                 </header>
@@ -696,7 +692,7 @@ const StructuredJourneySection: FC = () => {
                             strokeWidth={1.9}
                         />
 
-                        <span>Download Detailed Curriculum</span>
+                        <span>Download Curriculum</span>
                     </a>
 
                     <Link
@@ -732,7 +728,7 @@ const StructuredJourneySection: FC = () => {
                             strokeWidth={1.8}
                         />
 
-                        <span>View All Phases</span>
+                        <span>View Full Curriculum</span>
 
                         <ArrowRight
                             aria-hidden="true"

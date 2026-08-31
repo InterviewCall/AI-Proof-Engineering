@@ -54,33 +54,10 @@ const EcosystemSection: FC = () => {
                             className="h-4.5 w-4.5"
                             strokeWidth={1.9}
                         />
-                        <span>News / Ecosystem</span>
+                        <span>Updates &amp; Ecosystem</span>
                     </div>
 
-                    {/* Desktop heading */}
-                    <h2
-                        className="
-                            mt-4
-                            hidden
-                            text-[clamp(2.25rem,5.5vw,3.75rem)]
-                            font-bold
-                            leading-[1.15]
-                            tracking-[-2%]
-                            text-(--ecosystem-section-title-text)
-                            lg:block
-                        "
-                    >
-                        Updates, Resources, and the
-
-                        <span className="block">
-                            <span className="text-(--ecosystem-section-title-highlight)">
-                                InterviewCall
-                            </span>{' '}
-                            Ecosystem
-                        </span>
-                    </h2>
-
-                    {/* Mobile / tablet heading */}
+                    {/* Heading */}
                     <h2
                         className="
                             mt-4
@@ -89,55 +66,30 @@ const EcosystemSection: FC = () => {
                             leading-[1.06]
                             tracking-[-2%]
                             text-(--ecosystem-section-title-text)
-                            lg:hidden
+                            lg:text-[clamp(2.25rem,5.5vw,3.75rem)]
+                            lg:leading-[1.15]
                         "
                     >
-                        InterviewCall
-
-                        <span className="block">
-                            <span className="text-(--ecosystem-section-title-highlight)">
-                                Ecosystem
-                            </span>{' '}
-                            Updates
-                        </span>
+                        Recent Updates
                     </h2>
 
-                    {/* Desktop subtitle */}
+                    {/* Subtitle */}
                     <p
                         className="
                             mx-auto
                             mt-4
-                            hidden
                             max-w-220
-                            text-[16px]
-                            font-semibold
-                            leading-[1.5]
-                            text-(--ecosystem-section-subtitle-text)
-                            lg:block
-                            lg:text-[20px]
-                        "
-                    >
-                        Explore program updates, engineering resources, and
-                        support systems built around learning, practice,
-                        reviews, mocks, and career readiness.
-                    </p>
-
-                    {/* Mobile / tablet subtitle */}
-                    <p
-                        className="
-                            mx-auto
-                            mt-4
-                            max-w-190
                             text-[16px]
                             font-medium
                             leading-[1.5]
                             text-(--ecosystem-section-subtitle-text)
                             sm:text-[19px]
-                            lg:hidden
+                            lg:text-[20px]
+                            lg:font-semibold
                         "
                     >
-                        Program updates, engineering resources, and support
-                        systems for AI-era engineers.
+                        Changes to the curriculum and practice system as
+                        engineering work changes.
                     </p>
                 </header>
 

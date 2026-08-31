@@ -24,22 +24,18 @@ const TrackDetail: FC<TrackDetailProps> = ({
         {
             title: mobile ? 'Focus' : 'Focus Areas',
             description: mobile
-                ? 'AI workflows, system design, debugging, machine coding'
+                ? track.mobileFocusAreas
                 : track.focusAreas,
             icon: Target,
         },
         {
             title: 'Best For',
-            description: mobile
-                ? 'Engineers who can code but need stronger interview structure'
-                : track.bestFor,
+            description: mobile ? track.mobileBestFor : track.bestFor,
             icon: UsersRound,
         },
         {
             title: 'Outcome',
-            description: mobile
-                ? 'Better judgment, clearer roadmap, portfolio-ready proof'
-                : track.outcome,
+            description: mobile ? track.mobileOutcome : track.outcome,
             icon: Trophy,
         },
     ];
@@ -229,7 +225,7 @@ const TrackDetail: FC<TrackDetailProps> = ({
                             strokeWidth={1.8}
                         />
 
-                        <span>Book Track Counselling Call</span>
+                        <span>Book a Track Counselling Call</span>
                     </Link>
                 </div>
             </div>
@@ -437,7 +433,7 @@ const TrackDetail: FC<TrackDetailProps> = ({
                         strokeWidth={1.8}
                     />
 
-                    <span>Book Track Counselling Call</span>
+                    <span>Book a Track Counselling Call</span>
                 </Link>
             </div>
         </div>

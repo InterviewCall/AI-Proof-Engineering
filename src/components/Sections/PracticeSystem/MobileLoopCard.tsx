@@ -41,7 +41,7 @@ const MobileLoopCard: FC = () => {
                             text-(--practice-section-card-title)
                         "
                     >
-                        Turn Learning Into Progress
+                        Solve It. Apply It. Repeat.
                     </h3>
 
                     <p
@@ -52,8 +52,8 @@ const MobileLoopCard: FC = () => {
                             text-(--practice-section-card-text)
                         "
                     >
-                        Practice with structured tasks, labs, mock
-                        interviews, and mentor feedback.
+                        Every phase comes with something to solve, implement,
+                        debug, or present, and someone reviews it afterward.
                     </p>
                 </div>
 

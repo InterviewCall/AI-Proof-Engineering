@@ -2,17 +2,17 @@ import { AssessmentBenefit } from '@/types/assessment';
 
 export const assessmentBenefits: AssessmentBenefit[] = [
     {
-        label: 'Personalized Score',
+        label: 'Your Score',
         image: '/images/optimized-svg/personalized-score.svg',
         alt: '',
     },
     {
-        label: 'Track Recommendation',
+        label: 'Recommended Track',
         image: '/images/optimized-svg/track-recomendation.svg',
         alt: '',
     },
     {
-        label: 'Action Plan',
+        label: 'What to Work On',
         image: '/images/optimized-svg/action-plan.svg',
         alt: '',
     },

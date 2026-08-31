@@ -89,13 +89,9 @@ const CareerPathSection: FC = () => {
                             lg:block
                         "
                     >
-                        Find the Right AI-Proof Path
-
-                        <span className="block">
-                            for Your{' '}
-                            <span className="text-(--career-path-section-title-highlight)">
-                                Career Stage
-                            </span>
+                        Choose the Track That{' '}
+                        <span className="text-(--career-path-section-title-highlight)">
+                            Matches Your Experience
                         </span>
                     </h2>
 
@@ -111,10 +107,9 @@ const CareerPathSection: FC = () => {
                             lg:hidden
                         "
                     >
-                        Choose Your
-
-                        <span className="block text-(--career-path-section-title-highlight)">
-                            AI-Proof Track
+                        Choose the Track That{' '}
+                        <span className="text-(--career-path-section-title-highlight)">
+                            Matches Your Experience
                         </span>
                     </h2>
 
@@ -132,15 +127,14 @@ const CareerPathSection: FC = () => {
                         "
                     >
                         <span className="lg:hidden">
-                            Select the path that matches your experience level
-                            and career goal.
+                            It comes down to how long you&apos;ve been
+                            working and what&apos;s next.
                         </span>
 
                         <span className="hidden lg:inline">
-                            Whether you are starting out, growing into stronger
-                            product roles, or preparing for senior-level
-                            expectations, the program adapts to your experience
-                            level.
+                            It comes down to how long you&apos;ve been
+                            working and what you&apos;re expected to handle
+                            next.
                         </span>
                     </p>
                 </header>
@@ -572,8 +566,8 @@ const CareerPathSection: FC = () => {
                                     sm:text-[16px]
                                 "
                             >
-                                Take the AI-Proof Score Assessment and get your
-                                recommended learning track.
+                                Take the AI-Proof Score assessment and get
+                                your recommended learning track.
                             </p>
                         </div>
                     </div>
@@ -609,7 +603,7 @@ const CareerPathSection: FC = () => {
                                 tracking-[3%]
                             "
                         >
-                            <span>Unlock Your AI-Proof Score</span>
+                            <span>Check Your AI-Proof Score</span>
 
                             <ArrowRight
                                 aria-hidden="true"

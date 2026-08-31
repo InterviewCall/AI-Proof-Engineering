@@ -75,16 +75,18 @@ const ProgramUpdateRow: FC<{ update: ProgramUpdate; isLast: boolean }> = ({
                     {update.title}
                 </h3>
 
-                <p
-                    className="
-                        mt-1.5
-                        text-[14.7px]
-                        leading-[1.5]
-                        text-(--ecosystem-resource-card-text)
-                    "
-                >
-                    {update.description}
-                </p>
+                {update.description && (
+                    <p
+                        className="
+                            mt-1.5
+                            text-[14.7px]
+                            leading-[1.5]
+                            text-(--ecosystem-resource-card-text)
+                        "
+                    >
+                        {update.description}
+                    </p>
+                )}
             </div>
 
             <ChevronRight

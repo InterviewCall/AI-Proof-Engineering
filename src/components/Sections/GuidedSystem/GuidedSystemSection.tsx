@@ -45,9 +45,9 @@ const guidedSteps: GuidedStep[] = [
         id: '01',
         title: 'Diagnose Readiness',
         desktopDescription:
-            'Start with a baseline across fundamentals, system design, AI workflows, and interview communication.',
+            'An assessment across fundamentals, AI workflow habits, and how you currently interview.',
         mobileDescription:
-            'Start with a baseline across skills, AI workflows, and interview readiness.',
+            "An assessment of where you're starting from.",
         icon: ClipboardCheck,
         desktopItems: [
             {
@@ -69,9 +69,8 @@ const guidedSteps: GuidedStep[] = [
         id: '02',
         title: 'Build With Specialists',
         desktopDescription:
-            'Learn through live sessions and guided modules across DSA, backend, system design, AI-assisted engineering, and career readiness.',
-        mobileDescription:
-            'Learn through live sessions and guided modules with specialist mentors.',
+            'Live sessions with mentors who each focus on one part of the curriculum.',
+        mobileDescription: 'Live sessions with focused mentors.',
         icon: MonitorPlay,
         desktopItems: [
             {
@@ -93,9 +92,8 @@ const guidedSteps: GuidedStep[] = [
         id: '03',
         title: 'Practice With Feedback',
         desktopDescription:
-            'Complete labs, assignments, debugging tasks, mock interviews, reviews, and mentor feedback loops.',
-        mobileDescription:
-            'Complete labs, assignments, reviews, and mock interviews.',
+            'Labs, assignments, and mock interviews, each one reviewed by a mentor.',
+        mobileDescription: 'Labs and mocks, each reviewed.',
         icon: Code2,
         desktopItems: [
             {
@@ -121,9 +119,8 @@ const guidedSteps: GuidedStep[] = [
         id: '04',
         title: 'Prove With Capstone',
         desktopDescription:
-            'Build portfolio-ready proof, complete readiness reviews, and prepare for serious technical interview expectations.',
-        mobileDescription:
-            'Build portfolio-ready proof and complete readiness reviews.',
+            "A capstone you build over the final phase and walk a mentor through before you're done.",
+        mobileDescription: 'A capstone you walk a mentor through.',
         icon: Trophy,
         desktopItems: [
             {
@@ -222,7 +219,7 @@ const GuidedSystemSection: FC = () => {
                             strokeWidth={1.8}
                         />
 
-                        <span>How InterviewCall Works</span>
+                        <span>How It Works</span>
                     </div>
 
                     <h2
@@ -237,19 +234,19 @@ const GuidedSystemSection: FC = () => {
                         "
                     >
                         <span className="hidden lg:inline">
-                            A Guided System From
+                            How You&apos;ll Move
                             <span className="block">
-                                Diagnosis to{' '}
+                                Through{' '}
                                 <span className="text-(--guided-system-section-title-highlight)">
-                                    Capstone Proof
+                                    It
                                 </span>
                             </span>
                         </span>
 
                         <span className="lg:hidden">
-                            From Diagnosis to
+                            How You&apos;ll Move
                             <span className="block text-(--guided-system-section-title-highlight)">
-                                Capstone Proof
+                                Through It
                             </span>
                         </span>
                     </h2>
@@ -266,16 +263,8 @@ const GuidedSystemSection: FC = () => {
                             lg:text-[22px]
                         "
                     >
-                        <span className="hidden lg:inline">
-                            Every learner moves through a structured cycle of
-                            assessment, live learning, labs, reviews, mock
-                            interviews, and portfolio-backed proof.
-                        </span>
-
-                        <span className="lg:hidden">
-                            A structured cycle of assessment, live learning,
-                            labs, reviews, mocks, and portfolio-backed proof.
-                        </span>
+                        Every learner goes through the same four stages, in
+                        the same order.
                     </p>
                 </header>
 
@@ -845,7 +834,7 @@ const GuidedSystemSection: FC = () => {
                         <span className="text-(--guided-system-step-icon)">
                             →
                         </span>{' '}
-                        Classes{' '}
+                        Live Classes{' '}
                         <span className="text-(--guided-system-step-icon)">
                             →
                         </span>{' '}
@@ -861,7 +850,11 @@ const GuidedSystemSection: FC = () => {
                         <span className="text-(--guided-system-step-icon)">
                             →
                         </span>{' '}
-                        Capstone
+                        Capstone{' '}
+                        <span className="text-(--guided-system-step-icon)">
+                            →
+                        </span>{' '}
+                        Career Readiness
                     </p>
                 </div>
 
@@ -913,7 +906,7 @@ const GuidedSystemSection: FC = () => {
                             strokeWidth={1.8}
                         />
 
-                        <span>Explore Program Structure</span>
+                        <span>See How It&apos;s Organized</span>
                     </Link>
 
                     <a

@@ -103,36 +103,28 @@ const Navbar: FC = () => {
                 </nav>
 
                 {/* Mobile & Tablet CTA */}
-                <a
-                    href="*"
-                    download
-                    className="ml-auto mr-2 inline-flex min-h-10 items-center justify-center rounded-md border border-(--navbar-two-text) bg-white px-3 text-center text-sm font-bold text-(--navbar-two-text) transition-colors hover:bg-(--color-brand-50) sm:mr-4 sm:min-h-13 sm:px-10 sm:text-xl lg:hidden"
+                <Link
+                    href="#assessment"
+                    className="ml-auto mr-2 inline-flex min-h-10 items-center justify-center rounded-md bg-(--navbar-button-bg) px-3 text-center text-sm font-bold text-(--navbar-button-text) transition-colors hover:bg-(--navbar-button-hover-bg) sm:mr-4 sm:min-h-13 sm:px-6 sm:text-lg lg:hidden"
                 >
-                    Download Brochure
-                </a>
+                    Check Score
+                </Link>
 
                 {/* Desktop CTA buttons */}
                 <div className="hidden shrink-0 items-center justify-end gap-2 pl-4 lg:flex lg:min-w-85 xl:min-w-125 xl:gap-4 xl:pl-8 2xl:min-w-140 2xl:gap-6">
-                    <Link
-                        href="#login"
+                    <a
+                        href="/documents/ai-engineering-curriculum.pdf"
+                        download
                         className="inline-flex min-h-11 items-center justify-center rounded-md border border-(--navbar-two-text) bg-white px-4 text-center text-sm font-bold text-(--navbar-two-text) transition-colors hover:bg-(--color-brand-50) xl:min-h-12 xl:px-6 xl:text-base"
                     >
-                        Login
-                    </Link>
-
-                    <a
-                        href="*"
-                        download
-                        className="inline-flex min-h-11 items-center justify-center rounded-md bg-(--navbar-button-bg) px-4 text-center text-sm font-semibold text-(--navbar-button-text) transition-colors hover:bg-(--navbar-button-hover-bg) xl:min-h-12 xl:px-8 xl:text-base"
-                    >
-                        Download Brochure
+                        Download Curriculum
                     </a>
 
                     <Link
                         href="#assessment"
-                        className="inline-flex min-h-11 items-center justify-center rounded-md border border-(--navbar-two-text) bg-white px-4 text-center text-sm font-bold text-(--color-brand-700) transition-colors hover:bg-(--color-brand-50) xl:min-h-12 xl:px-6 xl:text-base"
+                        className="inline-flex min-h-11 items-center justify-center rounded-md bg-(--navbar-button-bg) px-4 text-center text-sm font-semibold text-(--navbar-button-text) transition-colors hover:bg-(--navbar-button-hover-bg) xl:min-h-12 xl:px-8 xl:text-base"
                     >
-                        Request Callback
+                        Check Your AI-Proof Score
                     </Link>
                 </div>
 
@@ -247,20 +239,21 @@ const Navbar: FC = () => {
 
                     {/* Mobile CTA buttons */}
                     <div className="mt-6 flex flex-col gap-3">
-                        <Link
-                            href="#login"
+                        <a
+                            href="/documents/ai-engineering-curriculum.pdf"
+                            download
                             onClick={closeMobileMenu}
                             className="inline-flex min-h-13 items-center justify-center rounded-xl border border-(--navbar-two-text) bg-white px-5 text-center text-base font-semibold text-(--navbar-two-text) transition-colors hover:bg-(--color-brand-50)"
                         >
-                            Login
-                        </Link>
+                            Download Curriculum
+                        </a>
 
                         <Link
                             href="#assessment"
                             onClick={closeMobileMenu}
                             className="inline-flex min-h-13 items-center justify-center rounded-xl bg-(--navbar-button-bg) px-5 text-center text-base font-semibold text-white transition-colors hover:bg-(--navbar-button-hover-bg)"
                         >
-                            Request Callback
+                            Check Your AI-Proof Score
                         </Link>
                     </div>
                 </nav>

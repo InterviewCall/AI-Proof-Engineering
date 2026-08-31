@@ -15,11 +15,11 @@ import {
 
 export const featuredTalk: FeaturedTalk = {
     badge: 'Founder Talk',
-    title: 'Will AI Replace Software Engineers - or Just Average Execution?',
+    title: 'What AI Actually Changes About the Job',
     description:
-        'A clear breakdown of how AI is changing engineering careers and what serious engineers should build next.',
+        "Sunyul Hossen on what he's hearing in hiring conversations right now, and where engineers should probably be spending their time.",
     descriptionMobile:
-        'How AI is changing engineering careers and what serious engineers should build next.',
+        "Sunyul Hossen on what he's hearing in hiring conversations right now.",
     duration: '18 min watch',
     tags: ['AI Careers', 'Career Strategy'],
 };
@@ -27,7 +27,7 @@ export const featuredTalk: FeaturedTalk = {
 export const insightArticles: InsightArticle[] = [
     {
         label: 'Expert Conversation',
-        title: 'What Product Companies Expect From Engineers Now',
+        title: 'What Product Companies Are Actually Hiring For',
         duration: '32 min watch',
         durationType: 'watch',
         tag: 'Hiring Signals',
@@ -36,7 +36,7 @@ export const insightArticles: InsightArticle[] = [
     },
     {
         label: 'Engineering Deep Dive',
-        title: 'Why System Design Matters More in Lean Teams',
+        title: 'System Design Matters More When Teams Are Small',
         duration: '24 min watch',
         durationType: 'watch',
         tag: 'System Design',
@@ -45,7 +45,7 @@ export const insightArticles: InsightArticle[] = [
     },
     {
         label: 'AI Workflow',
-        title: 'How to Use AI Without Becoming a Copy-Paste Engineer',
+        title: 'When to Trust AI-Generated Code',
         duration: '21 min watch',
         durationType: 'watch',
         tag: 'AI-Assisted Engineering',
@@ -54,7 +54,7 @@ export const insightArticles: InsightArticle[] = [
     },
     {
         label: 'Career Framework',
-        title: 'How to Build Proof Before Your Next Interview',
+        title: 'Building Something You Can Talk About in an Interview',
         duration: '7 min read',
         durationType: 'read',
         tag: 'Career Readiness',

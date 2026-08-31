@@ -25,7 +25,11 @@ export type ChecklistItem = {
     done: boolean;
 };
 
-export type FeedbackStatus = 'on-track' | 'improving' | 'needs-review';
+export type FeedbackStatus =
+    | 'on-track'
+    | 'improving'
+    | 'needs-review'
+    | 'ready-for-review';
 
 export type FeedbackMetric = {
     label: string;

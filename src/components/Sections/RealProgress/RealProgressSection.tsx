@@ -70,10 +70,10 @@ const RealProgressSection: FC = () => {
                             lg:block
                         "
                     >
-                        Real Progress Built Through
+                        Before
 
                         <span className="block text-(--progress-section-title-highlight)">
-                            Practice, Reviews, and Capstone Proof.
+                            and After
                         </span>
                     </h2>
 
@@ -89,50 +89,29 @@ const RealProgressSection: FC = () => {
                             lg:hidden
                         "
                     >
-                        Real Progress.
+                        Before
 
                         <span className="block text-(--progress-section-title-highlight)">
-                            Visible Proof.
+                            and After
                         </span>
                     </h2>
 
-                    {/* Desktop subtitle */}
+                    {/* Subtitle */}
                     <p
                         className="
                             mx-auto
                             mt-4
-                            hidden
                             max-w-220
                             text-[16px]
                             font-medium
                             leading-[1.5]
                             text-(--progress-section-subtitle-text)
-                            lg:block
+                            sm:text-[19px]
                             lg:text-[19px]
                         "
                     >
-                        Instead of inflated placement claims, InterviewCall
-                        focuses on visible learning progress: assignments,
-                        mock feedback, mentor reviews, AI workflow practice,
-                        and portfolio-backed proof.
-                    </p>
-
-                    {/* Mobile / tablet subtitle */}
-                    <p
-                        className="
-                            mx-auto
-                            mt-4
-                            max-w-190
-                            text-[16px]
-                            font-medium
-                            leading-[1.5]
-                            text-(--progress-section-subtitle-text)
-                            sm:text-[19px]
-                            lg:hidden
-                        "
-                    >
-                        Learners build evidence through assignments, mocks,
-                        mentor reviews, and capstone work.
+                        A few examples of what mentor feedback actually
+                        changes.
                     </p>
                 </header>
 
@@ -228,7 +207,7 @@ const RealProgressSection: FC = () => {
                             className="h-5 w-5"
                             strokeWidth={1.9}
                         />
-                        <span>View Learner Projects</span>
+                        <span>View Learner Progress</span>
                     </Link>
 
                     <a

@@ -52,9 +52,10 @@ export const loopBullets: LoopBullet[] = [
 ];
 
 export const mobileLoopBullets: string[] = [
-    'Topic-wise practice',
-    'Debugging and refactoring',
-    'AI workflow checkpoints',
+    'Solve It',
+    'Apply It',
+    'Get Reviewed',
+    'Try Again',
 ];
 
 export const practiceTaskByTab: Record<PracticeTabId, PracticeTaskContent> = {
@@ -123,7 +124,7 @@ export const labChecklist: ChecklistItem[] = [
 export const mockFeedbackMetrics: FeedbackMetric[] = [
     { label: 'Problem Solving', status: 'on-track', icon: Target },
     { label: 'Communication', status: 'improving', icon: Compass },
-    { label: 'Approach', status: 'improving', icon: ClipboardCheck },
+    { label: 'Approach', status: 'ready-for-review', icon: ClipboardCheck },
     { label: 'Code Quality', status: 'needs-review', icon: Star },
 ];
 
@@ -158,54 +159,59 @@ export const feedbackStatusLabel: Record<FeedbackMetric['status'], string> = {
     'on-track': 'On Track',
     improving: 'Improving',
     'needs-review': 'Needs Review',
+    'ready-for-review': 'Ready for Review',
 };
 
 export const desktopFeatureStrip: FeatureStripItem[] = [
     {
-        title: 'Practice Sets',
-        description: 'Curated by topic and difficulty',
+        title: 'Practice',
+        description:
+            'Problem sets, debugging exercises, and backend assignments. A mentor reads what you submit.',
         icon: Code2,
     },
     {
-        title: 'Guided Labs',
-        description: 'Hands-on labs with real-world scenarios',
+        title: 'Labs',
+        description:
+            'System design and AI-workflow labs where you build something and then explain the choices behind it.',
         icon: FlaskConical,
     },
     {
-        title: 'Mock Interviews',
-        description: 'Role-based mocks with realistic questions',
+        title: 'Mocks',
+        description:
+            "Timed mock interviews across DSA, machine coding, and system design, run by people who've actually interviewed engineers.",
         icon: Mic,
     },
     {
-        title: 'Mentor Reviews',
-        description: 'Detailed feedback that drives improvement',
+        title: 'Reviews',
+        description:
+            'Feedback on your code and on how well you can explain it.',
         icon: Star,
     },
     {
         title: 'Readiness Tracking',
-        description: 'Track progress across all key skill areas',
+        description: 'Track progress across all key skill areas.',
         icon: LineChart,
     },
 ];
 
 export const mobileFeatureStrip: FeatureStripItem[] = [
     {
-        title: 'Practise Sets',
+        title: 'Practice',
         description: '',
         icon: Code2,
     },
     {
-        title: 'Guided Labs',
+        title: 'Labs',
         description: '',
         icon: FlaskConical,
     },
     {
-        title: 'Mock Interviews',
+        title: 'Mocks',
         description: '',
         icon: Mic,
     },
     {
-        title: 'Mentor Reviews',
+        title: 'Reviews',
         description: '',
         icon: Star,
     },

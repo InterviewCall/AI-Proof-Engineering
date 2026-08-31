@@ -48,22 +48,22 @@ export const careerTracks: CareerTrack[] = [
 
 export const admissionInfoChips: AdmissionInfoChip[] = [
     {
-        label: 'Track-Based Counselling',
+        label: 'Track-Based Counselling Call',
         icon: UsersRound,
         accent: 'blue',
     },
     {
-        label: 'Latest Fee Plan Shared',
+        label: 'Current Fee Plan Shared on the Call',
         icon: FileCheck2,
         accent: 'green',
     },
     {
-        label: 'Payment Options Available',
+        label: 'Payment Options Discussed',
         icon: CreditCard,
         accent: 'purple',
     },
     {
-        label: 'Clear Enrollment Terms',
+        label: 'Enrollment Terms Explained Upfront',
         icon: FileText,
         accent: 'orange',
     },
@@ -71,7 +71,7 @@ export const admissionInfoChips: AdmissionInfoChip[] = [
 
 export const allTracksInclude: string[] = [
     '10-Phase Curriculum',
-    'Live + Labs Format',
+    'Live + Labs',
     'Assignments + Reviews',
     'Mocks + Interview Practice',
     'Capstone Project & Proof',
@@ -80,17 +80,17 @@ export const allTracksInclude: string[] = [
 
 export const mobileTrackPills: TrackPill[] = [
     {
-        label: 'Foundation',
+        label: 'Foundation (0–2 YOE)',
         icon: ShieldCheck,
         accent: 'blue',
     },
     {
-        label: 'Growth',
+        label: 'Growth (2–5 YOE)',
         icon: TrendingUp,
         accent: 'green',
     },
     {
-        label: 'Leadership',
+        label: 'Leadership (5+ YOE)',
         icon: Crown,
         accent: 'purple',
     },

@@ -85,9 +85,12 @@ const PracticeSystemSection: FC = () => {
                             lg:block
                         "
                     >
-                        Practice Is Not Optional. It Is{' '}
-                        <span className="text-(--practice-section-title-highlight)">
-                            the System.
+                        What You Actually Do{' '}
+                        <span className="block">
+                            Between{' '}
+                            <span className="text-(--practice-section-title-highlight)">
+                                Sessions
+                            </span>
                         </span>
                     </h2>
 
@@ -103,34 +106,13 @@ const PracticeSystemSection: FC = () => {
                             lg:hidden
                         "
                     >
-                        Practice. Get Feedback.
+                        What You Actually Do
                         <span className="block text-(--practice-section-title-highlight)">
-                            Improve.
+                            Between Sessions
                         </span>
                     </h2>
 
-                    {/* Desktop subtitle */}
-                    <p
-                        className="
-                            mx-auto
-                            mt-4
-                            hidden
-                            max-w-220
-                            text-[17px]
-                            font-medium
-                            leading-[1.5]
-                            text-(--practice-section-subtitle-text)
-                            lg:block
-                            lg:text-[19px]
-                        "
-                    >
-                        Every phase includes structured exercises, labs,
-                        assignments, mock interviews, reviews, and feedback
-                        loops designed to turn learning into measurable
-                        progress.
-                    </p>
-
-                    {/* Mobile / tablet subtitle */}
+                    {/* Subtitle */}
                     <p
                         className="
                             mx-auto
@@ -141,20 +123,23 @@ const PracticeSystemSection: FC = () => {
                             leading-[1.5]
                             text-(--practice-section-subtitle-text)
                             sm:text-[19px]
-                            lg:hidden
+                            lg:max-w-220
+                            lg:text-[19px]
                         "
                     >
-                        A structured cycle of assessment, live learning,
-                        labs, reviews, mocks, and portfolio-backed proof.
+                        Every phase comes with something to solve, implement,
+                        debug, or present, and someone reviews it afterward.
                     </p>
                 </header>
 
                 {/* Tabs */}
                 <div className="mt-8">
-                    <PracticeTabs
-                        activeTabId={activeTabId}
-                        onChange={setActiveTabId}
-                    />
+                    <div className="hidden lg:block">
+                        <PracticeTabs
+                            activeTabId={activeTabId}
+                            onChange={setActiveTabId}
+                        />
+                    </div>
 
                     {/* Desktop board */}
                     <div
@@ -218,9 +203,8 @@ const PracticeSystemSection: FC = () => {
                     <div
                         className="
                             space-y-4
-                            rounded-b-2xl
+                            rounded-2xl
                             border
-                            border-t-0
                             border-(--practice-section-board-border)
                             bg-(--practice-section-board-bg)
                             p-4
@@ -266,7 +250,7 @@ const PracticeSystemSection: FC = () => {
                             className="h-5 w-5"
                             strokeWidth={1.9}
                         />
-                        <span>See Practice System</span>
+                        <span>See How Practice Works</span>
                     </Link>
 
                     <a

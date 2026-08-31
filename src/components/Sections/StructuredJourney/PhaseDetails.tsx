@@ -79,8 +79,7 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                         text-(--journey-section-card-text)
                     "
                 >
-                    Learn to use AI as an engineering accelerator without
-                    losing technical judgment or code quality.
+                    {phase.description}
                 </p>
 
                 <div

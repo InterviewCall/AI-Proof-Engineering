@@ -73,16 +73,18 @@ const MobileUpdateCard: FC<{ update: ProgramUpdate }> = ({ update }) => {
                     {update.title}
                 </h3>
 
-                <p
-                    className="
-                        mt-1.5
-                        text-[13px]
-                        leading-[1.45]
-                        text-(--ecosystem-resource-card-text)
-                    "
-                >
-                    {update.description}
-                </p>
+                {update.description && (
+                    <p
+                        className="
+                            mt-1.5
+                            text-[13px]
+                            leading-[1.45]
+                            text-(--ecosystem-resource-card-text)
+                        "
+                    >
+                        {update.description}
+                    </p>
+                )}
             </div>
 
             <ChevronRight

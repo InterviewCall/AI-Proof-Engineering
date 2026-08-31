@@ -103,8 +103,7 @@ const Footer: FC = () => {
                                     sm:text-[21px]
                                 "
                             >
-                                Ready to Build Stronger Engineering Proof for
-                                the AI Era?
+                                Next Steps
                             </h2>
 
                             <p
@@ -116,8 +115,8 @@ const Footer: FC = () => {
                                     sm:text-[15px]
                                 "
                             >
-                                Explore the curriculum, identify your track,
-                                and speak with our team before enrolling.
+                                Book a call, or download the curriculum and
+                                look through it on your own first.
                             </p>
                         </div>
                     </div>
@@ -236,10 +235,11 @@ const Footer: FC = () => {
                                 text-(--footer-description-text)
                             "
                         >
-                            InterviewCall helps software engineers build
-                            stronger fundamentals, AI-assisted workflows,
-                            system design depth, interview readiness, and
-                            portfolio-backed proof.
+                            InterviewCall runs the AI-Proof Engineer Program
+                            for software engineers who want stronger
+                            fundamentals, real practice working with AI,
+                            system design work, and a project they can walk
+                            someone through in an interview.
                         </p>
 
                         <span className="mt-4 block h-1 w-8 rounded-full bg-(--footer-brand-underline)" />
@@ -482,8 +482,7 @@ const Footer: FC = () => {
                                         sm:text-[19px]
                                     "
                                 >
-                                    Ready to Build Stronger Engineering Proof
-                                    for the AI Era?
+                                    Next Steps
                                 </h2>
 
                                 <p
@@ -611,10 +610,11 @@ const Footer: FC = () => {
                                 text-(--footer-description-text)
                             "
                         >
-                            InterviewCall helps software engineers build
-                            stronger fundamentals, AI-assisted workflows,
-                            system design depth, interview readiness, and
-                            portfolio-backed proof.
+                            InterviewCall runs the AI-Proof Engineer Program
+                            for software engineers who want stronger
+                            fundamentals, real practice working with AI,
+                            system design work, and a project they can walk
+                            someone through in an interview.
                         </p>
 
                         <div className="mt-3 flex flex-wrap items-center gap-2">

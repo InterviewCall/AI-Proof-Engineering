@@ -13,6 +13,9 @@ export type CareerTrack = {
     focusAreas: string;
     bestFor: string;
     outcome: string;
+    mobileFocusAreas: string;
+    mobileBestFor: string;
+    mobileOutcome: string;
     duration: string;
     format: string;
     projects: string;

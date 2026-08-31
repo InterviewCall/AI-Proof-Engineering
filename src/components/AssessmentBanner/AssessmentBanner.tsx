@@ -114,7 +114,7 @@ const AssessmentBanner: FC = () => {
                             max-md:leading-[1.3]
                         "
                     >
-                        Not sure how AI-ready your engineering profile is?
+                        Not Sure How AI-Ready Your Profile Is?
                     </h2>
 
                     <p
@@ -132,8 +132,9 @@ const AssessmentBanner: FC = () => {
                             max-md:tracking-[-2%]
                         "
                     >
-                        Take the 3-minute AI-Proof Score assessment and get your
-                        recommended learning track.
+                        Take the assessment and get a track recommendation
+                        based on where your fundamentals, AI habits, and
+                        system design skills actually stand.
                     </p>
                 </div>
 
@@ -187,11 +188,11 @@ const AssessmentBanner: FC = () => {
                         "
                     >
                         <span className="xl:hidden">
-                            Unlock Your Score Now
+                            Check Your AI-Proof Score
                         </span>
 
                         <span className="hidden xl:inline">
-                            Unlock Your Score
+                            Check Your Score
                         </span>
 
                         <ArrowRight

@@ -17,19 +17,18 @@ const BuildProofSection: FC = () => {
             id="build-proof"
             className="
                 scroll-mt-25
-                bg-(--build-proof-section-bg)
                 px-4
                 py-14
                 sm:px-6
-                sm:py-16
+                sm:py-6
                 lg:px-8
-                lg:py-20
-                xl:px-12
+                lg:py-6
+                xl:px-8
             "
         >
-            <div className="mx-auto w-full max-w-345">
+            <div className="mx-auto w-full max-w-370">
                 {/* Header */}
-                <header className="mx-auto max-w-280 text-center">
+                <header className="mx-auto max-w-370 text-center">
                     <div
                         className="
                             inline-flex
@@ -55,30 +54,10 @@ const BuildProofSection: FC = () => {
                             className="h-4.5 w-4.5"
                             strokeWidth={1.9}
                         />
-                        <span>Admissions / Pricing</span>
+                        <span>Admissions &amp; Fee Guidance</span>
                     </div>
 
-                    {/* Desktop heading */}
-                    <h2
-                        className="
-                            mt-4
-                            hidden
-                            text-[clamp(2.25rem,5.5vw,3.75rem)]
-                            font-bold
-                            leading-[1.15]
-                            tracking-[-2%]
-                            text-(--build-proof-section-title-text)
-                            lg:block
-                        "
-                    >
-                        Ready to Build Your{' '}
-                        <span className="text-(--build-proof-section-title-highlight)">
-                            AI-Era
-                        </span>{' '}
-                        Engineering Proof?
-                    </h2>
-
-                    {/* Mobile / tablet heading */}
+                    {/* Heading */}
                     <h2
                         className="
                             mt-4
@@ -87,32 +66,27 @@ const BuildProofSection: FC = () => {
                             leading-[1.06]
                             tracking-[-2%]
                             text-(--build-proof-section-title-text)
-                            lg:hidden
+                            lg:text-[clamp(2.25rem,5.5vw,3.75rem)]
+                            lg:leading-[1.15]
                         "
                     >
-                        Ready to Build Your
-
-                        <span className="block text-(--build-proof-section-title-highlight)">
-                            AI-Era
-                        </span>
-
-                        Proof?
+                        Admissions
                     </h2>
 
                     <p
                         className="
                             mx-auto
                             mt-4
-                            max-w-220
+                            max-w-150
                             text-[16px]
-                            font-medium
+                            font-semibold
                             leading-[1.5]
                             text-(--build-proof-section-subtitle-text)
-                            sm:text-[19px]
+                            sm:text-[21px]
                         "
                     >
-                        Choose the right track, understand the program
-                        structure, and speak with our team before enrolling.
+                        Talk to the team about your track, the current fee
+                        plan, and payment options.
                     </p>
                 </header>
 

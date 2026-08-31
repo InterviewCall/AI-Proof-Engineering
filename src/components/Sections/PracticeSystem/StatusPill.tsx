@@ -9,6 +9,8 @@ const statusStyles: Record<FeedbackStatus, string> = {
     improving: 'bg-(--status-info-bg) text-(--status-info-text)',
     'needs-review':
         'bg-(--practice-section-warning-bg) text-(--practice-section-warning-text)',
+    'ready-for-review':
+        'bg-(--status-info-bg) text-(--status-info-text)',
 };
 
 const StatusPill: FC<{ status: FeedbackStatus }> = ({ status }) => {

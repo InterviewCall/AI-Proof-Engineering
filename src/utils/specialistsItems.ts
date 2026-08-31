@@ -24,7 +24,7 @@ export const specialists: Specialist[] = [
         number: 1,
         name: 'DSA & Problem Solving Mentor',
         description:
-            'Patterns, complexity, debugging, and interview problem solving.',
+            'Runs through patterns, complexity, and how to talk through a problem out loud.',
         tags: ['Patterns', 'Complexity', 'Debugging'],
         accent: 'blue',
     },
@@ -32,15 +32,15 @@ export const specialists: Specialist[] = [
         number: 2,
         name: 'System Design Mentor',
         description:
-            'HLD, LLD, scaling, tradeoffs, and architecture communication.',
-        tags: ['HLD/LLD', 'Scaling', 'Tradeoffs'],
+            'HLD, LLD, scaling decisions, and how to explain a trade-off clearly.',
+        tags: ['HLD/LLD', 'Scaling', 'Trade-offs'],
         accent: 'green',
     },
     {
         number: 3,
         name: 'AI Engineering Mentor',
         description:
-            'AI workflows, code review with AI, agents, and product use cases.',
+            "AI-assisted workflows and code review. Where to trust the model's output, and where to check it yourself.",
         tags: ['AI Workflows', 'Code Review', 'Agents'],
         accent: 'purple',
     },
@@ -48,7 +48,7 @@ export const specialists: Specialist[] = [
         number: 4,
         name: 'Mock Interview Mentor',
         description:
-            'Interview structure, communication, feedback, and readiness.',
+            'Runs mock interviews and gives feedback you can actually use next time.',
         tags: ['Communication', 'Technical Rounds', 'Feedback'],
         accent: 'orange',
     },
@@ -56,7 +56,7 @@ export const specialists: Specialist[] = [
         number: 5,
         name: 'Capstone Review Mentor',
         description:
-            'Project architecture, documentation, demo, and improvement notes.',
+            'Reviews your architecture and documentation, then asks you to defend it.',
         tags: ['Architecture', 'Documentation', 'Demo'],
         accent: 'blue',
     },
@@ -130,7 +130,7 @@ export const mobileSpecialists: MobileSpecialist[] = [
     },
     {
         title: 'System Design',
-        tags: ['HLD/LLD', 'Scaling', 'Tradeoffs'],
+        tags: ['HLD/LLD', 'Scaling', 'Trade-offs'],
         icon: Layers,
         accent: 'green',
     },

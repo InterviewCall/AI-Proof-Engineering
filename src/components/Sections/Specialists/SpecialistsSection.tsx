@@ -69,10 +69,10 @@ const SpecialistsSection: FC = () => {
                             lg:block
                         "
                     >
-                        Learn With Specialists Across
+                        Who Teaches
 
                         <span className="block text-(--specialists-section-title-highlight)">
-                            Engineering, AI, Systems, and Interviews.
+                            What
                         </span>
                     </h2>
 
@@ -88,50 +88,30 @@ const SpecialistsSection: FC = () => {
                             lg:hidden
                         "
                     >
-                        Specialist Mentors
+                        Who Teaches
 
                         <span className="block text-(--specialists-section-title-highlight)">
-                            for Every Stage
+                            What
                         </span>
                     </h2>
 
-                    {/* Desktop subtitle */}
+                    {/* Subtitle */}
                     <p
                         className="
                             mx-auto
                             mt-4
-                            hidden
                             max-w-220
                             text-[16px]
                             font-medium
                             leading-[1.5]
                             text-(--specialists-section-subtitle-text)
-                            lg:block
+                            sm:text-[19px]
                             lg:text-[19px]
                         "
                     >
-                        The program is supported by domain-focused mentors who
-                        guide learners through problem solving, system
-                        design, AI workflows, reviews, mocks, and capstone
-                        proof.
-                    </p>
-
-                    {/* Mobile / tablet subtitle */}
-                    <p
-                        className="
-                            mx-auto
-                            mt-4
-                            max-w-190
-                            text-[16px]
-                            font-medium
-                            leading-[1.5]
-                            text-(--specialists-section-subtitle-text)
-                            sm:text-[19px]
-                            lg:hidden
-                        "
-                    >
-                        Get guidance across DSA, system design, AI workflows,
-                        mock interviews, and capstone reviews.
+                        System design, AI workflows, mock interviews, and
+                        capstone reviews are each led by someone who focuses
+                        on that part.
                     </p>
                 </header>
 

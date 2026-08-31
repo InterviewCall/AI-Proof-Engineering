@@ -24,12 +24,12 @@ const CareerTrackColumn: FC<{ track: CareerTrack }> = ({ track }) => {
     const Icon = track.icon;
 
     return (
-        <div>
+        <div className='border p-5 rounded-lg border-[#02285D] flex flex-col gap-y-1'>
             <span
                 className={`
                     flex
-                    h-12
-                    w-12
+                    h-14
+                    w-14
                     items-center
                     justify-center
                     rounded-xl
@@ -37,13 +37,13 @@ const CareerTrackColumn: FC<{ track: CareerTrack }> = ({ track }) => {
                     ${iconBgStyles[track.accent]}
                 `}
             >
-                <Icon aria-hidden="true" className="h-6 w-6" strokeWidth={1.8} />
+                <Icon aria-hidden="true" className="h-8 w-8" strokeWidth={1.8} />
             </span>
 
             <h4
                 className="
                     mt-3
-                    text-[17px]
+                    text-[18px]
                     font-bold
                     leading-tight
                     text-(--build-proof-showcase-title)
@@ -65,7 +65,8 @@ const CareerTrackColumn: FC<{ track: CareerTrack }> = ({ track }) => {
             <p
                 className="
                     mt-3
-                    text-[13px]
+                    text-[13.5px]
+                    font-medium
                     leading-[1.5]
                     text-(--build-proof-showcase-text)
                 "

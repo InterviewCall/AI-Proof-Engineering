@@ -12,6 +12,7 @@ const CareerTracksPanel: FC = () => {
                 h-full
                 flex-col
                 rounded-2xl
+                gap-y-2.5
                 border
                 border-(--build-proof-showcase-border)
                 bg-(--build-proof-showcase-bg)
@@ -26,12 +27,10 @@ const CareerTracksPanel: FC = () => {
                     leading-[1.2]
                     tracking-[-1%]
                     text-(--build-proof-showcase-title)
-                    sm:text-[28px]
+                    sm:text-[30px]
                 "
             >
-                Three Career Tracks.
-
-                <span className="block">One Structured Program.</span>
+                Choose Your Track
             </h3>
 
             <span
@@ -48,14 +47,15 @@ const CareerTracksPanel: FC = () => {
             <p
                 className="
                     mt-3
-                    max-w-110
-                    text-[15px]
+                    max-w-100
+                    text-[16px]
+                    font-medium
                     leading-[1.55]
                     text-(--build-proof-showcase-text)
                 "
             >
-                Pick the track that matches your experience level and the
-                engineering future you are building.
+                Foundation, Growth, or Leadership — based on your years of
+                experience.
             </p>
 
             <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-3">
@@ -64,12 +64,12 @@ const CareerTracksPanel: FC = () => {
                 ))}
             </div>
 
-            <div className="mt-auto flex items-center gap-3 pt-6">
-                <span className="h-px flex-1 bg-(--build-proof-legend-line)" />
+            <div className="mt-auto flex justify-between items-center pt-6">
+                <span className="h-px max-w-24 flex-1 bg-(--build-proof-legend-line)" />
 
-                <div className="flex items-center gap-2 text-[13px] font-medium whitespace-nowrap text-(--build-proof-showcase-text)">
+                <div className="flex items-center gap-7 text-[16px] font-medium whitespace-nowrap text-(--build-proof-showcase-text)">
                     {careerTracks.map((track, index) => (
-                        <span key={track.title} className="flex items-center gap-2">
+                        <span key={track.title} className="flex items-center gap-5">
                             {track.title.replace(' Track', '')}
 
                             {index !== careerTracks.length - 1 && (
@@ -79,7 +79,7 @@ const CareerTracksPanel: FC = () => {
                     ))}
                 </div>
 
-                <span className="h-px flex-1 bg-(--build-proof-legend-line)" />
+                <span className="h-px max-w-24 flex-1 bg-(--build-proof-legend-line)" />
             </div>
         </div>
     );

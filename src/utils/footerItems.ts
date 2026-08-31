@@ -42,8 +42,6 @@ export const footerColumns: FooterColumn[] = [
         links: [
             { label: 'About InterviewCall', href: '#program' },
             { label: 'Contact Us', href: '#callback' },
-            { label: 'Privacy Policy', href: '#privacy' },
-            { label: 'Terms of Use', href: '#terms' },
         ],
     },
 ];

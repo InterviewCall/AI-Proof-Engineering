@@ -61,6 +61,31 @@ const MobileProgramOverviewPanel: FC = () => {
                     bg-(--program-glance-main-card-highlight)
                 "
             />
+
+            <p
+                className="
+                    mt-3
+                    max-w-70
+                    text-[12px]
+                    font-semibold
+                    leading-[1.5]
+                    text-(--program-glance-main-card-highlight)
+                "
+            >
+                Curriculum{' '}
+                <span className="text-(--program-glance-main-card-text)">
+                    →
+                </span>{' '}
+                Practice{' '}
+                <span className="text-(--program-glance-main-card-text)">
+                    →
+                </span>{' '}
+                Mocks{' '}
+                <span className="text-(--program-glance-main-card-text)">
+                    →
+                </span>{' '}
+                Capstone
+            </p>
         </div>
     );
 };

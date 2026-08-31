@@ -123,7 +123,7 @@ const HeroSection: FC = () => {
                                 lg:text-[58px]
                             "
                         >
-                            AI will not replace serious engineers.
+                            AI writes more of the code now.
                         </span>
 
                         <span
@@ -141,7 +141,7 @@ const HeroSection: FC = () => {
                                 lg:mt-3
                             "
                         >
-                            It will replace engineers who only execute tasks.
+                            Someone still has to check it.
                         </span>
 
                         <span
@@ -163,7 +163,7 @@ const HeroSection: FC = () => {
                                     'var(--hero-section-title-gradient-mobile)',
                             }}
                         >
-                            It will replace average execution.
+                            Someone still has to check it.
                         </span>
                     </h1>
 
@@ -186,9 +186,10 @@ const HeroSection: FC = () => {
                             xl:leading-[1.65]
                         "
                     >
-                        Build stronger fundamentals, AI-assisted engineering
-                        workflows, system design confidence, and portfolio-ready
-                        proof to become harder to replace in the AI era.
+                        A program for software engineers who want stronger
+                        fundamentals, real practice working with AI,
+                        hands-on system design, and a project they can walk
+                        someone through in an interview.
                     </p>
 
                     <p
@@ -209,8 +210,8 @@ const HeroSection: FC = () => {
                             xl:leading-[1.65]
                         "
                     >
-                        Build fundamentals, AI workflows, system design
-                        confidence, and interview readiness for the AI era.
+                        Fundamentals, real AI practice, system design, and
+                        a project you can explain in an interview.
                     </p>
 
                     {/* =====================================================
@@ -377,8 +378,9 @@ const HeroSection: FC = () => {
                                 xl:text-[15px]
                             "
                         >
-                            Built around fundamentals, AI workflows, system
-                            design, mocks, reviews, and capstone proof.
+                            Fundamentals &bull; AI-Assisted Workflows &bull;
+                            System Design &bull; Interview Practice &bull;
+                            Work You Can Show
                         </p>
                     </div>
                 </div>
@@ -445,13 +447,13 @@ const HeroSection: FC = () => {
                                         className="
                                         "
                                     >
-                                        Why Average Execution {' '} 
+                                        What AI Actually Changes {' '}
                                     </span>
                                     <span
                                         className="
                                         "
                                     >
-                                        Is No Longer Enough
+                                        About the Job
                                     </span>
                                 </h2>
 

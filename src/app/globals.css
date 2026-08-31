@@ -626,7 +626,89 @@
   --progress-section-mobile-strip-bg: var(--color-brand-50);
 
   /* =========================================================
-     19. CAREER INSIGHTS SECTION
+     19. ALUMNI / CAREER JOURNEYS SECTION
+  ========================================================= */
+
+  --alumni-section-bg: var(--color-surface-secondary);
+
+  --alumni-section-eyebrow-text: var(--color-blue);
+  --alumni-section-eyebrow-underline: var(--color-blue);
+
+  --alumni-section-title-text: var(--color-text-heading);
+  --alumni-section-subtitle-text: var(--color-text-muted);
+
+  --alumni-featured-card-bg: var(--color-navy-1000);
+  --alumni-featured-card-border: #17305c;
+
+  --alumni-featured-badge-bg: rgba(10, 83, 242, 0.18);
+  --alumni-featured-badge-border: #2547a0;
+  --alumni-featured-badge-text: var(--color-white);
+
+  --alumni-featured-name-text: var(--color-white);
+  --alumni-featured-meta-text: #c4cde1;
+  --alumni-featured-divider: #26385c;
+
+  --alumni-featured-info-label: #8fa5d6;
+  --alumni-featured-info-value: var(--color-white);
+  --alumni-featured-info-icon: var(--color-brand-400);
+  --alumni-featured-info-arrow: #4a5f8f;
+
+  --alumni-featured-quote-icon: var(--color-brand-400);
+  --alumni-featured-quote-text: var(--color-white);
+  --alumni-featured-quote-author: #c4cde1;
+
+  --alumni-featured-cta-bg: #101d3a;
+  --alumni-featured-cta-border: #26385c;
+  --alumni-featured-cta-text: var(--color-white);
+  --alumni-featured-cta-hover-bg: #16264a;
+
+  --alumni-mini-card-bg: var(--color-white);
+  --alumni-mini-card-border: var(--color-border-default);
+
+  --alumni-mini-badge-bg: var(--color-blue-soft);
+  --alumni-mini-badge-text: var(--color-blue);
+
+  --alumni-mini-avatar-bg: var(--color-brand-50);
+  --alumni-mini-avatar-icon: var(--color-brand-700);
+
+  --alumni-mini-name-text: var(--color-text-heading);
+  --alumni-mini-meta-text: var(--color-text-muted);
+
+  --alumni-mini-label-text: var(--color-blue);
+  --alumni-mini-value-text: var(--color-text-heading);
+  --alumni-mini-arrow-icon: var(--color-border-default);
+
+  --alumni-mini-company-text: var(--color-text-heading);
+  --alumni-mini-quote-text: var(--color-text-muted);
+
+  --alumni-mini-link-text: var(--color-blue);
+  --alumni-mini-link-hover-text: var(--color-brand-950);
+  --alumni-mini-divider: var(--color-border-default);
+
+  --alumni-companies-bg: var(--color-white);
+  --alumni-companies-border: var(--color-border-default);
+  --alumni-companies-title-text: var(--color-text-heading);
+  --alumni-companies-logo-text: var(--color-text-muted);
+  --alumni-companies-caption-text: var(--color-text-muted);
+
+  --alumni-cta-bg: var(--color-brand-50);
+  --alumni-cta-border: var(--color-border-default);
+  --alumni-cta-icon-bg: var(--color-white);
+  --alumni-cta-icon-text: var(--color-brand-700);
+  --alumni-cta-title-text: var(--color-text-heading);
+  --alumni-cta-text: var(--color-text-muted);
+
+  --alumni-cta-secondary-button-bg: var(--color-white);
+  --alumni-cta-secondary-button-border: var(--color-border-default);
+  --alumni-cta-secondary-button-text: var(--color-brand-700);
+  --alumni-cta-secondary-button-hover-bg: var(--color-brand-100);
+
+  --alumni-cta-primary-button-bg: var(--color-brand-700);
+  --alumni-cta-primary-button-hover-bg: var(--color-brand-950);
+  --alumni-cta-primary-button-text: var(--color-white);
+
+  /* =========================================================
+     20. CAREER INSIGHTS SECTION
   ========================================================= */
 
   --career-insights-section-bg: var(--color-surface-secondary);
@@ -680,7 +762,7 @@
   --career-insights-mobile-chevron: var(--color-brand-500);
 
   /* =========================================================
-     20. PROGRAM AT A GLANCE
+     21. PROGRAM AT A GLANCE
   ========================================================= */
 
   --program-glance-section-bg: var(--color-white);
@@ -728,7 +810,7 @@
   --program-glance-mobile-chevron: var(--color-brand-500);
 
   /* =========================================================
-     21. BUILD YOUR PROOF / ENROLLMENT SECTION
+     22. BUILD YOUR PROOF / ENROLLMENT SECTION
   ========================================================= */
 
   --build-proof-section-bg: var(--color-surface-secondary);
@@ -740,10 +822,10 @@
   --build-proof-section-title-highlight: var(--color-brand-700);
   --build-proof-section-subtitle-text: var(--color-text-muted);
 
-  --build-proof-showcase-bg: var(--color-navy-1000);
-  --build-proof-showcase-border: #17305c;
+  --build-proof-showcase-bg: #010D2F;
+  --build-proof-showcase-border: #F1F4F7;
   --build-proof-showcase-title: var(--color-white);
-  --build-proof-showcase-text: #c4cde1;
+  --build-proof-showcase-text: #F5F4F6;
 
   --build-proof-showcase-blue-bg: #092e76;
   --build-proof-showcase-blue-icon: #5f8dff;
@@ -754,7 +836,7 @@
   --build-proof-showcase-purple-bg: #2a205f;
   --build-proof-showcase-purple-icon: #a38bff;
 
-  --build-proof-enrollment-bg: var(--color-white);
+  --build-proof-enrollment-bg: #FEFDFE;
   --build-proof-enrollment-border: var(--color-border-default);
   --build-proof-enrollment-title: var(--color-text-heading);
   --build-proof-enrollment-text: var(--color-text-muted);
@@ -790,10 +872,10 @@
   --build-proof-mobile-trust-bg: var(--color-blue-soft);
   --build-proof-mobile-trust-text: var(--color-text-heading);
 
-  --build-proof-legend-line: #26385c;
+  --build-proof-legend-line: #5282B5;
 
   /* =========================================================
-     22. ECOSYSTEM SECTION
+     23. ECOSYSTEM SECTION
   ========================================================= */
 
   --ecosystem-section-bg: var(--color-white);
@@ -855,7 +937,7 @@
   --ecosystem-newsletter-input-text: var(--color-text-heading);
 
   /* =========================================================
-     23. FAQ SECTION
+     24. FAQ SECTION
   ========================================================= */
 
   --faq-section-bg: var(--color-surface-secondary);
@@ -917,7 +999,7 @@
   --faq-trust-pill-text: var(--color-text-heading);
 
   /* =========================================================
-     24. FOOTER CTA BANNER
+     25. FOOTER CTA BANNER
   ========================================================= */
 
   --footer-cta-bg: var(--color-white);
@@ -939,7 +1021,7 @@
   --footer-cta-secondary-button-text: var(--color-brand-700);
 
   /* =========================================================
-     25. FOOTER
+     26. FOOTER
   ========================================================= */
 
   --footer-bg: #011139;
@@ -979,7 +1061,7 @@
   --footer-legal-link-hover-text: var(--color-white);
 
   /* =========================================================
-     26. STATUS AND UTILITY COLORS
+     27. STATUS AND UTILITY COLORS
   ========================================================= */
 
   --status-success-bg: var(--color-green-soft);
@@ -999,7 +1081,7 @@
   --status-info-border: var(--color-brand-200);
 
   /* =========================================================
-     27. GRADIENTS
+     28. GRADIENTS
   ========================================================= */
 
   --gradient-brand:
@@ -1031,7 +1113,7 @@
     );
 
   /* =========================================================
-     28. BACKWARD-COMPATIBILITY ALIASES
+     29. BACKWARD-COMPATIBILITY ALIASES
 
      These aliases support the misspelled "differnt" variable
      names from your existing CSS. New CSS should use "different".

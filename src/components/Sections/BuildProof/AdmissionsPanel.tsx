@@ -2,7 +2,10 @@ import { Check } from 'lucide-react';
 import { FC } from 'react';
 
 import { type ChipAccent } from '@/types/buildProof';
-import { admissionInfoChips, allTracksInclude } from '@/utils/buildProofItems';
+import {
+    admissionInfoChips,
+    allTracksInclude,
+} from '@/utils/buildProofItems';
 
 import BuildProofCtaButtons from './BuildProofCtaButtons';
 
@@ -37,17 +40,27 @@ const AdmissionsPanel: FC = () => {
                     leading-[1.2]
                     tracking-[-1%]
                     text-(--build-proof-enrollment-title)
-                    sm:text-[28px]
+                    sm:text-[30px]
                 "
             >
                 Admissions &amp; Fee Guidance
             </h3>
 
-            <span className="mt-3 block h-1 w-11 rounded-full bg-(--color-blue)" />
+            <span
+                className="
+                    mt-3
+                    block
+                    h-1
+                    w-11
+                    rounded-full
+                    bg-(--color-blue)
+                "
+            />
 
             <p
                 className="
                     mt-3
+                    max-w-100
                     text-[15px]
                     leading-[1.55]
                     text-(--build-proof-enrollment-text)
@@ -57,63 +70,93 @@ const AdmissionsPanel: FC = () => {
                 options, and track recommendation through a counselling call.
             </p>
 
-            <div
-                className="
-                    mt-5
-                    grid
-                    grid-cols-2
-                    gap-3
-                    rounded-xl
-                    border
-                    border-(--build-proof-enrollment-border)
-                    p-4
-                    sm:grid-cols-4
-                "
-            >
-                {admissionInfoChips.map((chip) => {
-                    const Icon = chip.icon;
+            {/* Admission Info */}
+            <div className="mt-5">
+                <div
+                    className="
+                        grid
+                        grid-cols-2
+                        overflow-hidden
+                        rounded-xl
+                        border
+                        border-(--build-proof-enrollment-border)
+                        py-3
+                        sm:grid-cols-4
+                        bg-[#F8FAFE]
+                    "
+                >
+                    {admissionInfoChips.map((chip, index) => {
+                        const Icon = chip.icon;
 
-                    return (
-                        <div
-                            key={chip.label}
-                            className="flex flex-col items-center gap-2 text-center"
-                        >
-                            <span
+                        return (
+                            <div
+                                key={chip.label}
                                 className={`
                                     flex
-                                    h-10
-                                    w-10
-                                    items-center
-                                    justify-center
-                                    rounded-[10px]
-                                    ${chipStyles[chip.accent]}
+                                    min-w-0
+                                    flex-col
+                                    items-start
+                                    px-4
+                                    text-left
+                                    sm:px-5
+
+                                    ${
+                                        index !==
+                                        admissionInfoChips.length - 1
+                                            ? 'sm:border-r-2 sm:border-(--build-proof-enrollment-border)'
+                                            : ''
+                                    }
                                 `}
                             >
-                                <Icon
-                                    aria-hidden="true"
-                                    className="h-5 w-5"
-                                    strokeWidth={1.8}
-                                />
-                            </span>
+                                <span
+                                    className={`
+                                        flex
+                                        h-10
+                                        w-10
+                                        shrink-0
+                                        items-center
+                                        justify-center
+                                        rounded-xl
+                                        ${chipStyles[chip.accent]}
+                                    `}
+                                >
+                                    <Icon
+                                        aria-hidden="true"
+                                        className="h-6 w-6"
+                                        strokeWidth={1.8}
+                                    />
+                                </span>
 
-                            <p
-                                className="
-                                    text-[12.5px]
-                                    font-semibold
-                                    leading-[1.35]
-                                    text-(--build-proof-enrollment-title)
-                                "
-                            >
-                                {chip.label}
-                            </p>
-                        </div>
-                    );
-                })}
+                                <p
+                                    className="
+                                        mt-2
+                                        max-w-[120px]
+                                        text-[14px]
+                                        font-medium
+                                        leading-[1.35]
+                                        text-(--build-proof-enrollment-title)
+                                    "
+                                >
+                                    {chip.label}
+                                </p>
+                            </div>
+                        );
+                    })}
+                </div>
+
+                <div
+                    className="
+                        mt-2
+                        h-[2px]
+                        w-full
+                        bg-(--build-proof-enrollment-border)
+                    "
+                />
             </div>
 
             <p
                 className="
-                    mt-6
+                    mt-4
                     text-[15px]
                     font-bold
                     text-(--build-proof-enrollment-title)
@@ -122,9 +165,25 @@ const AdmissionsPanel: FC = () => {
                 All Tracks Include
             </p>
 
-            <div className="mt-3 grid grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2">
+            <div
+                className="
+                    mt-3
+                    grid
+                    grid-cols-1
+                    gap-x-6
+                    gap-y-3
+                    sm:grid-cols-2
+                "
+            >
                 {allTracksInclude.map((item) => (
-                    <div key={item} className="flex items-center gap-3">
+                    <div
+                        key={item}
+                        className="
+                            flex
+                            items-center
+                            gap-3
+                        "
+                    >
                         <span
                             className="
                                 flex

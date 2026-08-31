@@ -54,7 +54,7 @@ const ProgramGlanceSection: FC = () => {
                             className="h-4.5 w-4.5"
                             strokeWidth={1.9}
                         />
-                        <span>Program Snapshot</span>
+                        <span>Program at a Glance</span>
                     </div>
 
                     {/* Desktop heading */}
@@ -175,7 +175,7 @@ const ProgramGlanceSection: FC = () => {
                                 className="h-5 w-5"
                                 strokeWidth={1.9}
                             />
-                            <span>View Full Curriculum</span>
+                            <span>See Admissions &amp; Fee Guidance</span>
                         </Link>
 
                         <Link
@@ -297,7 +297,7 @@ const ProgramGlanceSection: FC = () => {
                                 className="h-5 w-5"
                                 strokeWidth={1.9}
                             />
-                            <span>View Full Curriculum</span>
+                            <span>See Admissions &amp; Fee Guidance</span>
                         </Link>
 
                         <Link

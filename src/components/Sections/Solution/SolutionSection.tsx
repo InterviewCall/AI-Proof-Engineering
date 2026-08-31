@@ -97,13 +97,7 @@ const SolutionSection: FC = () => {
                             lg:block
                         "
                     >
-                        Built Different for
-                        <span className="block">
-                            the{' '}
-                            <span className="text-(--solution-section-title-text-end)">
-                                AI-Era Engineer
-                            </span>
-                        </span>
+                        How the Program Is Run
                     </h2>
 
                     {/* Mobile and tablet heading */}
@@ -118,16 +112,7 @@ const SolutionSection: FC = () => {
                             lg:hidden
                         "
                     >
-                        Built for the
-
-                        <span
-                            className="
-                                block
-                                text-(--solution-section-title-text-end)
-                            "
-                        >
-                            AI-Era Engineer
-                        </span>
+                        How the Program Is Run
                     </h2>
 
                     {/* Desktop description */}
@@ -146,9 +131,9 @@ const SolutionSection: FC = () => {
                             lg:block
                         "
                     >
-                        Most courses teach content. InterviewCall builds
-                        judgment, context, practice, and proof — the skills
-                        serious engineers need when AI becomes standard.
+                        Live sessions, assignments with feedback, code
+                        review, system design work, mock interviews, and a
+                        capstone that gets reviewed more than once.
                     </p>
 
                     {/* Mobile and tablet description */}
@@ -163,8 +148,8 @@ const SolutionSection: FC = () => {
                             lg:hidden
                         "
                     >
-                        Most courses teach content. InterviewCall builds
-                        judgment, context, practice, and proof.
+                        Live sessions, reviewed assignments, and mock
+                        interviews built into the coursework.
                     </p>
                 </header>
 
@@ -395,7 +380,7 @@ const SolutionSection: FC = () => {
                         "
                     >
                         <span className="text-(--solution-section-different-box-footer-from-text)">
-                            From Content Consumption
+                            From Passive Content
                         </span>
 
                         <ArrowRight
@@ -409,7 +394,7 @@ const SolutionSection: FC = () => {
                         />
 
                         <span className="text-(--solution-section-different-box-footer-to-text)">
-                            Engineering Transformation
+                            Reviewed Engineering Work
                         </span>
                     </div>
                 </div>
@@ -511,7 +496,7 @@ const SolutionSection: FC = () => {
                                 text-(--solution-section-different-box-left-title)
                             "
                         >
-                            From content consumption
+                            From passive content
                         </p>
 
                         <span
@@ -541,7 +526,7 @@ const SolutionSection: FC = () => {
                                 text-(--solution-section-different-box-footer-to-text)
                             "
                         >
-                            Engineering transformation
+                            Reviewed engineering work
                         </p>
                     </div>
 
@@ -878,8 +863,8 @@ const SolutionSection: FC = () => {
                                     tracking-[1%]
                                 "
                             >
-                                We build engineers who can think, decide, and
-                                ship with confidence.
+                                It still can&apos;t tell you whether the
+                                decision behind it was right.
                             </p>
                         </div>
                     </div>
@@ -917,7 +902,7 @@ const SolutionSection: FC = () => {
                             xl:text-[20px]
                         "
                     >
-                        <span>Explore What Makes It Different</span>
+                        <span>See How the Program Works</span>
 
                         <ArrowRight
                             aria-hidden="true"

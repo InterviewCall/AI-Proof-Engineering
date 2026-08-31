@@ -61,28 +61,28 @@ export const exampleProjects: ExampleProject[] = [
     {
         title: 'AI Workflow Automation Project',
         description:
-            'Build an AI-assisted workflow with validation, review, and human-in-the-loop checks.',
+            'An AI-assisted workflow with a validation step and a point where a person checks the output before it goes further.',
         icon: Bot,
         accent: 'blue',
     },
     {
         title: 'Scalable Backend System',
         description:
-            'Design APIs, database schema, queues, caching, and deployment-ready structure.',
+            'APIs, a schema, a queue, and caching decisions that hold up once traffic increases.',
         icon: Server,
         accent: 'green',
     },
     {
-        title: 'System Design Capstone',
+        title: 'System Design Case Study',
         description:
-            'Create HLD, LLD, scaling decisions, tradeoffs, and interview-style explanation.',
+            "An HLD and LLD with the trade-offs written up the way you'd document them at work.",
         icon: Network,
         accent: 'purple',
     },
     {
         title: 'Product Engineering Capstone',
         description:
-            'Build a realistic product feature with auth, APIs, dashboard, testing, and documentation.',
+            'Auth, a set of APIs, a working dashboard, tests, and documentation someone else could pick up and continue.',
         icon: FileCode2,
         accent: 'orange',
     },
@@ -91,6 +91,39 @@ export const exampleProjects: ExampleProject[] = [
 export const capstoneFeatureStrip: CapstoneFeatureItem[] = [
     {
         title: 'Source Code',
+        description: 'Clean, modular, and maintainable',
+        icon: FileCode2,
+    },
+    {
+        title: 'Architecture Diagram',
+        description: 'HLD, LLD, and key design decisions',
+        icon: Network,
+    },
+    {
+        title: 'Demo Walkthrough',
+        description: 'End-to-end demo and walkthrough',
+        icon: Play,
+    },
+    {
+        title: 'Review Notes',
+        description: 'Mentor feedback, improvements, and key learnings',
+        icon: MessageSquareText,
+    },
+    {
+        title: 'Documentation',
+        description: 'README, API docs, and user guide',
+        icon: FileText,
+    },
+    {
+        title: 'Final Presentation',
+        description: 'A structured deck to explain your solution clearly',
+        icon: Presentation,
+    },
+];
+
+export const mobileCapstoneFeatureStrip: CapstoneFeatureItem[] = [
+    {
+        title: 'Repository',
         description: 'Clean, modular, and maintainable',
         icon: FileCode2,
     },
@@ -105,18 +138,8 @@ export const capstoneFeatureStrip: CapstoneFeatureItem[] = [
         icon: Play,
     },
     {
-        title: 'Documentation',
-        description: 'README, API docs, and user guide',
-        icon: FileText,
-    },
-    {
-        title: 'Mentor Review',
-        description: 'Expert feedback and improvement notes',
+        title: 'Mentor Comments',
+        description: 'Feedback, improvements, and key learnings',
         icon: UserRound,
-    },
-    {
-        title: 'Final Walkthrough',
-        description: 'Presentation to explain your solution clearly',
-        icon: Presentation,
     },
 ];

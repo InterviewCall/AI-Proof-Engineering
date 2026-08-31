@@ -54,7 +54,7 @@ const CareerInsightsSection: FC = () => {
                             className="h-4.5 w-4.5"
                             strokeWidth={1.9}
                         />
-                        <span>Thought Leadership</span>
+                        <span>Career Desk</span>
                     </div>
 
                     {/* Desktop heading */}
@@ -70,9 +70,9 @@ const CareerInsightsSection: FC = () => {
                             lg:block
                         "
                     >
-                        Career Insights for the{' '}
+                        What We&apos;re{' '}
                         <span className="text-(--career-insights-section-title-highlight)">
-                            AI-Era Engineer.
+                            Writing About
                         </span>
                     </h2>
 
@@ -88,49 +88,29 @@ const CareerInsightsSection: FC = () => {
                             lg:hidden
                         "
                     >
-                        Career Insights for
+                        What We&apos;re
 
                         <span className="block text-(--career-insights-section-title-highlight)">
-                            AI-Era Engineers
+                            Writing About
                         </span>
                     </h2>
 
-                    {/* Desktop subtitle */}
+                    {/* Subtitle */}
                     <p
                         className="
                             mx-auto
                             mt-4
-                            hidden
                             max-w-220
                             text-[16px]
                             font-medium
                             leading-[1.5]
                             text-(--career-insights-section-subtitle-text)
-                            lg:block
+                            sm:text-[19px]
                             lg:text-[19px]
                         "
                     >
-                        Founder-led talks, expert conversations, and
-                        engineering breakdowns on AI, system design,
-                        interviews, and career growth.
-                    </p>
-
-                    {/* Mobile / tablet subtitle */}
-                    <p
-                        className="
-                            mx-auto
-                            mt-4
-                            max-w-190
-                            text-[16px]
-                            font-medium
-                            leading-[1.5]
-                            text-(--career-insights-section-subtitle-text)
-                            sm:text-[19px]
-                            lg:hidden
-                        "
-                    >
-                        Founder-led talks and engineering breakdowns on AI,
-                        system design, interviews, and career growth.
+                        Hiring, system design, and what&apos;s actually
+                        changing in engineering work.
                     </p>
                 </header>
 
@@ -218,7 +198,7 @@ const CareerInsightsSection: FC = () => {
                             className="h-5 w-5"
                             strokeWidth={1.9}
                         />
-                        <span>Explore Career Desk</span>
+                        <span>See More From the Career Desk</span>
                     </Link>
 
                     <Link

@@ -64,10 +64,10 @@ const CapstoneProofSection: FC = () => {
                             text-(--proof-section-title-text)
                         "
                     >
-                        Finish With Proof You Can
+                        What You Leave
 
                         <span className="block text-(--proof-section-title-highlight)">
-                            Show, Explain, and Defend.
+                            With
                         </span>
                     </h2>
 
@@ -83,10 +83,9 @@ const CapstoneProofSection: FC = () => {
                             sm:text-[19px]
                         "
                     >
-                        Build capstone projects, architecture documents, code
-                        walkthroughs, and mentor-reviewed proof that
-                        demonstrate how you think, build, and communicate as
-                        an engineer.
+                        A capstone with a repository, an architecture
+                        write-up, a recorded walkthrough, and mentor comments
+                        on all of it.
                     </p>
                 </header>
 
@@ -143,7 +142,7 @@ const CapstoneProofSection: FC = () => {
                             className="h-5 w-5"
                             strokeWidth={1.9}
                         />
-                        <span>Explore Capstone Projects</span>
+                        <span>See Example Capstones</span>
                     </Link>
 
                     <a

@@ -1,10 +1,10 @@
 import {
     ArrowDown,
     ArrowRight,
+    Bot,
     CircleCheck,
     CircleX,
     ShieldCheck,
-    Star,
     UserRound,
 } from 'lucide-react';
 import Image from 'next/image';
@@ -70,11 +70,8 @@ const WhyNowSection: FC = () => {
                             lg:text-[50px]
                         '
                     >
-                        The engineering market has changed.
-
-                        <span className='block'>
-                            Execution alone is no longer enough.
-                        </span>
+                        AI Has Already Changed How Many Engineering Teams
+                        Work
                     </h2>
 
                     <p
@@ -90,10 +87,10 @@ const WhyNowSection: FC = () => {
                             lg:text-[19px]
                         '
                     >
-                        AI is making routine coding faster. But companies still
-                        need engineers who can think clearly, design systems,
-                        review AI-generated work, communicate tradeoffs, and
-                        build reliable products.
+                        It can draft an endpoint, write a first pass at
+                        tests, generate documentation, and explain a
+                        library you&apos;ve never touched. Most of that
+                        used to take longer.
                     </p>
                 </div>
 
@@ -159,8 +156,7 @@ const WhyNowSection: FC = () => {
                                         text-(--why-now-section-left-box-title-text)
                                     '
                                 >
-                                    Routine execution is becoming easier to
-                                    automate.
+                                    AI drafts it. You still decide.
                                 </h3>
 
                                 <div
@@ -184,11 +180,10 @@ const WhyNowSection: FC = () => {
                                         text-(--why-now-section-left-box-subtitle-text)
                                     '
                                 >
-                                    Code generation, debugging assistance, and
-                                    repetitive implementation are becoming
-                                    faster with AI. The real gap is shifting to
-                                    thinking, reviewing, designing, and shipping
-                                    with judgment.
+                                    AI can draft an endpoint, a first test,
+                                    or explain a library you&apos;ve never
+                                    touched. It can&apos;t tell you whether
+                                    the answer is right for your system.
                                 </p>
                             </div>
                         </article>
@@ -241,8 +236,7 @@ const WhyNowSection: FC = () => {
                                         text-(--why-now-section-left-box-title-text)
                                     '
                                 >
-                                    Routine execution is becoming easier to
-                                    automate.
+                                    AI drafts it. You still decide.
                                 </h3>
 
                                 <div
@@ -270,9 +264,9 @@ const WhyNowSection: FC = () => {
                                             text-(--why-now-section-left-box-subtitle-text)
                                         '
                                     >
-                                        Code generation, debugging assistance,
-                                        and repetitive implementation are
-                                        becoming faster with AI.
+                                        AI can draft an endpoint, write a
+                                        first pass at tests, and explain a
+                                        library you&apos;ve never touched.
                                     </p>
 
                                     <p
@@ -284,9 +278,8 @@ const WhyNowSection: FC = () => {
                                             text-(--why-now-section-left-box-subtitle-text)
                                         '
                                     >
-                                        The gap is now shifting from who can
-                                        write code to who can think, review,
-                                        design, and ship with judgment.
+                                        It can&apos;t tell you whether the
+                                        answer is right for your system.
                                     </p>
                                 </div>
                             </div>
@@ -323,7 +316,7 @@ const WhyNowSection: FC = () => {
                                         shadow-[0_8px_18px_rgba(1,13,47,0.12)]
                                     '
                                 >
-                                    <UserRound
+                                    <Bot
                                         aria-hidden='true'
                                         className='h-6 w-6'
                                         strokeWidth={2}
@@ -338,7 +331,7 @@ const WhyNowSection: FC = () => {
                                         sm:text-[18px]
                                     '
                                 >
-                                    Execution-Only Engineer
+                                    What AI Handles Well
                                 </h3>
                             </div>
 
@@ -415,7 +408,7 @@ const WhyNowSection: FC = () => {
                                     text-(--why-now-section-right-box-sub-box-middle-upper-text)
                                 '
                             >
-                                Task execution
+                                AI&apos;s first draft
                             </span>
 
                             <ArrowDown
@@ -436,7 +429,7 @@ const WhyNowSection: FC = () => {
                                     text-(--why-now-section-right-box-sub-box-middle-down-text)
                                 '
                             >
-                                Technical judgment
+                                Your judgment call
                             </span>
                         </div>
 
@@ -457,10 +450,10 @@ const WhyNowSection: FC = () => {
                                         shadow-[0_10px_22px_rgba(2,69,250,0.26)]
                                     '
                                 >
-                                    <Star
+                                    <UserRound
                                         aria-hidden='true'
-                                        className='h-6 w-6 fill-white'
-                                        strokeWidth={1.7}
+                                        className='h-6 w-6'
+                                        strokeWidth={2}
                                     />
                                 </div>
 
@@ -472,7 +465,7 @@ const WhyNowSection: FC = () => {
                                         sm:text-[18px]
                                     '
                                 >
-                                    AI-Proof Engineer
+                                    What Still Needs an Engineer
                                 </h3>
                             </div>
 
@@ -572,7 +565,7 @@ const WhyNowSection: FC = () => {
                                             shadow-[0_8px_18px_rgba(1,13,47,0.12)]
                                         '
                                     >
-                                        <UserRound
+                                        <Bot
                                             aria-hidden='true'
                                             className='h-7 w-7'
                                             strokeWidth={2}
@@ -588,7 +581,7 @@ const WhyNowSection: FC = () => {
                                             2xl:text-[17px]
                                         '
                                     >
-                                        Execution-Only Engineer
+                                        What AI Handles Well
                                     </h3>
                                 </div>
 
@@ -677,7 +670,7 @@ const WhyNowSection: FC = () => {
                                     From
 
                                     <span className='block'>
-                                        task execution
+                                        AI&apos;s first draft
                                     </span>
                                 </span>
 
@@ -703,7 +696,7 @@ const WhyNowSection: FC = () => {
                                     to
 
                                     <span className='block'>
-                                        technical judgment
+                                        your judgment call
                                     </span>
                                 </span>
                             </div>
@@ -724,10 +717,10 @@ const WhyNowSection: FC = () => {
                                             shadow-[0_12px_26px_rgba(2,69,250,0.28)]
                                         '
                                     >
-                                        <Star
+                                        <UserRound
                                             aria-hidden='true'
-                                            className='h-7 w-7 fill-white'
-                                            strokeWidth={1.8}
+                                            className='h-7 w-7'
+                                            strokeWidth={2}
                                         />
                                     </div>
 
@@ -740,7 +733,7 @@ const WhyNowSection: FC = () => {
                                             2xl:text-[17px]
                                         '
                                     >
-                                        AI-Proof Engineer
+                                        What Still Needs an Engineer
                                     </h3>
                                 </div>
 
@@ -859,11 +852,13 @@ const WhyNowSection: FC = () => {
                                 lg:text-[17px]
                             '
                         >
-                            This program is designed to move engineers from{' '}
+                            This program is built around what&apos;s still
+                            an engineer&apos;s job:{' '}
                             <span className='text-(--program-outcome-bar-title-middle-text)'>
-                                task execution to technical judgment,
+                                deciding what to build, reviewing what AI
+                                generates,
                             </span>{' '}
-                            AI-assisted engineering, and interview-ready proof.
+                            and proving you can defend it in an interview.
                         </p>
                     </div>
 
@@ -910,7 +905,7 @@ const WhyNowSection: FC = () => {
                                 sm:text-[16px]
                             '
                         >
-                            <span>See How the Program Works</span>
+                            <span>See What the Program Covers</span>
 
                             <ArrowRight
                                 aria-hidden='true'

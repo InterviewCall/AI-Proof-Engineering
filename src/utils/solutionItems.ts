@@ -1,80 +1,93 @@
 import {
     BadgeCheck,
-    BookOpen,
     Brain,
-    FlaskConical,
+    FileCheck2,
     Layers3,
+    MonitorPlay,
+    ScanEye,
     ShieldCheck,
     Sparkles,
     Target,
     UserRound,
+    Users,
 } from 'lucide-react';
 
 import { type CapabilityItem, type ModelItem } from '@/types/solution';
 
 export const oldCourseItems: ModelItem[] = [
     {
-        desktopText: 'Learn topics passively',
-        mobileText: 'Learn topics passively',
-        icon: BookOpen,
+        desktopText: 'Pre-recorded videos, watched at your own pace',
+        mobileText: 'Pre-recorded videos, watched at your own pace',
+        icon: MonitorPlay,
     },
     {
-        desktopText: 'Use AI as a shortcut',
-        mobileText: 'Use AI as a shortcut',
-        icon: Sparkles,
+        desktopText: 'One project, submitted once',
+        mobileText: 'One project, submitted once',
+        icon: FileCheck2,
     },
     {
-        desktopText: 'Prepare for interviews separately',
-        mobileText: 'Prepare for interviews separately',
+        desktopText: 'Interview prep handled as a separate track',
+        mobileText: 'Interview prep handled as a separate track',
         icon: UserRound,
+    },
+    {
+        desktopText: 'AI used to skip the parts that are hard to understand',
+        mobileText: 'AI used to skip the hard parts',
+        icon: Sparkles,
     },
 ];
 
 export const interviewCallItems: ModelItem[] = [
     {
-        desktopText:
-            'Build through labs, mocks, reviews, and mentor feedback',
-        mobileText: 'Labs, mocks, reviews, and mentor feedback',
-        icon: FlaskConical,
+        desktopText: 'Live sessions with a mentor you can ask questions',
+        mobileText: 'Live sessions with a mentor',
+        icon: Users,
     },
     {
-        desktopText:
-            'Use AI with review, debugging, judgment, and product context',
-        mobileText: 'AI with review, debugging, and judgment',
+        desktopText: 'Assignments reviewed and sent back with comments',
+        mobileText: 'Assignments reviewed with comments',
         icon: ShieldCheck,
     },
     {
         desktopText:
-            'Combine fundamentals, system design, AI workflows, capstone proof, and career readiness',
-        mobileText: 'Fundamentals, system design, and capstone proof',
+            'Mock interviews built into the same track as the coursework',
+        mobileText: 'Mock interviews built into the coursework',
         icon: Target,
+    },
+    {
+        desktopText: 'AI output checked and explained, every time',
+        mobileText: 'AI output checked and explained',
+        icon: ScanEye,
     },
 ];
 
 export const capabilities: CapabilityItem[] = [
     {
         title: 'Judgment',
-        desktopDescription: ['Think beyond', 'generated code.'],
-        mobileDescription: 'Think beyond generated code.',
+        desktopDescription: [
+            "Knowing when the AI's answer is wrong,",
+            'and being able to say why.',
+        ],
+        mobileDescription: "Knowing when the AI's answer is wrong.",
         icon: Brain,
     },
     {
         title: 'Context',
         desktopDescription: [
-            'Understand systems, users, and',
-            'tradeoffs.',
+            'Understanding how a change affects',
+            'the rest of the system.',
         ],
-        mobileDescription: 'Understand systems and tradeoffs.',
+        mobileDescription: 'Understanding how a change affects the system.',
         icon: Layers3,
     },
     {
         title: 'Proof',
         desktopDescription: [
-            'Show capability through projects,',
-            'mocks, and reviews.',
+            'Code and documentation someone',
+            'else can open and follow.',
         ],
         mobileDescription:
-            'Show capability through projects and reviews.',
+            'Code and documentation someone else can follow.',
         icon: BadgeCheck,
     },
 ];

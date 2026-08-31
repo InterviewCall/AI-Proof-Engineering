@@ -1,6 +1,7 @@
 import AssessmentBanner from '@/components/AssessmentBanner/AssessmentBanner';
 import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar/Navbar';
+import AlumniSection from '@/components/Sections/Alumni/AlumniSection';
 import BuildProofSection from '@/components/Sections/BuildProof/BuildProofSection';
 import CapstoneProofSection from '@/components/Sections/CapstoneProof/CapstoneProofSection';
 import CareerInsightsSection from '@/components/Sections/CareerInsights/CareerInsightsSection';
@@ -33,6 +34,7 @@ export default function Homepage() {
                 <CapstoneProofSection />
                 <SpecialistsSection />
                 <RealProgressSection />
+                <AlumniSection />
                 <CareerInsightsSection />
                 <ProgramGlanceSection />
                 <BuildProofSection />
