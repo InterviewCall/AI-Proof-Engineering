@@ -61,8 +61,8 @@ const MobileProgressCard: FC<{ proof: MobileProgressProof }> = ({ proof }) => {
                 </h3>
             </div>
 
-            <div className="flex flex-1 items-center justify-end gap-2.5 sm:flex-initial">
-                <div className="min-w-0 max-w-27 text-right">
+            <div className="flex flex-1 items-center justify-end gap-2.5 border-l border-(--progress-section-sidebar-divider) pl-3 sm:flex-initial">
+                <div className="min-w-0 max-w-[58px] text-left">
                     <span
                         className="
                             inline-flex
@@ -97,7 +97,7 @@ const MobileProgressCard: FC<{ proof: MobileProgressProof }> = ({ proof }) => {
                     strokeWidth={2.2}
                 />
 
-                <div className="min-w-0 max-w-27">
+                <div className="min-w-0 max-w-[58px]">
                     <span
                         className="
                             inline-flex
