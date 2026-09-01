@@ -1,144 +1,177 @@
 import { UserRound } from 'lucide-react';
-import { FC } from 'react';
+import type { Specialist } from '@/types/specialists';
 
-import { type Specialist, type SpecialistAccent } from '@/types/specialists';
-
-const avatarStyles: Record<SpecialistAccent, string> = {
-    blue: 'bg-(--specialist-card-blue-bg) text-(--specialist-card-blue-text)',
-    green: 'bg-(--specialist-card-green-bg) text-(--specialist-card-green-text)',
-    purple:
-        'bg-(--specialist-card-purple-bg) text-(--specialist-card-purple-text)',
-    orange:
-        'bg-(--specialist-card-orange-bg) text-(--specialist-card-orange-text)',
+type SpecialistCardProps = {
+    specialist: Specialist;
 };
 
-const badgeStyles: Record<SpecialistAccent, string> = {
-    blue: 'bg-(--specialist-card-blue-text)',
-    green: 'bg-(--specialist-card-green-text)',
-    purple: 'bg-(--specialist-card-purple-text)',
-    orange: 'bg-(--specialist-card-orange-text)',
+const accentStyles = {
+    blue: {
+        iconBg: 'bg-blue-50',
+        icon: 'text-blue-600',
+        number: 'bg-blue-600',
+        line: 'bg-blue-600',
+        tag: 'bg-blue-50 text-blue-700',
+    },
+    green: {
+        iconBg: 'bg-emerald-50',
+        icon: 'text-emerald-600',
+        number: 'bg-emerald-600',
+        line: 'bg-emerald-600',
+        tag: 'bg-emerald-50 text-emerald-700',
+    },
+    purple: {
+        iconBg: 'bg-violet-50',
+        icon: 'text-violet-600',
+        number: 'bg-violet-600',
+        line: 'bg-violet-600',
+        tag: 'bg-violet-50 text-violet-700',
+    },
+    orange: {
+        iconBg: 'bg-orange-50',
+        icon: 'text-orange-600',
+        number: 'bg-orange-500',
+        line: 'bg-orange-500',
+        tag: 'bg-orange-50 text-orange-700',
+    },
 };
 
-const underlineStyles: Record<SpecialistAccent, string> = {
-    blue: 'bg-(--specialist-card-blue-text)',
-    green: 'bg-(--specialist-card-green-text)',
-    purple: 'bg-(--specialist-card-purple-text)',
-    orange: 'bg-(--specialist-card-orange-text)',
-};
+const SpecialistCard = ({ specialist }: SpecialistCardProps) => {
+    const styles = accentStyles[specialist.accent];
 
-const tagStyles: Record<SpecialistAccent, string> = {
-    blue: 'bg-(--specialist-card-blue-bg) text-(--specialist-card-blue-text)',
-    green: 'bg-(--specialist-card-green-bg) text-(--specialist-card-green-text)',
-    purple:
-        'bg-(--specialist-card-purple-bg) text-(--specialist-card-purple-text)',
-    orange:
-        'bg-(--specialist-card-orange-bg) text-(--specialist-card-orange-text)',
-};
-
-const SpecialistCard: FC<{ specialist: Specialist }> = ({ specialist }) => {
     return (
         <article
             className="
+                relative
                 flex
+                min-h-[471px]
+                w-full
                 flex-col
                 items-center
-                rounded-2xl
+                rounded-[17px]
                 border
                 border-(--specialist-card-border)
                 bg-(--specialist-card-bg)
-                p-4
-                text-center
+                px-3
+                pt-5
+                pb-4
             "
         >
-            <div className="relative">
-                <span
-                    className={`
-                        flex
-                        h-14
-                        w-14
-                        items-center
-                        justify-center
-                        rounded-full
-                        ${avatarStyles[specialist.accent]}
-                    `}
-                >
-                    <UserRound
-                        aria-hidden="true"
-                        className="h-7 w-7"
-                        strokeWidth={1.6}
-                    />
-                </span>
+            {/* Mentor avatar */}
+            <div
+                className={`
+                    relative
+                    flex
+                    h-[86px]
+                    w-[86px]
+                    shrink-0
+                    items-center
+                    justify-center
+                    rounded-full
+                    ${styles.iconBg}
+                `}
+            >
+                <UserRound
+                    aria-hidden="true"
+                    className={`h-[48px] w-[48px] ${styles.icon}`}
+                    strokeWidth={1.7}
+                />
 
+                {/* Number */}
                 <span
                     className={`
                         absolute
-                        -bottom-0.5
-                        -right-0.5
+                        -right-1
+                        -bottom-1
                         flex
-                        h-5.5
-                        w-5.5
+                        h-6
+                        w-6
                         items-center
                         justify-center
                         rounded-full
-                        border-2
-                        border-(--specialist-card-bg)
-                        text-[11px]
+                        text-[12px]
                         font-bold
                         text-white
-                        ${badgeStyles[specialist.accent]}
+                        ${styles.number}
                     `}
                 >
                     {specialist.number}
                 </span>
             </div>
 
+            {/* Title */}
             <h3
                 className="
-                    mt-3
-                    text-[14px]
+                    mt-4
+                    min-h-[48px]
+                    w-full
+                    text-center
+                    text-[15px]
                     font-bold
-                    leading-tight
-                    text-(--specialist-card-name)
+                    leading-[1.35]
+                    tracking-[-0.01em]
+                    text-[#0B1B3A]
                 "
             >
                 {specialist.name}
             </h3>
 
-            <span
+            {/* Accent line */}
+            <div
                 className={`
-                    mt-2
+                    mt-3
                     h-1
-                    w-8
+                    w-10
+                    shrink-0
                     rounded-full
-                    ${underlineStyles[specialist.accent]}
+                    ${styles.line}
                 `}
             />
 
+            {/* Description */}
             <p
                 className="
-                    mt-2
-                    text-[12px]
-                    leading-[1.45]
-                    text-(--specialist-card-role)
+                    mt-5
+                    min-h-[96px]
+                    w-full
+                    text-center
+                    text-[13px]
+                    font-medium
+                    leading-[1.55]
+                    text-[#18345F]
                 "
             >
                 {specialist.description}
             </p>
 
-            <div className="mt-3 flex flex-wrap justify-center gap-1.5">
+            {/* Skills */}
+            <div
+                className="
+                    mt-4
+                    flex
+                    w-full
+                    flex-wrap
+                    items-center
+                    justify-center
+                    gap-x-1.5
+                    gap-y-2
+                "
+            >
                 {specialist.tags.map((tag) => (
                     <span
                         key={tag}
                         className={`
                             inline-flex
-                            min-h-6
+                            min-h-7
                             items-center
+                            justify-center
                             rounded-full
-                            px-2.5
+                            px-3
+                            py-1
                             text-[11px]
                             font-semibold
-                            whitespace-nowrap
-                            ${tagStyles[specialist.accent]}
+                            leading-none
+                            ${styles.tag}
                         `}
                     >
                         {tag}

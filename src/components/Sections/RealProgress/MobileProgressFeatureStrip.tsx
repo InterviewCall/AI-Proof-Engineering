@@ -18,15 +18,12 @@ const MobileProgressFeatureStrip: FC = () => {
         <div
             className="
                 flex
-                flex-wrap
-                items-start
-                justify-center
-                gap-x-3
-                gap-y-4
+                items-center
+                justify-between
                 rounded-2xl
                 bg-(--progress-section-mobile-strip-bg)
-                px-5
-                py-5
+                px-4
+                py-4
             "
         >
             {items.map((item, index) => {
@@ -35,12 +32,12 @@ const MobileProgressFeatureStrip: FC = () => {
 
                 return (
                     <Fragment key={item.title}>
-                        <div className="flex items-center gap-2">
+                        <div className="flex min-w-0 flex-1 items-center gap-2">
                             <span
                                 className={`
                                     flex
-                                    h-9
-                                    w-9
+                                    h-10
+                                    w-10
                                     shrink-0
                                     items-center
                                     justify-center
@@ -50,15 +47,15 @@ const MobileProgressFeatureStrip: FC = () => {
                             >
                                 <Icon
                                     aria-hidden="true"
-                                    className="h-4.5 w-4.5"
+                                    className="h-5 w-5"
                                     strokeWidth={1.8}
                                 />
                             </span>
 
                             <span
                                 className="
-                                    text-[13px]
-                                    font-semibold
+                                    text-[12px]
+                                    font-bold
                                     leading-tight
                                     text-(--progress-section-strip-title-text)
                                 "
@@ -71,12 +68,13 @@ const MobileProgressFeatureStrip: FC = () => {
                             <span
                                 aria-hidden="true"
                                 className="
-                                    self-center
-                                    text-(--progress-section-sidebar-eyebrow-text)
+                                    h-8
+                                    w-px
+                                    shrink-0
+                                    bg-(--progress-section-sidebar-divider)
                                 "
-                            >
-                                •
-                            </span>
+                                
+                            />
                         )}
                     </Fragment>
                 );
