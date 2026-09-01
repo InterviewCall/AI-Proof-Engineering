@@ -34,11 +34,11 @@ const LabChecklistCard: FC = () => {
                 </h3>
             </div>
 
-            <div className="mt-4 space-y-3">
+            <div className="mt-3 space-y-2">
                 {labChecklist.map((item) => (
                     <div
                         key={item.label}
-                        className="flex items-center gap-2.5"
+                        className="flex items-center gap-2"
                     >
                         {item.done ? (
                             <CheckCircle2
@@ -73,13 +73,13 @@ const LabChecklistCard: FC = () => {
 
             <div
                 className="
-                    mt-5
+                    mt-3
                     flex
                     items-start
-                    gap-2.5
+                    gap-2
                     rounded-lg
                     bg-(--practice-section-board-bg)
-                    px-3.5
+                    px-2.5
                     py-3
                 "
             >
@@ -91,7 +91,7 @@ const LabChecklistCard: FC = () => {
 
                 <p
                     className="
-                        text-[13px]
+                        text-[12px]
                         leading-[1.4]
                         text-(--practice-section-card-text)
                     "

@@ -83,12 +83,12 @@ const FeatureStrip: FC<FeatureStripProps> = ({ items, compact = false }) => {
                 const Icon = item.icon;
 
                 return (
-                    <div key={item.title} className="flex items-start gap-3">
+                    <div key={item.title} className="flex items-center gap-3">
                         <span
                             className="
                                 flex
-                                h-10.5
-                                w-10.5
+                                h-18
+                                w-18
                                 shrink-0
                                 items-center
                                 justify-center
@@ -101,7 +101,7 @@ const FeatureStrip: FC<FeatureStripProps> = ({ items, compact = false }) => {
                         >
                             <Icon
                                 aria-hidden="true"
-                                className="h-5 w-5"
+                                className="h-9 w-9"
                                 strokeWidth={1.8}
                             />
                         </span>

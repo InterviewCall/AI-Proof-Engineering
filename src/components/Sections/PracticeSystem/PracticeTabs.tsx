@@ -47,8 +47,8 @@ const PracticeTabs: FC<PracticeTabsProps> = ({ activeTabId, onChange }) => {
                             gap-2
                             rounded-xl
                             px-4
-                            text-[14px]
-                            font-semibold
+                            text-[18px]
+                            font-bold
                             whitespace-nowrap
                             transition-colors
                             sm:min-h-14
@@ -62,7 +62,7 @@ const PracticeTabs: FC<PracticeTabsProps> = ({ activeTabId, onChange }) => {
                     >
                         <Icon
                             aria-hidden="true"
-                            className="h-5 w-5"
+                            className="h-8 w-8"
                             strokeWidth={1.8}
                         />
                         <span>{tab.label}</span>

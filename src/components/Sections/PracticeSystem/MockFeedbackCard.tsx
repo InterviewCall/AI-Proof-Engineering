@@ -91,7 +91,7 @@ const MockFeedbackCard: FC = () => {
                     </div>
                 </div>
 
-                <div className="min-w-0 w-full flex-1 space-y-2">
+                <div className="min-w-0 w-full flex-1 space-y-1.5">
                     {mockFeedbackMetrics.map((metric) => {
                         const Icon = metric.icon;
 
@@ -128,10 +128,10 @@ const MockFeedbackCard: FC = () => {
 
             <div
                 className="
-                    mt-5
+                    mt-0
                     flex
                     items-start
-                    gap-2.5
+                    gap-2
                     rounded-lg
                     bg-(--practice-section-board-bg)
                     px-3.5
@@ -146,7 +146,7 @@ const MockFeedbackCard: FC = () => {
 
                 <p
                     className="
-                        text-[13px]
+                        text-[12px]
                         leading-[1.4]
                         text-(--practice-section-card-text)
                     "
@@ -159,7 +159,7 @@ const MockFeedbackCard: FC = () => {
                 href="#practice-system"
                 className="
                     group
-                    mt-3
+                    mt-0
                     inline-flex
                     items-center
                     gap-1.5

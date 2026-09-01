@@ -13,7 +13,7 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
                 border
                 border-(--practice-section-card-border)
                 bg-(--practice-section-card-bg)
-                p-5
+                p-4
             "
         >
             <div className="flex items-center justify-between gap-3">
@@ -54,8 +54,8 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
 
             <h4
                 className="
-                    mt-4
-                    text-[18px]
+                    mt-2
+                    text-[16px]
                     font-semibold
                     leading-tight
                     text-(--practice-section-card-title)
@@ -87,14 +87,14 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
 
             <pre
                 className="
-                    mt-4
+                    mt-2
                     rounded-lg
-                    bg-(--proof-section-code-bg)
-                    p-3.5
+                    bg-white
+                    p-2.5
                     font-mono
-                    text-[11.5px]
-                    leading-[1.75]
-                    text-(--proof-section-code-text)
+                    text-[10px]
+                    leading-[1.4]
+                    text-(--practice-section-card-title)
                 "
             >
                 {task.codeLines.map((line, index) => (
@@ -109,12 +109,12 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
                 ))}
             </pre>
 
-            <div className="mt-4 flex gap-2">
+            <div className="mt-2 flex justify-end gap-2">
                 <button
                     type="button"
                     className="
-                        min-h-10.5
-                        flex-1
+                        min-h-8
+                        px-3
                         cursor-pointer
                         rounded-lg
                         border
@@ -134,8 +134,8 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
                 <button
                     type="button"
                     className="
-                        min-h-10.5
-                        flex-1
+                        min-h-8
+                        px-3
                         cursor-pointer
                         rounded-lg
                         bg-(--button-primary-bg)

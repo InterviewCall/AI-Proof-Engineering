@@ -44,7 +44,7 @@ const PracticeSystemSection: FC = () => {
         >
             <div className="mx-auto w-full max-w-[1365px]">
                 {/* Header */}
-                <header className="mx-auto max-w-[920px] text-center">
+                <header className="mx-auto max-w-[1100px] text-center">
                     <div
                         className="
                             inline-flex
@@ -82,16 +82,15 @@ const PracticeSystemSection: FC = () => {
                             font-bold
                             leading-[1.06]
                             tracking-[-0.04em]
+                            lg:whitespace-nowrap
                             text-[#071536]
                         "
                     >
-                        What You Actually Do{' '}
-                        <span className="block">
-                            Between{' '}
+                        What You Actually Do Between{' '}
                             <span className="text-[#0a53f2]">
                                 Sessions
                             </span>
-                        </span>
+                        
                     </h2>
 
                     <p
@@ -100,7 +99,7 @@ const PracticeSystemSection: FC = () => {
                             mt-4
                             max-w-[850px]
                             text-[15px]
-                            font-medium
+                            font-bold
                             leading-[1.5]
                             text-[#52617d]
                             sm:text-[18px]
@@ -138,7 +137,7 @@ const PracticeSystemSection: FC = () => {
                                 overflow-hidden
                                 rounded-[13px]
                                 bg-white
-                                lg:grid-cols-[340px_minmax(0,1fr)]
+                                lg:grid-cols-[320px_minmax(0,1fr)]
                                 xl:grid-cols-[360px_minmax(0,1fr)]
                             "
                         >
@@ -162,7 +161,7 @@ const PracticeSystemSection: FC = () => {
                                     bg-white
                                     p-4
                                     sm:grid-cols-2
-                                    xl:grid-cols-3
+                                    xl:grid-cols-[1.2fr_0.9fr_1fr]
                                     xl:p-5
                                 "
                             >

@@ -20,11 +20,12 @@ const PracticeLoopPanel: FC = () => {
             <h3
                 className="
                     mt-3
-                    text-[26px]
+                    text-[24px]
                     font-bold
-                    leading-[1.2]
+                    leading-[1.1]
                     tracking-[-1%]
                     text-(--practice-section-card-title)
+                    max-w-[360px]
                     xl:text-[28px]
                 "
             >
@@ -35,6 +36,7 @@ const PracticeLoopPanel: FC = () => {
                 className="
                     mt-3
                     text-[15px]
+                    font-semibold
                     leading-[1.55]
                     text-(--practice-section-card-text)
                 "
@@ -44,7 +46,7 @@ const PracticeLoopPanel: FC = () => {
                 AI-assisted engineering assignments.
             </p>
 
-            <div className="mt-6 space-y-4">
+            <div className="mt-5 space-y-3">
                 {loopBullets.map((bullet) => {
                     const Icon = bullet.icon;
 
@@ -78,7 +80,7 @@ const PracticeLoopPanel: FC = () => {
                             <p
                                 className="
                                     text-[14px]
-                                    font-semibold
+                                    font-bold
                                     leading-[1.3]
                                     text-(--practice-section-card-title)
                                 "
