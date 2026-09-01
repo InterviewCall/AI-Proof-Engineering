@@ -1,41 +1,55 @@
+import {
+    Code2,
+    FolderClosed,
+    MessageSquareCode,
+    Network,
+    Sparkles,
+} from 'lucide-react';
 import { FC } from 'react';
 
 import { mentorshipSystemPoints } from '@/utils/specialistsItems';
 
 const MentorshipSystemPanel: FC = () => {
     return (
-        <div>
-            <span
+        <div className="flex h-full min-w-0 flex-col">
+            {/* Eyebrow */}
+            <p
                 className="
                     text-[13px]
                     font-bold
                     uppercase
-                    tracking-[0.04em]
-                    text-(--specialists-sidebar-eyebrow-text)
+                    tracking-[0.02em]
+                    text-[#0057FF]
                 "
             >
                 Our Mentorship System
-            </span>
+            </p>
 
+            {/* Heading */}
             <h3
                 className="
-                    mt-3
+                    mt-4
+                    max-w-[280px]
                     text-[26px]
                     font-bold
-                    leading-[1.2]
-                    tracking-[-1%]
-                    text-(--specialists-sidebar-title-text)
+                    leading-[1.12]
+                    tracking-[-1.5%]
+                    text-[#0B1B3A]
                 "
             >
-                Guidance Built Around Skill Outcomes
+                Guidance Built Around
+                <span className="block">Skill Outcomes</span>
             </h3>
 
+            {/* Description */}
             <p
                 className="
-                    mt-3
+                    mt-4
+                    max-w-[290px]
                     text-[15px]
+                    font-normal
                     leading-[1.55]
-                    text-(--specialists-sidebar-text)
+                    text-[#18345F]
                 "
             >
                 Mentorship at InterviewCall is structured around the skills
@@ -43,44 +57,64 @@ const MentorshipSystemPanel: FC = () => {
                 work in the AI era.
             </p>
 
-            <div className="mt-6 space-y-4 border-t border-(--specialists-sidebar-divider) pt-6">
-                {mentorshipSystemPoints.map((point) => {
-                    const Icon = point.icon;
+            {/* Divider */}
+            <div
+                className="
+                    mt-4
+                    h-px
+                    w-full
+                    bg-(--specialists-sidebar-divider)
+                "
+            />
+
+            {/* System points */}
+            <div className="mt-1 flex flex-col">
+                {mentorshipSystemPoints.map((item) => {
+                    const Icon = item.icon;
 
                     return (
                         <div
-                            key={point.label}
-                            className="flex items-center gap-3"
+                            key={item.label}
+                            className="
+                                flex
+                                min-h-[38px]
+                                items-center
+                                gap-3
+                                border-b
+                                border-(--specialists-sidebar-divider)
+                                py-1.5
+                            "
                         >
                             <span
                                 className="
                                     flex
-                                    h-9
-                                    w-9
+                                    h-7
+                                    w-7
                                     shrink-0
                                     items-center
                                     justify-center
                                     rounded-full
-                                    bg-(--specialists-sidebar-icon-bg)
-                                    text-(--specialists-sidebar-icon-text)
+                                    bg-(--button-primary-bg)
+                                    text-white
                                 "
                             >
                                 <Icon
                                     aria-hidden="true"
-                                    className="h-4.5 w-4.5"
-                                    strokeWidth={1.9}
+                                    className="h-4 w-4"
+                                    strokeWidth={1.8}
                                 />
                             </span>
 
                             <p
                                 className="
-                                    text-[14px]
+                                    min-w-0
+                                    text-[12px]
                                     font-semibold
-                                    leading-[1.35]
-                                    text-(--specialists-sidebar-title-text)
+                                    leading-[1.3]
+                                    text-[#0B1B3A]
                                 "
                             >
-                                {point.label}
+                                {item.label}
                             </p>
                         </div>
                     );

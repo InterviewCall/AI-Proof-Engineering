@@ -17,21 +17,15 @@ const SpecialistsFeatureStrip: FC = () => {
         <div
             className="
                 grid
-                grid-cols-2
-                gap-x-4
-                gap-y-6
+                grid-cols-5
                 rounded-2xl
                 border
                 border-(--specialists-strip-border)
                 bg-(--specialists-strip-bg)
                 px-5
-                py-6
-                sm:grid-cols-3
-                sm:px-8
-                lg:grid-cols-5
+                py-3
                 lg:divide-x
                 lg:divide-(--specialists-strip-border)
-                lg:py-7
             "
         >
             {specialistFeatureStrip.map((item) => {
@@ -40,7 +34,15 @@ const SpecialistsFeatureStrip: FC = () => {
                 return (
                     <div
                         key={item.title}
-                        className="flex items-start gap-3 px-2 lg:first:pl-0"
+                        className="
+                            flex
+                            min-w-0
+                            items-center
+                            gap-3
+                            px-4
+                            first:pl-0
+                            last:pr-0
+                        "
                     >
                         <span
                             className={`
@@ -66,7 +68,7 @@ const SpecialistsFeatureStrip: FC = () => {
                                 className="
                                     text-[14px]
                                     font-semibold
-                                    leading-tight
+                                    leading-[1.2]
                                     text-(--specialists-strip-title-text)
                                 "
                             >
