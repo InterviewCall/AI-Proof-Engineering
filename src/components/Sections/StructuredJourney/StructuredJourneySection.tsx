@@ -38,17 +38,17 @@ const StructuredJourneySection: FC = () => {
             className="
                 scroll-mt-25
                 px-4
-                py-2
+                py-8
                 sm:px-6
-                sm:py-16
+                sm:py-10
                 lg:px-8
-                lg:py-6
-                xl:px-12
+                lg:py-8
+                xl:px-10
             "
         >
-            <div className="mx-auto w-full max-w-345">
+            <div className="mx-auto w-full max-w-[1297px]">
                 {/* Header */}
-                <header className="mx-auto max-w-290 text-center">
+                <header className="mx-auto max-w-[1100px] text-center">
                     <div
                         className="
                             mx-auto
@@ -81,11 +81,11 @@ const StructuredJourneySection: FC = () => {
 
                     <h2
                         className="
-                            mt-4
+                            mt-3
                             hidden
-                            text-[clamp(3.4rem,5vw,3.625rem)]
+                            text-[clamp(2.5rem,3.4vw,3rem)]
                             font-bold
-                            leading-[1.03]
+                            leading-[1.05]
                             tracking-[-2%]
                             text-(--journey-section-title-text)
                             lg:block
@@ -123,16 +123,15 @@ const StructuredJourneySection: FC = () => {
                     <p
                         className="
                             mx-auto
-                            mt-4
-                            max-w-82
-                            text-[18px]
+                            mt-3
+                            max-w-[850px]
+                            text-[16px]
                             font-medium
-                            leading-[1.32]
-                            tracking-[-5%]
+                            leading-[1.35]
+                            tracking-[-2%]
                             text-(--journey-section-subtitle-text)
-                            sm:text-[22px]
-                            sm:max-w-190
-                            lg:max-w-200
+                            sm:text-[18px]
+                            lg:text-[19px]
                         "
                     >
                         <span className="hidden lg:inline">
@@ -150,13 +149,13 @@ const StructuredJourneySection: FC = () => {
                 {/* Stat cards */}
                 <div
                     className="
-                        mt-7
+                        mt-6
                         grid
                         grid-cols-2
                         gap-2.5
                         sm:gap-3
                         lg:grid-cols-4
-                        lg:gap-5
+                        lg:gap-4
                     "
                 >
                     {journeyStats.map((stat, index) => {
@@ -171,10 +170,10 @@ const StructuredJourneySection: FC = () => {
                                     border
                                     border-(--journey-section-card-border)
                                     bg-(--journey-section-card-bg)
-                                    px-2.5
-                                    py-4
-                                    sm:px-5
-                                    sm:py-5
+                                    px-3
+                                    py-3.5
+                                    sm:px-4
+                                    sm:py-4
                                     ${
                                         hideOnMobile
                                             ? 'hidden lg:flex'
@@ -183,16 +182,16 @@ const StructuredJourneySection: FC = () => {
                                     items-center
                                     gap-2.5
                                     sm:gap-4
-                                    lg:min-h-22
+                                    lg:min-h-[70px]
                                 `}
                             >
                                 <span
                                     className={`
                                         flex
-                                        h-11.5
-                                        w-11.5
-                                        sm:h-15.5
-                                        sm:w-15.5
+                                        h-10
+                                        w-10
+                                        sm:h-12
+                                        sm:w-12
                                         shrink-0
                                         items-center
                                         justify-center
@@ -236,11 +235,11 @@ const StructuredJourneySection: FC = () => {
                                 <div className="min-w-0">
                                     <h3
                                         className="
-                                            text-[16px]
+                                            text-[14px]
                                             font-semibold
                                             leading-[1.2]
                                             text-(--journey-section-card-title)
-                                            sm:text-[19px]
+                                            sm:text-[16px]
                                         "
                                     >
                                         {stat.title}
@@ -249,11 +248,11 @@ const StructuredJourneySection: FC = () => {
                                     <p
                                         className="
                                             mt-1
-                                            text-[13px]
+                                            text-[11px]
                                             font-medium
                                             leading-[1.35]
                                             text-(--journey-section-card-text)
-                                            sm:text-[14px]
+                                            sm:text-[12px]
                                         "
                                     >
                                         {stat.subtitle}
@@ -267,22 +266,22 @@ const StructuredJourneySection: FC = () => {
                 {/* Desktop layout */}
                 <div
                     className="
-                        mt-5
+                        mt-4
                         hidden
-                        gap-5
+                        gap-4
                         lg:grid
-                        lg:grid-cols-[400px_minmax(0,1fr)]
+                        lg:grid-cols-[344px_minmax(0,1fr)]
                     "
                 >
                     {/* Sidebar */}
                     <aside
                         className="
-                            rounded-[14px]
+                            rounded-[10px]
                             border
                             border-(--journey-section-card-border)
                             bg-(--journey-section-card-bg)
-                            px-2
-                            py-4
+                            px-1.5
+                            py-3
                         "
                     >
                         <div className="relative">
@@ -290,7 +289,7 @@ const StructuredJourneySection: FC = () => {
                                 aria-hidden="true"
                                 className="
                                     absolute
-                                    left-9.25
+                                    left-8
                                     top-8
                                     bottom-8
                                     w-0.5
@@ -314,9 +313,9 @@ const StructuredJourneySection: FC = () => {
                                             z-10
                                             grid
                                             cursor-pointer
-                                            min-h-16
+                                            min-h-[58px]
                                             w-full
-                                            grid-cols-[76px_minmax(0,1fr)]
+                                            grid-cols-[64px_minmax(0,1fr)]
                                             items-center
                                             rounded-[10px]
                                             text-left
@@ -332,13 +331,13 @@ const StructuredJourneySection: FC = () => {
                                             className={`
                                                 mx-auto
                                                 flex
-                                                h-10
-                                                w-10
+                                                h-9
+                                                w-9
                                                 items-center
                                                 justify-center
                                                 rounded-full
                                                 border
-                                                text-[15px]
+                                                text-[13px]
                                                 font-semibold
                                                 ${
                                                     isActive
@@ -357,9 +356,9 @@ const StructuredJourneySection: FC = () => {
                                                 items-center
                                                 gap-2
                                                 pr-4
-                                                text-[15px]
+                                                text-[13px]
                                                 font-semibold
-                                                leading-[1.3]
+                                                leading-[1.25]
                                                 ${
                                                     isActive
                                                         ? 'text-(--color-brand-700)'
@@ -404,13 +403,13 @@ const StructuredJourneySection: FC = () => {
                 {/* Mobile layout */}
                 <div
                     className="
-                        mt-4
-                        rounded-[14px]
+                        mt-3
+                        rounded-[12px]
                         border
                         border-(--journey-section-card-border)
                         bg-(--journey-section-card-bg)
-                        px-3
-                        py-4
+                        px-2.5
+                        py-3
                         lg:hidden
                     "
                 >
@@ -457,7 +456,7 @@ const StructuredJourneySection: FC = () => {
                                             cursor-pointer
                                             min-h-14.5
                                             w-full
-                                            grid-cols-[76px_minmax(0,1fr)_24px]
+                                            grid-cols-[60px_minmax(0,1fr)_24px]
                                             items-center
                                             text-left
                                         "
@@ -486,7 +485,7 @@ const StructuredJourneySection: FC = () => {
 
                                         <span
                                             className="
-                                                text-[17px]
+                                                text-[15px]
                                                 font-semibold
                                                 leading-tight
                                                 text-(--journey-section-card-title)
