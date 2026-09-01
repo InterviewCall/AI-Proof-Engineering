@@ -509,8 +509,8 @@ const CareerPathSection: FC = () => {
                         gap-5
                         rounded-[14px]
                         border
-                        border-(--career-path-card-border)
-                        bg-[#DBE6FB]
+                        border-[#DBE6FB]
+                        bg-[#F4F7FD]
                         px-5
                         py-5
                         sm:px-7

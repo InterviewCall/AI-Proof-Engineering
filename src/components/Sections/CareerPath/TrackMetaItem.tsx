@@ -17,8 +17,8 @@ const TrackMetaItem: FC<TrackMetaItemProps> = ({
                 overflow-hidden
                 rounded-[7px]
                 border
-                border-(--color-brand-300)
-                bg-[#F6F9FD]
+                border-[#DBE6FB]
+                bg-[#F4F7FD]
                 text-(--career-path-card-title)
                 ${
                     compact
