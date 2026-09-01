@@ -20,15 +20,16 @@ const ProgressSidebarPanel: FC = () => {
             <h3
                 className="
                     mt-3
+        
                     text-[26px]
                     font-bold
-                    leading-[1.2]
+                    leading-[1.12]
                     tracking-[-1%]
                     text-(--progress-section-sidebar-title-text)
                 "
             >
-                From Learning Claims to{' '}
-                <span className="text-(--progress-section-sidebar-highlight-text)">
+                From Learning Claims to
+                <span className="block text-(--progress-section-sidebar-highlight-text)">
                     Visible Proof
                 </span>
             </h3>
@@ -36,7 +37,8 @@ const ProgressSidebarPanel: FC = () => {
             <p
                 className="
                     mt-3
-                    text-[15px]
+                    text-[14px]
+                    font-medium
                     leading-[1.55]
                     text-(--progress-section-sidebar-text)
                 "
@@ -46,20 +48,20 @@ const ProgressSidebarPanel: FC = () => {
                 clearly.
             </p>
 
-            <div className="mt-6 space-y-4 border-t border-(--progress-section-sidebar-divider) pt-6">
+            <div className="mt-5 space-y-0 border-t border-(--progress-section-sidebar-divider) pt-4">
                 {progressSidebarPoints.map((point) => {
                     const Icon = point.icon;
 
                     return (
                         <div
                             key={point.label}
-                            className="flex items-center gap-3"
+                            className="flex items-center gap-3 border-b border-(--progress-section-sidebar-divider) py-2 last:border-b-0"
                         >
                             <span
                                 className="
                                     flex
-                                    h-9
-                                    w-9
+                                    h-10
+                                    w-10
                                     shrink-0
                                     items-center
                                     justify-center
@@ -70,7 +72,7 @@ const ProgressSidebarPanel: FC = () => {
                             >
                                 <Icon
                                     aria-hidden="true"
-                                    className="h-4.5 w-4.5"
+                                    className="h-5 w-5"
                                     strokeWidth={1.9}
                                 />
                             </span>
@@ -78,8 +80,9 @@ const ProgressSidebarPanel: FC = () => {
                             <p
                                 className="
                                     text-[14px]
-                                    font-semibold
-                                    leading-[1.35]
+                                    font-bold
+                                    leading-[1.25]
+                                    whitespace-nowrap
                                     text-(--progress-section-sidebar-title-text)
                                 "
                             >

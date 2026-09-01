@@ -12,55 +12,80 @@ const iconAccentStyles: Record<SpecialistAccent, string> = {
 
 const MobileSpecialistsFeatureStrip: FC = () => {
     const items = mobileSpecialistFeatureStrip;
-    const lastIndex = items.length - 1;
 
     return (
         <div
             className="
                 grid
                 grid-cols-2
-                gap-y-5
-                rounded-2xl
+                overflow-hidden
+                rounded-[17px]
+                border
+                border-(--specialist-card-border)
                 bg-(--specialists-mobile-strip-bg)
-                px-5
-                py-6
                 sm:grid-cols-4
-                sm:gap-x-4
-                sm:gap-y-0
             "
         >
             {items.map((item, index) => {
                 const Icon = item.icon;
-                const isRightColumnBase = index % 2 === 1;
-                const isLastItem = index === lastIndex;
+
+                const isRightColumn = index % 2 === 1;
+                const isLastRow =
+                    index >= items.length - 2;
 
                 return (
                     <div
                         key={item.title}
                         className={`
                             flex
-                            flex-col
+                            min-w-0
                             items-center
-                            gap-2
-                            border-(--specialists-mobile-strip-divider)
+                            justify-center
+                            gap-2.5
                             px-3
+                            py-4
                             text-center
-                            ${isRightColumnBase ? '' : 'border-r'}
-                            ${isLastItem ? 'sm:border-r-0' : 'sm:border-r'}
+
+                            sm:min-h-[88px]
+                            sm:px-4
+                            sm:py-4
+
+                            ${
+                                !isRightColumn
+                                    ? 'border-r border-(--specialists-mobile-strip-divider)'
+                                    : ''
+                            }
+
+                            ${
+                                !isLastRow
+                                    ? 'border-b border-(--specialists-mobile-strip-divider)'
+                                    : ''
+                            }
+
+                            sm:border-b-0
+                            sm:border-r
+                            sm:last:border-r-0
                         `}
                     >
                         <Icon
                             aria-hidden="true"
-                            className={`h-6 w-6 ${iconAccentStyles[item.accent]}`}
+                            className={`
+                                h-6
+                                w-6
+                                shrink-0
+                                ${iconAccentStyles[item.accent]}
+                            `}
                             strokeWidth={1.9}
                         />
 
                         <span
                             className="
-                                text-[13px]
+                                min-w-0
+                                text-[12px]
                                 font-semibold
-                                leading-tight
+                                leading-[1.3]
                                 text-(--specialists-strip-title-text)
+                                sm:text-[13px]
                             "
                         >
                             {item.title}

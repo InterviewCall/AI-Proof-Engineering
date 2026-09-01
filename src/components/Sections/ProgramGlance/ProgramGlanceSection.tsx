@@ -217,7 +217,7 @@ const ProgramGlanceSection: FC = () => {
                 <div className="mt-8 lg:hidden">
                     <MobileProgramOverviewPanel />
 
-                    <div className="mt-5 grid grid-cols-2 gap-3">
+                    <div className="mt-5  grid grid-cols-2 gap-3">
                         {mobileGlanceInfoCards.map((card) => (
                             <MobileProgramInfoCard key={card.title} card={card} />
                         ))}
@@ -233,6 +233,7 @@ const ProgramGlanceSection: FC = () => {
                             bg-(--program-glance-pill-bg)
                             px-4
                             py-3.5
+                            bg-[#F5F8FC]
                         "
                     >
                         <span

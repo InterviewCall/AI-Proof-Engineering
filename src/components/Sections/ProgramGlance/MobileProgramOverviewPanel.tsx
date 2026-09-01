@@ -13,7 +13,7 @@ const MobileProgramOverviewPanel: FC = () => {
                 border
                 border-(--program-glance-main-card-border)
                 bg-(--program-glance-main-card-bg)
-                p-5
+                p-3
                 sm:p-7
             "
         >
@@ -28,7 +28,7 @@ const MobileProgramOverviewPanel: FC = () => {
 
             <h3
                 className="
-                    max-w-70
+                    max-w-60
                     text-[22px]
                     font-bold
                     leading-[1.2]
@@ -43,9 +43,10 @@ const MobileProgramOverviewPanel: FC = () => {
             <p
                 className="
                     mt-0.5
+                    mb-2
                     text-[10px]
                     font-medium
-                    leading-[1.8]
+                    leading-[2]
                     tracking-[-2%]
                     text-[#46D2FD]
                 "
@@ -53,7 +54,7 @@ const MobileProgramOverviewPanel: FC = () => {
                 Skills. Practice Feedback. Proof.
             </p>
 
-            <span
+            {/* <span
                 className="
                     mt-3
                     block
@@ -62,7 +63,7 @@ const MobileProgramOverviewPanel: FC = () => {
                     rounded-full
                     bg-(--program-glance-main-card-highlight)
                 "
-            />
+            /> */}
 
           { /*  <p
                 className="

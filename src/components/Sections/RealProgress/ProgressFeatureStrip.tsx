@@ -39,13 +39,13 @@ const ProgressFeatureStrip: FC = () => {
                 return (
                     <div
                         key={item.title}
-                        className="flex items-start gap-3 px-2 lg:first:pl-0"
+                        className="flex items-center gap-3 px-2 lg:first:pl-0"
                     >
                         <span
                             className={`
                                 flex
-                                h-11
-                                w-11
+                                h-20
+                                w-20
                                 shrink-0
                                 items-center
                                 justify-center
@@ -55,7 +55,7 @@ const ProgressFeatureStrip: FC = () => {
                         >
                             <Icon
                                 aria-hidden="true"
-                                className="h-5.5 w-5.5"
+                                className="h-10 w-10"
                                 strokeWidth={1.8}
                             />
                         </span>
