@@ -1,5 +1,5 @@
 import { FC } from 'react';
-
+import { Users } from 'lucide-react';
 import { alumniMiniStories } from '@/utils/alumniItems';
 
 import AlumniCompanyBar from './AlumniCompanyBar';
@@ -28,14 +28,29 @@ const AlumniSection: FC = () => {
                 <header className="mx-auto max-w-220 text-center">
                     <p
                         className="
+                            inline-flex
+                            min-h-9.5
+                            items-center
+                            justify-center
+                            gap-2
+                            rounded-full
+                            border
+                            border-(--color-brand-200)
+                            bg-(--career-insights-section-eyebrow-bg)
+                            px-5
                             text-[13px]
-                            font-bold
+                            font-semibold
                             uppercase
-                            tracking-[0.08em]
-                            text-(--alumni-section-eyebrow-text)
-                            sm:text-[14px]
+                            tracking-[-1%]
+                            text-(--career-insights-section-eyebrow-text)
+                            sm:text-[15px]
                         "
                     >
+                        <Users
+                            aria-hidden="true"
+                            className="h-4.5 w-4.5"
+                            strokeWidth={1.9}
+                        />
                         Alumni &amp; Career Journeys
                     </p>
 

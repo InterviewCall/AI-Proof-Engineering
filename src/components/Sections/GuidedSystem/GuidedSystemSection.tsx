@@ -179,36 +179,36 @@ const GuidedSystemSection: FC = () => {
                 scroll-mt-25
                 bg-(--guided-system-section-bg)
                 px-4
-                py-14
+                py-12
                 sm:px-6
-                sm:py-16
+                sm:py-14
                 lg:px-8
-                lg:py-20
-                xl:px-12
+                lg:py-16
+                xl:px-4
             "
         >
-            <div className="mx-auto w-full max-w-345">
+            <div className="mx-auto w-full max-w-[1430px]">
                 {/* Header */}
-                <header className="mx-auto max-w-280 text-center">
+                <header className="mx-auto max-w-[900px] text-center">
                     <div
                         className="
                             mx-auto
                             inline-flex
-                            min-h-10
+                            min-h-[50px]
                             items-center
                             justify-center
-                            gap-3
+                            gap-2.5
                             rounded-full
                             border
-                            border-(--guided-system-section-eyebrow-text)
-                            bg-(--guided-system-section-eyebrow-bg)
-                            px-6
-                            text-[16px]
+                            border-[#AFC7FF]
+                            bg-white
+                            px-7
+                            text-[18px]
                             font-semibold
                             uppercase
-                            tracking-[-2%]
-                            leading-[1.58]
-                            text-(--guided-system-section-eyebrow-text)
+                            tracking-[-0.02em]
+                            leading-none
+                            text-[#0757F5]
                             sm:text-[20px]
                             lg:text-[20px]
                         "
@@ -216,7 +216,7 @@ const GuidedSystemSection: FC = () => {
                         <PlayCircle
                             aria-hidden="true"
                             className="h-5 w-5"
-                            strokeWidth={1.8}
+                            strokeWidth={2}
                         />
 
                         <span>How It Works</span>
@@ -225,19 +225,20 @@ const GuidedSystemSection: FC = () => {
                     <h2
                         className="
                             mt-5
-                            text-[clamp(3rem,10vw,4.5rem)]
-                            font-bold
-                            leading-[1.03]
-                            tracking-[-2%]
-                            text-(--guided-system-section-title-text)
-                            lg:text-[clamp(4rem,5.4vw,4.2rem)]
+                            text-[42px]
+                            font-[800]
+                            leading-[1.08]
+                            tracking-[-0.035em]
+                            text-[#0B1B3F]
+                            sm:text-[50px]
+                            lg:text-[58px]
                         "
                     >
                         <span className="hidden lg:inline">
                             How You&apos;ll Move
                             <span className="block">
                                 Through{' '}
-                                <span className="text-(--guided-system-section-title-highlight)">
+                                <span className="text-[#0052FF]">
                                     It
                                 </span>
                             </span>
@@ -245,7 +246,7 @@ const GuidedSystemSection: FC = () => {
 
                         <span className="lg:hidden">
                             How You&apos;ll Move
-                            <span className="block text-(--guided-system-section-title-highlight)">
+                            <span className="block text-[#0052FF]">
                                 Through It
                             </span>
                         </span>
@@ -255,12 +256,14 @@ const GuidedSystemSection: FC = () => {
                         className="
                             mx-auto
                             mt-5
-                            max-w-212.5
-                            text-[20px]
+                            max-w-[820px]
+                            text-[17px]
                             font-semibold
-                            leading-[1.32]
+                            leading-[1.45]
+                            tracking-[-0.02em]
                             text-(--guided-system-section-subtitle-text)
-                            lg:text-[22px]
+                            sm:text-[19px]
+                            lg:text-[21px]
                         "
                     >
                         Every learner goes through the same four stages, in
@@ -271,9 +274,9 @@ const GuidedSystemSection: FC = () => {
                 {/* Desktop / laptop step cards */}
                 <div
                     className="
-                        mt-8
+                        mt-7
                         hidden
-                        gap-5
+                        gap-[48px]
                         lg:grid
                         lg:grid-cols-4
                     "
@@ -286,31 +289,35 @@ const GuidedSystemSection: FC = () => {
                                 key={step.id}
                                 className="
                                     relative
-                                    min-h-87.5
+                                    flex
+                                    flex-col
+                                    min-h-[392px]
                                     rounded-[18px]
                                     border
-                                    border-(--guided-system-step-border)
-                                    bg-(--guided-system-step-bg)
-                                    px-4
+                                    border-[#D9E4FF]
+                                    bg-white
+                                    px-3
                                     pb-4
-                                    pt-4
+                                    pt-3
                                 "
                             >
                                 <span
                                     className="
                                         absolute
-                                        left-4
-                                        top-4
+                                        left-3
+                                        top-3
                                         flex
-                                        h-13.5
-                                        w-13.5
+                                        h-[58px]
+                                        w-[58px]
                                         items-center
                                         justify-center
                                         rounded-full
-                                        bg-(--guided-system-step-number-bg)
+                                        border
+                                        border-[#D9E4FF]
+                                        bg-[#EEF4FF]
                                         text-[24px]
                                         font-semibold
-                                        text-(--guided-system-step-number-text)
+                                        text-[#0757F5]
                                     "
                                 >
                                     {step.id}
@@ -322,15 +329,15 @@ const GuidedSystemSection: FC = () => {
                                             aria-hidden="true"
                                             className="
                                                 absolute
-                                                -right-7.5
+                                                -right-[52px]
                                                 top-1/2
                                                 z-10
                                                 hidden
                                                 h-px
-                                                w-11
+                                                w-[52px]
                                                 border-t
                                                 border-dashed
-                                                border-(--guided-system-step-connector)
+                                                border-[#8FB0FF]
                                                 lg:block
                                             "
                                         />
@@ -339,7 +346,7 @@ const GuidedSystemSection: FC = () => {
                                             aria-hidden="true"
                                             className="
                                                 absolute
-                                                -right-10.5
+                                                -right-[49px]
                                                 top-1/2
                                                 z-20
                                                 hidden
@@ -350,51 +357,52 @@ const GuidedSystemSection: FC = () => {
                                                 justify-center
                                                 rounded-full
                                                 border
-                                                border-(--guided-system-step-border)
+                                                border-[#D9E4FF]
                                                 bg-white
-                                                text-(--guided-system-step-icon)
+                                                text-[#0757F5]
                                                 lg:flex
                                             "
                                         >
                                             <ArrowRight
                                                 className="h-5 w-5"
-                                                strokeWidth={1.8}
+                                                strokeWidth={2.2}
                                             />
                                         </span>
                                     </>
                                 )}
 
-                                <div className="flex justify-center pt-6">
+                                <div className="flex justify-center pt-[34px]">
                                     <span
                                         className="
                                             flex
-                                            h-20.5
-                                            w-20.5
+                                            h-[90px]
+                                            w-[90px]
                                             items-center
                                             justify-center
                                             rounded-[14px]
                                             border
-                                            border-(--guided-system-step-border)
-                                            bg-(--guided-system-step-number-bg)
-                                            text-(--guided-system-step-icon)
+                                            border-[#D9E4FF]
+                                            bg-[#F5F8FF]
+                                            text-[#0757F5]
                                         "
                                     >
                                         <Icon
                                             aria-hidden="true"
-                                            className="h-12 w-12"
-                                            strokeWidth={1.7}
+                                            className="h-[52px] w-[52px]"
+                                            strokeWidth={1.8}
                                         />
                                     </span>
                                 </div>
 
                                 <h3
                                     className="
-                                        mt-5
+                                        mt-4
                                         text-center
                                         text-[20px]
                                         font-bold
-                                        leading-tight
-                                        text-(--guided-system-step-title)
+                                        leading-[1.2]
+                                        tracking-[-0.02em]
+                                        text-[#102454]
                                     "
                                 >
                                     {step.title}
@@ -403,29 +411,43 @@ const GuidedSystemSection: FC = () => {
                                 <p
                                     className="
                                         mx-auto
-                                        mt-4
-                                        max-w-67.5
+                                        mt-3
+                                        max-w-[270px]
                                         text-center
                                         text-[15px]
                                         font-medium
                                         leading-[1.6]
-                                        text-(--guided-system-step-text)
+                                        text-[#465272]
                                     "
                                 >
                                     {step.desktopDescription}
                                 </p>
 
+                                {/*
+                                    FIX: was a horizontal flex row of icon+label pairs.
+                                    With 4 items (e.g. "Assignments", "Reviews") the slot
+                                    became too narrow for the label's single-word width,
+                                    text couldn't shrink/wrap, and it overflowed into the
+                                    next item causing visual overlap.
+
+                                    Now: equal-width CSS grid columns (one per item),
+                                    icon stacked ABOVE a centered, word-breakable label.
+                                    Every label gets a fixed, non-overlapping column no
+                                    matter how many items or how long the words are.
+                                */}
                                 <div
                                     className="
-                                        mt-6
+                                        mt-auto
                                         grid
-                                        min-h-17
-                                        items-center
-                                        rounded-lg
+                                        min-h-[77px]
+                                        w-full
+                                        items-stretch
+                                        rounded-[10px]
                                         border
-                                        border-(--guided-system-step-border)
-                                        bg-(--guided-system-tool-bar-bg)
-                                        px-2
+                                        border-[#D5E2FF]
+                                        bg-[#F7F9FE]
+                                        px-1
+                                        py-2
                                     "
                                     style={{
                                         gridTemplateColumns: `repeat(${step.desktopItems.length}, minmax(0, 1fr))`,
@@ -434,49 +456,76 @@ const GuidedSystemSection: FC = () => {
                                     {step.desktopItems.map(
                                         (item, itemIndex) => {
                                             const ItemIcon = item.icon;
+                                            const isLast =
+                                                itemIndex ===
+                                                step.desktopItems.length - 1;
 
                                             return (
                                                 <div
                                                     key={item.label}
-                                                    className={`
+                                                    className="
+                                                        relative
                                                         flex
-                                                        h-full
+                                                        min-w-0
                                                         flex-col
                                                         items-center
                                                         justify-center
                                                         gap-1
-                                                        px-2
+                                                        px-1
                                                         text-center
-                                                        ${
-                                                            itemIndex <
-                                                            step.desktopItems
-                                                                .length -
-                                                                1
-                                                                ? 'border-r border-(--guided-system-tool-bar-border)'
-                                                                : ''
-                                                        }
-                                                    `}
+                                                    "
                                                 >
                                                     <ItemIcon
                                                         aria-hidden="true"
                                                         className="
-                                                            h-6
-                                                            w-6
-                                                            text-(--guided-system-tool-icon)
+                                                            h-5
+                                                            w-5
+                                                            shrink-0
+                                                            text-[#0757F5]
                                                         "
-                                                        strokeWidth={1.8}
+                                                        strokeWidth={2}
                                                     />
 
                                                     <span
                                                         className="
-                                                            text-[11px]
+                                                            w-full
+                                                            break-words
+                                                            text-[10.5px]
                                                             font-semibold
-                                                            leading-[1.15]
-                                                            text-(--guided-system-tool-text)
+                                                            leading-[1.2]
+                                                            text-[#111A35]
                                                         "
                                                     >
                                                         {item.label}
                                                     </span>
+
+                                                    {!isLast && (
+                                                        <span
+                                                            aria-hidden="true"
+                                                            className="
+                                                                absolute
+                                                                -right-[1px]
+                                                                top-1/2
+                                                                h-[38px]
+                                                                w-px
+                                                                -translate-y-1/2
+                                                                bg-[#DCE7FF]
+                                                            "
+                                                        >
+                                                            <span
+                                                                className="
+                                                                    absolute
+                                                                    -right-[4px]
+                                                                    top-1/2
+                                                                    h-1.5
+                                                                    w-1.5
+                                                                    -translate-y-1/2
+                                                                    rounded-full
+                                                                    bg-[#0757F5]
+                                                                "
+                                                            />
+                                                        </span>
+                                                    )}
                                                 </div>
                                             );
                                         },
@@ -652,34 +701,35 @@ const GuidedSystemSection: FC = () => {
                     className="
                         mt-7
                         hidden
-                        rounded-xl
+                        min-h-[152px]
+                        rounded-[10px]
                         border
-                        border-(--guided-system-tool-bar-border)
-                        bg-(--guided-system-tool-bar-bg)
+                        border-[#D5E2FF]
+                        bg-[#F7F9FE]
                         px-5
                         py-4
                         lg:grid
-                        lg:grid-cols-[290px_minmax(0,1fr)]
-                        xl:grid-cols-[360px_minmax(0,1fr)]
+                        lg:grid-cols-[350px_minmax(0,1fr)]
+                        xl:grid-cols-[370px_minmax(0,1fr)]
                     "
                 >
                     <div className="flex items-center gap-5">
                         <span
                             className="
                                 flex
-                                h-19
-                                w-19
+                                h-20
+                                w-20
                                 shrink-0
                                 items-center
                                 justify-center
-                                rounded-xl
-                                bg-(--button-primary-bg)
+                                rounded-[14px]
+                                bg-[#0757F5]
                                 text-white
                             "
                         >
                             <Settings
                                 aria-hidden="true"
-                                className="h-12 w-12"
+                                className="h-11 w-11"
                                 strokeWidth={1.7}
                             />
                         </span>
@@ -690,7 +740,7 @@ const GuidedSystemSection: FC = () => {
                                     text-[20px]
                                     font-bold
                                     leading-tight
-                                    text-(--guided-system-step-title)
+                                    text-[#102454]
                                 "
                             >
                                 The InterviewCall
@@ -702,11 +752,11 @@ const GuidedSystemSection: FC = () => {
                             <p
                                 className="
                                     mt-2
-                                    max-w-60
+                                    max-w-[220px]
                                     text-[15px]
                                     font-medium
                                     leading-[1.4]
-                                    text-(--guided-system-step-text)
+                                    text-[#465272]
                                 "
                             >
                                 A continuous cycle of improvement and readiness.
@@ -730,26 +780,26 @@ const GuidedSystemSection: FC = () => {
                                         ${isLast ? '' : 'flex-1'}
                                     `}
                                 >
-                                    <div className="flex w-19.5 shrink-0 flex-col items-center text-center">
+                                    <div className="flex w-[86px] shrink-0 flex-col items-center text-center">
                                         <span
                                             className="
                                                 flex
-                                                h-15.5
-                                                w-15.5
+                                                h-[72px]
+                                                w-[72px]
                                                 shrink-0
                                                 items-center
                                                 justify-center
                                                 rounded-full
                                                 border
-                                                border-(--guided-system-step-border)
+                                                border-[#D9E4FF]
                                                 bg-white
-                                                text-(--guided-system-step-icon)
+                                                text-[#0757F5]
                                             "
                                         >
                                             <Icon
                                                 aria-hidden="true"
                                                 className="h-9 w-9"
-                                                strokeWidth={1.6}
+                                                strokeWidth={1.8}
                                             />
                                         </span>
 
@@ -758,8 +808,8 @@ const GuidedSystemSection: FC = () => {
                                                 mt-2
                                                 text-[12px]
                                                 font-semibold
-                                                leading-tight
-                                                text-(--guided-system-step-title)
+                                                leading-[1.25]
+                                                text-[#102454]
                                             "
                                         >
                                             {item.label}
@@ -768,17 +818,28 @@ const GuidedSystemSection: FC = () => {
 
                                     {!isLast && (
                                         <span
-                                            aria-hidden="true"
-                                            className="
-                                                mt-7.75
-                                                h-px
-                                                min-w-4
-                                                flex-1
-                                                border-t
-                                                border-dashed
-                                                border-(--guided-system-step-connector)
-                                            "
-                                        />
+                                                    aria-hidden="true"
+                                                    className="
+                                                        relative
+                                                        mt-9
+                                                        h-px
+                                                        min-w-5
+                                                        flex-1
+                                                        border-t-2
+                                                        border-dashed
+                                                        border-[#0757F5]
+                                                        after:absolute
+                                                        after:-right-[2px]
+                                                        after:-top-[4px]
+                                                        after:h-0
+                                                        after:w-0
+                                                        after:content-['']
+                                                        after:border-y-[4px]
+                                                        after:border-y-transparent
+                                                        after:border-l-[6px]
+                                                        after:border-l-[#0757F5]
+                                                    "
+                                                />
                                     )}
                                 </div>
                             );
@@ -864,10 +925,9 @@ const GuidedSystemSection: FC = () => {
                         mx-auto
                         mt-6
                         grid
-                        max-w-180
+                        max-w-[735px]
                         gap-3
-                        lg:mt-7
-                        lg:max-w-175
+                        lg:mt-6
                         lg:grid-cols-[1.2fr_1fr]
                         lg:gap-6
                     "

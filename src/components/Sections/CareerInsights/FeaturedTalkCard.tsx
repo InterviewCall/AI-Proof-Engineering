@@ -95,7 +95,10 @@ const FeaturedTalkCard: FC = () => {
                 <p
                     className="
                         mt-4
-                        max-w-67
+                        w-full
+                        max-w-full
+                        sm:max-w-80
+                        lg:max-w-67
                         text-[15px]
                         leading-[1.6]
                         text-(--career-insights-video-muted-text)
@@ -173,7 +176,9 @@ const FeaturedTalkCard: FC = () => {
                                     px-3
                                     text-[12px]
                                     font-semibold
+                                    text-[#A2C5EC]
                                     text-(--career-insights-video-tag-text)
+
                                 "
                             >
                                 {tag}

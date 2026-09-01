@@ -17,13 +17,13 @@ const HeroSection: FC = () => {
                 overflow-hidden
                 bg-(--hero-section-bg)
                 px-4
-                py-6
+                py-5
                 sm:px-6
-                sm:py-8
+                sm:py-6
                 lg:px-8
-                lg:py-10
+                lg:py-7
                 xl:px-10
-                xl:py-12
+                xl:py-8
             "
         >
             <div
@@ -57,7 +57,7 @@ const HeroSection: FC = () => {
                     <div
                         className="
                             mx-auto
-                            mb-6
+                            mb-4
                             inline-flex
                             min-h-9.5
                             items-center
@@ -114,7 +114,7 @@ const HeroSection: FC = () => {
                         <span
                             className="
                                 block
-                                text-[clamp(2.65rem,7.8vw,4.2rem)]
+                                text-[clamp(2rem,9vw,2.8rem)]
                                 font-bold
                                 tracking-[-3%]
                                 text-(--hero-section-title-one-text)
@@ -127,7 +127,7 @@ const HeroSection: FC = () => {
 
                         <span
                             className="
-                                mt-2
+                            mt-2
                             block
                             bg-clip-text
                             text-[clamp(2.55rem,7.5vw,4rem)]
@@ -174,15 +174,15 @@ const HeroSection: FC = () => {
                             mt-4
                             block
                             max-w-155
-                            text-[17px]
+                            text-[15px]
                             leading-[142%]
                             tracking-[-2%]
                             text-(--hero-section-subtitle-text)
                             max-md:hidden
-                            sm:text-[19px]
+                            sm:text-[17px]
                             lg:mx-0
-                            lg:text-[17px]
-                            xl:text-[18px]
+                            lg:text-[16px]
+                            xl:text-[17px]
                             xl:leading-[1.65]
                         "
                     >
@@ -220,7 +220,7 @@ const HeroSection: FC = () => {
                     <div
                         className="
                             mx-auto
-                            mt-5
+                            mt-4
                             flex
                             w-full
                             max-w-142.5
@@ -257,12 +257,12 @@ const HeroSection: FC = () => {
                                 focus-visible:outline-none
                                 focus-visible:ring-4
                                 focus-visible:ring-(--focus-ring-color)
-                                sm:min-h-16
-                                sm:text-[18px]
+                                sm:min-h-14
+                                sm:text-[16px]
                                 lg:w-auto
-                                lg:min-w-65
+                                lg:min-w-60
                                 lg:px-6
-                                xl:min-w-70
+                                xl:min-w-65
                                 xl:px-8
                             "
                             style={{
@@ -388,7 +388,7 @@ const HeroSection: FC = () => {
                 {/* =====================================================
                     RIGHT VISUAL
                 ====================================================== */}
-                <div className="mx-auto w-full max-w-[720px]">
+                <div className="mx-auto w-full max-w-[810px]">
                     <div
                         className="
                             relative
@@ -433,14 +433,15 @@ const HeroSection: FC = () => {
                                 sm:px-[6%]
                             "
                         >
-                            <div className="max-w-[58%] sm:max-w-[46%]">
+                            <div className="max-w-[52%] sm:max-w-[55%] lg:max-w-[58%]">
                                 <h2
                                     className="
-                                        text-[34px]
+                                        text-[20px]
                                         font-semibold
-                                        leading-[1.35]
+                                        leading-[1.2]
+                                        tracking-[-0.025em]
+                                        sm:text-[25px]
                                         lg:text-[34px]
-                                        tracking-[-4%]
                                     "
                                 >
                                     <span
@@ -478,10 +479,11 @@ const HeroSection: FC = () => {
                                 >
                                     <p
                                         className="
-                                            text-[24px]
+                                            text-[15px]
                                             font-semibold
                                             leading-[1.35]
                                             tracking-[-4%]
+                                            sm:text-[18px]
                                             lg:text-[24px]
                                         "
                                     >
@@ -489,10 +491,11 @@ const HeroSection: FC = () => {
                                     </p>
                                     <p
                                         className="
-                                            text-[22px]
+                                            text-[13px]
                                             font-normal
                                             leading-[1.35]
                                             tracking-[-6%]
+                                            sm:text-[16px]
                                             lg:text-[22px]
                                         "
                                     >
@@ -500,11 +503,12 @@ const HeroSection: FC = () => {
                                     </p>
                                     <p
                                         className="
-                                            text-[20px]
+                                            text-[12px]
                                             font-normal
                                             leading-[1.35]
                                             tracking-[-2%]
                                             text-[#D0CFD1]
+                                            sm:text-[15px]
                                             lg:text-[20px]
                                         "
                                     >
@@ -518,12 +522,12 @@ const HeroSection: FC = () => {
                     {/* Mobile and tablet curriculum download */}
                     <div
                         className="
-                            mt-4
+                            mt-3
                             border-b
                             border-(--hero-section-download-divider)
-                            pb-4
-                            sm:mt-5
-                            sm:pb-5
+                            pb-3
+                            sm:mt-4
+                            sm:pb-4
                             lg:hidden
                         "
                     >
