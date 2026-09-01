@@ -10,6 +10,7 @@ const MobileFeaturedTalkCard: FC = () => {
             className="
                 relative
                 isolate
+                min-h-[294px]
                 overflow-hidden
                 rounded-2xl
                 border
@@ -62,7 +63,7 @@ const MobileFeaturedTalkCard: FC = () => {
             <h3
                 className="
                     mt-4
-                    max-w-70
+                    max-w-75
                     text-[24px]
                     font-bold
                     leading-[1.2]
@@ -86,8 +87,8 @@ const MobileFeaturedTalkCard: FC = () => {
 
             <p
                 className="
-                    mt-4
-                    max-w-70
+                    mt-2
+                    max-w-28
                     text-[14px]
                     leading-[1.6]
                     text-(--career-insights-video-muted-text)
@@ -100,10 +101,15 @@ const MobileFeaturedTalkCard: FC = () => {
                 type="button"
                 aria-label="Play featured career insight video"
                 className="
-                    mt-8
+                    absolute
+                    top-1/2
+                    left-1/2
                     flex
                     h-14
                     w-14
+                    shrink-0
+                    -translate-x-1/2
+                    -translate-y-1/2
                     cursor-pointer
                     items-center
                     justify-center
@@ -122,7 +128,7 @@ const MobileFeaturedTalkCard: FC = () => {
                 />
             </button>
 
-            <div className="mt-8 flex items-center gap-2">
+            <div className="mt-3 flex items-center gap-2">
                 <Clock
                     aria-hidden="true"
                     className="h-4 w-4 text-(--career-insights-video-muted-text)"

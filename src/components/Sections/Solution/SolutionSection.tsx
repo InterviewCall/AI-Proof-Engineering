@@ -25,22 +25,22 @@ const SolutionSection: FC = () => {
                 overflow-hidden
                 bg-(--solution-section-bg)
                 px-5
-                py-14
-                sm:px-7
-                sm:py-16
-                lg:px-10
-                lg:py-20
-                xl:px-14
-                xl:py-24
+                py-12
+                sm:px-6
+                sm:py-14
+                lg:px-8
+                lg:py-16
+                xl:px-10
+                xl:py-20
             "
         >
-            <div className="mx-auto w-full max-w-345">
+            <div className="mx-auto w-full max-w-280">
                 {/* =====================================================
                     SECTION HEADER
                 ====================================================== */}
                 <header
                     className="
-                        max-w-265
+                        max-w-230
                         text-left
                         lg:mx-auto
                         lg:text-center
@@ -50,18 +50,18 @@ const SolutionSection: FC = () => {
                     <div
                         className="
                             hidden
-                            min-h-9.5
+                            min-h-7
                             items-center
                             justify-center
                             rounded-full
                             border
                             border-(--solution-section-header-border)
                             bg-(--solution-section-header-bg)
-                            px-8
-                            text-[20px]
+                            px-5
+                            text-[12px]
                             font-medium
                             uppercase
-                            tracking-[-2%]
+                            tracking-[0.08em]
                             text-(--solution-section-header-text)
                             lg:inline-flex
                         "
@@ -89,10 +89,10 @@ const SolutionSection: FC = () => {
                         className="
                             mt-4
                             hidden
-                            text-[clamp(4rem,6.2vw,5.125rem)]
+                            text-[clamp(3.5rem,5vw,4.5rem)]
                             font-semibold
-                            leading-[0.94]
-                            tracking-[1%]
+                            leading-[1]
+                            tracking-[-0.02em]
                             text-(--solution-section-title-text)
                             lg:block
                         "
@@ -104,10 +104,10 @@ const SolutionSection: FC = () => {
                     <h2
                         className="
                             mt-4
-                            text-[clamp(2.5rem,10vw,4rem)]
+                            text-[clamp(2.4rem,9vw,3.5rem)]
                             font-bold
-                            leading-[1.11]
-                            tracking-[-1%]
+                            leading-[1.05]
+                            tracking-[-0.02em]
                             text-(--solution-section-title-text)
                             lg:hidden
                         "
@@ -119,13 +119,13 @@ const SolutionSection: FC = () => {
                     <p
                         className="
                             mx-auto
-                            mt-5
+                            mt-4
                             hidden
-                            max-w-240
-                            text-[22px]
-                            font-semibold
-                            leading-normal
-                            tracking-[1%]
+                            max-w-195
+                            text-[16px]
+                            font-medium
+                            leading-[1.5]
+                            tracking-normal
                             text-center
                             text-(--solution-section-subtitle-text)
                             lg:block
@@ -158,16 +158,16 @@ const SolutionSection: FC = () => {
                 ====================================================== */}
                 <div
                     className="
-                        mt-10
+                        mt-8
                         hidden
                         overflow-hidden
-                        rounded-2xl
+                        rounded-xl
                         border
                         border-(--solution-section-different-box-border)
                         bg-(--solution-section-different-box-bg)
-                        px-6
+                        px-4
                         pb-4
-                        pt-5
+                        pt-4
                         lg:block
                     "
                 >
@@ -175,19 +175,19 @@ const SolutionSection: FC = () => {
                     <div
                         className="
                             grid
-                            grid-cols-[minmax(0,1fr)_110px_minmax(0,1.08fr)]
+                            grid-cols-[minmax(0,1fr)_80px_minmax(0,1fr)]
                             items-center
-                            gap-5
-                            px-5
-                            pb-4
+                            gap-4
+                            px-4
+                            pb-3
                         "
                     >
                         <h3
                             className="
                                 text-center
-                                text-[22px]
+                                text-[14px]
                                 font-semibold
-                                leading-[1.34]
+                                leading-[1.3]
                                 uppercase
                                 tracking-[2%]
                                 text-(--solution-section-different-box-left-title)
@@ -201,9 +201,9 @@ const SolutionSection: FC = () => {
                         <h3
                             className="
                                 text-center
-                                text-[22px]
+                                text-[14px]
                                 font-semibold
-                                leading-[1.34]
+                                leading-[1.3]
                                 uppercase
                                 tracking-[2%]
                                 text-(--solution-section-different-box-right-title)
@@ -225,31 +225,31 @@ const SolutionSection: FC = () => {
                                     key={oldItem.desktopText}
                                     className="
                                         grid
-                                        grid-cols-[minmax(0,1fr)_110px_minmax(0,1.08fr)]
+                                        grid-cols-[minmax(0,1fr)_80px_minmax(0,1fr)]
                                         items-center
-                                        gap-5
+                                        gap-4
                                     "
                                 >
                                     {/* Old model row */}
                                     <div
                                         className="
                                             flex
-                                            min-h-21
+                                            min-h-[64px]
                                             items-center
-                                            gap-6
-                                            rounded-xl
+                                            gap-4
+                                            rounded-lg
                                             border
                                             border-(--solution-section-different-box-left-point-border)
                                             bg-(--solution-section-different-box-left-point-bg)
-                                            px-5
-                                            py-4
+                                            px-4
+                                            py-3
                                         "
                                     >
                                         <span
                                             className="
                                                 flex
-                                                h-14.5
-                                                w-14.5
+                                                h-11
+                                                w-11
                                                 shrink-0
                                                 items-center
                                                 justify-center
@@ -262,17 +262,17 @@ const SolutionSection: FC = () => {
                                         >
                                             <OldIcon
                                                 aria-hidden="true"
-                                                className="h-8 w-8"
+                                                className="h-8 w-6"
                                                 strokeWidth={1.6}
                                             />
                                         </span>
 
                                         <p
                                             className="
-                                                text-[22px]
+                                                text-[15px]
                                                 font-semibold
-                                                leading-[1.80]
-                                                tracking-[-1%]
+                                                leading-[1.35]
+                                                tracking-[-0.01em]
                                                 text-(--solution-section-different-box-left-point-text)
                                             "
                                         >
@@ -291,8 +291,8 @@ const SolutionSection: FC = () => {
                                         <span
                                             className="
                                                 flex
-                                                h-15
-                                                w-15
+                                                h-11
+                                                w-11
                                                 items-center
                                                 justify-center
                                                 rounded-full
@@ -304,7 +304,7 @@ const SolutionSection: FC = () => {
                                         >
                                             <ArrowRight
                                                 aria-hidden="true"
-                                                className="h-8 w-8"
+                                                className="h-8 w-5"
                                                 strokeWidth={1.7}
                                             />
                                         </span>
@@ -314,22 +314,22 @@ const SolutionSection: FC = () => {
                                     <div
                                         className="
                                             flex
-                                            min-h-21
+                                            min-h-[64px]
                                             items-center
-                                            gap-6
-                                            rounded-xl
+                                            gap-4
+                                            rounded-lg
                                             border
                                             border-(--solution-section-different-box-right-point-border)
                                             bg-(--solution-section-different-box-right-point-bg)
-                                            px-5
-                                            py-4
+                                            px-4
+                                            py-3
                                         "
                                     >
                                         <span
                                             className="
                                                 flex
-                                                h-14.5
-                                                w-14.5
+                                                h-11
+                                                w-11
                                                 shrink-0
                                                 items-center
                                                 justify-center
@@ -342,17 +342,17 @@ const SolutionSection: FC = () => {
                                         >
                                             <NewIcon
                                                 aria-hidden="true"
-                                                className="h-8 w-8"
+                                                className="h-6 w-6"
                                                 strokeWidth={1.7}
                                             />
                                         </span>
 
                                         <p
                                             className="
-                                                text-[22px]
+                                                text-[15px]
                                                 font-semibold
-                                                leading-[1.40]
-                                                tracking-[-1%]
+                                                leading-[1.35]
+                                                tracking-[-0.01em]
                                                 text-(--solution-section-different-box-right-point-text)
                                             "
                                         >
@@ -367,16 +367,16 @@ const SolutionSection: FC = () => {
                     {/* Transformation footer */}
                     <div
                         className="
-                            mt-4
+                            mt-3
                             flex
                             items-center
                             justify-center
-                            gap-6
-                            text-[17px]
+                            gap-4
+                            text-[10px]
                             font-semibold
                             uppercase
-                            leading-[1.34]
-                            tracking-[7%]
+                            leading-[1.3]
+                            tracking-[0.1em]
                         "
                     >
                         <span className="text-(--solution-section-different-box-footer-from-text)">
@@ -386,8 +386,8 @@ const SolutionSection: FC = () => {
                         <ArrowRight
                             aria-hidden="true"
                             className="
-                                h-6
-                                w-6
+                                h-5
+                                w-5
                                 text-(--solution-section-different-box-footer-from-arrow)
                             "
                             strokeWidth={1.8}
@@ -611,10 +611,10 @@ const SolutionSection: FC = () => {
                 ====================================================== */}
                 <div
                     className="
-                        mt-4
+                        mt-3
                         hidden
                         grid-cols-3
-                        gap-4
+                        gap-3
                         lg:grid
                     "
                 >
@@ -626,22 +626,22 @@ const SolutionSection: FC = () => {
                                 key={capability.title}
                                 className="
                                     flex
-                                    min-h-29
+                                    min-h-[88px]
                                     items-center
-                                    gap-6
-                                    rounded-xl
+                                    gap-4
+                                    rounded-lg
                                     border
                                     border-(--solution-section-different-box-border)
                                     bg-(--solution-section-different-box-bg)
-                                    px-6
-                                    py-5
+                                    px-4
+                                    py-4
                                 "
                             >
                                 <Icon
                                     aria-hidden="true"
                                     className="
-                                        h-14.5
-                                        w-14.5
+                                        h-11
+                                        w-11
                                         shrink-0
                                         text-(--solution-section-feature-icon-color)
                                     "
@@ -651,7 +651,7 @@ const SolutionSection: FC = () => {
                                 <div>
                                     <h3
                                         className="
-                                            text-[24px]
+                                            text-[17px]
                                             font-semibold
                                             text-(--solution-section-feature-title)
                                             tracking-[2%]
@@ -664,8 +664,8 @@ const SolutionSection: FC = () => {
                                     <p
                                         className="
                                             mt-1
-                                            text-[20px]
-                                            leading-[1.35]
+                                            text-[13px]
+                                            leading-[1.4]
                                             text-(--solution-section-feature-text)
                                             tracking-[-1%]
                                         "
@@ -772,31 +772,32 @@ const SolutionSection: FC = () => {
                 ====================================================== */}
                 <div
                     className="
-                        mt-4
+                        mt-3
                         border
                         border-(--solution-section-different-box-border)
                         bg-(--solution-section-different-box-bg)
                         max-lg:bg-[#051024]
-                        p-5
-                        sm:p-7
+                        p-3
+                        sm:p-4
                         lg:grid
-                        lg:grid-cols-[minmax(0,1fr)_360px]
+                        lg:grid-cols-[minmax(0,1fr)_300px]
                         lg:items-center
-                        lg:gap-8
-                        lg:rounded-xl
-                        lg:px-7
-                        lg:py-5
-                        xl:grid-cols-[minmax(0,1fr)_410px]
-                        xl:gap-10
-                        xl:px-8
+                        lg:gap-4
+                        lg:rounded-lg
+                        lg:px-4
+                        lg:py-4
+                        xl:grid-cols-[minmax(0,1fr)_320px]
+                        xl:gap-5
+                        xl:px-5
                     "
                 >
                     <div
                         className="
                             flex
                             items-start
-                            gap-5
+                            gap-3
                             lg:items-center
+                            lg:gap-4
                         "
                     >
                         {/* Mobile icon */}
@@ -804,11 +805,13 @@ const SolutionSection: FC = () => {
                             aria-hidden="true"
                             className="
                                 mt-1
-                                h-12
-                                w-12
+                                h-9
+                                w-9
                                 shrink-0
                                 text-(--solution-section-feature-icon-color)
                                 lg:hidden
+                                sm:h-10
+                                sm:w-10
                             "
                             strokeWidth={1.5}
                         />
@@ -818,8 +821,8 @@ const SolutionSection: FC = () => {
                             aria-hidden="true"
                             className="
                                 hidden
-                                h-20.5
-                                w-20.5
+                                h-11
+                                w-11
                                 shrink-0
                                 text-(--solution-section-feature-icon-color)
                                 lg:block
@@ -831,19 +834,19 @@ const SolutionSection: FC = () => {
                             className="
                                 lg:border-l
                                 lg:border-(--solution-section-different-box-divider)
-                                lg:pl-7
-                                xl:pl-8
+                                lg:pl-4
+                                xl:pl-5
                             "
                         >
                             <h3
                                 className="
-                                    text-[22px]
+                                    text-[17px]
                                     font-semibold
-                                    leading-[0.94]
+                                    leading-[1.2]
                                     text-(--solution-section-title-text)
-                                    lg:text-[28px]
-                                    xl:text-[28px]
                                     tracking-normal
+                                    lg:text-[17px]
+                                    xl:text-[18px]
                                 "
                             >
                                 AI can write code.
@@ -852,15 +855,15 @@ const SolutionSection: FC = () => {
                             <p
                                 className="
                                     mt-1
-                                    text-[20px]
+                                    text-[13px]
                                     font-medium
-                                    leading-[1.28]
+                                    leading-[1.4]
                                     text-(--solution-section-title-text-end)
+                                    tracking-normal
                                     lg:max-w-155
-                                    lg:text-[26px]
-                                    xl:max-w-167.5
-                                    xl:text-[26px]
-                                    tracking-[1%]
+                                    lg:text-[13px]
+                                    xl:max-w-160
+                                    xl:text-[14px]
                                 "
                             >
                                 It still can&apos;t tell you whether the
@@ -873,18 +876,18 @@ const SolutionSection: FC = () => {
                         href="#career-path"
                         className="
                             group
-                            mt-6
+                            mt-4
                             inline-flex
-                            min-h-14
+                            min-h-11
                             w-full
                             items-center
                             justify-center
-                            gap-4
+                            gap-2
                             rounded-[7px]
                             bg-(--solution-section-button-bg)
-                            px-6
+                            px-4
                             text-center
-                            text-[16px]
+                            text-[13px]
                             font-medium
                             text-(--solution-section-button-text)
                             transition-all
@@ -894,12 +897,14 @@ const SolutionSection: FC = () => {
                             focus-visible:outline-none
                             focus-visible:ring-4
                             focus-visible:ring-(--focus-ring-color)
-                            sm:text-[18px]
+                            sm:mt-0
+                            sm:min-h-12
+                            sm:text-[14px]
                             lg:mt-0
-                            lg:min-h-15
-                            lg:text-[20px]
-                            xl:min-h-16
-                            xl:text-[20px]
+                            lg:min-h-12
+                            lg:text-[14px]
+                            xl:min-h-13
+                            xl:text-[15px]
                         "
                     >
                         <span>See How the Program Works</span>
@@ -907,8 +912,8 @@ const SolutionSection: FC = () => {
                         <ArrowRight
                             aria-hidden="true"
                             className="
-                                h-6
-                                w-6
+                                h-5
+                                w-5
                                 shrink-0
                                 transition-transform
                                 duration-200

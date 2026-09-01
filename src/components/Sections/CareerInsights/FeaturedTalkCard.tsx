@@ -31,7 +31,7 @@ const FeaturedTalkCard: FC = () => {
                 fill
                 aria-hidden="true"
                 sizes="(max-width: 1024px) 100vw, 700px"
-                className="-z-10 object-cover"
+                className="-z-10 object-cover object-top"
             />
 
             <div
@@ -69,19 +69,19 @@ const FeaturedTalkCard: FC = () => {
                 <h3
                     className="
                         mt-4
-                        max-w-100
+                        max-w-90
                         text-[28px]
                         font-bold
                         leading-[1.2]
                         tracking-[-1%]
                         text-(--career-insights-video-text)
-                        sm:text-[32px]
+                        sm:text-[30px]
                     "
                 >
                     {featuredTalk.title}
                 </h3>
 
-                <span
+                {/* <span
                     className="
                         mt-4
                         block
@@ -90,12 +90,12 @@ const FeaturedTalkCard: FC = () => {
                         rounded-full
                         bg-(--career-insights-video-accent-bar)
                     "
-                />
+                /> */}
 
                 <p
                     className="
                         mt-4
-                        max-w-90
+                        max-w-67
                         text-[15px]
                         leading-[1.6]
                         text-(--career-insights-video-muted-text)
@@ -111,11 +111,12 @@ const FeaturedTalkCard: FC = () => {
                 className="
                     absolute
                     top-1/2
-                    right-8
+                    left-1/2
                     flex
                     h-16
                     w-16
                     shrink-0
+                    -translate-x-1/2
                     -translate-y-1/2
                     cursor-pointer
                     items-center

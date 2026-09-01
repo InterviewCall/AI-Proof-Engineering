@@ -10,7 +10,6 @@ import {
     mobileFeatureStrip,
     practiceTaskByTab,
 } from '@/utils/practiceSystemItems';
-
 import FeatureStrip from './FeatureStrip';
 import LabChecklistCard from './LabChecklistCard';
 import MentorReviewCard from './MentorReviewCard';
@@ -23,7 +22,8 @@ import PracticeTaskCard from './PracticeTaskCard';
 import ReadinessProgressCard from './ReadinessProgressCard';
 
 const PracticeSystemSection: FC = () => {
-    const [activeTabId, setActiveTabId] = useState<PracticeTabId>('practice');
+    const [activeTabId, setActiveTabId] =
+        useState<PracticeTabId>('practice');
 
     const activeTask = practiceTaskByTab[activeTabId];
 
@@ -32,6 +32,7 @@ const PracticeSystemSection: FC = () => {
             id="practice-system"
             className="
                 scroll-mt-25
+                bg-white
                 px-4
                 py-14
                 sm:px-6
@@ -41,90 +42,68 @@ const PracticeSystemSection: FC = () => {
                 xl:px-12
             "
         >
-            <div className="mx-auto w-full max-w-345">
+            <div className="mx-auto w-full max-w-[1365px]">
                 {/* Header */}
-                <header className="mx-auto max-w-260 text-center">
+                <header className="mx-auto max-w-[920px] text-center">
                     <div
                         className="
                             inline-flex
-                            min-h-9.5
+                            min-h-9
                             items-center
                             justify-center
                             gap-2
                             rounded-full
                             border
-                            border-(--practice-section-board-border)
+                            border-[#cbdcff]
                             bg-white
                             px-5
-                            text-[13px]
+                            text-[12px]
                             font-semibold
                             uppercase
-                            tracking-[-1%]
-                            text-(--practice-section-eyebrow-text)
-                            sm:text-[15px]
+                            tracking-[0.02em]
+                            text-[#0a53f2]
+                            shadow-[0_1px_2px_rgba(15,23,42,0.03)]
+                            sm:text-[14px]
                         "
                     >
                         <Settings2
                             aria-hidden="true"
-                            className="h-4.5 w-4.5"
+                            className="h-4 w-4"
                             strokeWidth={1.8}
                         />
                         <span>Practice, Labs, Mocks, Reviews</span>
                     </div>
 
-                    {/* Desktop heading */}
+                    {/* Keep existing text exactly unchanged */}
                     <h2
                         className="
                             mt-4
-                            hidden
-                            text-[clamp(2.75rem,5.5vw,3.75rem)]
+                            text-[clamp(2.5rem,5.5vw,3.75rem)]
                             font-bold
-                            leading-[1.1]
-                            tracking-[-2%]
-                            text-(--practice-section-title-text)
-                            lg:block
+                            leading-[1.06]
+                            tracking-[-0.04em]
+                            text-[#071536]
                         "
                     >
                         What You Actually Do{' '}
                         <span className="block">
                             Between{' '}
-                            <span className="text-(--practice-section-title-highlight)">
+                            <span className="text-[#0a53f2]">
                                 Sessions
                             </span>
                         </span>
                     </h2>
 
-                    {/* Mobile / tablet heading */}
-                    <h2
-                        className="
-                            mt-4
-                            text-[clamp(2.5rem,7.5vw,3.75rem)]
-                            font-bold
-                            leading-[1.06]
-                            tracking-[-2%]
-                            text-(--practice-section-title-text)
-                            lg:hidden
-                        "
-                    >
-                        What You Actually Do
-                        <span className="block text-(--practice-section-title-highlight)">
-                            Between Sessions
-                        </span>
-                    </h2>
-
-                    {/* Subtitle */}
                     <p
                         className="
                             mx-auto
                             mt-4
-                            max-w-190
-                            text-[16px]
+                            max-w-[850px]
+                            text-[15px]
                             font-medium
                             leading-[1.5]
-                            text-(--practice-section-subtitle-text)
-                            sm:text-[19px]
-                            lg:max-w-220
-                            lg:text-[19px]
+                            text-[#52617d]
+                            sm:text-[18px]
                         "
                     >
                         Every phase comes with something to solve, implement,
@@ -132,7 +111,7 @@ const PracticeSystemSection: FC = () => {
                     </p>
                 </header>
 
-                {/* Tabs */}
+                {/* Tabs + board */}
                 <div className="mt-8">
                     <div className="hidden lg:block">
                         <PracticeTabs
@@ -145,43 +124,52 @@ const PracticeSystemSection: FC = () => {
                     <div
                         className="
                             hidden
-                            rounded-b-2xl
+                            overflow-hidden
+                            rounded-[14px]
                             border
-                            border-t-0
-                            border-(--practice-section-board-border)
-                            bg-(--practice-section-board-bg)
-                            p-4
+                            border-[#dce6fa]
+                            bg-white
                             lg:block
-                            xl:p-6
                         "
                     >
                         <div
                             className="
                                 grid
-                                gap-4
-                                rounded-2xl
-                                border
-                                border-(--practice-section-board-border)
+                                overflow-hidden
+                                rounded-[13px]
                                 bg-white
-                                lg:grid-cols-[300px_minmax(0,1fr)]
-                                xl:grid-cols-[340px_minmax(0,1fr)]
+                                lg:grid-cols-[340px_minmax(0,1fr)]
+                                xl:grid-cols-[360px_minmax(0,1fr)]
                             "
                         >
-                            <PracticeLoopPanel />
+                            {/* Left practice-loop panel */}
+                            <div
+                                className="
+                                    border-r
+                                    border-[#dce6fa]
+                                    bg-white
+                                "
+                            >
+                                <PracticeLoopPanel />
+                            </div>
 
+                            {/* Right cards */}
                             <div
                                 className="
                                     grid
                                     grid-cols-1
-                                    gap-5
+                                    gap-3
+                                    bg-white
                                     p-4
                                     sm:grid-cols-2
                                     xl:grid-cols-3
-                                    xl:p-6
+                                    xl:p-5
                                 "
                             >
                                 <PracticeTaskCard task={activeTask} />
+
                                 <LabChecklistCard />
+
                                 <MockFeedbackCard />
 
                                 <div className="xl:col-span-1">
@@ -194,7 +182,8 @@ const PracticeSystemSection: FC = () => {
                             </div>
                         </div>
 
-                        <div className="mt-6">
+                        {/* Feature strip */}
+                        <div className="border-t border-[#e2eafd] px-5 py-4">
                             <FeatureStrip items={desktopFeatureStrip} />
                         </div>
                     </div>
@@ -203,23 +192,37 @@ const PracticeSystemSection: FC = () => {
                     <div
                         className="
                             space-y-4
-                            rounded-2xl
+                            rounded-[12px]
                             border
-                            border-(--practice-section-board-border)
-                            bg-(--practice-section-board-bg)
+                            border-[#dce6fa]
+                            bg-white
                             p-4
                             sm:p-5
                             lg:hidden
                         "
                     >
                         <MobileLoopCard />
+
                         <MobileSummaryCards />
-                        <FeatureStrip items={mobileFeatureStrip} compact />
+
+                        <FeatureStrip
+                            items={mobileFeatureStrip}
+                            compact
+                        />
                     </div>
                 </div>
 
                 {/* CTA */}
-                <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
+                <div
+                    className="
+                        mt-6
+                        flex
+                        flex-col
+                        gap-3
+                        sm:flex-row
+                        sm:justify-center
+                    "
+                >
                     <Link
                         href="#specialists"
                         className="
@@ -229,20 +232,21 @@ const PracticeSystemSection: FC = () => {
                             items-center
                             justify-center
                             gap-3
-                            rounded-lg
-                            bg-(--button-primary-bg)
+                            rounded-[6px]
+                            bg-[#0a53f2]
                             px-7
                             text-center
                             text-[16px]
                             font-semibold
-                            text-(--button-primary-text)
+                            text-white
+                            shadow-[0_8px_20px_rgba(10,83,242,0.12)]
                             transition-all
                             duration-200
                             hover:-translate-y-0.5
-                            hover:bg-(--button-primary-bg-hover)
+                            hover:bg-[#0847d4]
                             focus-visible:outline-none
                             focus-visible:ring-4
-                            focus-visible:ring-(--focus-ring-color)
+                            focus-visible:ring-[#0a53f2]/20
                         "
                     >
                         <CircleArrowRight
@@ -262,20 +266,20 @@ const PracticeSystemSection: FC = () => {
                             items-center
                             justify-center
                             gap-3
-                            rounded-lg
+                            rounded-[6px]
                             border
-                            border-(--practice-section-card-border)
+                            border-[#cbd8f0]
                             bg-white
                             px-7
                             text-center
                             text-[16px]
                             font-semibold
-                            text-(--practice-section-card-title)
+                            text-[#0a53f2]
                             transition-colors
-                            hover:bg-(--practice-section-board-bg)
+                            hover:bg-[#f6f8fd]
                             focus-visible:outline-none
                             focus-visible:ring-4
-                            focus-visible:ring-(--focus-ring-color)
+                            focus-visible:ring-[#0a53f2]/20
                         "
                     >
                         <Download
