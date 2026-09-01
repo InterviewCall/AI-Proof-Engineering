@@ -25,6 +25,9 @@ const ProgressProofCard: FC<{ proof: ProgressProof }> = ({ proof }) => {
     return (
         <article
             className="
+                flex
+                flex-col
+                items-center
                 rounded-2xl
                 border
                 border-(--progress-section-card-border)
@@ -35,21 +38,22 @@ const ProgressProofCard: FC<{ proof: ProgressProof }> = ({ proof }) => {
             <span
                 className={`
                     flex
-                    h-14
-                    w-14
+                    h-28
+                    w-28
                     items-center
                     justify-center
                     rounded-full
                     ${iconAccentStyles[proof.accent]}
                 `}
             >
-                <Icon aria-hidden="true" className="h-7 w-7" strokeWidth={1.7} />
+                <Icon aria-hidden="true" className="h-17 w-17" strokeWidth={1.7} />
             </span>
 
             <h3
                 className="
                     mt-3
-                    text-[16px]
+                    text-[17px]
+                    whitespace-nowrap
                     font-bold
                     leading-tight
                     text-(--progress-section-card-title)
@@ -62,12 +66,27 @@ const ProgressProofCard: FC<{ proof: ProgressProof }> = ({ proof }) => {
             <div
                 className="
                     mt-4
+                    w-full
+                    min-h-[118px]
+                    overflow-hidden
                     rounded-xl
-                    bg-(--progress-section-before-bg)
-                    p-3.5
+                    border
+                    border-(--progress-section-card-border)
+                    bg-white  
                 "
             >
-                <div className="flex items-center justify-between gap-2">
+            <div
+                className="
+                    flex
+                    h-10
+                    items-center
+                    justify-between
+                    gap-2
+                    bg-(--progress-section-before-bg)
+                    px-3.5
+                    
+                "
+                >
                     <span
                         className="
                             text-[13px]
@@ -87,7 +106,10 @@ const ProgressProofCard: FC<{ proof: ProgressProof }> = ({ proof }) => {
 
                 <p
                     className="
-                        mt-1.5
+                        px-4
+                        pt-3
+                        pb-4
+                        
                         text-[13px]
                         leading-[1.4]
                         text-(--progress-section-card-text)
@@ -97,7 +119,7 @@ const ProgressProofCard: FC<{ proof: ProgressProof }> = ({ proof }) => {
                 </p>
             </div>
 
-            <div className="flex justify-center py-2">
+            <div className="flex h-10 items-center justify-center">
                 <ArrowDown
                     aria-hidden="true"
                     className="h-4 w-4 text-(--progress-section-before-text)"
@@ -108,12 +130,25 @@ const ProgressProofCard: FC<{ proof: ProgressProof }> = ({ proof }) => {
             {/* After */}
             <div
                 className="
+                    w-full
+                    min-h-[118px]
+                    overflow-hidden
                     rounded-xl
-                    bg-(--progress-section-after-bg)
-                    p-3.5
+                    bg-white
+                    border
+                    border-(--progress-section-card-border)
                 "
             >
-                <div className="flex items-center justify-between gap-2">
+                <div className="
+                    flex
+                    h-10
+                    items-center
+                    justify-between
+                    gap-2
+                    bg-(--progress-section-after-bg)
+                    px-3.5
+                    
+                ">
                     <span
                         className="
                             text-[13px]
@@ -133,7 +168,9 @@ const ProgressProofCard: FC<{ proof: ProgressProof }> = ({ proof }) => {
 
                 <p
                     className="
-                        mt-1.5
+                        px-4
+                        pt-3
+                        pb-4
                         text-[13px]
                         leading-[1.4]
                         text-(--progress-section-card-text)
@@ -148,16 +185,18 @@ const ProgressProofCard: FC<{ proof: ProgressProof }> = ({ proof }) => {
                 className={`
                     mt-4
                     flex
-                    items-start
+                    w-full
+                    items-center
                     gap-2.5
                     rounded-xl
                     p-3.5
+                    min-h-[64px]
                     ${badgeAccentStyles[proof.accent]}
                 `}
             >
                 <Award
                     aria-hidden="true"
-                    className="h-4.5 w-4.5 shrink-0"
+                    className="h-8 w-8 shrink-0"
                     strokeWidth={1.9}
                 />
 

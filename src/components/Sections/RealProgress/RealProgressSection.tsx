@@ -121,7 +121,7 @@ const RealProgressSection: FC = () => {
                         className="
                             mt-10
                             grid
-                            grid-cols-[280px_minmax(0,1fr)]
+                            grid-cols-[300px_minmax(0,1fr)]
                             divide-x
                             divide-(--progress-section-sidebar-divider)
                             overflow-hidden
