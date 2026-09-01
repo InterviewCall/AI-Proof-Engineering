@@ -14,17 +14,16 @@ const accentStyles: Record<InsightAccent, string> = {
 };
 
 const MobileCareerInsightsFeatureStrip: FC = () => {
-    const items = careerInsightsFeatureStrip.slice(0, 3);
+    const items = careerInsightsFeatureStrip;
 
     return (
         <div
             className="
                 flex
-                flex-wrap
+                flex-nowrap
                 items-center
-                justify-center
                 gap-x-3
-                gap-y-4
+                overflow-x-auto
                 rounded-2xl
                 bg-(--career-insights-mobile-strip-bg)
                 px-5
@@ -37,7 +36,7 @@ const MobileCareerInsightsFeatureStrip: FC = () => {
 
                 return (
                     <Fragment key={item.title}>
-                        <div className="flex items-center gap-2">
+                        <div className="flex shrink-0 items-center gap-2">
                             <span
                                 className={`
                                     flex
@@ -59,6 +58,7 @@ const MobileCareerInsightsFeatureStrip: FC = () => {
 
                             <span
                                 className="
+                                    whitespace-nowrap
                                     text-[13px]
                                     font-semibold
                                     leading-tight
@@ -73,6 +73,7 @@ const MobileCareerInsightsFeatureStrip: FC = () => {
                             <span
                                 aria-hidden="true"
                                 className="
+                                    shrink-0
                                     self-center
                                     text-(--career-insights-mobile-eyebrow-text)
                                 "

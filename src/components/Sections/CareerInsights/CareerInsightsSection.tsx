@@ -64,8 +64,8 @@ const CareerInsightsSection: FC = () => {
                             hidden
                             text-[clamp(2.25rem,5.5vw,3.75rem)]
                             font-bold
-                            leading-[1.15]
-                            tracking-[-2%]
+                            leading-[103%]
+                            tracking-[0%]
                             text-(--career-insights-section-title-text)
                             lg:block
                         "
