@@ -365,10 +365,10 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                 <p
                     className="
                         max-w-230
-                        text-[17px]
+                        text-[15px]
                         font-semibold
-                        leading-[1.45]
-                        tracking-[-4%]
+                        leading-[1.2]
+                        tracking-[-1%]
                         text-(--journey-section-card-text)
                     "
                 >
