@@ -12,7 +12,9 @@ const TrackMetaItem: FC<TrackMetaItemProps> = ({
             className={`
                 flex
                 items-center
-                justify-center
+                justify-start
+                gap-2
+                overflow-hidden
                 rounded-[7px]
                 border
                 border-(--color-brand-300)
@@ -20,8 +22,8 @@ const TrackMetaItem: FC<TrackMetaItemProps> = ({
                 text-(--career-path-card-title)
                 ${
                     compact
-                        ? 'min-h-11 gap-2 px-2 py-2 text-[11px] font-semibold'
-                        : 'min-h-12 gap-3 px-4 py-3 text-[12px] font-semibold lg:w-full lg:gap-2.5 lg:px-4 lg:text-[13px]'
+                        ? 'min-h-11 px-2 py-2 text-[11px] font-semibold'
+                        : 'min-h-12 px-4 py-3 text-[12px] font-semibold lg:w-full lg:gap-2.5 lg:px-4 lg:text-[13px]'
                 }
             `}
         >
@@ -35,7 +37,7 @@ const TrackMetaItem: FC<TrackMetaItemProps> = ({
                 strokeWidth={1.8}
             />
 
-            <span className="whitespace-nowrap text-[12px] font-bold leading-tight">
+            <span className="whitespace-normal break-words text-left text-[12px] font-bold leading-tight">
                 {label}
             </span>
         </div>

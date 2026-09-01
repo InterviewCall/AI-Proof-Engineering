@@ -510,7 +510,7 @@ const CareerPathSection: FC = () => {
                         rounded-[14px]
                         border
                         border-(--career-path-card-border)
-                        bg-(--career-path-section-eyebrow-bg)
+                        bg-[#DBE6FB]
                         px-5
                         py-5
                         sm:px-7
