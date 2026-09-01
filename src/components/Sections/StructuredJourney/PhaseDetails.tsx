@@ -12,12 +12,13 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
         return (
             <div
                 className="
-                    rounded-[14px]
+                    rounded-[10px]
                     border
                     border-(--journey-section-card-border)
                     bg-(--journey-section-card-bg)
                     px-5
-                    py-5
+                    pt-5
+                    pb-1
                     shadow-[0_10px_30px_rgba(9,77,231,0.04)]
                 "
             >
@@ -183,7 +184,7 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                 pb-1
             "
         >
-            <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_320px] xl:grid-cols-[minmax(0,1fr)_340px]">
+            <div className="grid items-start gap-4 lg:grid-cols-[minmax(0,1fr)_250px] xl:grid-cols-[minmax(0,1fr)_270px]">
                 <div>
                     <span
                         className="
@@ -205,9 +206,9 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                     <h3
                         className="
                             mt-3
-                            text-[32px]
+                            text-[26px]
                             font-semibold
-                            leading-[1.08]
+                            leading-[1.1]
                             tracking-[-1%]
                             text-(--journey-section-card-title)
                             xl:text-[32px]
@@ -222,7 +223,7 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                             flex
                             items-center
                             gap-2
-                            text-[18px]
+                            text-[14px]
                             font-semibold
                             text-(--color-brand-700)
                             leading-[1.2]
@@ -231,7 +232,7 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                     >
                         <Clock3
                             aria-hidden="true"
-                            className="h-5 w-5"
+                            className="h-4 w-4"
                             strokeWidth={1.8}
                         />
                         <span>{phase.duration}</span>
@@ -240,9 +241,9 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                     <p
                         className="
                             mt-4
-                            max-w-170
-                            text-[18px]
-                            leading-[1.35]
+                            max-w-[560px]
+                            text-[14px]
+                            leading-[1.4]
                             tracking-[-1%]
                             text-(--journey-section-card-text)
                         "
@@ -255,16 +256,16 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                     <Image
                         src='/images/optimized-svg/image 425.svg'
                         alt='image'
-                        width={320}
-                        height={250}
+                        width={245}
+                        height={178}
                         loading='lazy'
-                        className='h-auto w-full max-w-65'
+                        className='h-auto w-full max-w-[220px]'
                     />
                 </div>
             </div>
 
-            <div className="mt-6 border-t border-(--journey-section-card-border) pt-5">
-                <div className="grid gap-3 lg:grid-cols-3">
+            <div className="mt-4 border-t border-(--journey-section-card-border) pt-4">
+                <div className="grid gap-2.5 lg:grid-cols-3">
                     {phase.cards.map((card) => {
                         const Icon = card.icon;
 
@@ -302,7 +303,7 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
 
                                     <h4
                                         className="
-                                            text-[17px]
+                                            text-[15px]
                                             font-semibold
                                             text-(--journey-section-card-title)
                                             leading-[1.32]
@@ -321,7 +322,7 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                                                 flex
                                                 gap-3
                                                 text-[14px]
-                                                font-semibold
+                                                font-medium
                                                 leading-[1.61]
                                                 tracking-[-4%]
                                                 text-(--journey-section-card-text)
@@ -345,7 +346,7 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                     items-center
                     gap-6
                     rounded-xl
-                    bg-(--career-path-section-eyebrow-bg)
+                    bg-[#EEF3FF]
                     px-6
                     py-3
                 "
@@ -364,10 +365,10 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                 <p
                     className="
                         max-w-230
-                        text-[17px]
+                        text-[15px]
                         font-semibold
-                        leading-[1.45]
-                        tracking-[-4%]
+                        leading-[1.2]
+                        tracking-[-1%]
                         text-(--journey-section-card-text)
                     "
                 >
