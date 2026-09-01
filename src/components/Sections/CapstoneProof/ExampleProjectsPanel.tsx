@@ -14,10 +14,21 @@ const accentStyles: Record<CapstoneAccent, string> = {
 
 const ExampleProjectsPanel: FC = () => {
     return (
-        <div>
+        <div
+            className="
+                self-start
+                rounded-xl
+                border
+                border-(--proof-section-card-border)
+                bg-(--proof-section-card-bg)
+                p-3
+                sm:p-3.5
+            "
+        >
             <span
                 className="
-                    text-[13px]
+                    px-1
+                    text-[11px]
                     font-bold
                     uppercase
                     tracking-[0.04em]
@@ -27,7 +38,7 @@ const ExampleProjectsPanel: FC = () => {
                 Example Capstone Projects
             </span>
 
-            <div className="mt-4 space-y-3">
+            <div className="mt-3 space-y-2.5">
                 {exampleProjects.map((project, index) => {
                     const Icon = project.icon;
                     const isMobileHidden = index >= 2;
@@ -37,11 +48,12 @@ const ExampleProjectsPanel: FC = () => {
                             key={project.title}
                             className={`
                                 items-start
-                                gap-3.5
-                                rounded-xl
+                                gap-3
+                                rounded-lg
                                 border
                                 border-(--proof-section-card-border)
-                                p-4
+                                bg-white
+                                p-3
                                 ${
                                     isMobileHidden
                                         ? 'hidden lg:flex'
@@ -52,18 +64,18 @@ const ExampleProjectsPanel: FC = () => {
                             <span
                                 className={`
                                     flex
-                                    h-10.5
-                                    w-10.5
+                                    h-9
+                                    w-9
                                     shrink-0
                                     items-center
                                     justify-center
-                                    rounded-[10px]
+                                    rounded-[9px]
                                     ${accentStyles[project.accent]}
                                 `}
                             >
                                 <Icon
                                     aria-hidden="true"
-                                    className="h-5.5 w-5.5"
+                                    className="h-4.5 w-4.5"
                                     strokeWidth={1.8}
                                 />
                             </span>
@@ -71,9 +83,9 @@ const ExampleProjectsPanel: FC = () => {
                             <div className="min-w-0">
                                 <h3
                                     className="
-                                        text-[15px]
+                                        text-[12px]
                                         font-semibold
-                                        leading-tight
+                                        leading-[1.15]
                                         text-(--proof-section-card-title)
                                     "
                                 >
@@ -83,8 +95,8 @@ const ExampleProjectsPanel: FC = () => {
                                 <p
                                     className="
                                         mt-1
-                                        text-[13px]
-                                        leading-[1.45]
+                                        text-[10px]
+                                        leading-[1.4]
                                         text-(--proof-section-card-text)
                                     "
                                 >
@@ -98,9 +110,10 @@ const ExampleProjectsPanel: FC = () => {
 
             <p
                 className="
-                    mt-4
-                    text-[13px]
-                    leading-[1.45]
+                    mt-3
+                    px-1
+                    text-[10px]
+                    leading-[1.4]
                     text-(--proof-section-card-text)
                 "
             >
@@ -108,7 +121,9 @@ const ExampleProjectsPanel: FC = () => {
                 <span className="hidden lg:inline">
                     These four are examples.
                 </span>
-                <span className="lg:hidden">These are examples.</span>
+                <span className="lg:hidden">
+                    These are examples.
+                </span>
             </p>
         </div>
     );

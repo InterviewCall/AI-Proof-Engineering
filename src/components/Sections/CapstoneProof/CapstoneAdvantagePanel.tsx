@@ -1,13 +1,26 @@
+import { Check } from 'lucide-react';
 import { FC } from 'react';
 
 import { advantagePoints } from '@/utils/capstoneProofItems';
 
 const CapstoneAdvantagePanel: FC = () => {
     return (
-        <div>
+        <div
+            className="
+                self-start
+                rounded-xl
+                border
+                border-(--proof-section-card-border)
+                bg-(--proof-section-card-bg)
+                px-5
+                py-5
+                sm:px-6
+                sm:py-6
+            "
+        >
             <span
                 className="
-                    text-[13px]
+                    text-[11px]
                     font-bold
                     uppercase
                     tracking-[0.04em]
@@ -19,43 +32,86 @@ const CapstoneAdvantagePanel: FC = () => {
 
             <h3
                 className="
-                    mt-3
-                    text-[26px]
+                    mt-4
+                    text-[21px]
                     font-bold
-                    leading-[1.2]
-                    tracking-[-1%]
+                    leading-[1.08]
+                    tracking-[-0.02em]
                     text-(--proof-section-title-text)
                 "
             >
-                From Learning to Interview-Ready Proof
+                From Learning to
+                <br />
+                Interview-Ready Proof
             </h3>
 
             <p
                 className="
-                    mt-3
-                    text-[15px]
-                    leading-[1.55]
+                    mt-4
+                    text-[12px]
+                    leading-[1.45]
                     text-(--proof-section-subtitle-text)
                 "
             >
-                Capstones help learners convert skills into visible proof:
-                code, architecture, tradeoffs, documentation, demo
-                walkthroughs, and mentor-reviewed improvements.
+                Capstones help learners convert
+                skills into visible proof: code,
+                architecture, tradeoffs,
+                documentation, demo walkthroughs,
+                and mentor-reviewed improvements.
             </p>
 
-            <div className="mt-6 space-y-4 border-t border-(--proof-section-card-border) pt-6">
+            <div
+                className="
+                    mt-5
+                    border-t
+                    border-(--proof-section-card-border)
+                "
+            >
                 {advantagePoints.map((point) => (
-                    <p
+                    <div
                         key={point}
                         className="
-                            text-[15px]
-                            font-semibold
-                            leading-tight
-                            text-(--proof-section-card-title)
+                            flex
+                            items-start
+                            gap-2.5
+                            border-b
+                            border-(--proof-section-card-border)
+                            py-3
+                            last:border-b-0
                         "
                     >
-                        {point}
-                    </p>
+                        <span
+                            className="
+                                mt-0.5
+                                flex
+                                h-4
+                                w-4
+                                shrink-0
+                                items-center
+                                justify-center
+                                rounded-full
+                                bg-(--proof-section-blue-bg)
+                                text-(--proof-section-blue-text)
+                            "
+                        >
+                            <Check
+                                aria-hidden="true"
+                                className="h-3 w-3"
+                                strokeWidth={3}
+                            />
+                        </span>
+
+                        <p
+                            className="
+                                text-[11px]
+                                font-semibold
+                                leading-[1.25]
+                                text-(--proof-section-card-title)
+                            "
+                        >
+                            {point}
+                        </p>
+                    </div>
                 ))}
             </div>
         </div>

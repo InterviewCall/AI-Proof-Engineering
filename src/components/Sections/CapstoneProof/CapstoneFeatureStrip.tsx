@@ -18,32 +18,42 @@ const FeatureStripGrid: FC<{
                 return (
                     <div
                         key={item.title}
-                        className="flex flex-col items-center gap-2 px-2 text-center lg:first:pl-0"
+                        className="
+                            flex
+                            min-w-0
+                            flex-col
+                            items-center
+                            justify-start
+                            gap-2
+                            px-3
+                            text-center
+                        "
                     >
                         <span
                             className="
                                 flex
-                                h-11
-                                w-11
+                                h-9
+                                w-9
+                                shrink-0
                                 items-center
                                 justify-center
-                                rounded-[10px]
+                                rounded-[8px]
                                 bg-(--proof-section-blue-bg)
                                 text-(--proof-section-blue-text)
                             "
                         >
                             <Icon
                                 aria-hidden="true"
-                                className="h-5.5 w-5.5"
+                                className="h-4.5 w-4.5"
                                 strokeWidth={1.8}
                             />
                         </span>
 
                         <p
                             className="
-                                text-[14px]
+                                text-[11px]
                                 font-semibold
-                                leading-tight
+                                leading-[1.2]
                                 text-(--proof-section-card-title)
                             "
                         >
@@ -52,7 +62,8 @@ const FeatureStripGrid: FC<{
 
                         <p
                             className="
-                                text-[12px]
+                                max-w-[145px]
+                                text-[9.5px]
                                 leading-[1.35]
                                 text-(--proof-section-card-text)
                             "
@@ -69,7 +80,7 @@ const FeatureStripGrid: FC<{
 const CapstoneFeatureStrip: FC = () => {
     return (
         <>
-            {/* Mobile / tablet — trimmed to 4 components */}
+            {/* Mobile / tablet */}
             <FeatureStripGrid
                 items={mobileCapstoneFeatureStrip}
                 className="
@@ -77,37 +88,33 @@ const CapstoneFeatureStrip: FC = () => {
                     grid-cols-2
                     gap-x-4
                     gap-y-6
-                    rounded-2xl
+                    rounded-[12px]
                     border
                     border-(--proof-section-card-border)
                     bg-(--proof-section-card-bg)
-                    px-5
-                    py-6
+                    px-4
+                    py-5
                     sm:grid-cols-4
-                    sm:px-8
+                    sm:px-6
                     lg:hidden
                 "
             />
 
-            {/* Desktop — full 6 components */}
+            {/* Desktop */}
             <FeatureStripGrid
                 items={capstoneFeatureStrip}
                 className="
                     hidden
-                    gap-x-4
-                    gap-y-6
-                    rounded-2xl
+                    rounded-[12px]
                     border
                     border-(--proof-section-card-border)
                     bg-(--proof-section-card-bg)
-                    px-5
-                    py-6
-                    sm:px-8
                     lg:grid
                     lg:grid-cols-6
                     lg:divide-x
                     lg:divide-(--proof-section-card-border)
-                    lg:py-7
+                    lg:px-2
+                    lg:py-5
                 "
             />
         </>
