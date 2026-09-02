@@ -16,15 +16,6 @@ const ExampleProjectsPanel: FC = () => {
     return (
         <div
             className="
-<<<<<<< HEAD
-                self-start
-                rounded-xl
-                border
-                border-(--proof-section-card-border)
-                bg-(--proof-section-card-bg)
-                p-3
-                sm:p-3.5
-=======
                 w-full
                 max-w-[500px]
                 rounded-[17px]
@@ -32,13 +23,11 @@ const ExampleProjectsPanel: FC = () => {
                 border-[#DCE5F6]
                 bg-[#FFFEFD]
                 p-6
->>>>>>> 8d136ea8a0d66a671ecfc8a8818d944007280aae
             "
         >
             <span
                 className="
-                    px-1
-                    text-[11px]
+                    text-[13px]
                     font-bold
                     uppercase
                     tracking-[0.04em]
@@ -48,7 +37,7 @@ const ExampleProjectsPanel: FC = () => {
                 Example Capstone Projects
             </span>
 
-            <div className="mt-3 space-y-2.5">
+            <div className="mt-4 space-y-3">
                 {exampleProjects.map((project, index) => {
                     const Icon = project.icon;
                     const isMobileHidden = index >= 2;
@@ -58,12 +47,11 @@ const ExampleProjectsPanel: FC = () => {
                             key={project.title}
                             className={`
                                 items-start
-                                gap-3
-                                rounded-lg
+                                gap-3.5
+                                rounded-xl
                                 border
                                 border-(--proof-section-card-border)
-                                bg-white
-                                p-3
+                                p-4
                                 ${
                                     isMobileHidden
                                         ? 'hidden lg:flex'
@@ -74,27 +62,18 @@ const ExampleProjectsPanel: FC = () => {
                             <span
                                 className={`
                                     flex
-<<<<<<< HEAD
-                                    h-9
-                                    w-9
-=======
                                     h-18
                                     w-18
->>>>>>> ff7b351bedd2b94f3966d98a1fa592a427e5b4d5
                                     shrink-0
                                     items-center
                                     justify-center
-                                    rounded-[9px]
+                                    rounded-[10px]
                                     ${accentStyles[project.accent]}
                                 `}
                             >
                                 <Icon
                                     aria-hidden="true"
-<<<<<<< HEAD
-                                    className="h-4.5 w-4.5"
-=======
                                     className="h-9 w-9"
->>>>>>> ff7b351bedd2b94f3966d98a1fa592a427e5b4d5
                                     strokeWidth={1.8}
                                 />
                             </span>
@@ -102,9 +81,9 @@ const ExampleProjectsPanel: FC = () => {
                             <div className="min-w-0">
                                 <h3
                                     className="
-                                        text-[12px]
+                                        text-[15px]
                                         font-semibold
-                                        leading-[1.15]
+                                        leading-tight
                                         text-(--proof-section-card-title)
                                     "
                                 >
@@ -114,8 +93,8 @@ const ExampleProjectsPanel: FC = () => {
                                 <p
                                     className="
                                         mt-1
-                                        text-[10px]
-                                        leading-[1.4]
+                                        text-[13px]
+                                        leading-[1.45]
                                         text-(--proof-section-card-text)
                                     "
                                 >
@@ -129,10 +108,9 @@ const ExampleProjectsPanel: FC = () => {
 
             {/* <p
                 className="
-                    mt-3
-                    px-1
-                    text-[10px]
-                    leading-[1.4]
+                    mt-4
+                    text-[13px]
+                    leading-[1.45]
                     text-(--proof-section-card-text)
                 "
             >
@@ -140,15 +118,8 @@ const ExampleProjectsPanel: FC = () => {
                 <span className="hidden lg:inline">
                     These four are examples.
                 </span>
-<<<<<<< HEAD
-                <span className="lg:hidden">
-                    These are examples.
-                </span>
-            </p>
-=======
                 <span className="lg:hidden">These are examples.</span>
             </p> */}
->>>>>>> 8d136ea8a0d66a671ecfc8a8818d944007280aae
         </div>
     );
 };

@@ -21,16 +21,7 @@ const MentorReviewedBadge: FC = () => {
                 text-center
             "
         >
-            <span
-                className="
-                    text-[7px]
-                    font-bold
-                    uppercase
-                    leading-none
-                    tracking-[0.05em]
-                    text-(--color-brand-500)
-                "
-            >
+            <span className="text-[7px] font-bold uppercase leading-none tracking-[0.05em] text-(--color-brand-500)">
                 Mentor
             </span>
 
@@ -40,16 +31,7 @@ const MentorReviewedBadge: FC = () => {
                 strokeWidth={2.5}
             />
 
-            <span
-                className="
-                    text-[7px]
-                    font-bold
-                    uppercase
-                    leading-none
-                    tracking-[0.05em]
-                    text-(--color-brand-500)
-                "
-            >
+            <span className="text-[7px] font-bold uppercase leading-none tracking-[0.05em] text-(--color-brand-500)">
                 Reviewed
             </span>
         </div>

@@ -51,7 +51,6 @@ const CapstoneProofSection: FC = () => {
                             className="h-4.5 w-4.5"
                             strokeWidth={1.8}
                         />
-
                         <span>Capstone Proof</span>
                     </div>
 
@@ -90,7 +89,7 @@ const CapstoneProofSection: FC = () => {
                     </p>
                 </header>
 
-                {/* Main content */}
+                {/* Three-column layout */}
                 <div
                     className="
                         mt-10
@@ -99,26 +98,12 @@ const CapstoneProofSection: FC = () => {
                         
                         gap-8
                         lg:grid-cols-[280px_minmax(0,1fr)]
-<<<<<<< HEAD
-                        xl:grid-cols-[300px_630px_320px]
-                        xl:justify-center
-                        xl:gap-7
-=======
                         xl:grid-cols-[300px_minmax(0,1fr)_390px]
->>>>>>> ff7b351bedd2b94f3966d98a1fa592a427e5b4d5
                     "
                 >
-                    {/* Left */}
                     <CapstoneAdvantagePanel />
-
-                    {/* Center — keep portfolio card intact */}
                     <CapstonePortfolioCard />
-<<<<<<< HEAD
-
-                    {/* Right */}
-=======
                     <div className="xl:-ml-20">
->>>>>>> ff7b351bedd2b94f3966d98a1fa592a427e5b4d5
                     <ExampleProjectsPanel />
                     </div>
                 </div>
@@ -129,16 +114,7 @@ const CapstoneProofSection: FC = () => {
                 </div>
 
                 {/* CTA */}
-                <div
-                    className="
-                        mt-8
-                        flex
-                        flex-col
-                        gap-3
-                        sm:flex-row
-                        sm:justify-center
-                    "
-                >
+                <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
                     <Link
                         href="#capstone-proof"
                         className="
@@ -169,7 +145,6 @@ const CapstoneProofSection: FC = () => {
                             className="h-5 w-5"
                             strokeWidth={1.9}
                         />
-
                         <span>See Example Capstones</span>
                     </Link>
 
@@ -203,7 +178,6 @@ const CapstoneProofSection: FC = () => {
                             className="h-5 w-5"
                             strokeWidth={1.9}
                         />
-
                         <span>Download Curriculum</span>
                     </a>
                 </div>

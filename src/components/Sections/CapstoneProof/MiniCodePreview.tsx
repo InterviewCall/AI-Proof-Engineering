@@ -10,18 +10,18 @@ const MiniCodePreview: FC = () => {
                 flex
                 h-full
                 w-full
+                min-w-20
                 flex-col
                 gap-1.5
-                overflow-hidden
                 rounded-lg
                 bg-(--proof-section-code-bg)
                 p-2.5
             "
         >
             <div className="flex gap-1">
-                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#dc4c5b]" />
-                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#d99800]" />
-                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#179b67]" />
+                <span className="h-1.5 w-1.5 rounded-full bg-[#dc4c5b]" />
+                <span className="h-1.5 w-1.5 rounded-full bg-[#d99800]" />
+                <span className="h-1.5 w-1.5 rounded-full bg-[#179b67]" />
             </div>
 
             <div className="flex flex-1 flex-col justify-center gap-1">
