@@ -24,7 +24,7 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
                         className="h-5 w-5 text-(--color-brand-700)"
                         strokeWidth={1.9}
                     />
-                    
+
                     <h3
                         className="
                             text-[15px]
@@ -65,27 +65,29 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
                 {task.title}
             </h4>
 
-            <div className="mt-2 flex flex-wrap gap-2">
-                {task.tags.map((tag) => (
-                    <span
-                        key={tag}
-                        className="
-                            inline-flex
-                            min-h-6
-                            items-center
-                            rounded-full
-                            bg-(--practice-section-progress-track)
-                            px-2.5
-                            text-[11px]
-                            font-semibold
-                            text-(--practice-section-card-text)
-                        "
-                    >
-                        {tag}
-                    </span>
-                ))}
-            </div>
-
+        <div className="mt-2 flex flex-wrap gap-2">
+    {task.tags.map((tag) => (
+        <span
+            key={tag}
+            className={`
+                inline-flex
+                min-h-6
+                items-center
+                rounded-full
+                px-2.5
+                text-[11px]
+                font-semibold
+                ${
+                    tag.toLowerCase() === 'medium'
+                        ? 'bg-[#097042] text-white'
+                        : 'bg-(--practice-section-progress-track) text-(--practice-section-card-text)'
+                }
+            `}
+        >
+            {tag}
+        </span>
+    ))}
+</div>
             {/* OLD CODE BLOCK REMOVED — SVG IS PLACED HERE */}
             <div
                 className="

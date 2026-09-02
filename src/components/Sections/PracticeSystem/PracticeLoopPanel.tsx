@@ -4,7 +4,17 @@ import { loopBullets } from '@/utils/practiceSystemItems';
 
 const PracticeLoopPanel: FC = () => {
     return (
-        <div className="flex flex-col justify-center p-6 xl:p-8">
+        <div
+            className="
+                flex
+                h-full
+                flex-col
+                justify-center
+                gap-5
+                p-6
+                xl:p-8
+            "
+        >
             <span
                 className="
                     text-[13px]
@@ -19,13 +29,13 @@ const PracticeLoopPanel: FC = () => {
 
             <h3
                 className="
-                    mt-3
+                    mt-0
+                    max-w-[360px]
                     text-[24px]
                     font-bold
                     leading-[1.1]
                     tracking-[-1%]
                     text-(--practice-section-card-title)
-                    max-w-[360px]
                     xl:text-[28px]
                 "
             >
@@ -34,7 +44,8 @@ const PracticeLoopPanel: FC = () => {
 
             <p
                 className="
-                    mt-3
+                    mt-0
+                    max-w-[330px]
                     text-[15px]
                     font-semibold
                     leading-[1.55]
@@ -46,14 +57,18 @@ const PracticeLoopPanel: FC = () => {
                 AI-assisted engineering assignments.
             </p>
 
-            <div className="mt-5 space-y-3">
+            <div className="mt-1 space-y-4">
                 {loopBullets.map((bullet) => {
                     const Icon = bullet.icon;
 
                     return (
                         <div
                             key={bullet.label}
-                            className="flex items-center gap-3"
+                            className="
+                                flex
+                                items-center
+                                gap-3
+                            "
                         >
                             <span
                                 className="
