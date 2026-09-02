@@ -10,7 +10,15 @@ type FeatureStripProps = {
 const FeatureStrip: FC<FeatureStripProps> = ({ items, compact = false }) => {
     if (compact) {
         return (
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <div className="
+                grid
+                grid-cols-4
+                overflow-hidden
+                rounded-xl
+                border
+                border-(--practice-section-card-border)
+                bg-(--practice-section-card-bg)
+            ">
                 {items.map((item) => {
                     const Icon = item.icon;
 
@@ -34,8 +42,8 @@ const FeatureStrip: FC<FeatureStripProps> = ({ items, compact = false }) => {
                             <span
                                 className="
                                     flex
-                                    h-10
-                                    w-10
+                                    h-16
+                                    w-16
                                     items-center
                                     justify-center
                                     rounded-[10px]
@@ -45,7 +53,7 @@ const FeatureStrip: FC<FeatureStripProps> = ({ items, compact = false }) => {
                             >
                                 <Icon
                                     aria-hidden="true"
-                                    className="h-5 w-5"
+                                    className="h-8 w-8"
                                     strokeWidth={1.8}
                                 />
                             </span>

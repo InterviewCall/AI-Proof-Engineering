@@ -41,11 +41,21 @@ const LabChecklistCard: FC = () => {
                         className="flex items-center gap-2"
                     >
                         {item.done ? (
-                            <CheckCircle2
-                                aria-hidden="true"
-                                className="h-5 w-5 shrink-0 text-(--practice-section-success-text)"
-                                strokeWidth={2}
-                            />
+                            <span
+                                className="
+                                    flex
+                                    h-4
+                                    w-4
+                                    shrink-0
+                                    items-center
+                                    justify-center
+                                    rounded-full
+                                    bg-(--color-brand-700)
+                                  text-white
+                                "
+                            >
+                        <span className="text-[10px] font-bold leading-none">✓</span>
+                    </span>
                         ) : (
                             <Circle
                                 aria-hidden="true"

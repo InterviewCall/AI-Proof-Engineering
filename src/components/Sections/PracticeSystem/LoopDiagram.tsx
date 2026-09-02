@@ -22,6 +22,29 @@ const LoopDiagram: FC = () => {
                     border-(--practice-section-progress-track)
                 "
             />
+            <svg
+    aria-hidden="true"
+    className="
+        absolute
+        inset-[4%]
+        z-0
+        h-[92%]
+        w-[92%]
+        overflow-visible
+    "
+    viewBox="0 0 100 100"
+>
+    <circle
+        cx="50"
+        cy="50"
+        r="47"
+        fill="none"
+        stroke="var(--button-primary-bg)"
+        strokeWidth="2"
+    />
+
+    
+</svg>
 
             <div
                 className="

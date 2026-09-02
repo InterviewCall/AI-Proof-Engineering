@@ -21,7 +21,7 @@ const summaryCards = [
 
 const MobileSummaryCards: FC = () => {
     return (
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+        <div className="grid grid-cols-3 gap-3">
             {summaryCards.map((card) => {
                 const Icon = card.icon;
 
@@ -41,8 +41,8 @@ const MobileSummaryCards: FC = () => {
                             className="
                                 mx-auto
                                 flex
-                                h-11
-                                w-11
+                                h-18
+                                w-18
                                 items-center
                                 justify-center
                                 rounded-[10px]
@@ -52,7 +52,7 @@ const MobileSummaryCards: FC = () => {
                         >
                             <Icon
                                 aria-hidden="true"
-                                className="h-5.5 w-5.5"
+                                className="h-10 w-10"
                                 strokeWidth={1.8}
                             />
                         </span>
