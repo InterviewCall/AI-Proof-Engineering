@@ -29,11 +29,31 @@ const AlumniCompanyBar: FC = () => {
                 Where InterviewCall alumni are building their careers
             </h3>
 
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
+            <div
+                className="
+                    mt-6
+                    flex
+                    items-center
+                    gap-x-8
+                    overflow-x-auto
+                    px-1
+                    pb-2
+                    [scrollbar-width:thin]
+                    sm:flex-wrap
+                    sm:justify-center
+                    sm:gap-x-10
+                    sm:gap-y-6
+                    sm:overflow-visible
+                    sm:pb-0
+                    [&::-webkit-scrollbar]:h-1
+                    [&::-webkit-scrollbar-thumb]:rounded-full
+                    [&::-webkit-scrollbar-thumb]:bg-(--alumni-companies-border)
+                "
+            >
                 {alumniCompanies.map((company) => (
                     <div
                         key={company.name}
-                        className="relative h-7 w-24 sm:h-8 sm:w-28"
+                        className="relative h-7 w-24 shrink-0 sm:h-8 sm:w-28"
                     >
                         <Image
                             src={company.logo}

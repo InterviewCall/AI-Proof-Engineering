@@ -6,6 +6,7 @@ import AlumniCompanyBar from './AlumniCompanyBar';
 import AlumniCtaBar from './AlumniCtaBar';
 import AlumniMiniCard from './AlumniMiniCard';
 import FeaturedAlumniCard from './FeaturedAlumniCard';
+import AlumniMobileCarousel from './AlumniMobileCarousel';
 
 const AlumniSection: FC = () => {
     return (
@@ -91,14 +92,13 @@ const AlumniSection: FC = () => {
                 <div
                     className="
                         mt-10
-                        grid
-                        grid-cols-1
+                        hidden
                         items-stretch
                         gap-5
+                        sm:grid
                         sm:grid-cols-3
                         lg:grid-cols-[minmax(0,3fr)_repeat(3,minmax(0,1fr))]
                         lg:items-start
-                        
                     "
                 >
                     <div className="sm:col-span-3 lg:col-span-1">
@@ -109,6 +109,28 @@ const AlumniSection: FC = () => {
                         <AlumniMiniCard key={story.name} story={story} />
                     ))}
                 </div>
+
+                {/* Mobile-only layout */}
+                <div className="mt-10 sm:hidden">
+                    <FeaturedAlumniCard />
+
+                    <h3
+                        className="
+                            mt-8
+                            text-center
+                            text-[18px]
+                            font-bold
+                            text-(--alumni-section-title-text)
+                        "
+                    >
+                        More Alumni Journeys
+                    </h3>
+
+                    <div className="mt-4">
+                        <AlumniMobileCarousel stories={alumniMiniStories} />
+                    </div>
+                </div>
+
 
                 <AlumniCompanyBar />
 
