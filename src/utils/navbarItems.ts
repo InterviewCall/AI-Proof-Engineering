@@ -14,7 +14,7 @@ export const navigationItems: NavigationItem[] = [
             },
             {
                 label: 'Learning Journey',
-                href: '#journey',
+                href: '#alumni',
             },
         ],
     },
@@ -28,7 +28,7 @@ export const navigationItems: NavigationItem[] = [
     },
     {
         label: 'Mentors',
-        href: '#mentors',
+        href: '#specialists',
     },
     {
         label: 'Outcomes',
@@ -43,7 +43,7 @@ export const navigationItems: NavigationItem[] = [
             },
             {
                 label: 'Learning Ecosystem',
-                href: '#resources',
+                href: '#ecosystem',
             },
             {
                 label: 'Frequently Asked Questions',

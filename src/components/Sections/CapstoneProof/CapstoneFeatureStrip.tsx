@@ -20,6 +20,7 @@ const FeatureStripGrid: FC<{
                         key={item.title}
                         className="
                             flex
+<<<<<<< HEAD
                             min-w-0
                             flex-col
                             items-center
@@ -27,13 +28,25 @@ const FeatureStripGrid: FC<{
                             gap-2
                             px-3
                             text-center
+=======
+                            items-center
+                            gap-3
+                            px-2
+                            text-left
+                            lg:first:pl-0
+>>>>>>> ff7b351bedd2b94f3966d98a1fa592a427e5b4d5
                         "
                     >
                         <span
                             className="
                                 flex
+<<<<<<< HEAD
                                 h-9
                                 w-9
+=======
+                                h-16
+                                w-16
+>>>>>>> ff7b351bedd2b94f3966d98a1fa592a427e5b4d5
                                 shrink-0
                                 items-center
                                 justify-center
@@ -44,11 +57,16 @@ const FeatureStripGrid: FC<{
                         >
                             <Icon
                                 aria-hidden="true"
+<<<<<<< HEAD
                                 className="h-4.5 w-4.5"
+=======
+                                className="h-8 w-8"
+>>>>>>> ff7b351bedd2b94f3966d98a1fa592a427e5b4d5
                                 strokeWidth={1.8}
                             />
                         </span>
 
+<<<<<<< HEAD
                         <p
                             className="
                                 text-[11px]
@@ -70,6 +88,31 @@ const FeatureStripGrid: FC<{
                         >
                             {item.description}
                         </p>
+=======
+                        <div className="min-w-0">
+                            <p
+                                className="
+                                    text-[14px]
+                                    font-semibold
+                                    leading-tight
+                                    text-(--proof-section-card-title)
+                                "
+                            >
+                                {item.title}
+                            </p>
+
+                            <p
+                                className="
+                                    mt-1
+                                    text-[12px]
+                                    leading-[1.35]
+                                    text-(--proof-section-card-text)
+                                "
+                            >
+                                {item.description}
+                            </p>
+                        </div>
+>>>>>>> ff7b351bedd2b94f3966d98a1fa592a427e5b4d5
                     </div>
                 );
             })}

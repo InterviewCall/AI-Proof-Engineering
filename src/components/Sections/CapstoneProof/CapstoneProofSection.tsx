@@ -96,11 +96,16 @@ const CapstoneProofSection: FC = () => {
                         mt-10
                         grid
                         grid-cols-1
+                        
                         gap-8
                         lg:grid-cols-[280px_minmax(0,1fr)]
+<<<<<<< HEAD
                         xl:grid-cols-[300px_630px_320px]
                         xl:justify-center
                         xl:gap-7
+=======
+                        xl:grid-cols-[300px_minmax(0,1fr)_390px]
+>>>>>>> ff7b351bedd2b94f3966d98a1fa592a427e5b4d5
                     "
                 >
                     {/* Left */}
@@ -108,13 +113,18 @@ const CapstoneProofSection: FC = () => {
 
                     {/* Center — keep portfolio card intact */}
                     <CapstonePortfolioCard />
+<<<<<<< HEAD
 
                     {/* Right */}
+=======
+                    <div className="xl:-ml-20">
+>>>>>>> ff7b351bedd2b94f3966d98a1fa592a427e5b4d5
                     <ExampleProjectsPanel />
+                    </div>
                 </div>
 
                 {/* Feature strip */}
-                <div className="mt-8">
+                <div className="mt-2">
                     <CapstoneFeatureStrip />
                 </div>
 

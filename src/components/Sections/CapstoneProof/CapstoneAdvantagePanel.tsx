@@ -20,6 +20,7 @@ const CapstoneAdvantagePanel: FC = () => {
 =======
                 w-full
                 max-w-[382px]
+                h-fit
                 rounded-[17px]
                 border
                 border-[#DCE5F6]
@@ -78,6 +79,7 @@ const CapstoneAdvantagePanel: FC = () => {
                 "
             >
                 {advantagePoints.map((point) => (
+<<<<<<< HEAD
                     <div
                         key={point}
                         className="
@@ -123,6 +125,40 @@ const CapstoneAdvantagePanel: FC = () => {
                         </p>
                     </div>
                 ))}
+=======
+    <div
+        key={point}
+        className="flex items-start gap-2"
+    >
+        <span
+            className="
+                flex
+                h-4
+                w-4
+                shrink-0
+                items-center
+                justify-center
+                rounded-full
+                bg-(--color-brand-700)
+                text-white
+            "
+        >
+            <span className="text-[10px] font-bold leading-none">✓</span>
+        </span>
+
+        <p
+            className="
+                text-[15px]
+                font-semibold
+                leading-tight
+                text-(--proof-section-card-title)
+            "
+        >
+            {point}
+        </p>
+    </div>
+))}
+>>>>>>> ff7b351bedd2b94f3966d98a1fa592a427e5b4d5
             </div>
         </div>
     );

@@ -25,7 +25,6 @@ const PracticeLoopPanel: FC = () => {
                     leading-[1.1]
                     tracking-[-1%]
                     text-(--practice-section-card-title)
-                    max-w-[360px]
                     xl:text-[28px]
                 "
             >
