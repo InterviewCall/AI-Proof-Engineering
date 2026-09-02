@@ -4,7 +4,17 @@ import { advantagePoints } from '@/utils/capstoneProofItems';
 
 const CapstoneAdvantagePanel: FC = () => {
     return (
-        <div>
+        <div
+            className="
+                w-full
+                max-w-[382px]
+                rounded-[17px]
+                border
+                border-[#DCE5F6]
+                bg-[#FFFEFD]
+                p-6
+            "
+        >
             <span
                 className="
                     text-[13px]

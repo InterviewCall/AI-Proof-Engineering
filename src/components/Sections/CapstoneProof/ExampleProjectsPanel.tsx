@@ -14,7 +14,17 @@ const accentStyles: Record<CapstoneAccent, string> = {
 
 const ExampleProjectsPanel: FC = () => {
     return (
-        <div>
+        <div
+            className="
+                w-full
+                max-w-[382px]
+                rounded-[17px]
+                border
+                border-[#DCE5F6]
+                bg-[#FFFEFD]
+                p-6
+            "
+        >
             <span
                 className="
                     text-[13px]
@@ -96,7 +106,7 @@ const ExampleProjectsPanel: FC = () => {
                 })}
             </div>
 
-            <p
+            {/* <p
                 className="
                     mt-4
                     text-[13px]
@@ -109,7 +119,7 @@ const ExampleProjectsPanel: FC = () => {
                     These four are examples.
                 </span>
                 <span className="lg:hidden">These are examples.</span>
-            </p>
+            </p> */}
         </div>
     );
 };
