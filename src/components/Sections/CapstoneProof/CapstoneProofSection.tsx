@@ -6,18 +6,22 @@ import CapstoneAdvantagePanel from './CapstoneAdvantagePanel';
 import CapstoneFeatureStrip from './CapstoneFeatureStrip';
 import CapstonePortfolioCard from './CapstonePortfolioCard';
 import ExampleProjectsPanel from './ExampleProjectsPanel';
+import CapstoneMobileSection from './CapstoneMobileSection';
 
 const CapstoneProofSection: FC = () => {
     return (
+        <>
         <section
             id="capstone-proof"
             className="
+                hidden
                 scroll-mt-25
                 bg-(--proof-section-bg)
                 px-4
                 py-14
                 sm:px-6
                 sm:py-16
+                lg:block
                 lg:px-8
                 lg:py-20
                 xl:px-12
@@ -183,6 +187,8 @@ const CapstoneProofSection: FC = () => {
                 </div>
             </div>
         </section>
+        <CapstoneMobileSection />
+        </>
     );
 };
 
