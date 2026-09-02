@@ -16,6 +16,7 @@ const ExampleProjectsPanel: FC = () => {
     return (
         <div
             className="
+<<<<<<< HEAD
                 self-start
                 rounded-xl
                 border
@@ -23,6 +24,15 @@ const ExampleProjectsPanel: FC = () => {
                 bg-(--proof-section-card-bg)
                 p-3
                 sm:p-3.5
+=======
+                w-full
+                max-w-[382px]
+                rounded-[17px]
+                border
+                border-[#DCE5F6]
+                bg-[#FFFEFD]
+                p-6
+>>>>>>> 8d136ea8a0d66a671ecfc8a8818d944007280aae
             "
         >
             <span
@@ -108,7 +118,7 @@ const ExampleProjectsPanel: FC = () => {
                 })}
             </div>
 
-            <p
+            {/* <p
                 className="
                     mt-3
                     px-1
@@ -121,10 +131,15 @@ const ExampleProjectsPanel: FC = () => {
                 <span className="hidden lg:inline">
                     These four are examples.
                 </span>
+<<<<<<< HEAD
                 <span className="lg:hidden">
                     These are examples.
                 </span>
             </p>
+=======
+                <span className="lg:hidden">These are examples.</span>
+            </p> */}
+>>>>>>> 8d136ea8a0d66a671ecfc8a8818d944007280aae
         </div>
     );
 };

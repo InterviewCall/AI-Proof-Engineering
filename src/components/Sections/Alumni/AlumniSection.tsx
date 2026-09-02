@@ -96,8 +96,9 @@ const AlumniSection: FC = () => {
                         items-stretch
                         gap-5
                         sm:grid-cols-3
-                        lg:grid-cols-[minmax(0,2.3fr)_repeat(3,minmax(0,1fr))]
+                        lg:grid-cols-[minmax(0,3fr)_repeat(3,minmax(0,1fr))]
                         lg:items-start
+                        
                     "
                 >
                     <div className="sm:col-span-3 lg:col-span-1">

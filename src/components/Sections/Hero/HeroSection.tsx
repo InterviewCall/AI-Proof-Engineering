@@ -436,28 +436,18 @@ const HeroSection: FC = () => {
                             <div className="max-w-[52%] sm:max-w-[55%] lg:max-w-[58%]">
                                 <h2
                                     className="
-                                        text-[20px]
                                         font-semibold
-                                        leading-[1.2]
-                                        tracking-[-0.025em]
+                                        text-[20px]
+                                        leading-[1.35]
+                                        tracking-[-0.04em]
                                         sm:text-[25px]
                                         lg:text-[34px]
+                                        lg:w-75
+                                        font-inter
                                     "
-                                >
-                                    <span
-                                        className="
-                                        "
                                     >
-                                        What AI Actually Changes {' '}
-                                    </span>
-                                    <span
-                                        className="
-                                        "
-                                    >
-                                        About the Job
-                                    </span>
-                                </h2>
-
+                                    What AI Actually Changes About the Job
+                                    </h2>
                                 <div
                                     aria-hidden="true"
                                     className="

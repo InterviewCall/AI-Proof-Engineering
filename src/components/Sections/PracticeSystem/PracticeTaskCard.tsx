@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Code2 } from 'lucide-react';
 import { FC } from 'react';
 
@@ -13,7 +14,7 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
                 border
                 border-(--practice-section-card-border)
                 bg-(--practice-section-card-bg)
-                p-4
+                p-5
             "
         >
             <div className="flex items-center justify-between gap-3">
@@ -23,7 +24,7 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
                         className="h-5 w-5 text-(--color-brand-700)"
                         strokeWidth={1.9}
                     />
-
+                    
                     <h3
                         className="
                             text-[15px]
@@ -54,8 +55,8 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
 
             <h4
                 className="
-                    mt-2
-                    text-[16px]
+                    mt-4
+                    text-[18px]
                     font-semibold
                     leading-tight
                     text-(--practice-section-card-title)
@@ -85,36 +86,39 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
                 ))}
             </div>
 
-            <pre
+            {/* OLD CODE BLOCK REMOVED — SVG IS PLACED HERE */}
+            <div
                 className="
-                    mt-2
+                    mt-4
+                    flex
+                    w-full
+                    items-center
+                    justify-center
+                    overflow-hidden
                     rounded-lg
-                    bg-white
-                    p-2.5
-                    font-mono
-                    text-[10px]
-                    leading-[1.4]
-                    text-(--practice-section-card-title)
                 "
             >
-                {task.codeLines.map((line, index) => (
-                    <div key={index} className="flex gap-2.5">
-                        <span className="w-3 shrink-0 text-right text-[#4a577b]">
-                            {index + 1}
-                        </span>
-                        <span className="min-w-0 whitespace-pre-wrap break-words">
-                            {line}
-                        </span>
-                    </div>
-                ))}
-            </pre>
+                <Image
+                    src="/images/svg/practice-system-visual.svg"
+                    alt="Practice task"
+                    width={268}
+                    height={132}
+                    priority
+                    className="
+                        block
+                        h-auto
+                        w-full
+                        object-contain
+                    "
+                />
+            </div>
 
-            <div className="mt-2 flex justify-end gap-2">
+            <div className="mt-4 flex gap-2">
                 <button
                     type="button"
                     className="
-                        min-h-8
-                        px-3
+                        min-h-10.5
+                        flex-1
                         cursor-pointer
                         rounded-lg
                         border
@@ -134,8 +138,8 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
                 <button
                     type="button"
                     className="
-                        min-h-8
-                        px-3
+                        min-h-10.5
+                        flex-1
                         cursor-pointer
                         rounded-lg
                         bg-(--button-primary-bg)

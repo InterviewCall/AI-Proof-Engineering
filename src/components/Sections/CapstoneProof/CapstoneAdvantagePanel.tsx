@@ -7,6 +7,7 @@ const CapstoneAdvantagePanel: FC = () => {
     return (
         <div
             className="
+<<<<<<< HEAD
                 self-start
                 rounded-xl
                 border
@@ -16,6 +17,15 @@ const CapstoneAdvantagePanel: FC = () => {
                 py-5
                 sm:px-6
                 sm:py-6
+=======
+                w-full
+                max-w-[382px]
+                rounded-[17px]
+                border
+                border-[#DCE5F6]
+                bg-[#FFFEFD]
+                p-6
+>>>>>>> 8d136ea8a0d66a671ecfc8a8818d944007280aae
             "
         >
             <span

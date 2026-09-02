@@ -12,8 +12,11 @@ const AlumniMiniCard: FC<AlumniMiniCardProps> = ({ story }) => {
     return (
         <div
             className="
+                mx-auto
                 flex
                 h-full
+                w-full
+                max-w-[220px]
                 flex-col
                 items-center
                 rounded-2xl
@@ -52,10 +55,10 @@ const AlumniMiniCard: FC<AlumniMiniCardProps> = ({ story }) => {
             <span
                 className="
                     relative
-                    mt-4
+                    mt-2
                     flex
-                    h-18
-                    w-18
+                    h-22
+                    w-22
                     shrink-0
                     overflow-hidden
                     rounded-full
@@ -67,14 +70,14 @@ const AlumniMiniCard: FC<AlumniMiniCardProps> = ({ story }) => {
                     src={story.image}
                     alt={story.name}
                     fill
-                    sizes="72px"
+                    sizes="75px"
                     className="object-cover"
                 />
             </span>
 
             <h3
                 className="
-                    mt-3
+                    mt-2
                     text-[16px]
                     font-bold
                     leading-tight
@@ -94,7 +97,7 @@ const AlumniMiniCard: FC<AlumniMiniCardProps> = ({ story }) => {
                 {story.role} &bull; {story.yoe}
             </p>
 
-            <div className="mt-4 w-full">
+            <div className="mt-2 w-full">
                 <p
                     className="
                         text-[10.5px]
@@ -120,8 +123,8 @@ const AlumniMiniCard: FC<AlumniMiniCardProps> = ({ story }) => {
 
                 <ArrowDown
                     aria-hidden="true"
-                    className="mx-auto mt-2 h-4 w-4 text-(--alumni-mini-arrow-icon)"
-                    strokeWidth={1.9}
+                    className="mx-auto mt-2 h-4 w-4 text-black"
+                    strokeWidth={2.9}
                 />
 
                 <p
@@ -149,7 +152,7 @@ const AlumniMiniCard: FC<AlumniMiniCardProps> = ({ story }) => {
                 </p>
             </div>
 
-            <div className="relative mt-3 h-6 w-24">
+            <div className="relative mt-1 h-6 w-24">
                 <Image
                     src={story.companyLogo}
                     alt={story.company}
@@ -159,10 +162,10 @@ const AlumniMiniCard: FC<AlumniMiniCardProps> = ({ story }) => {
                 />
             </div>
 
-            <div className="mt-3 w-full border-t border-(--alumni-mini-divider) pt-3">
+            <div className="mt-2 w-full border-t border-(--alumni-mini-divider) pt-2">
                 <p
                     className="
-                        text-[12.5px]
+                        text-[10.5px]
                         leading-[1.5]
                         text-(--alumni-mini-quote-text)
                     "
@@ -175,13 +178,22 @@ const AlumniMiniCard: FC<AlumniMiniCardProps> = ({ story }) => {
                 type="button"
                 className="
                     group
-                    mt-4
+                    mt-2
                     inline-flex
+                    w-fit
+                    
                     cursor-pointer
                     items-center
-                    gap-1.5
+                    justify-center
+                    gap-2
+                    rounded-[6px]
+                    border
+                    border-[#144EFE]
+                    px-4
+                    py-2
                     text-[13px]
                     font-semibold
+                    whitespace-nowrap
                     text-(--alumni-mini-link-text)
                     transition-colors
                     hover:text-(--alumni-mini-link-hover-text)
