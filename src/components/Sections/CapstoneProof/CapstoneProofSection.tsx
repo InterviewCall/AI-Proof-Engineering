@@ -95,18 +95,21 @@ const CapstoneProofSection: FC = () => {
                         mt-10
                         grid
                         grid-cols-1
+                        
                         gap-8
                         lg:grid-cols-[280px_minmax(0,1fr)]
-                        xl:grid-cols-[300px_minmax(0,1fr)_320px]
+                        xl:grid-cols-[300px_minmax(0,1fr)_390px]
                     "
                 >
                     <CapstoneAdvantagePanel />
                     <CapstonePortfolioCard />
+                    <div className="xl:-ml-20">
                     <ExampleProjectsPanel />
+                    </div>
                 </div>
 
                 {/* Feature strip */}
-                <div className="mt-8">
+                <div className="mt-2">
                     <CapstoneFeatureStrip />
                 </div>
 
