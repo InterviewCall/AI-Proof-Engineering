@@ -18,13 +18,21 @@ const FeatureStripGrid: FC<{
                 return (
                     <div
                         key={item.title}
-                        className="flex flex-col items-center gap-2 px-2 text-center lg:first:pl-0"
+                        className="
+                            flex
+                            items-center
+                            gap-3
+                            px-2
+                            text-left
+                            lg:first:pl-0
+                        "
                     >
                         <span
                             className="
                                 flex
-                                h-11
-                                w-11
+                                h-16
+                                w-16
+                                shrink-0
                                 items-center
                                 justify-center
                                 rounded-[10px]
@@ -34,31 +42,34 @@ const FeatureStripGrid: FC<{
                         >
                             <Icon
                                 aria-hidden="true"
-                                className="h-5.5 w-5.5"
+                                className="h-8 w-8"
                                 strokeWidth={1.8}
                             />
                         </span>
 
-                        <p
-                            className="
-                                text-[14px]
-                                font-semibold
-                                leading-tight
-                                text-(--proof-section-card-title)
-                            "
-                        >
-                            {item.title}
-                        </p>
+                        <div className="min-w-0">
+                            <p
+                                className="
+                                    text-[14px]
+                                    font-semibold
+                                    leading-tight
+                                    text-(--proof-section-card-title)
+                                "
+                            >
+                                {item.title}
+                            </p>
 
-                        <p
-                            className="
-                                text-[12px]
-                                leading-[1.35]
-                                text-(--proof-section-card-text)
-                            "
-                        >
-                            {item.description}
-                        </p>
+                            <p
+                                className="
+                                    mt-1
+                                    text-[12px]
+                                    leading-[1.35]
+                                    text-(--proof-section-card-text)
+                                "
+                            >
+                                {item.description}
+                            </p>
+                        </div>
                     </div>
                 );
             })}

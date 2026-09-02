@@ -27,6 +27,7 @@ const CapstonePortfolioCard: FC = () => {
         <div
             className="
                 relative
+                
             "
         >
             {/* Folder-stack background artwork */}
@@ -36,7 +37,7 @@ const CapstonePortfolioCard: FC = () => {
                 aria-hidden="true"
                 fill
                 sizes="(max-width: 1024px) 100vw, 700px"
-                className="pointer-events-none object-fill"
+                className="pointer-events-none -translate-x-10 -translate-y-2 scale-x-[0.94] scale-y-[1.05] object-fill"
             />
 
             <div
@@ -50,7 +51,7 @@ const CapstonePortfolioCard: FC = () => {
             >
                 {/* Header */}
                 <div className="flex items-start justify-between gap-3">
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-3 -translate-x-5 translate-y-4">
                         <span
                             className="
                                 flex
@@ -66,7 +67,7 @@ const CapstonePortfolioCard: FC = () => {
                         >
                             <FolderClosed
                                 aria-hidden="true"
-                                className="h-6.5 w-6.5"
+                                className="h-7 w-7"
                                 strokeWidth={1.8}
                             />
                         </span>
@@ -88,6 +89,7 @@ const CapstonePortfolioCard: FC = () => {
                                 className="
                                     text-[22px]
                                     font-bold
+                                    uppercase
                                     leading-tight
                                     tracking-[-1%]
                                     text-(--proof-section-card-title)
@@ -98,15 +100,20 @@ const CapstonePortfolioCard: FC = () => {
                             </p>
                         </div>
                     </div>
-
+                <div className="-translate-x-30 translate-y-7 scale-140">
                     <MentorReviewedBadge />
+                    
+                </div>
                 </div>
 
                 <p
                     className="
                         mt-4
+                        max-w-[250px]
+                        translate-x-12
                         text-[14px]
-                        leading-[1.5]
+                        font-semibold
+                        leading-[1.4]
                         text-(--proof-section-card-text)
                     "
                 >
@@ -119,6 +126,7 @@ const CapstonePortfolioCard: FC = () => {
                     className="
                         mt-5
                         grid
+                        w-[93%]
                         grid-cols-[minmax(0,1fr)_110px]
                         items-center
                         gap-4
@@ -127,14 +135,18 @@ const CapstonePortfolioCard: FC = () => {
                         border-(--proof-section-card-border)
                         p-3.5
                         sm:p-4
+                        origin-left
+                        -translate-x-6
+                        -translate-y-3
+                        scale-[0.96]
                     "
                 >
                     <div className="flex items-start gap-3">
                         <span
                             className={`
                                 flex
-                                h-9.5
-                                w-9.5
+                                h-10
+                                w-10
                                 shrink-0
                                 items-center
                                 justify-center
@@ -144,7 +156,7 @@ const CapstonePortfolioCard: FC = () => {
                         >
                             <SourceIcon
                                 aria-hidden="true"
-                                className="h-5 w-5"
+                                className="h-10 w-10"
                                 strokeWidth={1.8}
                             />
                         </span>
@@ -163,6 +175,7 @@ const CapstonePortfolioCard: FC = () => {
                             <p
                                 className="
                                     mt-0.5
+                                    max-w-[150px]
                                     text-[12px]
                                     leading-[1.4]
                                     text-(--proof-section-card-text)
@@ -173,13 +186,13 @@ const CapstonePortfolioCard: FC = () => {
                         </div>
                     </div>
 
-                    <div className="h-16.5">
+                    <div className="h-20 w-[210px] -translate-x-30">
                         <MiniCodePreview />
                     </div>
                 </div>
 
                 {/* Remaining deliverables grid */}
-                <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <div className="mt-3 grid w-[92%] grid-cols-1 gap-3 origin-left -translate-x-6 -translate-y-5 scale-[0.96] sm:grid-cols-2">
                     {gridDeliverables.map((deliverable) => {
                         const Icon = deliverable.icon;
 
@@ -194,13 +207,14 @@ const CapstonePortfolioCard: FC = () => {
                                     border
                                     border-(--proof-section-card-border)
                                     p-3.5
+                                    min-h-28
                                 "
                             >
                                 <span
                                     className={`
                                         flex
-                                        h-9.5
-                                        w-9.5
+                                        h-20
+                                        w-20
                                         shrink-0
                                         items-center
                                         justify-center
@@ -210,7 +224,7 @@ const CapstonePortfolioCard: FC = () => {
                                 >
                                     <Icon
                                         aria-hidden="true"
-                                        className="h-5 w-5"
+                                        className="h-10 w-10"
                                         strokeWidth={1.8}
                                     />
                                 </span>

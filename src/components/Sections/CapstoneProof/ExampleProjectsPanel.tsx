@@ -17,7 +17,7 @@ const ExampleProjectsPanel: FC = () => {
         <div
             className="
                 w-full
-                max-w-[382px]
+                max-w-[500px]
                 rounded-[17px]
                 border
                 border-[#DCE5F6]
@@ -62,8 +62,8 @@ const ExampleProjectsPanel: FC = () => {
                             <span
                                 className={`
                                     flex
-                                    h-10.5
-                                    w-10.5
+                                    h-18
+                                    w-18
                                     shrink-0
                                     items-center
                                     justify-center
@@ -73,7 +73,7 @@ const ExampleProjectsPanel: FC = () => {
                             >
                                 <Icon
                                     aria-hidden="true"
-                                    className="h-5.5 w-5.5"
+                                    className="h-9 w-9"
                                     strokeWidth={1.8}
                                 />
                             </span>
