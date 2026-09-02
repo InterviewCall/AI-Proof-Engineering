@@ -1,4 +1,4 @@
-import { CheckCircle2 } from 'lucide-react';
+import {  } from 'lucide-react';
 import { FC } from 'react';
 
 import { mobileLoopBullets } from '@/utils/practiceSystemItems';
@@ -13,11 +13,11 @@ const MobileLoopCard: FC = () => {
                 border
                 border-(--practice-section-board-border)
                 bg-(--practice-section-board-bg)
-                p-5
+                p-4
                 sm:p-6
             "
         >
-            <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-center">
+            <div className="flex items-center justify-between gap-4">
                 <div className="text-center sm:text-left">
                     <span
                         className="
@@ -34,9 +34,9 @@ const MobileLoopCard: FC = () => {
                     <h3
                         className="
                             mt-2
-                            text-[24px]
+                            text-[22px]
                             font-bold
-                            leading-[1.2]
+                            leading-[1.15]
                             tracking-[-1%]
                             text-(--practice-section-card-title)
                         "
@@ -47,8 +47,10 @@ const MobileLoopCard: FC = () => {
                     <p
                         className="
                             mt-2
-                            text-[14px]
-                            leading-[1.5]
+                            max-w-[220px]
+                            text-justify
+                            text-[13px]
+                            leading-[1.45]
                             text-(--practice-section-card-text)
                         "
                     >
@@ -56,22 +58,33 @@ const MobileLoopCard: FC = () => {
                         debug, or present, and someone reviews it afterward.
                     </p>
                 </div>
-
-                <LoopDiagram />
+                <div className="shrink-0 translate-y-20">
+                    <LoopDiagram />
+                </div>
             </div>
 
-            <div className="mt-5 space-y-2.5">
+            <div className="mt-4 space-y-2">
                 {mobileLoopBullets.map((bullet) => (
-                    <div key={bullet} className="flex items-center gap-2.5">
-                        <CheckCircle2
-                            aria-hidden="true"
-                            className="h-5 w-5 shrink-0 text-(--button-primary-bg)"
-                            strokeWidth={2}
-                        />
-
+                    <div key={bullet} className="flex items-center gap-2">
+                        
+            <div
+                className="
+                    flex
+                    h-5
+                    w-5
+                    shrink-0
+                    items-center
+                    justify-center
+                    rounded-full
+                    bg-(--button-primary-bg)
+                  text-white
+                "
+                >
+                <span className="text-[12px] font-bold leading-none">✓</span>
+            </div>
                         <p
                             className="
-                                text-[14px]
+                                text-[13px]
                                 font-medium
                                 text-(--practice-section-card-title)
                             "

@@ -20,6 +20,7 @@ import PracticeLoopPanel from './PracticeLoopPanel';
 import PracticeTabs from './PracticeTabs';
 import PracticeTaskCard from './PracticeTaskCard';
 import ReadinessProgressCard from './ReadinessProgressCard';
+import MobilePracticeTabs from './MobilePracticeTabs';
 
 const PracticeSystemSection: FC = () => {
     const [activeTabId, setActiveTabId] =
@@ -191,15 +192,13 @@ const PracticeSystemSection: FC = () => {
                     <div
                         className="
                             space-y-4
-                            rounded-[12px]
-                            border
-                            border-[#dce6fa]
-                            bg-white
-                            p-4
-                            sm:p-5
                             lg:hidden
                         "
-                    >
+                    ><MobilePracticeTabs
+                        activeTabId={activeTabId}
+                        onTabChange={setActiveTabId}
+                    />
+
                         <MobileLoopCard />
 
                         <MobileSummaryCards />
