@@ -14,7 +14,7 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
                 border
                 border-(--practice-section-card-border)
                 bg-(--practice-section-card-bg)
-                p-5
+                p-4
             "
         >
             <div className="flex items-center justify-between gap-3">
@@ -55,8 +55,8 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
 
             <h4
                 className="
-                    mt-4
-                    text-[18px]
+                    mt-2
+                    text-[16px]
                     font-semibold
                     leading-tight
                     text-(--practice-section-card-title)
@@ -65,68 +65,64 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
                 {task.title}
             </h4>
 
-        <div className="mt-2 flex flex-wrap gap-2">
-    {task.tags.map((tag) => (
-        <span
-            key={tag}
-            className={`
-                inline-flex
-                min-h-6
-                items-center
-                rounded-full
-                px-2.5
-                text-[11px]
-                font-semibold
-                ${
-                    tag.toLowerCase() === 'medium'
-                        ? 'bg-[#097042] text-white'
-                        : 'bg-(--practice-section-progress-track) text-(--practice-section-card-text)'
-                }
-            `}
-        >
-            {tag}
-        </span>
-    ))}
-</div>
-            {/* OLD CODE BLOCK REMOVED — SVG IS PLACED HERE */}
-            <div
-                className="
-                    mt-4
-                    flex
-                    w-full
-                    items-center
-                    justify-center
-                    overflow-hidden
-                    rounded-lg
-                "
-            >
-                <Image
-                    src="/images/svg/practice-system-visual.svg"
-                    alt="Practice task"
-                    width={268}
-                    height={132}
-                    priority
-                    className="
-                        block
-                        h-auto
-                        w-full
-                        object-contain
-                    "
-                />
+            <div className="mt-2 flex flex-wrap gap-2">
+                {task.tags.map((tag) => (
+                    <span
+                        key={tag}
+                        className="
+                            inline-flex
+                            min-h-6
+                            items-center
+                            rounded-full
+                            bg-(--practice-section-progress-track)
+                            px-2.5
+                            text-[11px]
+                            font-semibold
+                            text-(--practice-section-card-text)
+                        "
+                    >
+                        {tag}
+                    </span>
+                ))}
             </div>
 
-            <div className="mt-4 flex gap-2">
+            <div
+    className="
+        mt-2
+        flex
+        h-[100px]
+        w-[200px]
+        translate-x-10
+        overflow-hidden
+    "
+>
+    <Image
+        src="/image 114.svg"
+        alt="Practice task"
+        width={200}
+        height={100}
+        priority
+        className="
+            block
+            h-full
+            w-full
+            object-contain
+        "
+    />
+</div>
+
+            <div className="mt-2 flex justify-end gap-2">
                 <button
                     type="button"
                     className="
-                        min-h-10.5
-                        flex-1
+                        min-h-8
                         cursor-pointer
                         rounded-lg
                         border
                         border-(--practice-section-card-border)
                         bg-white
-                        text-[13px]
+                        px-3
+                        text-[12px]
                         font-semibold
                         whitespace-nowrap
                         text-(--practice-section-card-title)
@@ -140,13 +136,14 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
                 <button
                     type="button"
                     className="
-                        min-h-10.5
-                        flex-1
+                        min-h-8
                         cursor-pointer
                         rounded-lg
                         bg-(--button-primary-bg)
-                        text-[13px]
+                        px-3
+                        text-[12px]
                         font-semibold
+                        whitespace-nowrap
                         text-(--button-primary-text)
                         transition-colors
                         hover:bg-(--button-primary-bg-hover)

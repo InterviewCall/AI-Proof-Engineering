@@ -4,17 +4,7 @@ import { loopBullets } from '@/utils/practiceSystemItems';
 
 const PracticeLoopPanel: FC = () => {
     return (
-        <div
-            className="
-                flex
-                h-full
-                flex-col
-                justify-center
-                gap-5
-                p-6
-                xl:p-8
-            "
-        >
+        <div className="flex flex-col justify-center p-6 xl:p-8">
             <span
                 className="
                     text-[13px]
@@ -29,8 +19,7 @@ const PracticeLoopPanel: FC = () => {
 
             <h3
                 className="
-                    mt-0
-                    max-w-[360px]
+                    mt-3
                     text-[24px]
                     font-bold
                     leading-[1.1]
@@ -44,8 +33,7 @@ const PracticeLoopPanel: FC = () => {
 
             <p
                 className="
-                    mt-0
-                    max-w-[330px]
+                    mt-3
                     text-[15px]
                     font-semibold
                     leading-[1.55]
@@ -57,18 +45,14 @@ const PracticeLoopPanel: FC = () => {
                 AI-assisted engineering assignments.
             </p>
 
-            <div className="mt-1 space-y-4">
+            <div className="mt-5 space-y-3">
                 {loopBullets.map((bullet) => {
                     const Icon = bullet.icon;
 
                     return (
                         <div
                             key={bullet.label}
-                            className="
-                                flex
-                                items-center
-                                gap-3
-                            "
+                            className="flex items-center gap-3"
                         >
                             <span
                                 className="
