@@ -17,7 +17,7 @@ const FeaturedAlumniCard: FC = () => {
             className="
                 relative
                 isolate
-                self-start
+                h-full
                 overflow-hidden
                 rounded-2xl
                 border
@@ -26,7 +26,6 @@ const FeaturedAlumniCard: FC = () => {
                 p-5
                 min-h-[620px]
                 sm:p-6
-                lg:aspect-[1.47/1]
                 lg:min-h-0
             "
         >

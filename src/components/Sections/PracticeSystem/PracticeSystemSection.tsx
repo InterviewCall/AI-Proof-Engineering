@@ -195,7 +195,7 @@ const PracticeSystemSection: FC = () => {
                             lg:hidden
                         "
                     ><MobilePracticeTabs
-                        activeTabId={activeTabId}
+                        activeTab={activeTabId}
                         onTabChange={setActiveTabId}
                     />
 

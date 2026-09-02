@@ -64,6 +64,7 @@ const StructuredJourneySection: FC = () => {
                             px-5
                             text-[16px]
                             font-semibold
+                            shadow-[0_7px_14px_rgba(1,17,57,0.18)]
                             uppercase
                             text-(--color-brand-700)
                             leading-[1.58]
