@@ -24,7 +24,7 @@ export const progressProofs: ProgressProof[] = [
         accent: 'one',
         before:
             'Jumps straight into components without stating the requirements first.',
-        after: 'States assumptions, then works through storage, APIs, and where the system will need to scale.',
+        after: 'States assumptions,works through storage,APIs,and where the system will need to scale.',
         badge: 'Improved structure, clarity, and depth',
     },
     {
@@ -33,7 +33,7 @@ export const progressProofs: ProgressProof[] = [
         accent: 'two',
         before:
             'Loses the thread of the answer once the interviewer pushes back.',
-        after: 'Holds the structure of the answer through follow-up questions.',
+        after: 'Holds the structure of the answer through follow-up questions.and where the system will need to scale',
         badge: 'Better communication and confidence',
     },
     {
@@ -42,7 +42,7 @@ export const progressProofs: ProgressProof[] = [
         accent: 'three',
         before:
             'A resume line describing a project, with no code or write-up attached.',
-        after: 'A repository, an architecture document, and a recorded walkthrough.',
+        after: 'A repository, an architecture document, and a recorded walkthrough.and where the system will need to scale',
         badge: 'Tangible proof of engineering ability',
     },
     {
@@ -50,7 +50,7 @@ export const progressProofs: ProgressProof[] = [
         icon: Brain,
         accent: 'four',
         before: 'Copies AI-generated code into the project without checking it.',
-        after: "Tests the output, flags what's wrong, and rewrites the parts that need it.",
+        after: "Tests the output, flags what's wrong, and rewrites the parts that need it.and where the system will need to scale",
         badge: 'Smarter use of AI with real engineering judgment',
     },
 ];

@@ -190,7 +190,7 @@ const ProgressProofCard: FC<{ proof: ProgressProof }> = ({ proof }) => {
                     gap-2.5
                     rounded-xl
                     p-3.5
-                    min-h-[64px]
+                    min-h-[72px]
                     ${badgeAccentStyles[proof.accent]}
                 `}
             >
@@ -200,7 +200,7 @@ const ProgressProofCard: FC<{ proof: ProgressProof }> = ({ proof }) => {
                     strokeWidth={1.9}
                 />
 
-                <p className="text-[13px] font-semibold leading-[1.35]">
+                <p className="line-clamp-2 text-[13px] font-semibold leading-[1.35]">
                     {proof.badge}
                 </p>
             </div>

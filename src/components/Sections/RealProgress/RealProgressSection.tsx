@@ -26,7 +26,7 @@ const RealProgressSection: FC = () => {
                 xl:px-12
             "
         >
-            <div className="mx-auto w-full max-w-345">
+            <div className="mx-auto w-full max-w-1540">
                 {/* Header */}
                 <header className="mx-auto max-w-260 text-center">
                     <div
@@ -62,17 +62,18 @@ const RealProgressSection: FC = () => {
                         className="
                             mt-4
                             hidden
-                            text-[clamp(2.5rem,6vw,3.75rem)]
+                            text-[clamp(1.75rem,5vw,3.125rem)]
                             font-bold
+                            whitespace-nowrap
                             leading-[1.06]
                             tracking-[-2%]
                             text-(--progress-section-title-text)
                             lg:block
                         "
                     >
-                        Before
+                        Before{' '}
 
-                        <span className="block text-(--progress-section-title-highlight)">
+                        <span className="text-(--progress-section-title-highlight)">
                             and After
                         </span>
                     </h2>

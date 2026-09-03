@@ -61,7 +61,7 @@ const MobilePracticeTabs: FC<MobilePracticeTabsProps> = ({
                             ${
                                 isActive
                                     ? "bg-white text-(--color-brand-700)"
-                                    : "bg-transparent text-(--practice-section-muted-text)"
+                                    : "bg-transparent text-black"
                             }
                         `}
                     >

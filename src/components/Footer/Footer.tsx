@@ -29,9 +29,11 @@ const Footer: FC = () => {
                 className="
                     mx-auto
                     w-full
-                    max-w-395
+                    max-w-[1540px]
+                    box-border
                     px-4
-                    py-12
+                    pt-[50px]
+                    pb-12
                     sm:px-6
                     lg:px-8
                     xl:px-12
