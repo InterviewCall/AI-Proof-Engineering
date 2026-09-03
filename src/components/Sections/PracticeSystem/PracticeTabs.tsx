@@ -56,7 +56,7 @@ const PracticeTabs: FC<PracticeTabsProps> = ({ activeTabId, onChange }) => {
                             ${
                                 isActive
                                     ? 'bg-(--practice-section-tab-active-bg) text-(--practice-section-tab-active-text)'
-                                    : 'text-(--practice-section-tab-text) hover:bg-white'
+                                    : 'text-black hover:bg-white'
                             }
                         `}
                     >

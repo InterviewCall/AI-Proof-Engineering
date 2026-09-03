@@ -80,7 +80,7 @@ const HeroSection: FC = () => {
                             xl:text-[15px]
                         "
                     >
-                        <span
+                        {/* <span
                             aria-hidden="true"
                             className="
                                 h-1.5
@@ -88,11 +88,11 @@ const HeroSection: FC = () => {
                                 rounded-full
                                 bg-(--hero-section-badge-dot)
                             "
-                        />
+                        /> */}
 
                         <span>AI-Proof Engineer Program</span>
 
-                        <span
+                        {/* <span
                             aria-hidden="true"
                             className="
                                 h-1.5
@@ -100,7 +100,7 @@ const HeroSection: FC = () => {
                                 rounded-full
                                 bg-(--hero-section-badge-dot)
                             "
-                        />
+                        /> */}
                     </div>
 
                     {/* Main heading */}

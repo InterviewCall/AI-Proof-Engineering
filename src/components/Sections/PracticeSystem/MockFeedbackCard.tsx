@@ -128,12 +128,13 @@ const MockFeedbackCard: FC = () => {
 
             <div
                 className="
-                    mt-0
+                    mt-2
                     flex
                     items-start
                     gap-2
                     rounded-lg
-                    bg-(--practice-section-board-bg)
+                    border-[#ECF1FD]
+                    bg-[#F6F8FD]
                     px-3.5
                     py-3
                 "
@@ -159,7 +160,7 @@ const MockFeedbackCard: FC = () => {
                 href="#practice-system"
                 className="
                     group
-                    mt-0
+                    mt-2
                     inline-flex
                     items-center
                     gap-1.5
