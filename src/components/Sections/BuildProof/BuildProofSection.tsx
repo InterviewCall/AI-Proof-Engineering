@@ -26,7 +26,7 @@ const BuildProofSection: FC = () => {
                 xl:px-8
             "
         >
-            <div className="mx-auto w-full max-w-370">
+            <div className="mx-auto w-full max-w-[1540px]">
                 {/* Header */}
                 <header className="mx-auto max-w-370 text-center">
                     <div
