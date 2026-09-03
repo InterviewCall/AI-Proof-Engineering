@@ -232,16 +232,16 @@ const AssessmentBanner: FC = () => {
                             items-center
                             gap-4
                             xl:min-w-0
-                            xl:gap-6
+                            xl:justify-between
                             2xl:gap-8
                         "
                     >
                         {assessmentBenefits.map((benefit, index) => (
                             <div
                                 key={benefit.label}
-                                className="flex shrink-0 items-center gap-4"
+                                className="flex flex-1 items-center justify-center gap-4"
                             >
-                                {index > 0 && (
+                               
                                     <span
                                         aria-hidden="true"
                                         className="
@@ -252,7 +252,7 @@ const AssessmentBanner: FC = () => {
                                             bg-(--assessment-banner-point-bg)
                                         "
                                     />
-                                )}
+                               
 
                                 <div className="flex items-center gap-3">
                                     <Image
