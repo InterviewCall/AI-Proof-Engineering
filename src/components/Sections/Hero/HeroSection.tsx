@@ -31,7 +31,7 @@ const HeroSection: FC = () => {
                     mx-auto
                     grid
                     w-full
-                    max-w-[1542px]
+                    max-w-[1540px]
                     items-center
                     gap-6
                     lg:grid-cols-[0.9fr_1.1fr]
@@ -113,22 +113,19 @@ const HeroSection: FC = () => {
                     >
                         <span
                             className="
-                                block
                                 text-[clamp(2rem,9vw,2.8rem)]
                                 font-bold
                                 tracking-[-3%]
                                 text-(--hero-section-title-one-text)
                                 md:tracking-[-4%]
-                                lg:text-[52px]
+                                lg:text-[50px]
                             "
                         >
                             AI writes more of the code now.
-                        </span>
+                        </span>{' '}
 
                         <span
                             className="
-                            mt-2
-                            block
                             bg-clip-text
                             text-[clamp(2.55rem,7.5vw,4rem)]
                             font-bold
@@ -248,7 +245,7 @@ const HeroSection: FC = () => {
                                 text-center
                                 text-[17px]
                                 font-semibold
-                                text-(--hero-section-button-text)
+                                text-white
                                 shadow-[0_12px_28px_rgba(5,66,247,0.18)]
                                 transition-all
                                 duration-200
@@ -457,6 +454,7 @@ const HeroSection: FC = () => {
                                         min-w-10
                                         bg-[#0b62ff]
                                         sm:h-0.75
+                                        
                                     "
                                 />
 
@@ -465,6 +463,7 @@ const HeroSection: FC = () => {
                                         mt-[8%]
                                         space-y-1
                                         sm:space-y-1
+                                        
                                     "
                                 >
                                     <p
@@ -475,6 +474,7 @@ const HeroSection: FC = () => {
                                             tracking-[-4%]
                                             sm:text-[18px]
                                             lg:text-[24px]
+                                            
                                         "
                                     >
                                         Sunyul Hossen

@@ -30,7 +30,7 @@ const WhyNowSection: FC = () => {
                 xl:px-10
             '
         >
-            <div className='mx-auto w-full max-w-[1409px]'>
+            <div className='mx-auto w-full max-w-[1540px]'>
                 {/* Section header */}
                 <div className='mx-auto max-w-240 text-center'>
                     <div
@@ -67,11 +67,11 @@ const WhyNowSection: FC = () => {
                             text-(--why-now-section-title-text)
                             [text-shadow:0_6px_14px_rgba(1,13,47,0.18)]
                             sm:text-[38px]
-                            lg:text-[42px]
+                            lg:text-[50px]
                         '
                     >
-                        AI Has Already Changed How Many Engineering Teams
-                        Work
+                        AI Has Already Changed How Many{' '} 
+                        <span className='text-(--why-now-section-title-highlight)'>Engineering Teams work</span>
                     </h2>
 
                     <p
@@ -305,8 +305,8 @@ const WhyNowSection: FC = () => {
                                 <div
                                     className='
                                         flex
-                                        h-11
-                                        w-11
+                                        h-16
+                                        w-16
                                         shrink-0
                                         items-center
                                         justify-center
@@ -318,7 +318,7 @@ const WhyNowSection: FC = () => {
                                 >
                                     <Bot
                                         aria-hidden='true'
-                                        className='h-6 w-6'
+                                        className='h-8 w-8'
                                         strokeWidth={2}
                                     />
                                 </div>
@@ -376,7 +376,7 @@ const WhyNowSection: FC = () => {
 
                                         <p
                                             className='
-                                                text-[12px]
+                                                text-[15px]
                                                 font-medium
                                                 leading-[1.45]
                                                 text-(--why-now-section-right-box-sub-box-one-point-text)

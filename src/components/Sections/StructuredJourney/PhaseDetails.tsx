@@ -226,7 +226,7 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                             flex
                             items-center
                             gap-2
-                            text-[14px]
+                            text-[15px]
                             font-semibold
                             text-(--color-brand-700)
                             leading-[1.2]
@@ -245,7 +245,7 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                         className="
                             mt-4
                             max-w-[560px]
-                            text-[14px]
+                            text-[15px]
                             leading-[1.4]
                             tracking-[-1%]
                             text-(--journey-section-card-text)
