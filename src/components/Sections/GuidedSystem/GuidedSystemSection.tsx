@@ -423,18 +423,6 @@ const GuidedSystemSection: FC = () => {
                                     {step.desktopDescription}
                                 </p>
 
-                                {/*
-                                    FIX: was a horizontal flex row of icon+label pairs.
-                                    With 4 items (e.g. "Assignments", "Reviews") the slot
-                                    became too narrow for the label's single-word width,
-                                    text couldn't shrink/wrap, and it overflowed into the
-                                    next item causing visual overlap.
-
-                                    Now: equal-width CSS grid columns (one per item),
-                                    icon stacked ABOVE a centered, word-breakable label.
-                                    Every label gets a fixed, non-overlapping column no
-                                    matter how many items or how long the words are.
-                                */}
                                 <div
                                     className="
                                         mt-auto
@@ -537,22 +525,29 @@ const GuidedSystemSection: FC = () => {
                 </div>
 
                 {/* Mobile / tablet timeline */}
-                <div className="relative mt-8 lg:hidden">
+                <div
+                    className="
+                        relative
+                        mt-7
+                        lg:hidden
+                    "
+                >
+                    {/* Figma-style vertical timeline */}
                     <span
                         aria-hidden="true"
                         className="
                             absolute
-                            left-8.75
-                            top-8
-                            bottom-8
+                            left-[20px]
+                            top-[20px]
+                            bottom-[20px]
                             w-px
                             border-l
                             border-dotted
-                            border-(--guided-system-step-connector)
+                            border-[#BFD2FF]
                         "
                     />
 
-                    <div className="space-y-4">
+                    <div className="space-y-3">
                         {guidedSteps.map((step) => {
                             const Icon = step.icon;
 
@@ -562,76 +557,86 @@ const GuidedSystemSection: FC = () => {
                                     className="
                                         relative
                                         grid
-                                        grid-cols-[70px_minmax(0,1fr)]
-                                        gap-0
+                                        grid-cols-[40px_minmax(0,1fr)]
+                                        gap-3
                                     "
                                 >
-                                    <div className="relative z-10 pt-3">
+                                    {/* Step number */}
+                                    <div className="relative z-10 flex justify-center pt-2">
                                         <span
                                             className="
                                                 flex
-                                                h-16
-                                                w-16
+                                                h-10
+                                                w-10
+                                                shrink-0
                                                 items-center
                                                 justify-center
                                                 rounded-full
-                                                bg-(--guided-system-step-number-bg)
-                                                text-[24px]
+                                                border
+                                                border-[#D9E4FF]
+                                                bg-[#EEF4FF]
+                                                text-[15px]
                                                 font-semibold
-                                                text-(--guided-system-step-number-text)
+                                                text-[#0757F5]
                                             "
                                         >
                                             {step.id}
                                         </span>
                                     </div>
 
+                                    {/* Mobile card */}
                                     <div
                                         className="
-                                            rounded-2xl
+                                            min-w-0
+                                            rounded-[12px]
                                             border
-                                            border-(--guided-system-step-border)
-                                            bg-(--guided-system-step-bg)
-                                            px-6
-                                            py-6
+                                            border-[#D9E4FF]
+                                            bg-white
+                                            px-3
+                                            py-3
                                         "
                                     >
+                                        {/* Main content */}
                                         <div
                                             className="
                                                 grid
-                                                grid-cols-[110px_minmax(0,1fr)]
-                                                gap-5
-                                                sm:grid-cols-[120px_minmax(0,1fr)]
+                                                grid-cols-[48px_minmax(0,1fr)]
+                                                items-center
+                                                gap-3
                                             "
                                         >
+                                            {/* Icon */}
                                             <span
                                                 className="
                                                     flex
-                                                    h-27.5
-                                                    w-27.5
+                                                    h-12
+                                                    w-12
+                                                    shrink-0
                                                     items-center
                                                     justify-center
-                                                    rounded-2xl
+                                                    rounded-[9px]
                                                     border
-                                                    border-(--guided-system-step-border)
-                                                    bg-(--guided-system-step-number-bg)
-                                                    text-(--guided-system-step-icon)
+                                                    border-[#D9E4FF]
+                                                    bg-[#F5F8FF]
+                                                    text-[#0757F5]
                                                 "
                                             >
                                                 <Icon
                                                     aria-hidden="true"
-                                                    className="h-16 w-16"
-                                                    strokeWidth={1.6}
+                                                    className="h-7 w-7"
+                                                    strokeWidth={1.8}
                                                 />
                                             </span>
 
-                                            <div>
+                                            {/* Text */}
+                                            <div className="min-w-0">
                                                 <h3
                                                     className="
-                                                        text-[25px]
+                                                        text-[14px]
                                                         font-bold
                                                         leading-[1.2]
-                                                        tracking-[-0.03em]
-                                                        text-(--guided-system-step-title)
+                                                        tracking-[-0.02em]
+                                                        text-[#102454]
                                                     "
                                                 >
                                                     {step.title}
@@ -639,11 +644,11 @@ const GuidedSystemSection: FC = () => {
 
                                                 <p
                                                     className="
-                                                        mt-3
-                                                        text-[18px]
-                                                        font-semibold
-                                                        leading-[1.55]
-                                                        text-(--guided-system-step-text)
+                                                        mt-1
+                                                        text-[11px]
+                                                        font-medium
+                                                        leading-[1.4]
+                                                        text-[#465272]
                                                     "
                                                 >
                                                     {step.mobileDescription}
@@ -651,39 +656,44 @@ const GuidedSystemSection: FC = () => {
                                             </div>
                                         </div>
 
+                                        {/* Includes bar */}
                                         <div
                                             className="
-                                                mt-6
-                                                rounded-xl
-                                                bg-(--guided-system-tool-bar-bg)
-                                                px-5
-                                                py-3
+                                                mt-2.5
+                                                flex
+                                                min-h-[27px]
+                                                items-center
+                                                rounded-[6px]
+                                                border
+                                                border-[#E0E9FF]
+                                                bg-[#F7F9FE]
+                                                px-2
                                             "
                                         >
                                             <div
                                                 className="
                                                     flex
-                                                    items-start
-                                                    gap-3
-                                                    text-[18px]
+                                                    min-w-0
+                                                    items-center
+                                                    gap-1.5
+                                                    text-[10px]
                                                     font-medium
-                                                    leading-[1.45]
-                                                    text-(--guided-system-step-text)
+                                                    leading-[1.25]
+                                                    text-[#465272]
                                                 "
                                             >
                                                 <CheckCircle2
                                                     aria-hidden="true"
                                                     className="
-                                                        mt-1
-                                                        h-6
-                                                        w-6
+                                                        h-3.5
+                                                        w-3.5
                                                         shrink-0
-                                                        text-(--guided-system-step-icon)
+                                                        text-[#0757F5]
                                                     "
                                                     strokeWidth={1.8}
                                                 />
 
-                                                <span>
+                                                <span className="min-w-0">
                                                     Includes:{' '}
                                                     {step.mobileIncludes}
                                                 </span>
@@ -818,28 +828,28 @@ const GuidedSystemSection: FC = () => {
 
                                     {!isLast && (
                                         <span
-                                                    aria-hidden="true"
-                                                    className="
-                                                        relative
-                                                        mt-9
-                                                        h-px
-                                                        min-w-5
-                                                        flex-1
-                                                        border-t-2
-                                                        border-dashed
-                                                        border-[#0757F5]
-                                                        after:absolute
-                                                        after:-right-[2px]
-                                                        after:-top-[4px]
-                                                        after:h-0
-                                                        after:w-0
-                                                        after:content-['']
-                                                        after:border-y-[4px]
-                                                        after:border-y-transparent
-                                                        after:border-l-[6px]
-                                                        after:border-l-[#0757F5]
-                                                    "
-                                                />
+                                            aria-hidden="true"
+                                            className="
+                                                relative
+                                                mt-9
+                                                h-px
+                                                min-w-5
+                                                flex-1
+                                                border-t-2
+                                                border-dashed
+                                                border-[#0757F5]
+                                                after:absolute
+                                                after:-right-[2px]
+                                                after:-top-[4px]
+                                                after:h-0
+                                                after:w-0
+                                                after:content-['']
+                                                after:border-y-[4px]
+                                                after:border-y-transparent
+                                                after:border-l-[6px]
+                                                after:border-l-[#0757F5]
+                                            "
+                                        />
                                     )}
                                 </div>
                             );
@@ -850,24 +860,24 @@ const GuidedSystemSection: FC = () => {
                 {/* Mobile operating flow */}
                 <div
                     className="
-                        mt-5
+                        mt-4
                         flex
-                        items-center
-                        gap-5
-                        rounded-[14px]
+                        items-start
+                        gap-3
+                        rounded-[10px]
                         border
-                        border-(--guided-system-tool-bar-border)
-                        bg-(--guided-system-tool-bar-bg)
-                        px-5
-                        py-4
+                        border-[#D9E4FF]
+                        bg-[#F7F9FE]
+                        px-3
+                        py-3
                         lg:hidden
                     "
                 >
                     <span
                         className="
                             flex
-                            h-20
-                            w-20
+                            h-10
+                            w-10
                             shrink-0
                             items-center
                             justify-center
@@ -878,14 +888,15 @@ const GuidedSystemSection: FC = () => {
                     >
                         <Route
                             aria-hidden="true"
-                            className="h-12 w-12"
+                            className="h-6 w-6"
                             strokeWidth={1.6}
                         />
                     </span>
 
                     <p
                         className="
-                            text-[22px]
+                            pt-0.5
+                            text-[11px]
                             font-medium
                             leading-[1.55]
                             text-(--guided-system-step-title)
@@ -923,10 +934,10 @@ const GuidedSystemSection: FC = () => {
                 <div
                     className="
                         mx-auto
-                        mt-6
+                        mt-5
                         grid
                         max-w-[735px]
-                        gap-3
+                        gap-2.5
                         lg:mt-6
                         lg:grid-cols-[1.2fr_1fr]
                         lg:gap-6
@@ -937,16 +948,16 @@ const GuidedSystemSection: FC = () => {
                         className="
                             group
                             inline-flex
-                            min-h-17.5
+                            min-h-12
                             w-full
                             items-center
                             justify-center
-                            gap-4
+                            gap-2.5
                             rounded-lg
                             bg-(--button-primary-bg)
-                            px-6
+                            px-4
                             text-center
-                            text-[22px]
+                            text-[14px]
                             font-medium
                             text-white
                             transition-all
@@ -957,12 +968,14 @@ const GuidedSystemSection: FC = () => {
                             focus-visible:ring-4
                             focus-visible:ring-(--focus-ring-color)
                             lg:min-h-16
+                            lg:gap-4
+                            lg:px-6
                             lg:text-[20px]
                         "
                     >
                         <PlayCircle
                             aria-hidden="true"
-                            className="h-7 w-7"
+                            className="h-5 w-5 lg:h-7 lg:w-7"
                             strokeWidth={1.8}
                         />
 
@@ -975,16 +988,18 @@ const GuidedSystemSection: FC = () => {
                         className="
                             group
                             inline-flex
-                            min-h-14
+                            min-h-12
                             w-full
                             items-center
                             justify-center
-                            gap-4
+                            gap-2.5
                             rounded-lg
+                            border
+                            border-(--guided-system-step-border)
                             bg-white
-                            px-6
+                            px-4
                             text-center
-                            text-[21px]
+                            text-[14px]
                             font-semibold
                             text-(--guided-system-step-icon)
                             transition-all
@@ -995,8 +1010,9 @@ const GuidedSystemSection: FC = () => {
                             focus-visible:ring-4
                             focus-visible:ring-(--focus-ring-color)
                             lg:min-h-16
+                            lg:gap-4
                             lg:border
-                            lg:border-(--guided-system-step-border)
+                            lg:px-6
                             lg:text-[20px]
                         "
                     >
@@ -1016,8 +1032,8 @@ const GuidedSystemSection: FC = () => {
                         <ArrowRight
                             aria-hidden="true"
                             className="
-                                h-6
-                                w-6
+                                h-5
+                                w-5
                                 lg:hidden
                             "
                             strokeWidth={1.8}

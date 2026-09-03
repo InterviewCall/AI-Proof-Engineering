@@ -16,23 +16,24 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                     border
                     border-(--journey-section-card-border)
                     bg-(--journey-section-card-bg)
-                    px-5
-                    pt-5
+                    px-3
+                    pt-3
                     pb-1
-                    shadow-[0_10px_30px_rgba(9,77,231,0.04)]
+                    shadow-[0_6px_20px_rgba(9,77,231,0.04)]
                 "
             >
                 <span
                     className="
                         inline-flex
-                        min-h-7
+                        min-h-5
                         items-center
-                        rounded-lg
+                        rounded-[5px]
                         bg-(--button-primary-bg)
-                        px-4
-                        text-[12px]
+                        px-2
+                        text-[9px]
                         font-semibold
                         uppercase
+                        leading-none
                         text-white
                     "
                 >
@@ -41,11 +42,11 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
 
                 <h3
                     className="
-                        mt-3
-                        text-[25px]
+                        mt-2
+                        text-[16px]
                         font-bold
                         leading-[1.15]
-                        tracking-[-0.035em]
+                        tracking-[-0.025em]
                         text-(--journey-section-card-title)
                     "
                 >
@@ -54,18 +55,19 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
 
                 <div
                     className="
-                        mt-3
+                        mt-2
                         flex
                         items-center
-                        gap-2
-                        text-[15px]
+                        gap-1.5
+                        text-[11px]
                         font-semibold
+                        leading-none
                         text-(--color-brand-700)
                     "
                 >
                     <Clock3
                         aria-hidden="true"
-                        className="h-5 w-5"
+                        className="h-3.5 w-3.5"
                         strokeWidth={1.8}
                     />
                     <span>{phase.duration}</span>
@@ -73,10 +75,10 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
 
                 <p
                     className="
-                        mt-4
-                        text-[15px]
+                        mt-2.5
+                        text-[11px]
                         font-medium
-                        leading-normal
+                        leading-[1.4]
                         text-(--journey-section-card-text)
                     "
                 >
@@ -85,10 +87,10 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
 
                 <div
                     className="
-                        mt-5
+                        mt-3
                         border-t
                         border-(--journey-section-card-border)
-                        pt-1
+                        pt-0
                     "
                 >
                     {phase.mobileCards.map((card, index) => {
@@ -99,9 +101,9 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                                 key={card.title}
                                 className={`
                                     grid
-                                    grid-cols-[58px_minmax(0,1fr)]
-                                    gap-4
-                                    py-4
+                                    grid-cols-[36px_minmax(0,1fr)]
+                                    gap-2.5
+                                    py-3
                                     ${
                                         index < phase.mobileCards.length - 1
                                             ? 'border-b border-(--journey-section-card-border)'
@@ -112,11 +114,11 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                                 <span
                                     className={`
                                         flex
-                                        h-13.5
-                                        w-13.5
+                                        h-8.5
+                                        w-8.5
                                         items-center
                                         justify-center
-                                        rounded-[11px]
+                                        rounded-[7px]
                                         ${
                                             card.iconBoxClass ??
                                             'bg-(--journey-section-phase-one-bg)'
@@ -129,36 +131,37 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                                 >
                                     <Icon
                                         aria-hidden="true"
-                                        className="h-8 w-8"
+                                        className="h-5 w-5"
                                         strokeWidth={1.8}
                                     />
                                 </span>
 
-                                <div>
+                                <div className="min-w-0">
                                     <h4
                                         className="
-                                            text-[17px]
+                                            text-[11px]
                                             font-semibold
+                                            leading-[1.25]
                                             text-(--journey-section-card-title)
                                         "
                                     >
                                         {card.title}
                                     </h4>
 
-                                    <ul className="mt-2 space-y-1.5">
+                                    <ul className="mt-1.5 space-y-1">
                                         {card.points.map((point) => (
                                             <li
                                                 key={point}
                                                 className="
                                                     flex
-                                                    gap-2
-                                                    text-[14px]
+                                                    gap-1.5
+                                                    text-[10px]
                                                     font-medium
                                                     leading-[1.35]
                                                     text-(--journey-section-card-text)
                                                 "
                                             >
-                                                <span className="mt-1.75 h-1.5 w-1.5 shrink-0 rounded-full bg-(--color-brand-700)" />
+                                                <span className="mt-1.25 h-1 w-1 shrink-0 rounded-full bg-(--color-brand-700)" />
                                                 <span>{point}</span>
                                             </li>
                                         ))}
@@ -254,12 +257,12 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
 
                 <div className="flex justify-end">
                     <Image
-                        src='/images/optimized-svg/image 425.svg'
-                        alt='image'
+                        src="/images/optimized-svg/image 425.svg"
+                        alt="image"
                         width={245}
                         height={178}
-                        loading='lazy'
-                        className='h-auto w-full max-w-[220px]'
+                        loading="lazy"
+                        className="h-auto w-full max-w-[220px]"
                     />
                 </div>
             </div>
@@ -353,12 +356,12 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
             >
                 <div className="shrink-0">
                     <Image
-                        src='/images/optimized-svg/image 424.svg'
-                        alt='target'
+                        src="/images/optimized-svg/image 424.svg"
+                        alt="target"
                         width={64}
                         height={64}
-                        loading='lazy'
-                        className='h-16 w-16'
+                        loading="lazy"
+                        className="h-16 w-16"
                     />
                 </div>
 

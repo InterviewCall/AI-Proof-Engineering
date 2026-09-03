@@ -801,18 +801,20 @@ const WhyNowSection: FC = () => {
                 {/* Program outcome bar */}
                 <div
                     className='
-                        mt-5
+                        mt-4
                         rounded-2xl
                         border
                         border-(--program-outcome-bar-border)
                         bg-(--program-outcome-bar-bg)
-                        p-4
+                        px-5
+                        py-4
                         shadow-[0_14px_22px_rgba(1,13,47,0.14),0_2px_6px_rgba(1,13,47,0.08)]
-                        sm:p-6
+                        sm:px-6
+                        sm:py-5
                         lg:grid
-                        lg:grid-cols-[minmax(0,1fr)_330px]
+                        lg:grid-cols-[minmax(0,1fr)_340px]
                         lg:items-center
-                        lg:gap-8
+                        lg:gap-7
                     '
                 >
                     <div className='flex items-start gap-4'>
@@ -843,12 +845,12 @@ const WhyNowSection: FC = () => {
 
                         <p
                             className='
+                                max-w-[680px]
                                 text-[13px]
                                 font-semibold
-                                leading-normal
+                                leading-[1.5]
                                 text-(--program-outcome-bar-title-text)
-                                sm:text-[16px]
-                                lg:max-w-190
+                                sm:text-[15px]
                                 lg:text-[17px]
                             '
                         >
@@ -864,33 +866,35 @@ const WhyNowSection: FC = () => {
 
                     <div
                         className='
-                            mt-5
+                           mt-4
                             border-t
                             border-(--program-outcome-bar-divider)
-                            pt-5
+                            pt-4
                             lg:mt-0
                             lg:border-l
                             lg:border-t-0
-                            lg:pl-8
+                            lg:pl-7
                             lg:pt-0
                         '
                     >
                         <Link
                             href='#solution'
                             className='
-                                group
+                                 group
                                 inline-flex
-                                min-h-12.5
+                                min-h-14
                                 w-full
                                 items-center
                                 justify-center
                                 gap-3
+                                whitespace-nowrap
                                 rounded-lg
                                 bg-(--assessment-banner-button-bg)
-                                px-5
+                                px-6
                                 text-center
                                 text-[14px]
                                 font-semibold
+                                leading-none
                                 text-white
                                 shadow-[0_10px_25px_rgba(0,67,251,0.16)]
                                 transition-all
@@ -901,8 +905,8 @@ const WhyNowSection: FC = () => {
                                 focus-visible:outline-none
                                 focus-visible:ring-4
                                 focus-visible:ring-(--focus-ring-color)
-                                sm:min-h-14
-                                sm:text-[16px]
+                                sm:min-h-15
+                                sm:text-[15px]
                             '
                         >
                             <span>See What the Program Covers</span>
