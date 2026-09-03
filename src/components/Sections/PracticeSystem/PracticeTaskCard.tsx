@@ -27,7 +27,7 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
 
                     <h3
                         className="
-                            text-[15px]
+                            text-[16px]
                             font-semibold
                             text-(--practice-section-card-title)
                         "
@@ -76,7 +76,7 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
                             rounded-full
                             bg-(--practice-section-progress-track)
                             px-2.5
-                            text-[11px]
+                            text-[12px]
                             font-semibold
                             text-(--practice-section-card-text)
                         "
@@ -87,31 +87,31 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
             </div>
 
             <div
-    className="
-        mt-2
-        flex
-        h-[100px]
-        w-[200px]
-        translate-x-10
-        overflow-hidden
-    "
->
-    <Image
-        src="/image 114.svg"
-        alt="Practice task"
-        width={200}
-        height={100}
-        priority
-        className="
-            block
-            h-full
-            w-full
-            object-contain
-        "
-    />
-</div>
+                className="
+                    mt-4
+                    flex
+                    h-[115px]
+                    w-[300px]
+                    self-center
+                    overflow-hidden
+                "
+            >
+                <Image
+                    src="/image 114.svg"
+                    alt="Practice task"
+                    width={300}
+                    height={115}
+                    priority
+                    className="
+                        block
+                        h-full
+                        w-full
+                        object-contain
+                    "
+                />
+            </div>
 
-            <div className="mt-2 flex justify-end gap-2">
+            <div className="mt-5 flex justify-end gap-2">
                 <button
                     type="button"
                     className="

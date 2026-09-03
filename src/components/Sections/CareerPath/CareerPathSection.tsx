@@ -35,7 +35,7 @@ const CareerPathSection: FC = () => {
                 xl:px-12
             "
         >
-            <div className="mx-auto w-full max-w-345">
+            <div className="mx-auto w-full max-w-[1540px]">
                 {/* =====================================================
                     SECTION HEADER
                 ====================================================== */}
@@ -81,7 +81,7 @@ const CareerPathSection: FC = () => {
                         className="
                             mt-3
                             hidden
-                            text-[clamp(3rem,5vw,3.75rem)]
+                            text-[50px]
                             font-bold
                             leading-[1.03]
                             tracking-[-1%]
@@ -118,12 +118,12 @@ const CareerPathSection: FC = () => {
                             mx-auto
                             mt-4
                             max-w-220
-                            text-[17px]
+                            text-[19px]
                             font-medium
                             leading-[1.32]
                             tracking-[-5%]
                             text-(--career-path-section-subtitle-text)
-                            sm:text-[22px]
+                            
                         "
                     >
                         <span className="lg:hidden">

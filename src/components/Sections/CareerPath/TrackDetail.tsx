@@ -236,11 +236,10 @@ const TrackDetail: FC<TrackDetailProps> = ({
         <div className="min-w-0 px-6 py-7 xl:px-10 xl:py-8">
             <h3
                 className="
-                    text-[32px]
+                    text-[24px]
                     font-semibold
                     leading-[1.32]
                     text-(--career-path-card-title)
-                    xl:text-[34px]
                     tracking-[-2%]
                 "
             >
@@ -256,7 +255,6 @@ const TrackDetail: FC<TrackDetailProps> = ({
                     leading-[1.38]
                     tracking-[-2%]
                     text-(--career-path-card-text)
-                    xl:text-[18px]
                 "
             >
                 {track.description}
