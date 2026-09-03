@@ -85,7 +85,7 @@ const StructuredJourneySection: FC = () => {
                         className="
                             mt-3
                             hidden
-                            text-[50px]
+                            text-[clamp(1.75rem,5vw,3.125rem)]
                             font-bold
                             leading-[1.05]
                             tracking-[-2%]
@@ -646,19 +646,15 @@ const StructuredJourneySection: FC = () => {
                 {/* CTA bar */}
                 <div
                     className="
-                        mt-4
-                        grid
-                        gap-2
-                        rounded-[10px]
-                        border
-                        border-(--journey-section-card-border)
-                        bg-(--journey-section-card-bg)
-                        px-3
-                        py-3
-                        lg:grid-cols-2
-                        lg:gap-4
-                        lg:px-36
-                    "
+                    mx-auto
+                    mt-5
+                    grid
+                    max-w-[735px]
+                    gap-2.5
+                    lg:mt-6
+                    lg:grid-cols-[1.2fr_1fr]
+                    lg:gap-6
+                "
                 >
                     <a
                         href="/documents/ai-engineering-curriculum.pdf"
@@ -671,10 +667,11 @@ const StructuredJourneySection: FC = () => {
                             items-center
                             justify-center
                             gap-2.5
-                            rounded-[6px]
+                            rounded-lg
                             bg-(--button-primary-bg)
                             px-4
-                            text-[17px]
+                            text-center
+                            text-[14px]
                             font-medium
                             text-white
                             transition-all
@@ -684,11 +681,15 @@ const StructuredJourneySection: FC = () => {
                             focus-visible:outline-none
                             focus-visible:ring-4
                             focus-visible:ring-(--focus-ring-color)
+                            lg:min-h-16
+                            lg:gap-4
+                            lg:px-6
+                            lg:text-[20px]
                         "
                     >
                         <Download
                             aria-hidden="true"
-                            className="h-4 w-4"
+                            className="h-5 w-5 lg:h-7 lg:w-7"
                             strokeWidth={1.9}
                         />
 
@@ -705,12 +706,13 @@ const StructuredJourneySection: FC = () => {
                             items-center
                             justify-center
                             gap-2.5
-                            rounded-[6px]
+                            rounded-lg
                             border
                             border-(--color-brand-600)
                             bg-white
                             px-4
-                            text-[17px]
+                            text-center
+                            text-[14px]
                             font-semibold
                             text-(--color-brand-700)
                             transition-all
@@ -720,6 +722,10 @@ const StructuredJourneySection: FC = () => {
                             focus-visible:outline-none
                             focus-visible:ring-4
                             focus-visible:ring-(--focus-ring-color)
+                            lg:min-h-16
+                            lg:gap-4
+                            lg:px-6
+                            lg:text-[20px]
                         "
                     >
                         <FileText

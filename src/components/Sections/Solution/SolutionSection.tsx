@@ -89,7 +89,7 @@ const SolutionSection: FC = () => {
                         className="
                             mt-4
                             hidden
-                            text-[50px]
+                            text-[clamp(1.75rem,5vw,3.125rem)]
                             font-semibold
                             leading-[1]
                             tracking-[-0.02em]

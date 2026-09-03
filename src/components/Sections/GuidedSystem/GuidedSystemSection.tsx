@@ -187,7 +187,7 @@ const GuidedSystemSection: FC = () => {
                 xl:px-4
             "
         >
-            <div className="mx-auto w-full max-w-[1430px]">
+            <div className="mx-auto w-full max-w-[1540px]">
                 {/* Header */}
                 <header className="mx-auto max-w-[900px] text-center">
                     <div
@@ -225,7 +225,7 @@ const GuidedSystemSection: FC = () => {
                     <h2
                         className="
                             mt-5
-                            text-[42px]
+                            text-[clamp(1.75rem,5vw,3.125rem)]
                             font-[800]
                             leading-[1.08]
                             tracking-[-0.035em]
@@ -234,19 +234,9 @@ const GuidedSystemSection: FC = () => {
                             lg:text-[58px]
                         "
                     >
-                        <span className="hidden lg:inline">
-                            How You&apos;ll Move
-                            <span className="block">
-                                Through{' '}
-                                <span className="text-[#0052FF]">
-                                    It
-                                </span>
-                            </span>
-                        </span>
-
-                        <span className="lg:hidden">
-                            How You&apos;ll Move
-                            <span className="block text-[#0052FF]">
+                        <span>
+                            How You&apos;ll Move{' '}
+                            <span className="text-[#0052FF]">
                                 Through It
                             </span>
                         </span>
@@ -427,7 +417,7 @@ const GuidedSystemSection: FC = () => {
                                     className="
                                         mt-auto
                                         grid
-                                        min-h-[77px]
+                                        min-h-[95px]
                                         w-full
                                         items-stretch
                                         rounded-[10px]
@@ -466,8 +456,8 @@ const GuidedSystemSection: FC = () => {
                                                     <ItemIcon
                                                         aria-hidden="true"
                                                         className="
-                                                            h-5
-                                                            w-5
+                                                            h-8
+                                                            w-8
                                                             shrink-0
                                                             text-[#0757F5]
                                                         "
@@ -478,7 +468,7 @@ const GuidedSystemSection: FC = () => {
                                                         className="
                                                             w-full
                                                             break-words
-                                                            text-[10.5px]
+                                                            text-[11px]
                                                             font-semibold
                                                             leading-[1.2]
                                                             text-[#111A35]
@@ -896,7 +886,7 @@ const GuidedSystemSection: FC = () => {
                     <p
                         className="
                             pt-0.5
-                            text-[11px]
+                            text-[12px]
                             font-medium
                             leading-[1.55]
                             text-(--guided-system-step-title)

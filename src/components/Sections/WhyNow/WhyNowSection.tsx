@@ -60,7 +60,7 @@ const WhyNowSection: FC = () => {
                     <h2
                         className='
                             mt-5
-                            text-[34px]
+                            text-[clamp(1.75rem,5vw,3.125rem)]
                             font-bold
                             leading-[1.12]
                             tracking-[-0.042em]
