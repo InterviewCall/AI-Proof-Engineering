@@ -108,7 +108,7 @@ const FeatureStrip: FC<FeatureStripProps> = ({ items, compact = false }) => {
                                 rounded-[10px]
                                 border
                                 border-(--practice-section-card-border)
-                                bg-white
+                                bg-[#E6EDFB]
                                 text-(--color-brand-700)
                             "
                         >

@@ -595,7 +595,7 @@ const CareerPathSection: FC = () => {
                                 px-2
                                 text-[16px]
                                 font-semibold
-                                text-(--career-path-section-title-highlight)
+                                text-black
                                 sm:text-[18px]
                                 lg:justify-center
                                 lg:text-[20px]
@@ -610,6 +610,7 @@ const CareerPathSection: FC = () => {
                                 className="
                                     h-6
                                     w-6
+                                    text-[#0545F9]
                                     shrink-0
                                     transition-transform
                                     group-hover:translate-x-1

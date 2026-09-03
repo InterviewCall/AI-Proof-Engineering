@@ -50,8 +50,8 @@ const LabChecklistCard: FC = () => {
                                     items-center
                                     justify-center
                                     rounded-full
-                                    bg-(--color-brand-700)
-                                  text-white
+                                    bg-[#0C9581]
+                                    text-white
                                 "
                             >
                         <span className="text-[10px] font-bold leading-none">✓</span>
@@ -68,6 +68,7 @@ const LabChecklistCard: FC = () => {
                             className={`
                                 text-[15px]
                                 font-medium
+
                                 ${
                                     item.done
                                         ? 'text-(--practice-section-card-title)'
@@ -88,9 +89,12 @@ const LabChecklistCard: FC = () => {
                     items-start
                     gap-2
                     rounded-lg
-                    bg-(--practice-section-board-bg)
+                    border
+                    border-[#ECF1FD]
+                    bg-[#F6F8FD]
                     px-2.5
                     py-3
+                    
                 "
             >
                 <TrendingUp

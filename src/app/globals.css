@@ -1204,3 +1204,102 @@ body {
   border-bottom: 4px solid transparent;
   border-left: 6px solid #034CFE;
 }
+
+/* =========================================================
+   VIEWPORT / 100% ZOOM FULL-HEIGHT FIX (appended)
+
+   Fixes the common issue where the page doesn't fill the
+   full viewport at 100% browser zoom (visible gaps below
+   the footer, or the layout not stretching to fill the
+   screen height/width). Purely structural — no existing
+   variables, colors, or content above are touched.
+========================================================= */
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100dvh; /* modern dynamic viewport height */
+  min-height: 100vh;  /* fallback for browsers without dvh support */
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Common app-root selectors — adjust the selector to match
+   whichever wraps your app (#__next for Next.js, #root for
+   Vite/CRA) if your framework uses a different one. */
+#__next,
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+}
+
+/* =========================================================
+   NAVBAR OVERFLOW FIX (appended, scoped)
+
+   The navbar's logo and CTA-button block reserve fixed
+   minimum widths that jump up at the 1280px breakpoint,
+   before the screen actually has that much spare room. This
+   pushes the "Check Your AI-Proof Score" button off-screen
+   on real laptop screens, and shifts around as you zoom:
+   zooming IN shrinks the effective CSS width (worse overflow),
+   zooming OUT grows it (can push into the next breakpoint's
+   own oversized reservations instead).
+
+   This ONLY applies inside 1024px-1919px — the "lg" and "xl"
+   tiers, plus "2xl" up to the container's own 1920px cap.
+   Nothing changes on mobile/tablet or on screens wider than
+   1920px (real ultra-wide monitors have room to spare
+   regardless), and the component file itself is untouched.
+
+   Every value is a clamp() tied to viewport width rather than
+   one fixed number, recalculated end-to-end across the full
+   1024-1919px span. That means the fix holds at EVERY width
+   in that range — and therefore at every zoom level that maps
+   into it — instead of only the one width it was first tested
+   at.
+========================================================= */
+
+@media (min-width: 1024px) and (max-width: 1919px) {
+  header > div:first-child {
+    gap: clamp(0.375rem, calc(-5px + 1.12vw), 1rem) !important;
+  }
+
+  header > div:first-child > a[aria-label='InterviewCall homepage'] {
+    min-width: 0 !important;
+  }
+
+  header nav[aria-label='Main navigation'] {
+    min-width: 0 !important;
+    gap: clamp(0.375rem, calc(-33px + 3.8vw), 2.5rem) !important;
+    margin-left: clamp(0.25rem, calc(-10px + 1.34vw), 1rem);
+  }
+
+  header nav[aria-label='Main navigation'] a,
+  header nav[aria-label='Main navigation'] button {
+    font-size: clamp(0.75rem, calc(7.4px + 0.45vw), 1rem) !important;
+  }
+
+  header > div:first-child > div {
+    min-width: 0 !important;
+    gap: clamp(0.3rem, calc(-12px + 1.68vw), 1.25rem) !important;
+  }
+
+  header > div:first-child > div a {
+    padding-left: clamp(0.5rem, calc(-5.7px + 1.34vw), 1.25rem) !important;
+    padding-right: clamp(0.5rem, calc(-5.7px + 1.34vw), 1.25rem) !important;
+    font-size: clamp(0.75rem, calc(7.4px + 0.45vw), 1rem) !important;
+  }
+}
