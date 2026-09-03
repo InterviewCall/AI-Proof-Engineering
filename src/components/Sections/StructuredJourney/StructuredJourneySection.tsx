@@ -47,6 +47,7 @@ const StructuredJourneySection: FC = () => {
             "
         >
             <div className="mx-auto w-full max-w-[1297px]">
+
                 {/* Header */}
                 <header className="mx-auto max-w-[1100px] text-center">
                     <div
@@ -101,14 +102,14 @@ const StructuredJourneySection: FC = () => {
 
                     <h2
                         className="
+                            mx-auto
                             mt-4
+                            max-w-82
                             text-[42px]
                             font-bold
                             leading-[1.02]
                             tracking-[-2%]
                             text-(--journey-section-title-text)
-                            mx-auto
-                            max-w-82
                             lg:hidden
                         "
                     >
@@ -383,11 +384,7 @@ const StructuredJourneySection: FC = () => {
                                             {isActive && (
                                                 <ChevronRight
                                                     aria-hidden="true"
-                                                    className="
-                                                        h-5
-                                                        w-5
-                                                        shrink-0
-                                                    "
+                                                    className="h-5 w-5 shrink-0"
                                                     strokeWidth={2}
                                                 />
                                             )}
@@ -405,23 +402,24 @@ const StructuredJourneySection: FC = () => {
                 <div
                     className="
                         mt-3
-                        rounded-[12px]
+                        rounded-[10px]
                         border
                         border-(--journey-section-card-border)
                         bg-(--journey-section-card-bg)
-                        px-2.5
-                        py-3
+                        px-1.5
+                        py-2
                         lg:hidden
                     "
                 >
                     <div className="relative">
+
                         <span
                             aria-hidden="true"
                             className="
                                 absolute
-                                left-9
-                                top-8
-                                bottom-10
+                                left-7.5
+                                top-7
+                                bottom-8
                                 w-px
                                 border-l
                                 border-dotted
@@ -441,7 +439,7 @@ const StructuredJourneySection: FC = () => {
                                         z-10
                                         ${
                                             isActive
-                                                ? 'rounded-[14px] bg-(--journey-section-phase-one-bg) px-2 py-2'
+                                                ? 'rounded-[10px] bg-(--journey-section-phase-one-bg) px-1.5 py-1'
                                                 : ''
                                         }
                                     `}
@@ -454,10 +452,10 @@ const StructuredJourneySection: FC = () => {
                                         aria-expanded={isActive}
                                         className="
                                             grid
-                                            cursor-pointer
-                                            min-h-14.5
+                                            min-h-11
                                             w-full
-                                            grid-cols-[60px_minmax(0,1fr)_24px]
+                                            cursor-pointer
+                                            grid-cols-[50px_minmax(0,1fr)_20px]
                                             items-center
                                             text-left
                                         "
@@ -466,13 +464,13 @@ const StructuredJourneySection: FC = () => {
                                             className={`
                                                 mx-auto
                                                 flex
-                                                h-11
-                                                w-11
+                                                h-8
+                                                w-8
                                                 items-center
                                                 justify-center
                                                 rounded-full
                                                 border
-                                                text-[16px]
+                                                text-[11px]
                                                 font-semibold
                                                 ${
                                                     isActive
@@ -486,9 +484,11 @@ const StructuredJourneySection: FC = () => {
 
                                         <span
                                             className="
-                                                text-[15px]
+                                                min-w-0
+                                                pr-1
+                                                text-[11px]
                                                 font-semibold
-                                                leading-tight
+                                                leading-[1.25]
                                                 text-(--journey-section-card-title)
                                             "
                                         >
@@ -498,8 +498,8 @@ const StructuredJourneySection: FC = () => {
                                         <ChevronDown
                                             aria-hidden="true"
                                             className={`
-                                                h-5
-                                                w-5
+                                                h-4
+                                                w-4
                                                 text-(--color-brand-700)
                                                 transition-transform
                                                 ${
@@ -527,9 +527,9 @@ const StructuredJourneySection: FC = () => {
                                     >
                                         <div
                                             className={`
-                                                pl-1.25
-                                                pr-1
-                                                pb-2
+                                                pl-0.5
+                                                pr-0.5
+                                                pb-1
                                                 transition-transform
                                                 duration-300
                                                 ease-out
@@ -559,31 +559,31 @@ const StructuredJourneySection: FC = () => {
                                 className="
                                     relative
                                     z-10
-                                    mt-2
+                                    mt-1
                                     grid
-                                    min-h-13.5
+                                    min-h-10.5
                                     w-full
-                                    grid-cols-[76px_minmax(0,1fr)_24px]
+                                    grid-cols-[60px_minmax(0,1fr)_20px]
                                     items-center
                                     text-left
                                     text-(--color-brand-700)
                                 "
                             >
-                                <span className="mx-auto flex h-10 w-10 items-center justify-center">
+                                <span className="mx-auto flex h-8 w-8 items-center justify-center">
                                     <List
                                         aria-hidden="true"
-                                        className="h-7 w-7"
+                                        className="h-5 w-5"
                                         strokeWidth={2}
                                     />
                                 </span>
 
-                                <span className="text-[17px] font-semibold">
+                                <span className="text-[11px] font-semibold">
                                     View remaining phases (05–10)
                                 </span>
 
                                 <ArrowRight
                                     aria-hidden="true"
-                                    className="h-5 w-5"
+                                    className="h-4 w-4"
                                     strokeWidth={1.8}
                                 />
                             </button>
@@ -594,44 +594,44 @@ const StructuredJourneySection: FC = () => {
                 {/* Outcome strip */}
                 <div
                     className="
-                        mt-4
+                        mt-3
                         flex
                         items-center
-                        gap-5
-                        rounded-[14px]
+                        gap-3
+                        rounded-[10px]
                         border
                         border-(--journey-section-card-border)
                         bg-(--career-path-section-eyebrow-bg)
-                        px-5
-                        py-4
+                        px-3
+                        py-2.5
                         lg:hidden
                     "
                 >
                     <span
                         className="
                             flex
-                            h-16.5
-                            w-16.5
+                            h-11
+                            w-11
                             shrink-0
                             items-center
                             justify-center
-                            rounded-[14px]
+                            rounded-[9px]
                             bg-(--journey-section-phase-one-bg)
                             text-(--color-brand-700)
                         "
                     >
                         <Target
                             aria-hidden="true"
-                            className="h-10 w-10"
+                            className="h-6 w-6"
                             strokeWidth={1.8}
                         />
                     </span>
 
                     <p
                         className="
-                            text-[15px]
+                            text-[10px]
                             font-medium
-                            leading-normal
+                            leading-[1.4]
                             text-(--journey-section-card-text)
                         "
                     >
@@ -646,15 +646,15 @@ const StructuredJourneySection: FC = () => {
                 {/* CTA bar */}
                 <div
                     className="
-                        mt-5
+                        mt-4
                         grid
-                        gap-3
-                        rounded-xl
+                        gap-2
+                        rounded-[10px]
                         border
                         border-(--journey-section-card-border)
                         bg-(--journey-section-card-bg)
-                        px-4
-                        py-4
+                        px-3
+                        py-3
                         lg:grid-cols-2
                         lg:gap-4
                         lg:px-36
@@ -666,15 +666,15 @@ const StructuredJourneySection: FC = () => {
                         className="
                             group
                             inline-flex
-                            min-h-14.5
+                            min-h-11
                             w-full
                             items-center
                             justify-center
-                            gap-4
-                            rounded-[7px]
+                            gap-2.5
+                            rounded-[6px]
                             bg-(--button-primary-bg)
-                            px-6
-                            text-[17px]
+                            px-4
+                            text-[12px]
                             font-medium
                             text-white
                             transition-all
@@ -688,7 +688,7 @@ const StructuredJourneySection: FC = () => {
                     >
                         <Download
                             aria-hidden="true"
-                            className="h-5 w-5"
+                            className="h-4 w-4"
                             strokeWidth={1.9}
                         />
 
@@ -700,17 +700,17 @@ const StructuredJourneySection: FC = () => {
                         className="
                             group
                             inline-flex
-                            min-h-14.5
+                            min-h-11
                             w-full
                             items-center
                             justify-center
-                            gap-4
-                            rounded-[7px]
+                            gap-2.5
+                            rounded-[6px]
                             border
                             border-(--color-brand-600)
                             bg-white
-                            px-6
-                            text-[17px]
+                            px-4
+                            text-[12px]
                             font-semibold
                             text-(--color-brand-700)
                             transition-all
@@ -724,7 +724,7 @@ const StructuredJourneySection: FC = () => {
                     >
                         <FileText
                             aria-hidden="true"
-                            className="hidden h-5 w-5 lg:block"
+                            className="hidden h-4 w-4 lg:block"
                             strokeWidth={1.8}
                         />
 
@@ -732,7 +732,7 @@ const StructuredJourneySection: FC = () => {
 
                         <ArrowRight
                             aria-hidden="true"
-                            className="h-5 w-5 lg:hidden"
+                            className="h-4 w-4 lg:hidden"
                             strokeWidth={1.8}
                         />
                     </Link>
