@@ -60,16 +60,17 @@ const SpecialistsSection: FC = () => {
                     <h2
                         className="
                             mt-4
-                            text-[clamp(2.5rem,6vw,3.75rem)]
+                            whitespace-nowrap
+                            text-[clamp(1.75rem,5vw,3.125rem)]
                             font-bold
                             leading-[1.06]
                             tracking-[-2%]
                             text-(--specialists-section-title-text)
                         "
                     >
-                        Who Teaches
+                        Who Teaches{' '}
 
-                        <span className="block text-(--specialists-section-title-highlight)">
+                        <span className="text-(--specialists-section-title-highlight)">
                             What
                         </span>
                     </h2>
