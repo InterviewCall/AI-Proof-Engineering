@@ -34,7 +34,7 @@ const SolutionSection: FC = () => {
                 xl:py-20
             "
         >
-            <div className="mx-auto w-full max-w-280">
+            <div className="mx-auto w-full max-w-[1540px]">
                 {/* =====================================================
                     SECTION HEADER
                 ====================================================== */}
@@ -89,7 +89,7 @@ const SolutionSection: FC = () => {
                         className="
                             mt-4
                             hidden
-                            text-[clamp(3.5rem,5vw,4.5rem)]
+                            text-[50px]
                             font-semibold
                             leading-[1]
                             tracking-[-0.02em]
