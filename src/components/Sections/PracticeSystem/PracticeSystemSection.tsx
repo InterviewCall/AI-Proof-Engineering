@@ -213,12 +213,15 @@ const PracticeSystemSection: FC = () => {
                 {/* CTA */}
                 <div
                     className="
-                        mt-6
-                        flex
-                        flex-col
-                        gap-3
-                        sm:flex-row
-                        sm:justify-center
+                        mx-auto
+                        mt-5
+                        grid
+                        max-w-[735px]
+                        gap-2.5
+                        lg:mt-6
+                        lg:grid-cols-[1.2fr_1fr]
+                        lg:gap-6
+                        
                     "
                 >
                     <Link
@@ -226,15 +229,16 @@ const PracticeSystemSection: FC = () => {
                         className="
                             group
                             inline-flex
-                            min-h-14
+                            min-h-11
+                            w-full
                             items-center
                             justify-center
-                            gap-3
-                            rounded-[6px]
+                            gap-2.5
+                            rounded-lg
                             bg-[#0a53f2]
-                            px-7
+                            px-4
                             text-center
-                            text-[16px]
+                            text-[14px]
                             font-semibold
                             text-white
                             shadow-[0_8px_20px_rgba(10,83,242,0.12)]
@@ -245,11 +249,15 @@ const PracticeSystemSection: FC = () => {
                             focus-visible:outline-none
                             focus-visible:ring-4
                             focus-visible:ring-[#0a53f2]/20
+                            lg:min-h-16
+                            lg:gap-4
+                            lg:px-6
+                            lg:text-[20px]
                         "
                     >
                         <CircleArrowRight
                             aria-hidden="true"
-                            className="h-5 w-5"
+                            className="h-5 w-5 lg:h-7 lg:w-7"
                             strokeWidth={1.9}
                         />
                         <span>See How Practice Works</span>
@@ -260,17 +268,18 @@ const PracticeSystemSection: FC = () => {
                         download
                         className="
                             inline-flex
-                            min-h-14
+                            min-h-11
+                            w-full
                             items-center
                             justify-center
-                            gap-3
-                            rounded-[6px]
+                            gap-2.5
+                            rounded-lg
                             border
                             border-[#cbd8f0]
                             bg-white
-                            px-7
+                            px-4
                             text-center
-                            text-[16px]
+                            text-[14px]
                             font-semibold
                             text-[#0a53f2]
                             transition-colors
@@ -278,11 +287,15 @@ const PracticeSystemSection: FC = () => {
                             focus-visible:outline-none
                             focus-visible:ring-4
                             focus-visible:ring-[#0a53f2]/20
+                            lg:min-h-16
+                            lg:gap-4
+                            lg:px-6
+                            lg:text-[20px]
                         "
                     >
                         <Download
                             aria-hidden="true"
-                            className="h-5 w-5"
+                            className="h-5 w-5 lg:h-7 lg:w-7"
                             strokeWidth={1.9}
                         />
                         <span>Download Curriculum</span>
