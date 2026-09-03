@@ -46,7 +46,7 @@ const StructuredJourneySection: FC = () => {
                 xl:px-10
             "
         >
-            <div className="mx-auto w-full max-w-[1297px]">
+            <div className="mx-auto w-full max-w-[1540px]">
 
                 {/* Header */}
                 <header className="mx-auto max-w-[1100px] text-center">
@@ -85,7 +85,7 @@ const StructuredJourneySection: FC = () => {
                         className="
                             mt-3
                             hidden
-                            text-[clamp(2.5rem,3.4vw,3rem)]
+                            text-[50px]
                             font-bold
                             leading-[1.05]
                             tracking-[-2%]
@@ -241,7 +241,7 @@ const StructuredJourneySection: FC = () => {
                                             font-semibold
                                             leading-[1.2]
                                             text-(--journey-section-card-title)
-                                            sm:text-[16px]
+                                            sm:text-[17px]
                                         "
                                     >
                                         {stat.title}
@@ -250,11 +250,11 @@ const StructuredJourneySection: FC = () => {
                                     <p
                                         className="
                                             mt-1
-                                            text-[11px]
+                                            text-[12px]
                                             font-medium
                                             leading-[1.35]
                                             text-(--journey-section-card-text)
-                                            sm:text-[12px]
+                                            sm:text-[13px]
                                         "
                                     >
                                         {stat.subtitle}
@@ -272,7 +272,7 @@ const StructuredJourneySection: FC = () => {
                         hidden
                         gap-4
                         lg:grid
-                        lg:grid-cols-[344px_minmax(0,1fr)]
+                        lg:grid-cols-[380px_minmax(0,1fr)]
                     "
                 >
                     {/* Sidebar */}
@@ -358,7 +358,7 @@ const StructuredJourneySection: FC = () => {
                                                 items-center
                                                 gap-2
                                                 pr-4
-                                                text-[13px]
+                                                text-[15px]
                                                 font-semibold
                                                 leading-[1.25]
                                                 ${
@@ -674,7 +674,7 @@ const StructuredJourneySection: FC = () => {
                             rounded-[6px]
                             bg-(--button-primary-bg)
                             px-4
-                            text-[12px]
+                            text-[17px]
                             font-medium
                             text-white
                             transition-all
@@ -710,7 +710,7 @@ const StructuredJourneySection: FC = () => {
                             border-(--color-brand-600)
                             bg-white
                             px-4
-                            text-[12px]
+                            text-[17px]
                             font-semibold
                             text-(--color-brand-700)
                             transition-all
