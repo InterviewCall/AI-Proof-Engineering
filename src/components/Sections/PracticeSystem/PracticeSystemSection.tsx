@@ -79,7 +79,7 @@ const PracticeSystemSection: FC = () => {
                     <h2
                         className="
                             mt-4
-                            text-[50px]
+                            text-[clamp(1.75rem,5vw,3.125rem)]
                             font-bold
                             leading-[1.06]
                             tracking-[-0.04em]

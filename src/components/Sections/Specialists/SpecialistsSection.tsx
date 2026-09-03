@@ -69,7 +69,6 @@ const SpecialistsSection: FC = () => {
                         "
                     >
                         Who Teaches{' '}
-
                         <span className="text-(--specialists-section-title-highlight)">
                             What
                         </span>

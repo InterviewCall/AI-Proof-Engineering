@@ -63,7 +63,7 @@ const CapstoneProofSection: FC = () => {
                         className="
                             mt-4
                             whitespace-nowrap
-                            text-[50px]
+                            text-[clamp(1.75rem,5vw,3.125rem)]
                             font-bold
                             leading-[1.06]
                             tracking-[-2%]

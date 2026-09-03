@@ -66,7 +66,7 @@ const SpecialistsFeatureStrip: FC = () => {
                         <div className="min-w-0">
                             <p
                                 className="
-                                    text-[14px]
+                                    text-[15px]
                                     font-semibold
                                     leading-[1.2]
                                     text-(--specialists-strip-title-text)
@@ -78,7 +78,7 @@ const SpecialistsFeatureStrip: FC = () => {
                             <p
                                 className="
                                     mt-1
-                                    text-[12px]
+                                    text-[14px]
                                     leading-[1.4]
                                     text-(--specialists-strip-text)
                                 "
