@@ -32,7 +32,7 @@ const MockFeedbackCard: FC = () => {
 
                 <h3
                     className="
-                        text-[15px]
+                        text-[16px]
                         font-semibold
                         text-(--practice-section-card-title)
                     "
@@ -74,7 +74,7 @@ const MockFeedbackCard: FC = () => {
                     <div className="absolute inset-0 flex flex-col items-center justify-center gap-0.5 text-center">
                         <span
                             className="
-                                text-[9px]
+                                text-[11px]
                                 font-semibold
                                 leading-tight
                                 text-(--practice-section-card-text)
@@ -110,7 +110,7 @@ const MockFeedbackCard: FC = () => {
                                     <span
                                         className="
                                             truncate
-                                            text-[12px]
+                                            text-[14px]
                                             font-medium
                                             text-(--practice-section-card-title)
                                         "
@@ -146,8 +146,8 @@ const MockFeedbackCard: FC = () => {
 
                 <p
                     className="
-                        text-[12px]
-                        leading-[1.4]
+                        text-[13.5px]
+                        leading-[1.45]
                         text-(--practice-section-card-text)
                     "
                 >
@@ -163,7 +163,7 @@ const MockFeedbackCard: FC = () => {
                     inline-flex
                     items-center
                     gap-1.5
-                    text-[13px]
+                    text-[14px]
                     font-semibold
                     text-(--color-brand-700)
                 "

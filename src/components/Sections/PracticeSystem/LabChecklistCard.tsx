@@ -25,7 +25,7 @@ const LabChecklistCard: FC = () => {
 
                 <h3
                     className="
-                        text-[15px]
+                        text-[16px]
                         font-semibold
                         text-(--practice-section-card-title)
                     "
@@ -66,7 +66,7 @@ const LabChecklistCard: FC = () => {
 
                         <p
                             className={`
-                                text-[14px]
+                                text-[15px]
                                 font-medium
                                 ${
                                     item.done
@@ -101,8 +101,8 @@ const LabChecklistCard: FC = () => {
 
                 <p
                     className="
-                        text-[12px]
-                        leading-[1.4]
+                        text-[14px]
+                        leading-[1.55]
                         text-(--practice-section-card-text)
                     "
                 >
