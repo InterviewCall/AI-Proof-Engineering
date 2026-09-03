@@ -72,7 +72,7 @@ const FaqSection: FC = () => {
 
                         <h2
                             className="
-                                mt-4
+                                mt-[50px]
                                 text-[clamp(2.5rem,7.5vw,3.75rem)]
                                 font-bold
                                 leading-[1.06]
@@ -161,7 +161,7 @@ const FaqSection: FC = () => {
 
                         <h2
                             className="
-                                mt-4
+                                mt-[50px]
                                 text-[clamp(2.25rem,7.5vw,3rem)]
                                 font-bold
                                 leading-[1.1]
