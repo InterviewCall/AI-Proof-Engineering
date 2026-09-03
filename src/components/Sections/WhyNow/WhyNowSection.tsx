@@ -305,8 +305,8 @@ const WhyNowSection: FC = () => {
                                 <div
                                     className='
                                         flex
-                                        h-11
-                                        w-11
+                                        h-16
+                                        w-16
                                         shrink-0
                                         items-center
                                         justify-center
@@ -318,7 +318,7 @@ const WhyNowSection: FC = () => {
                                 >
                                     <Bot
                                         aria-hidden='true'
-                                        className='h-6 w-6'
+                                        className='h-8 w-8'
                                         strokeWidth={2}
                                     />
                                 </div>
@@ -376,7 +376,7 @@ const WhyNowSection: FC = () => {
 
                                         <p
                                             className='
-                                                text-[12px]
+                                                text-[15px]
                                                 font-medium
                                                 leading-[1.45]
                                                 text-(--why-now-section-right-box-sub-box-one-point-text)
