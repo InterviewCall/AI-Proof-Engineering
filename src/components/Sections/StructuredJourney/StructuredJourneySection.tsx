@@ -85,7 +85,7 @@ const StructuredJourneySection: FC = () => {
                         className="
                             mt-3
                             hidden
-                            text-[50px]
+                            text-[clamp(1.75rem,5vw,3.125rem)]
                             font-bold
                             leading-[1.05]
                             tracking-[-2%]
