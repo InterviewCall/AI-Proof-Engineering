@@ -15,7 +15,7 @@ const MentorshipSystemPanel: FC = () => {
             {/* Eyebrow */}
             <p
                 className="
-                    text-[13px]
+                    text-[15px]
                     font-bold
                     uppercase
                     tracking-[0.02em]
@@ -46,7 +46,7 @@ const MentorshipSystemPanel: FC = () => {
                 className="
                     mt-4
                     max-w-[290px]
-                    text-[15px]
+                    text-[16px]
                     font-normal
                     leading-[1.55]
                     text-[#18345F]
@@ -108,9 +108,10 @@ const MentorshipSystemPanel: FC = () => {
                             <p
                                 className="
                                     min-w-0
-                                    text-[12px]
+                                    flex-1
+                                    text-[15px]
                                     font-semibold
-                                    leading-[1.3]
+                                    leading-[1.25]
                                     text-[#0B1B3A]
                                 "
                             >

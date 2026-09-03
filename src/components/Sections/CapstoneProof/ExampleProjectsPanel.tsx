@@ -27,7 +27,7 @@ const ExampleProjectsPanel: FC = () => {
         >
             <span
                 className="
-                    text-[13px]
+                    text-[15px]
                     font-bold
                     uppercase
                     tracking-[0.04em]
@@ -81,7 +81,7 @@ const ExampleProjectsPanel: FC = () => {
                             <div className="min-w-0">
                                 <h3
                                     className="
-                                        text-[15px]
+                                        text-[16px]
                                         font-semibold
                                         leading-tight
                                         text-(--proof-section-card-title)
@@ -93,7 +93,7 @@ const ExampleProjectsPanel: FC = () => {
                                 <p
                                     className="
                                         mt-1
-                                        text-[13px]
+                                        text-[16px]
                                         leading-[1.45]
                                         text-(--proof-section-card-text)
                                     "

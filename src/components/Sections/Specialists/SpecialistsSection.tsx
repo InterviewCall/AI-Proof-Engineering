@@ -25,7 +25,7 @@ const SpecialistsSection: FC = () => {
                 xl:px-12
             "
         >
-            <div className="mx-auto w-full max-w-345">
+            <div className="mx-auto w-full max-w-1540">
                 {/* Header */}
                 <header className="mx-auto max-w-280 text-center">
                     <div
@@ -69,7 +69,6 @@ const SpecialistsSection: FC = () => {
                         "
                     >
                         Who Teaches{' '}
-
                         <span className="text-(--specialists-section-title-highlight)">
                             What
                         </span>

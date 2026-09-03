@@ -20,11 +20,14 @@ const FeatureStripGrid: FC<{
                         key={item.title}
                         className="
                             flex
+                            min-w-0
                             items-center
                             gap-3
-                            px-2
+                            px-4
                             text-left
+                            lg:min-h-16
                             lg:first:pl-0
+                            lg:last:pr-0
                         "
                     >
                         <span
@@ -47,12 +50,17 @@ const FeatureStripGrid: FC<{
                             />
                         </span>
 
-                        <div className="min-w-0">
+                        <div
+                            className="
+                                min-w-0
+                                flex-1
+                            "
+                        >
                             <p
                                 className="
-                                    text-[14px]
+                                    text-[16px]
                                     font-semibold
-                                    leading-tight
+                                    leading-[1.2]
                                     text-(--proof-section-card-title)
                                 "
                             >
@@ -61,9 +69,9 @@ const FeatureStripGrid: FC<{
 
                             <p
                                 className="
-                                    mt-1
-                                    text-[12px]
-                                    leading-[1.35]
+                                    mt-1.5
+                                    text-[14.5px]
+                                    leading-[1.4]
                                     text-(--proof-section-card-text)
                                 "
                             >
@@ -105,7 +113,7 @@ const CapstoneFeatureStrip: FC = () => {
                 items={capstoneFeatureStrip}
                 className="
                     hidden
-                    gap-x-4
+                    gap-x-0
                     gap-y-6
                     rounded-2xl
                     border

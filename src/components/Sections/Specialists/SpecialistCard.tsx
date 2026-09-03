@@ -39,6 +39,29 @@ const accentStyles = {
 const SpecialistCard = ({ specialist }: SpecialistCardProps) => {
     const styles = accentStyles[specialist.accent];
 
+    const renderTag = (tag: string) => (
+        <span
+            key={tag}
+            className={`
+                inline-flex
+                min-h-7.5
+                w-fit
+                shrink-0
+                items-center
+                justify-center
+                rounded-full
+                px-3.5
+                py-1
+                text-[11.5px]
+                font-semibold
+                leading-none
+                ${styles.tag}
+            `}
+        >
+            {tag}
+        </span>
+    );
+
     return (
         <article
             className="
@@ -106,7 +129,7 @@ const SpecialistCard = ({ specialist }: SpecialistCardProps) => {
                     min-h-[48px]
                     w-full
                     text-center
-                    text-[15px]
+                    text-[15.5px]
                     font-bold
                     leading-[1.35]
                     tracking-[-0.01em]
@@ -135,7 +158,7 @@ const SpecialistCard = ({ specialist }: SpecialistCardProps) => {
                     min-h-[96px]
                     w-full
                     text-center
-                    text-[13px]
+                    text-[13.5px]
                     font-medium
                     leading-[1.55]
                     text-[#18345F]
@@ -144,40 +167,36 @@ const SpecialistCard = ({ specialist }: SpecialistCardProps) => {
                 {specialist.description}
             </p>
 
-            {/* Skills */}
-            <div
-                className="
-                    mt-4
-                    flex
-                    w-full
-                    flex-wrap
-                    items-center
-                    justify-center
-                    gap-x-1.5
-                    gap-y-2
-                "
-            >
-                {specialist.tags.map((tag) => (
-                    <span
-                        key={tag}
-                        className={`
-                            inline-flex
-                            min-h-7
-                            items-center
-                            justify-center
-                            rounded-full
-                            px-3
-                            py-1
-                            text-[11px]
-                            font-semibold
-                            leading-none
-                            ${styles.tag}
-                        `}
-                    >
-                        {tag}
-                    </span>
-                ))}
-            </div>
+            {/* Skills / Tags */}
+            {specialist.tags.length === 3 ? (
+                <div className="mt-4 flex w-full flex-col items-center gap-2">
+                    {/* Top tag */}
+                    <div className="flex w-full justify-center">
+                        {renderTag(specialist.tags[0])}
+                    </div>
+
+                    {/* Bottom two tags */}
+                    <div className="flex items-center justify-center gap-x-1.5">
+                        {renderTag(specialist.tags[1])}
+                        {renderTag(specialist.tags[2])}
+                    </div>
+                </div>
+            ) : (
+                <div
+                    className="
+                        mt-4
+                        flex
+                        w-full
+                        flex-wrap
+                        items-center
+                        justify-center
+                        gap-x-1.5
+                        gap-y-2
+                    "
+                >
+                    {specialist.tags.map(renderTag)}
+                </div>
+            )}
         </article>
     );
 };

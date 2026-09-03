@@ -8,7 +8,7 @@ const CapstoneAdvantagePanel: FC = () => {
             className="
                 w-full
                 max-w-[382px]
-                h-fit
+                h-full
                 rounded-[17px]
                 border
                 border-[#DCE5F6]
@@ -16,78 +16,90 @@ const CapstoneAdvantagePanel: FC = () => {
                 p-6
             "
         >
-            <span
-                className="
-                    text-[13px]
-                    font-bold
-                    uppercase
-                    tracking-[0.04em]
-                    text-(--proof-section-eyebrow-text)
-                "
-            >
-                The Capstone Advantage
-            </span>
+            <div className="translate-y-6">
+                <span
+                    className="
+                        text-[15px]
+                        font-bold
+                        uppercase
+                        tracking-[0.04em]
+                        text-(--proof-section-eyebrow-text)
+                    "
+                >
+                    The Capstone Advantage
+                </span>
 
-            <h3
-                className="
-                    mt-3
-                    text-[26px]
-                    font-bold
-                    leading-[1.2]
-                    tracking-[-1%]
-                    text-(--proof-section-title-text)
-                "
-            >
-                From Learning to Interview-Ready Proof
-            </h3>
+                <h3
+                    className="
+                        mt-3
+                        text-[26px]
+                        font-bold
+                        leading-[1.2]
+                        tracking-[-1%]
+                        text-(--proof-section-title-text)
+                    "
+                >
+                    From Learning to Interview-Ready Proof
+                </h3>
 
-            <p
-                className="
-                    mt-3
-                    text-[15px]
-                    leading-[1.55]
-                    text-(--proof-section-subtitle-text)
-                "
-            >
-                Capstones help learners convert skills into visible proof:
-                code, architecture, tradeoffs, documentation, demo
-                walkthroughs, and mentor-reviewed improvements.
-            </p>
+                <p
+                    className="
+                        mt-3
+                        text-[16.5px]
+                        leading-[1.75]
+                        text-(--proof-section-subtitle-text)
+                    "
+                >
+                    Capstones help learners convert skills into visible proof:
+                    code, architecture, tradeoffs, documentation, demo
+                    walkthroughs, and mentor-reviewed improvements.
+                </p>
 
-            <div className="mt-6 space-y-4 border-t border-(--proof-section-card-border) pt-6">
-                {advantagePoints.map((point) => (
-    <div
-        key={point}
-        className="flex items-start gap-2"
-    >
-        <span
-            className="
-                flex
-                h-4
-                w-4
-                shrink-0
-                items-center
-                justify-center
-                rounded-full
-                bg-(--color-brand-700)
-                text-white
-            "
-        >
-            <span className="text-[10px] font-bold leading-none">✓</span>
-        </span>
+                <div
+                    className="
+                        mt-10
+                        space-y-4
+                        border-t
+                        border-(--proof-section-card-border)
+                        pt-6
+                    "
+                >
+                    {advantagePoints.map((point) => (
+                        <div
+                            key={point}
+                            className="flex items-start gap-2"
+                        >
+                            <span
+                                className="
+                                    flex
+                                    h-4
+                                    w-4
+                                    shrink-0
+                                    items-center
+                                    justify-center
+                                    rounded-full
+                                    bg-(--color-brand-700)
+                                    text-white
+                                "
+                            >
+                                <span className="text-[10px] font-bold leading-none">
+                                    ✓
+                                </span>
+                            </span>
 
-        <p
-            className="
-                text-[15px]
-                font-semibold
-                leading-tight
-                text-(--proof-section-card-title)
-            "
-        >
-            {point}
-        </p>
-    </div>
-))}
+                            <p
+                                className="
+                                    text-[17px]
+                                    font-semibold
+                                    leading-tight
+                                    text-(--proof-section-card-title)
+                                "
+                            >
+                                {point}
+                            </p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
