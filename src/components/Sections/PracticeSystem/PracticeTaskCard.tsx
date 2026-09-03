@@ -87,29 +87,31 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
             </div>
 
             <div
-    className="
-        mt-2
-        flex
-        h-[100px]
-        w-[200px]
-        translate-x-10
-        overflow-hidden
-    "
->
-    <Image
-        src="/image 114.svg"
-        alt="Practice task"
-        width={200}
-        height={100}
-        priority
-        className="
-            block
-            h-full
-            w-full
-            object-contain
-        "
-    />
-</div>
+                className="
+                    mt-2
+                    flex
+                    h-[100px]
+                    w-[200px]
+                    translate-x-10
+                    overflow-hidden
+                "
+            >
+                
+                <Image
+                        src="/image 114.svg"
+                        alt="Practice task"
+                        width={500}
+                        height={400}
+                        priority
+                        className="
+                            block
+                            h-full
+                            w-full
+                            object-contain
+                        "
+                    />
+
+            </div>
 
             <div className="mt-2 flex justify-end gap-2">
                 <button

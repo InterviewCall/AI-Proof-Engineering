@@ -26,7 +26,7 @@ const ProgramGlanceSection: FC = () => {
                 xl:px-12
             "
         >
-            <div className="mx-auto w-full max-w-345">
+            <div className="mx-auto w-full max-w-[1540px]">
                 {/* Header */}
                 <header className="mx-auto max-w-260 text-center">
                     <div

@@ -35,7 +35,7 @@ const CareerPathSection: FC = () => {
                 xl:px-12
             "
         >
-            <div className="mx-auto w-full max-w-345">
+            <div className="mx-auto w-full max-w-[1540px]">
                 {/* =====================================================
                     SECTION HEADER
                 ====================================================== */}
