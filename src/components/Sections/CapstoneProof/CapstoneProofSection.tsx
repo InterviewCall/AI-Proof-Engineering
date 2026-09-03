@@ -1,6 +1,7 @@
 import { CircleArrowRight, Download, Trophy } from 'lucide-react';
 import Link from 'next/link';
 import { FC } from 'react';
+import Image from 'next/image';
 
 import CapstoneAdvantagePanel from './CapstoneAdvantagePanel';
 import CapstoneFeatureStrip from './CapstoneFeatureStrip';
@@ -27,7 +28,7 @@ const CapstoneProofSection: FC = () => {
                 xl:px-12
             "
         >
-            <div className="mx-auto w-full max-w-345">
+            <div className="mx-auto w-full max-w-[1540px]">
                 {/* Header */}
                 <header className="mx-auto max-w-260 text-center">
                     <div
@@ -61,16 +62,17 @@ const CapstoneProofSection: FC = () => {
                     <h2
                         className="
                             mt-4
-                            text-[clamp(2.5rem,6vw,3.75rem)]
+                            whitespace-nowrap
+                            text-[50px]
                             font-bold
                             leading-[1.06]
                             tracking-[-2%]
                             text-(--proof-section-title-text)
                         "
                     >
-                        What You Leave
+                        What You Leave{' '}
 
-                        <span className="block text-(--proof-section-title-highlight)">
+                        <span className="text-(--proof-section-title-highlight)">
                             With
                         </span>
                     </h2>
@@ -96,29 +98,36 @@ const CapstoneProofSection: FC = () => {
                 {/* Three-column layout */}
                 <div
                     className="
-                        mt-10
+                        mt-5
                         grid
                         grid-cols-1
                         
-                        gap-8
-                        lg:grid-cols-[280px_minmax(0,1fr)]
+                        gap-3
+                        lg:grid-cols-[280px_minmax(0,1fr)_320px]
                         xl:grid-cols-[300px_minmax(0,1fr)_390px]
                     "
                 >
                     <CapstoneAdvantagePanel />
-                    <CapstonePortfolioCard />
-                    <div className="xl:-ml-20">
-                    <ExampleProjectsPanel />
+                    <div className="flex h-full items-center justify-center">
+                        <Image
+                            src="/images/optimized-svg/capstone-portfolio.svg"
+                            alt="Capstone portfolio example"
+                            width={600}
+                            height={500}
+                            className="h-auto w-full max-w-[850px] object-contain"
+                        />
                     </div>
+                    <ExampleProjectsPanel />
+                    
                 </div>
 
                 {/* Feature strip */}
-                <div className="mt-2">
+                <div className="mt-0">
                     <CapstoneFeatureStrip />
                 </div>
 
                 {/* CTA */}
-                <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
+                <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:justify-center">
                     <Link
                         href="#capstone-proof"
                         className="
