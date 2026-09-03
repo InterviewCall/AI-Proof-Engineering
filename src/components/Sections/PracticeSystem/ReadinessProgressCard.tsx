@@ -40,7 +40,7 @@ const ReadinessProgressCard: FC = () => {
 
                     <h3
                         className="
-                            text-[15px]
+                            text-[16px]
                             font-semibold
                             text-(--practice-section-card-title)
                         "
@@ -59,7 +59,7 @@ const ReadinessProgressCard: FC = () => {
                         border
                         border-(--practice-section-card-border)
                         px-3
-                        text-[12px]
+                        text-[13.5px]
                         font-semibold
                         whitespace-nowrap
                         text-(--practice-section-card-text)
@@ -116,7 +116,7 @@ const ReadinessProgressCard: FC = () => {
 
                                 <span
                                     className="
-                                        text-[12.5px]
+                                        text-[14.5px]
                                         font-semibold
                                         whitespace-nowrap
                                         text-(--practice-section-card-title)

@@ -25,7 +25,7 @@ const MentorReviewCard: FC = () => {
 
                 <h3
                     className="
-                        text-[15px]
+                        text-[16px]
                         font-semibold
                         text-(--practice-section-card-title)
                     "
@@ -67,7 +67,7 @@ const MentorReviewCard: FC = () => {
 
                 <p
                     className="
-                        text-[14px]
+                        text-[15px]
                         leading-[1.5]
                         text-(--practice-section-card-title)
                     "
@@ -85,7 +85,7 @@ const MentorReviewCard: FC = () => {
                     inline-flex
                     items-center
                     gap-1.5
-                    text-[13px]
+                    text-[14px]
                     font-semibold
                     text-(--color-brand-700)
                 "

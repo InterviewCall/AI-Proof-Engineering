@@ -10,15 +10,17 @@ type FeatureStripProps = {
 const FeatureStrip: FC<FeatureStripProps> = ({ items, compact = false }) => {
     if (compact) {
         return (
-            <div className="
-                grid
-                grid-cols-4
-                overflow-hidden
-                rounded-xl
-                border
-                border-(--practice-section-card-border)
-                bg-(--practice-section-card-bg)
-            ">
+            <div
+                className="
+                    grid
+                    grid-cols-4
+                    overflow-hidden
+                    rounded-xl
+                    border
+                    border-(--practice-section-card-border)
+                    bg-(--practice-section-card-bg)
+                "
+            >
                 {items.map((item) => {
                     const Icon = item.icon;
 
@@ -91,7 +93,10 @@ const FeatureStrip: FC<FeatureStripProps> = ({ items, compact = false }) => {
                 const Icon = item.icon;
 
                 return (
-                    <div key={item.title} className="flex items-center gap-3">
+                    <div
+                        key={item.title}
+                        className="flex items-center gap-3"
+                    >
                         <span
                             className="
                                 flex
@@ -117,9 +122,9 @@ const FeatureStrip: FC<FeatureStripProps> = ({ items, compact = false }) => {
                         <div className="min-w-0">
                             <p
                                 className="
-                                    text-[14px]
+                                    text-[16px]
                                     font-semibold
-                                    leading-tight
+                                    leading-[1.25]
                                     text-(--practice-section-card-title)
                                 "
                             >
@@ -129,8 +134,8 @@ const FeatureStrip: FC<FeatureStripProps> = ({ items, compact = false }) => {
                             <p
                                 className="
                                     mt-1
-                                    text-[12px]
-                                    leading-[1.35]
+                                    text-[13px]
+                                    leading-[1.4]
                                     text-(--practice-section-card-text)
                                 "
                             >

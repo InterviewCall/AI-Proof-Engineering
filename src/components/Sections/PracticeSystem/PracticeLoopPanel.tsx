@@ -7,7 +7,7 @@ const PracticeLoopPanel: FC = () => {
         <div className="flex flex-col justify-center p-6 xl:p-8">
             <span
                 className="
-                    text-[13px]
+                    text-[14px]
                     font-bold
                     uppercase
                     tracking-[0.04em]
