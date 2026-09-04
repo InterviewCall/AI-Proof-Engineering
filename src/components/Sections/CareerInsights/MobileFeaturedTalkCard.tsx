@@ -50,7 +50,7 @@ const MobileFeaturedTalkCard: FC = () => {
                     rounded-md
                     bg-(--career-insights-video-badge-bg)
                     px-3
-                    text-[12px]
+                    text-[12.5px]
                     font-bold
                     uppercase
                     tracking-[0.03em]
@@ -89,7 +89,7 @@ const MobileFeaturedTalkCard: FC = () => {
                 className="
                     mt-2
                     max-w-28
-                    text-[14px]
+                    text-[14.5px]
                     leading-[1.6]
                     text-(--career-insights-video-muted-text)
                 "
@@ -137,7 +137,7 @@ const MobileFeaturedTalkCard: FC = () => {
 
                 <span
                     className="
-                        text-[13px]
+                        text-[13.5px]
                         font-medium
                         text-(--career-insights-video-muted-text)
                     "
@@ -159,7 +159,7 @@ const MobileFeaturedTalkCard: FC = () => {
                             border-(--career-insights-video-tag-border)
                             bg-(--career-insights-video-tag-bg)
                             px-3
-                            text-[12px]
+                            text-[12.5px]
                             font-semibold
                             text-(--career-insights-video-tag-text)
                         "

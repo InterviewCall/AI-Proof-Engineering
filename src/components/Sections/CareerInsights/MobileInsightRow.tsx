@@ -62,7 +62,7 @@ const MobileInsightRow: FC<{ article: InsightArticle }> = ({ article }) => {
                         items-center
                         rounded-md
                         px-2.5
-                        text-[11px]
+                        text-[11.5px]
                         font-bold
                         uppercase
                         tracking-[0.02em]
@@ -75,7 +75,7 @@ const MobileInsightRow: FC<{ article: InsightArticle }> = ({ article }) => {
                 <h3
                     className="
                         mt-2
-                        text-[15px]
+                        text-[15.5px]
                         font-bold
                         leading-[1.3]
                         text-(--career-insights-card-title)
@@ -93,7 +93,7 @@ const MobileInsightRow: FC<{ article: InsightArticle }> = ({ article }) => {
 
                     <span
                         className="
-                            text-[12px]
+                            text-[12.5px]
                             font-medium
                             text-(--career-insights-card-text)
                         "

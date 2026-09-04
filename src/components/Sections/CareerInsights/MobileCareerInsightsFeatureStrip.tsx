@@ -59,7 +59,7 @@ const MobileCareerInsightsFeatureStrip: FC = () => {
                             <span
                                 className="
                                     whitespace-nowrap
-                                    text-[13px]
+                                    text-[13.5px]
                                     font-semibold
                                     leading-tight
                                     text-(--career-insights-strip-title-text)
