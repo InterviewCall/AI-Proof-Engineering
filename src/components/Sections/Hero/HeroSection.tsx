@@ -131,7 +131,7 @@ const HeroSection: FC = () => {
                                 font-bold
                                 tracking-[-3%]
                                 text-(--hero-section-title-two-text-desktop)
-                                max-md:hidden
+                                
                                 md:tracking-[-4%]
                                 lg:mt-2
                             "
@@ -362,14 +362,14 @@ const HeroSection: FC = () => {
                 {/* =====================================================
                     RIGHT VISUAL
                 ====================================================== */}
-                <div className="mx-auto w-full max-w-[810px]">
+                <div className="mx-auto w-full max-w-[710px]">
                     <div
                         className="
                             relative
                             overflow-hidden
                             rounded-xl
                             bg-(--hero-video-card-bg)
-                            shadow-[0_22px_60px_rgba(4,13,87,0.13)]
+                            
                             sm:rounded-[16px]
                         "
                     >
