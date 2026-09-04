@@ -35,9 +35,10 @@ const FaqSection: FC = () => {
                 pt-[50px]
                 pb-[50px]
                 scroll-mt-25
+                xl:px-12
             "
         >
-            <div className="mx-auto w-full max-w-none">
+            <div className="mx-auto w-full max-w-1540">
                 {/* Desktop */}
                 <div className="hidden lg:block">
                     <header className="mx-auto max-w-220 text-center">

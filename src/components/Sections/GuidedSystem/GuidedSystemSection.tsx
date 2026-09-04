@@ -184,7 +184,7 @@ const GuidedSystemSection: FC = () => {
                 sm:py-14
                 lg:px-8
                 lg:py-16
-                xl:px-4
+                xl:px-12
             "
         >
             <div className="mx-auto w-full max-w-[1540px]">

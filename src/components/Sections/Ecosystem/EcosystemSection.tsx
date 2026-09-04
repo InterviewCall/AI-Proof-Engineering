@@ -23,7 +23,7 @@ const EcosystemSection: FC = () => {
                 sm:py-6
                 lg:px-8
                 lg:py-6
-                xl:px-8
+                xl:px-12
             "
         >
             <div className="mx-auto w-full max-w-[1540px]">

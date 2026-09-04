@@ -27,7 +27,7 @@ const WhyNowSection: FC = () => {
                 sm:py-10
                 lg:px-8
                 lg:py-12
-                xl:px-10
+                xl:px-12
             '
         >
             <div className='mx-auto w-full max-w-[1540px]'>
