@@ -196,7 +196,7 @@ const RealProgressSection: FC = () => {
                             w-full
                             items-center
                             justify-center
-                            gap-2.5
+                            gap-3
                             rounded-lg
                             border
                             border-[#144EFE]
@@ -216,7 +216,7 @@ const RealProgressSection: FC = () => {
                             lg:min-h-16
                             lg:gap-4
                             lg:px-6
-                            lg:text-[20px]
+                            lg:text-[16px]
                         "
                     >
                         <CircleArrowRight
@@ -254,7 +254,7 @@ const RealProgressSection: FC = () => {
                             lg:min-h-16
                             lg:gap-4
                             lg:px-6
-                            lg:text-[20px]
+                            lg:text-[16px]
                         "
                     >
                         <Download

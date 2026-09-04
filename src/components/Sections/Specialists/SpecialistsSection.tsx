@@ -119,7 +119,8 @@ const SpecialistsSection: FC = () => {
                             className="
                                 grid
                                 grid-cols-5
-                                items-start
+                                items-stretch
+                                grid-rows-[auto_auto_auto_auto_auto]
                                 gap-3
                                 p-5
                             "
@@ -154,7 +155,7 @@ const SpecialistsSection: FC = () => {
                                 bg-(--button-primary-bg)
                                 px-4
                                 text-center
-                                text-[14px]
+                                text-[13px]
                                 font-semibold
                                 text-(--button-primary-text)
                                 transition-all
@@ -169,7 +170,7 @@ const SpecialistsSection: FC = () => {
                                 lg:justify-self-start
                                 lg:gap-1
                                 lg:px-6
-                                lg:text-[20px]
+                                lg:text-[16px]
                             "
                         >
                             <CircleArrowRight
@@ -197,9 +198,14 @@ const SpecialistsSection: FC = () => {
                                 bg-white
                                 px-4
                                 text-center
-                                text-[14px]
+                                text-[13px]
                                 font-semibold
                                 text-(--color-brand-700)
+                                transition-all
+                                duration-200
+                                transition-all
+                                duration-200
+                                hover:-translate-y-0.5
                                 transition-colors
                                 hover:bg-(--color-brand-50)
                                 focus-visible:outline-none
@@ -208,7 +214,7 @@ const SpecialistsSection: FC = () => {
                                 lg:min-h-16
                                 lg:gap-4
                                 lg:px-6
-                                lg:text-[20px]
+                                lg:text-[16px]
                             "
                         >
                             <Download
@@ -265,7 +271,7 @@ const SpecialistsSection: FC = () => {
                             bg-(--button-primary-bg)
                             px-7
                             text-center
-                            text-[16px]
+                            text-[14px]
                             font-semibold
                             text-(--button-primary-text)
                             transition-all
@@ -294,7 +300,7 @@ const SpecialistsSection: FC = () => {
                             inline-flex
                             items-center
                             gap-2
-                            text-[15px]
+                            text-[14px]
                             font-semibold
                             text-(--color-brand-700)
                             transition-colors

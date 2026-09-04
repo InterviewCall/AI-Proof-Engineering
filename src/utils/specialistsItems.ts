@@ -33,7 +33,7 @@ export const specialists: Specialist[] = [
         name: 'System Design Mentor',
         description:
             'HLD, LLD, scaling decisions, and how to explain a trade-off clearly.',
-        tags: ['HLD/LLD', 'Scaling', 'Trade-offs'],
+        tags: ['Communication', 'Scaling', 'Trade-offs'],
         accent: 'green',
     },
     {
@@ -49,7 +49,7 @@ export const specialists: Specialist[] = [
         name: 'Mock Interview Mentor',
         description:
             'Runs mock interviews and gives feedback you can actually use next time.',
-        tags: ['Communication', 'Technical Rounds', 'Feedback'],
+        tags: ['Technical Rounds', 'HLD/LLD', 'Feedback'],
         accent: 'orange',
     },
     {

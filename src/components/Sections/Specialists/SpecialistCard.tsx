@@ -51,7 +51,7 @@ const SpecialistCard = ({ specialist }: SpecialistCardProps) => {
                 justify-center
                 rounded-full
                 px-3.5
-                py-1
+                py-2
                 text-[11.5px]
                 font-semibold
                 leading-none
@@ -66,11 +66,14 @@ const SpecialistCard = ({ specialist }: SpecialistCardProps) => {
         <article
             className="
                 relative
-                flex
+                grid
+                grid-rows-subgrid
+                row-span-5
+              
                 min-h-[471px]
                 w-full
-                flex-col
-                items-center
+                
+                justify-items-center
                 rounded-[17px]
                 border
                 border-(--specialist-card-border)
@@ -126,7 +129,7 @@ const SpecialistCard = ({ specialist }: SpecialistCardProps) => {
             <h3
                 className="
                     mt-4
-                    min-h-[48px]
+                    
                     w-full
                     text-center
                     text-[15.5px]
@@ -155,7 +158,7 @@ const SpecialistCard = ({ specialist }: SpecialistCardProps) => {
             <p
                 className="
                     mt-5
-                    min-h-[96px]
+                    
                     w-full
                     text-center
                     text-[13.5px]
@@ -169,7 +172,7 @@ const SpecialistCard = ({ specialist }: SpecialistCardProps) => {
 
             {/* Skills / Tags */}
             {specialist.tags.length === 3 ? (
-                <div className="mt-4 flex w-full flex-col items-center gap-2">
+                <div className="mt-4 flex w-full flex-col items-center gap-5">
                     {/* Top tag */}
                     <div className="flex w-full justify-center">
                         {renderTag(specialist.tags[0])}
@@ -191,7 +194,7 @@ const SpecialistCard = ({ specialist }: SpecialistCardProps) => {
                         items-center
                         justify-center
                         gap-x-1.5
-                        gap-y-2
+                        gap-y-3
                     "
                 >
                     {specialist.tags.map(renderTag)}
