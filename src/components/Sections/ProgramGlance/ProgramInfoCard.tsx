@@ -29,6 +29,10 @@ const ProgramInfoCard: FC<{ card: GlanceInfoCard }> = ({ card }) => {
                 border-(--program-glance-info-card-border)
                 bg-(--program-glance-info-card-bg)
                 p-5
+                lg:flex
+                lg:min-h-[180px]
+                lg:flex-col
+                lg:justify-center
             "
         >
             <span
@@ -48,7 +52,7 @@ const ProgramInfoCard: FC<{ card: GlanceInfoCard }> = ({ card }) => {
             <h3
                 className="
                     mt-3
-                    text-[15px]
+                    text-[18px]
                     font-bold
                     leading-[1.3]
                     text-(--program-glance-info-card-title)
@@ -71,7 +75,7 @@ const ProgramInfoCard: FC<{ card: GlanceInfoCard }> = ({ card }) => {
             <p
                 className="
                     mt-2
-                    text-[12.5px]
+                    text-[14px]
                     leading-[1.5]
                     text-(--program-glance-info-card-text)
                 "

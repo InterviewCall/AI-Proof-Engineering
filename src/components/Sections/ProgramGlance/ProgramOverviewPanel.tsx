@@ -34,9 +34,9 @@ const ProgramOverviewPanel: FC = () => {
                     tracking-[-1%]
                     text-(--program-glance-main-card-title)
                     sm:text-[30px]
-                    lg:text-[38px]
+                    lg:text-[42px]
                     lg:font-semibold
-                    lg:leading-[1.32]
+                    lg:leading-[1.2]
                     lg:tracking-[0%]
                 "
             >
@@ -52,6 +52,8 @@ const ProgramOverviewPanel: FC = () => {
                     font-semibold
                     leading-[1.4]
                     text-(--program-glance-main-card-highlight)
+                    lg:mt-4
+                    lg:text-[18px]
                 "
             >
                 Built around skills, practice, feedback, and proof.
