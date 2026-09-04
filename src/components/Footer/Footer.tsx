@@ -745,13 +745,27 @@ const Footer: FC = () => {
                                     <div
                                         className={`
                                             grid
+                                            min-h-0
+                                            overflow-hidden
                                             transition-[grid-template-rows]
                                             duration-200
                                             sm:grid-rows-[1fr]
                                             ${isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}
                                         `}
                                     >
-                                        <ul className="mt-1 space-y-3 overflow-hidden pb-4 sm:mt-4 sm:pb-0">
+                                        <ul
+                                            className={`
+                                                min-h-0
+                                                overflow-hidden
+                                                space-y-3
+                                                sm:mt-4
+                                                ${
+                                                    isOpen
+                                                    ? 'mt-1 pb-4 sm:pb-0'
+                                                    : 'mt-0 pb-0'
+                                                }
+                                            `}
+    >
                                             {column.links.map((link) => (
                                                 <li key={link.label}>
                                                     <Link
