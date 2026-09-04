@@ -46,43 +46,30 @@ const SolutionSection: FC = () => {
                         lg:text-center
                     "
                 >
-                    {/* Desktop badge */}
+                    {/* Combined responsive badge */}
                     <div
                         className="
-                            hidden
-                            min-h-7
+                            mx-auto
+                            flex
+                            w-fit
+                            min-h-10
                             items-center
                             justify-center
                             rounded-full
                             border
                             border-(--solution-section-header-border)
                             bg-(--solution-section-header-bg)
-                            px-5
-                            text-[12px]
-                            font-medium
+                            px-6
+                            text-[clamp(0.875rem,1.1vw,1.0625rem)]
+                            font-semibold
                             uppercase
-                            tracking-[0.08em]
+                            tracking-[0.015em]
                             text-(--solution-section-header-text)
-                            lg:inline-flex
+                            ring-1
                         "
                     >
                         Why InterviewCall
                     </div>
-
-                    {/* Mobile and tablet eyebrow */}
-                    <p
-                        className="
-                            text-[17px]
-                            font-medium
-                            uppercase
-                            tracking-normal
-                            leading-none
-                            text-(--solution-section-title-text-end)
-                            lg:hidden
-                        "
-                    >
-                        Why InterviewCall
-                    </p>
 
                     {/* Desktop heading */}
                     <h2

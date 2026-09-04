@@ -49,23 +49,26 @@ const PracticeSystemSection: FC = () => {
                 <header className="mx-auto max-w-[1100px] text-center">
                     <div
                         className="
-                            inline-flex
-                            min-h-9
+                            mx-auto
+                            flex
+                            w-fit
+                            min-h-10
                             items-center
                             justify-center
                             gap-2
                             rounded-full
                             border
-                            border-[#cbdcff]
-                            bg-white
-                            px-5
-                            text-[12px]
+                            border-[#AFC7FF]
+                            bg-[#EEF4FF]
+                            px-6
+                            text-[clamp(0.875rem,1.1vw,1.0625rem)]
                             font-semibold
                             uppercase
-                            tracking-[0.02em]
+                            tracking-[0.015em]
                             text-[#0a53f2]
-                            shadow-[0_1px_2px_rgba(15,23,42,0.03)]
-                            sm:text-[14px]
+                            shadow-[0_7px_14px_rgba(1,17,57,0.18)]
+                            ring-1
+                            ring-[#a9c3fc]
                         "
                     >
                         <Settings2

@@ -60,7 +60,7 @@ const HeroSection: FC = () => {
                             mx-auto
                             mb-4
                             inline-flex
-                            min-h-9.5
+                            min-h-10
                             items-center
                             justify-center
                             gap-2
@@ -68,17 +68,17 @@ const HeroSection: FC = () => {
                             border
                             border-(--hero-section-badge-border)
                             bg-(--hero-section-badge-bg)
-                            px-4
-                            text-[12px]
+                            px-6
+                            text-[clamp(0.875rem,1.1vw,1.0625rem)]
                             font-semibold
                             uppercase
                             tracking-[0.01em]
                             text-(--hero-section-badge-text)
-                            sm:text-[14px]
+                            sm:text-[15px]
                             lg:mx-0
-                            xl:min-h-10.5
-                            xl:px-5
-                            xl:text-[15px]
+                            xl:min-h-10
+                            xl:px-6
+                            xl:text-[16px]
                         "
                     >
                         {/* <span

@@ -72,7 +72,7 @@ const ProgramOverviewPanel: FC = () => {
                 className="
                     mt-3
                     max-w-56
-                    text-[11.5px]
+                    text-[10px]
                     leading-[1.6]
                     text-(--program-glance-main-card-text)
                 "

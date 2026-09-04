@@ -46,7 +46,7 @@ const CareerPathSection: FC = () => {
                             items-center
                             justify-center
                             gap-4
-                            text-[14px]
+                            text-[clamp(0.875rem,1.1vw,1.0625rem)]
                             font-semibold
                             uppercase
                             tracking-[-1%]

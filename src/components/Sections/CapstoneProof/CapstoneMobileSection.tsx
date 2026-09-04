@@ -42,21 +42,25 @@ const CapstoneMobileSection: FC = () => {
                     <div
                         className="
                             mx-auto
-                            inline-flex
-                            min-h-7
+                            flex
+                            w-fit
+                            min-h-10
                             items-center
                             justify-center
-                            gap-1.5
+                            gap-2
                             rounded-full
                             border
-                            border-(--color-brand-200)
-                            bg-(--proof-section-eyebrow-bg)
-                            px-4
-                            text-[11px]
+                            border-[#AFC7FF]
+                            bg-[#EEF4FF]
+                            px-6
+                            text-[clamp(0.875rem,1.1vw,1.0625rem)]
                             font-semibold
                             uppercase
-                            tracking-[0.02em]
+                            tracking-[0.015em]
                             text-(--proof-section-eyebrow-text)
+                            shadow-[0_7px_14px_rgba(1,17,57,0.18)]
+                            ring-1
+                            ring-[#a9c3fc]
                         "
                     >
                         <Trophy
