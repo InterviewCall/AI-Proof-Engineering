@@ -119,7 +119,7 @@ const AssessmentBanner: FC = () => {
 
                     <p
                         className="
-                             mt-3
+                            mt-3
                             max-w-212.5
                             text-[16px]
                             leading-[1.5]
@@ -167,7 +167,7 @@ const AssessmentBanner: FC = () => {
                             bg-(--assessment-banner-button-bg)
                             px-6
                             text-center
-                            text-[21px]
+                            text-[16px]
                             font-medium
                             text-(--assessment-banner-button-text)
                             shadow-[0_12px_30px_rgba(0,67,251,0.16)]
@@ -180,7 +180,7 @@ const AssessmentBanner: FC = () => {
                             focus-visible:ring-4
                             focus-visible:ring-(--focus-ring-color)
                             sm:min-h-19.5
-                            sm:text-[25px]
+                            sm:text-[18px]
                             xl:min-h-14
                             xl:max-w-[250px]
                             xl:text-[16px]
@@ -241,18 +241,16 @@ const AssessmentBanner: FC = () => {
                                 key={benefit.label}
                                 className="flex flex-1 items-center justify-center gap-4"
                             >
-                               
-                                    <span
-                                        aria-hidden="true"
-                                        className="
-                                            h-2
-                                            w-2
-                                            shrink-0
-                                            rounded-full
-                                            bg-(--assessment-banner-point-bg)
-                                        "
-                                    />
-                               
+                                <span
+                                    aria-hidden="true"
+                                    className="
+                                        h-2
+                                        w-2
+                                        shrink-0
+                                        rounded-full
+                                        bg-(--assessment-banner-point-bg)
+                                    "
+                                />
 
                                 <div className="flex items-center gap-3">
                                     <Image
