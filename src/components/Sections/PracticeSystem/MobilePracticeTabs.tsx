@@ -25,18 +25,15 @@ const MobilePracticeTabs: FC<MobilePracticeTabsProps> = ({
                 const Icon = tab.icon;
 
                 return (
-                    <button
+                    <div
                         key={tab.id}
-                        type="button"
                         role="tab"
                         aria-selected={isActive}
-                        onClick={() => onTabChange(tab.id)}
                         className={`
                             flex
                             min-h-20
                             flex-1
                             shrink-0
-                            cursor-pointer
                             flex-col
                             items-center
                             justify-center
@@ -45,17 +42,13 @@ const MobilePracticeTabs: FC<MobilePracticeTabsProps> = ({
                             text-[12px]
                             font-semibold
                             whitespace-nowrap
-                            transition-colors
+                            text-balck
                             ${
                                 tab.id !== "reviews"
                                     ? "border-r border-(--practice-section-board-border)"
                                     : ""
                             }
-                            ${
-                                isActive
-                                    ? "text-(--color-brand-700)"
-                                    : "text-black"
-                            }
+                            
                         `}
                     >
                         <Icon
@@ -64,7 +57,7 @@ const MobilePracticeTabs: FC<MobilePracticeTabsProps> = ({
                             strokeWidth={1.9}
                         />
                         <span>{tab.label}</span>
-                    </button>
+                    </div>
                 );
             })}
         </div>
