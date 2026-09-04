@@ -178,12 +178,14 @@ const CapstoneProofSection: FC = () => {
                             justify-center
                             gap-2.5
                             rounded-lg
-                            bg-(--button-primary-bg)
+                            border
+                            border-(--color-brand-300)
+                            bg-white
                             px-4
                             text-center
                             text-[14px]
                             font-semibold
-                            text-(--button-primary-text)
+                            text-(--button-primary-bg)
                             transition-all
                             duration-200
                             hover:-translate-y-0.5
