@@ -18,28 +18,30 @@ const FeatureStrip: FC<FeatureStripProps> = ({ items, compact = false }) => {
                     rounded-xl
                     border
                     border-(--practice-section-card-border)
-                    bg-(--practice-section-card-bg)
+                    bg-white
                 "
             >
-                {items.map((item) => {
+                {items.map((item, index) => {
                     const Icon = item.icon;
 
                     return (
                         <div
                             key={item.title}
-                            className="
+                            className={`
                                 flex
                                 flex-col
                                 items-center
+                                justify-center
                                 gap-2
-                                rounded-xl
-                                border
-                                border-(--practice-section-card-border)
-                                bg-(--practice-section-card-bg)
                                 px-3
                                 py-4
                                 text-center
-                            "
+                                ${
+                                    index < items.length - 1
+                                        ? 'border-r border-(--practice-section-card-border)'
+                                        : ''
+                                }
+                            `}
                         >
                             <span
                                 className="
