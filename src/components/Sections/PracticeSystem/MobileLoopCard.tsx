@@ -21,11 +21,15 @@ const MobileLoopCard: FC = () => {
                 <div className="text-center sm:text-left">
                     <span
                         className="
+                            block
+                            w-full
+                            text-left
                             text-[12px]
                             font-bold
                             uppercase
                             tracking-[0.04em]
                             text-(--color-brand-700)
+                            
                         "
                     >
                         Practice Loop
@@ -39,6 +43,7 @@ const MobileLoopCard: FC = () => {
                             leading-[1.15]
                             tracking-[-1%]
                             text-(--practice-section-card-title)
+                            text-left
                         "
                     >
                         Solve It. Apply It. Repeat.
