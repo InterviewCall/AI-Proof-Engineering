@@ -220,7 +220,7 @@ const PracticeSystemSection: FC = () => {
                         grid
                         max-w-[735px]
                         gap-2.5
-                        lg:mt-
+                        lg:mt-6
                         lg:grid-cols-[1.2fr_1fr]
                         lg:gap-1
                     "

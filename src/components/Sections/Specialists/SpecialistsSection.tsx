@@ -139,7 +139,7 @@ const SpecialistsSection: FC = () => {
                     </div>
 
                     {/* Desktop CTA */}
-                    <div className="mx-auto mt-5 grid max-w-[735px] gap-2.5 lg:mt-6 lg:grid-cols-[1.2fr_1fr] lg:gap-6">
+                    <div className="mx-auto mt-5 grid max-w-[735px] gap-2.5 lg:mt-6 lg:grid-cols-[1.2fr_1fr] lg:gap-2">
                         <Link
                             href="#specialists"
                             className="
@@ -165,7 +165,9 @@ const SpecialistsSection: FC = () => {
                                 focus-visible:ring-4
                                 focus-visible:ring-(--focus-ring-color)
                                 lg:min-h-16
-                                lg:gap-4
+                                lg:w-[90%]
+                                lg:justify-self-start
+                                lg:gap-1
                                 lg:px-6
                                 lg:text-[20px]
                             "
