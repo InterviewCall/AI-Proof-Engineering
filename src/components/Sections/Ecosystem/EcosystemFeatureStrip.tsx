@@ -35,8 +35,8 @@ const EcosystemFeatureStrip: FC = () => {
                         <span
                             className="
                                 flex
-                                h-11
-                                w-11
+                                h-13
+                                w-13
                                 items-center
                                 justify-center
                                 rounded-full
@@ -46,14 +46,14 @@ const EcosystemFeatureStrip: FC = () => {
                         >
                             <Icon
                                 aria-hidden="true"
-                                className="h-5.5 w-5.5"
+                                className="h-6.5 w-6.5"
                                 strokeWidth={1.8}
                             />
                         </span>
 
                         <p
                             className="
-                                text-[14px]
+                                text-[17px]
                                 font-semibold
                                 leading-tight
                                 text-(--ecosystem-strip-title-text)

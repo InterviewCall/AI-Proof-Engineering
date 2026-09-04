@@ -73,7 +73,7 @@ const FaqSection: FC = () => {
 
                         <h2
                             className="
-                                mt-[50px]
+                                mt-[25px]
                                 text-[clamp(2.5rem,7.5vw,3.75rem)]
                                 font-bold
                                 leading-[1.06]
@@ -81,7 +81,7 @@ const FaqSection: FC = () => {
                                 text-(--faq-section-title-text)
                             "
                         >
-                            Frequently Asked Questions
+                            Frequently Asked <span className="text-(--color-brand-700)">Questions</span>
                         </h2>
 
                         <p
