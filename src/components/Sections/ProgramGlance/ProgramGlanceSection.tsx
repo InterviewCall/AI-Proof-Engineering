@@ -88,7 +88,7 @@ const ProgramGlanceSection: FC = () => {
                             lg:hidden
                         "
                     >
-                        Program at a Glance
+                        Program at a <span className="text-[#0840FD]">Glance</span>
                     </h2>
 
                     {/* Desktop subtitle */}
