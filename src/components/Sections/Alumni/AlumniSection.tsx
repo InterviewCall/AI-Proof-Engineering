@@ -65,9 +65,13 @@ const AlumniSection: FC = () => {
                             leading-[1.1]
                             tracking-[-2%]
                             text-(--alumni-section-title-text)
+                            lg:whitespace-nowrap
                         "
                     >
-                        Real Engineers. Real Career Journeys.
+                        Real Engineers. Real Career{" "} 
+                        <span className="text-(--progress-section-title-highlight)">
+                            Journeys
+                        </span>
                     </h2>
 
                     <p
@@ -98,10 +102,9 @@ const AlumniSection: FC = () => {
                         sm:grid
                         sm:grid-cols-3
                         lg:grid-cols-[minmax(0,3fr)_repeat(3,minmax(0,1fr))]
-                        lg:items-start
                     "
                 >
-                    <div className="sm:col-span-3 lg:col-span-1">
+                    <div className="sm:col-span-3 lg:col-span-1 h-full">
                         <FeaturedAlumniCard />
                     </div>
 

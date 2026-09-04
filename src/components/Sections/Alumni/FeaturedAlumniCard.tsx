@@ -26,7 +26,7 @@ const FeaturedAlumniCard: FC = () => {
                 p-5
                 min-h-[620px]
                 sm:p-6
-                lg:min-h-0
+                lg:min-h-[480px]
             "
         >
             {/* Background image */}
@@ -40,8 +40,8 @@ const FeaturedAlumniCard: FC = () => {
                 className="
                     -z-20
                     object-cover
-                    object-[80%_center]
-                    lg:object-[67%_center]
+                    object-[80%_20%]
+                    lg:object-[67%_15%]
                 "
             />
 
@@ -118,7 +118,7 @@ const FeaturedAlumniCard: FC = () => {
 
                     <p
                         className="
-                            mt-1.5
+                            mt-3
                             text-[13px]
                             leading-none
                             font-medium
@@ -132,7 +132,7 @@ const FeaturedAlumniCard: FC = () => {
 
                     <div
                         className="
-                            mt-4
+                            mt-5
                             h-px
                             w-[60%]
                             bg-(--alumni-featured-divider)

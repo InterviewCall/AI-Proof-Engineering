@@ -26,7 +26,7 @@ const AlumniCtaBar: FC = () => {
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:text-left">
                 <span
                     className="
-                        flex
+                        hidden
                         h-13
                         w-13
                         shrink-0
@@ -35,6 +35,7 @@ const AlumniCtaBar: FC = () => {
                         rounded-full
                         bg-(--alumni-cta-icon-bg)
                         text-(--alumni-cta-icon-text)
+                        sm:flex
                     "
                 >
                     <UsersRound
@@ -76,14 +77,16 @@ const AlumniCtaBar: FC = () => {
                 <Link
                     href="#alumni"
                     className="
+                        group
                         inline-flex
                         min-h-12.5
+                        w-full
                         items-center
                         justify-center
                         gap-2.5
                         rounded-lg
                         border
-                        border-(--alumni-cta-secondary-button-border)
+                        border-[#144EFE]
                         bg-(--alumni-cta-secondary-button-bg)
                         px-6
                         text-center
@@ -91,18 +94,22 @@ const AlumniCtaBar: FC = () => {
                         font-semibold
                         whitespace-nowrap
                         text-(--alumni-cta-secondary-button-text)
-                        transition-colors
+                        transition-all
+                        duration-200
+                        hover:-translate-y-0.5
                         hover:bg-(--alumni-cta-secondary-button-hover-bg)
                         focus-visible:outline-none
                         focus-visible:ring-4
                         focus-visible:ring-(--focus-ring-color)
+                        sm:w-auto
+                        sm:min-w-[248px]
                     "
                 >
                     <span>View Alumni Stories</span>
                     <ArrowRight
                         aria-hidden="true"
-                        className="h-4.5 w-4.5"
-                        strokeWidth={1.9}
+                        className="h-4.5 w-4.5 shrink-0 transition-transform duration-200 group-hover:translate-x-1"
+                        strokeWidth={1.8}
                     />
                 </Link>
 
@@ -112,6 +119,7 @@ const AlumniCtaBar: FC = () => {
                         group
                         inline-flex
                         min-h-12.5
+                        w-full
                         items-center
                         justify-center
                         gap-2.5
@@ -130,14 +138,12 @@ const AlumniCtaBar: FC = () => {
                         focus-visible:outline-none
                         focus-visible:ring-4
                         focus-visible:ring-(--focus-ring-color)
+                        sm:w-auto
+                        sm:min-w-[248px]
                     "
                 >
-                    <CalendarCheck
-                        aria-hidden="true"
-                        className="h-4.5 w-4.5"
-                        strokeWidth={1.9}
-                    />
-                    <span>Book a Program Counselling Call</span>
+                    <CalendarCheck aria-hidden="true" className="h-4.5 w-4.5 shrink-0" strokeWidth={1.9} />
+                    <span>Book a Counselling Call</span>
                 </Link>
             </div>
         </div>
