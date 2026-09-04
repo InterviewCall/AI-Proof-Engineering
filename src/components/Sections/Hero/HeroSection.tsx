@@ -2,6 +2,7 @@ import {
     ArrowRight,
     Download,
     FileDown,
+    Play,
     ShieldCheck,
 } from 'lucide-react';
 import Image from 'next/image';
@@ -113,12 +114,12 @@ const HeroSection: FC = () => {
                     >
                         <span
                             className="
-                                text-[clamp(2rem,9vw,2.8rem)]
+                                text-[clamp(2.6rem,10vw,3.8rem)]
                                 font-bold
                                 tracking-[-3%]
                                 text-(--hero-section-title-one-text)
                                 md:tracking-[-4%]
-                                lg:text-[50px]
+                                
                             "
                         >
                             AI writes more of the code now.
@@ -127,34 +128,17 @@ const HeroSection: FC = () => {
                         <span
                             className="
                             bg-clip-text
-                            text-[clamp(2.55rem,7.5vw,4rem)]
+                            text-[clamp(2.6rem,10vw,3.8rem)]
                             font-bold
                             tracking-[-3%]
                             text-(--hero-section-title-two-text-desktop)
                             max-md:hidden
-                            md:text-[48px]
+                            
                             md:tracking-[-4%]
                             lg:mt-2
-                            xl:text-[52px]
+                            
                             "
-                        >
-                            Someone still has to check it.
-                        </span>
-
-                        <span
-                            className="
-                                hidden
-                                bg-clip-text
-                                pt-2
-                                text-[clamp(2.55rem,7.5vw,4rem)]
-                                font-bold
-                                tracking-[-3%]
-                                text-transparent
-                                max-md:block
-                                md:text-[52px]
-                                md:tracking-[-4%]
-                                lg:mt-3
-                            "
+                        
                             style={{
                                 backgroundImage:
                                     'var(--hero-section-title-gradient-mobile)',
@@ -171,15 +155,12 @@ const HeroSection: FC = () => {
                             mt-4
                             block
                             max-w-155
-                            text-[15px]
+                            text-[clamp(16px,1.3vw,18px)]
                             leading-[142%]
                             tracking-[-2%]
                             text-(--hero-section-subtitle-text)
                             max-md:hidden
-                            sm:text-[17px]
                             lg:mx-0
-                            lg:text-[16px]
-                            xl:text-[17px]
                             xl:leading-[1.65]
                         "
                     >
@@ -367,7 +348,7 @@ const HeroSection: FC = () => {
 
                         <p
                             className="
-                                text-[13px]
+                                text-[clamp(16px,1.3vw,18px)]
                                 leading-normal
                                 text-(--hero-section-proof-text)
                                 sm:text-[15px]
@@ -415,6 +396,46 @@ const HeroSection: FC = () => {
                                 object-cover
                             "
                         />
+                        <div
+                            className="
+                            pointer-events-none
+                            absolute
+                            inset-0
+                            z-20
+                            flex
+                            items-center
+                            justify-center
+                        "
+                        >
+                        <span
+                            className="
+                                flex
+                                h-20
+                                w-20
+                                items-center
+                                justify-center
+                                rounded-full
+                                bg-white
+                                shadow-[0_8px_30px_rgba(4,13,87,0.18)]
+                                sm:h-24
+                                sm:w-24
+                            "
+                        >
+                        <Play
+                            aria-hidden="true"
+                            className="
+                            ml-1
+                            h-9
+                            w-9
+                            fill-[#0b62ff]
+                            text-[#0b62ff]
+                            sm:h-11
+                            sm:w-11
+                        "
+                        strokeWidth={1.8}
+                        />
+                        </span>
+                    </div>
 
                         <div
                             className="
