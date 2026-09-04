@@ -654,6 +654,10 @@ const StructuredJourneySection: FC = () => {
                     lg:mt-6
                     lg:grid-cols-[1.2fr_1fr]
                     lg:gap-6
+                    rounded-xl
+                    border
+                    border-blue-100
+                    p-3
                 "
                 >
                     <a
