@@ -35,14 +35,16 @@ const WhyNowSection: FC = () => {
                 <div className='mx-auto max-w-240 text-center'>
                     <div
                         className='
-                            inline-flex
-                            min-h-8
+                            mx-auto
+                            flex
+                            w-fit
+                            min-h-10
                             items-center
                             justify-center
                             rounded-full
                             bg-(--why-now-section-header-bg)
-                            px-5
-                            text-[clamp(0.7rem,0.75vw,0.9375rem)]
+                            px-6
+                            text-[clamp(0.875rem,1.1vw,1.0625rem)]
                             font-semibold
                             uppercase
                             tracking-[0.015em]
