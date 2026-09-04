@@ -1,33 +1,39 @@
-'use client';
+"use client";
 
-import { CircleArrowRight, Download, Settings2 } from 'lucide-react';
-import Link from 'next/link';
-import { FC, useState } from 'react';
+import { CircleArrowRight, Download, Settings2 } from "lucide-react";
+import Link from "next/link";
+import { FC, useState } from "react";
 
-import { type PracticeTabId } from '@/types/practiceSystem';
+import { type PracticeTabId } from "@/types/practiceSystem";
 import {
     desktopFeatureStrip,
     mobileFeatureStrip,
     practiceTaskByTab,
-} from '@/utils/practiceSystemItems';
+} from "@/utils/practiceSystemItems";
 
-import FeatureStrip from './FeatureStrip';
-import LabChecklistCard from './LabChecklistCard';
-import MentorReviewCard from './MentorReviewCard';
-import MobileLoopCard from './MobileLoopCard';
-import MobileSummaryCards from './MobileSummaryCards';
-import MockFeedbackCard from './MockFeedbackCard';
-import PracticeLoopPanel from './PracticeLoopPanel';
-import PracticeTabs from './PracticeTabs';
-import PracticeTaskCard from './PracticeTaskCard';
-import ReadinessProgressCard from './ReadinessProgressCard';
-import MobilePracticeTabs from './MobilePracticeTabs';
+import FeatureStrip from "./FeatureStrip";
+import LabChecklistCard from "./LabChecklistCard";
+import MentorReviewCard from "./MentorReviewCard";
+import MobileLoopCard from "./MobileLoopCard";
+import MobileSummaryCards from "./MobileSummaryCards";
+import MockFeedbackCard from "./MockFeedbackCard";
+import PracticeLoopPanel from "./PracticeLoopPanel";
+import PracticeTabs from "./PracticeTabs";
+import PracticeTaskCard from "./PracticeTaskCard";
+import ReadinessProgressCard from "./ReadinessProgressCard";
+import MobilePracticeTabs from "./MobilePracticeTabs";
 
 const PracticeSystemSection: FC = () => {
+    /*
+     * Mobile state is kept exactly as before.
+     * Desktop tabs are now static, so desktop always shows
+     * the Practice task while mobile keeps its original
+     * interactive tab behaviour.
+     */
     const [activeTabId, setActiveTabId] =
-        useState<PracticeTabId>('practice');
+        useState<PracticeTabId>("practice");
 
-    const activeTask = practiceTaskByTab[activeTabId];
+    const activeTask = practiceTaskByTab.practice;
 
     return (
         <section
@@ -80,7 +86,6 @@ const PracticeSystemSection: FC = () => {
                         <span>Practice, Labs, Mocks, Reviews</span>
                     </div>
 
-                    {/* Keep existing text exactly unchanged */}
                     <h2
                         className="
                             mt-4
@@ -88,11 +93,11 @@ const PracticeSystemSection: FC = () => {
                             font-bold
                             leading-[1.06]
                             tracking-[-0.04em]
-                            lg:whitespace-nowrap
                             text-[#071536]
+                            lg:whitespace-nowrap
                         "
                     >
-                        What You Actually Do Between{' '}
+                        What You Actually Do Between{" "}
                         <span className="text-[#0a53f2]">
                             Sessions
                         </span>
@@ -117,11 +122,9 @@ const PracticeSystemSection: FC = () => {
 
                 {/* Tabs + board */}
                 <div className="mt-8">
+                    {/* Desktop tabs */}
                     <div className="hidden lg:block">
-                        <PracticeTabs
-                            activeTabId={activeTabId}
-                            onChange={setActiveTabId}
-                        />
+                        <PracticeTabs />
                     </div>
 
                     {/* Desktop board */}
@@ -186,19 +189,14 @@ const PracticeSystemSection: FC = () => {
                             </div>
                         </div>
 
-                        {/* Feature strip */}
+                        {/* Desktop feature strip */}
                         <div className="border-t border-[#e2eafd] px-5 py-4">
                             <FeatureStrip items={desktopFeatureStrip} />
                         </div>
                     </div>
 
-                    {/* Mobile / tablet board */}
-                    <div
-                        className="
-                            space-y-4
-                            lg:hidden
-                        "
-                    >
+                    {/* Mobile / tablet board — unchanged */}
+                    <div className="space-y-4 lg:hidden">
                         <MobilePracticeTabs
                             activeTab={activeTabId}
                             onTabChange={setActiveTabId}

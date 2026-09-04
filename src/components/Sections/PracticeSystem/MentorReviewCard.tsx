@@ -1,5 +1,4 @@
-import { ArrowRight, MessageCircle, UserRound } from 'lucide-react';
-import Link from 'next/link';
+import { MessageCircle, UserRound } from 'lucide-react';
 import { FC } from 'react';
 
 const MentorReviewCard: FC = () => {
@@ -76,27 +75,6 @@ const MentorReviewCard: FC = () => {
                     approach, code quality, and system thinking.
                 </p>
             </div>
-
-            <Link
-                href="#specialists"
-                className="
-                    group
-                    mt-4
-                    inline-flex
-                    items-center
-                    gap-1.5
-                    text-[14px]
-                    font-semibold
-                    text-(--color-brand-700)
-                "
-            >
-                <span>View Review Notes</span>
-                <ArrowRight
-                    aria-hidden="true"
-                    className="h-4 w-4 transition-transform group-hover:translate-x-1"
-                    strokeWidth={2}
-                />
-            </Link>
         </article>
     );
 };

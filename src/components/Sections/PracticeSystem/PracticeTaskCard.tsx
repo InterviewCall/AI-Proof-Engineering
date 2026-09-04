@@ -86,72 +86,33 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
                 ))}
             </div>
 
-            {/* Code preview */}
+            {/* Enlarged code preview */}
             <div
                 className="
                     mt-4
                     flex
-                    h-[135px]
+                    min-h-[190px]
                     w-full
+                    flex-1
                     self-center
                     overflow-hidden
+                    rounded-lg
                 "
             >
                 <Image
                     src="/image 114.svg"
                     alt="Practice task"
-                    width={360}
-                    height={135}
+                    width={500}
+                    height={190}
                     priority
                     className="
                         block
                         h-full
+                        min-h-[190px]
                         w-full
                         object-fill
                     "
                 />
-            </div>
-
-            <div className="mt-5 flex justify-end gap-2">
-                <button
-                    type="button"
-                    className="
-                        min-h-8
-                        cursor-pointer
-                        rounded-lg
-                        border
-                        border-(--practice-section-card-border)
-                        bg-white
-                        px-3
-                        text-[12px]
-                        font-semibold
-                        whitespace-nowrap
-                        text-(--practice-section-card-title)
-                        transition-colors
-                        hover:bg-(--practice-section-board-bg)
-                    "
-                >
-                    View Problem
-                </button>
-
-                <button
-                    type="button"
-                    className="
-                        min-h-8
-                        cursor-pointer
-                        rounded-lg
-                        bg-(--button-primary-bg)
-                        px-3
-                        text-[12px]
-                        font-semibold
-                        whitespace-nowrap
-                        text-(--button-primary-text)
-                        transition-colors
-                        hover:bg-(--button-primary-bg-hover)
-                    "
-                >
-                    Submit
-                </button>
             </div>
         </article>
     );

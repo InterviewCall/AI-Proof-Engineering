@@ -24,20 +24,25 @@ const MobileProgressFeatureStrip: FC = () => {
                 bg-(--progress-section-mobile-strip-bg)
             "
         >
-            {items.map((item) => {
+            {items.map((item, index) => {
                 const Icon = item.icon;
+
+                const isLeftColumn = index % 2 === 0;
+                const isTopRow = index < 2;
 
                 return (
                     <div
                         key={item.title}
-                        className="
+                        className={`
                             flex
                             min-w-0
                             items-center
                             gap-2.5
                             px-4
                             py-4
-                        "
+                            ${isLeftColumn ? 'border-r border-(--progress-section-sidebar-divider)' : ''}
+                            ${isTopRow ? 'border-b border-(--progress-section-sidebar-divider)' : ''}
+                        `}
                     >
                         <span
                             className={`

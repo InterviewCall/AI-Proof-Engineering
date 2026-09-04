@@ -1,22 +1,15 @@
 import { FC } from 'react';
 
-import { type PracticeTabId } from '@/types/practiceSystem';
 import { practiceTabs } from '@/utils/practiceSystemItems';
 
-type PracticeTabsProps = {
-    activeTabId: PracticeTabId;
-    onChange: (tabId: PracticeTabId) => void;
-};
-
-const PracticeTabs: FC<PracticeTabsProps> = ({ activeTabId, onChange }) => {
+const PracticeTabs: FC = () => {
     return (
         <div
-            role="tablist"
             aria-label="Practice system categories"
             className="
                 flex
                 items-stretch
-                overflow-x-auto
+                overflow-hidden
                 rounded-t-2xl
                 border
                 border-(--practice-section-board-border)
@@ -25,48 +18,48 @@ const PracticeTabs: FC<PracticeTabsProps> = ({ activeTabId, onChange }) => {
                 sm:p-3
             "
         >
-            {practiceTabs.map((tab) => {
+            {practiceTabs.map((tab, index) => {
                 const Icon = tab.icon;
-                const isActive = tab.id === activeTabId;
+                const isLast = index === practiceTabs.length - 1;
 
                 return (
-                    <button
+                    <div
                         key={tab.id}
-                        type="button"
-                        role="tab"
-                        aria-selected={isActive}
-                        onClick={() => onChange(tab.id)}
-                        className={`
+                        className="
                             flex
                             min-h-12
                             flex-1
-                            shrink-0
-                            cursor-pointer
                             items-center
                             justify-center
-                            gap-2
-                            rounded-xl
-                            px-4
-                            text-[18px]
-                            font-bold
-                            whitespace-nowrap
-                            transition-colors
                             sm:min-h-14
-                            sm:text-[16px]
-                            ${
-                                isActive
-                                    ? 'bg-(--practice-section-tab-active-bg) text-(--practice-section-tab-active-text)'
-                                    : 'text-black hover:bg-white'
-                            }
-                        `}
+                        "
                     >
-                        <Icon
-                            aria-hidden="true"
-                            className="h-8 w-8"
-                            strokeWidth={1.8}
-                        />
-                        <span>{tab.label}</span>
-                    </button>
+                        <div
+                            className={`
+                                flex
+                                h-full
+                                w-full
+                                items-center
+                                justify-center
+                                gap-2
+                                px-4
+                                text-[18px]
+                                font-bold
+                                whitespace-nowrap
+                                text-black
+                                sm:text-[16px]
+                                ${!isLast ? 'border-r border-(--practice-section-board-border)' : ''}
+                            `}
+                        >
+                            <Icon
+                                aria-hidden="true"
+                                className="h-8 w-8"
+                                strokeWidth={1.8}
+                            />
+
+                            <span>{tab.label}</span>
+                        </div>
+                    </div>
                 );
             })}
         </div>

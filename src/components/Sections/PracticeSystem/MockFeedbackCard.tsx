@@ -1,5 +1,4 @@
-import { ArrowRight, Lightbulb, Mic } from 'lucide-react';
-import Link from 'next/link';
+import { Lightbulb, Mic } from 'lucide-react';
 import { FC } from 'react';
 
 import { mockFeedbackMetrics } from '@/utils/practiceSystemItems';
@@ -125,7 +124,12 @@ const MockFeedbackCard: FC = () => {
                                 <span className="flex min-w-0 items-center gap-1.5">
                                     <Icon
                                         aria-hidden="true"
-                                        className="h-3.5 w-3.5 shrink-0 text-(--practice-section-card-text)"
+                                        className="
+                                            h-3.5
+                                            w-3.5
+                                            shrink-0
+                                            text-(--practice-section-card-text)
+                                        "
                                         strokeWidth={1.9}
                                     />
 
@@ -148,57 +152,37 @@ const MockFeedbackCard: FC = () => {
                 </div>
             </div>
 
+            {/* Feedback focus */}
             <div
                 className="
-                    mt-2
+                    mt-auto
                     flex
+                    min-h-[76px]
                     items-start
-                    gap-2
-                    rounded-lg
-                    border-[#ECF1FD]
+                    gap-3
+                    rounded-xl
                     bg-[#F6F8FD]
-                    px-3.5
-                    py-3
+                    px-4
+                    py-4
                 "
             >
                 <Lightbulb
                     aria-hidden="true"
-                    className="mt-0.5 h-4.5 w-4.5 shrink-0 text-(--color-brand-700)"
+                    className="mt-0.5 h-5 w-5 shrink-0 text-(--color-brand-700)"
                     strokeWidth={1.9}
                 />
 
                 <p
                     className="
-                        text-[13.5px]
-                        leading-[1.45]
+                        text-[14px]
+                        font-medium
+                        leading-[1.5]
                         text-(--practice-section-card-text)
                     "
                 >
                     Focus on edge cases and clearer communication.
                 </p>
             </div>
-
-            <Link
-                href="#practice-system"
-                className="
-                    group
-                    mt-2
-                    inline-flex
-                    items-center
-                    gap-1.5
-                    text-[14px]
-                    font-semibold
-                    text-(--color-brand-700)
-                "
-            >
-                <span>View Detailed Feedback</span>
-
-                <ArrowRight
-                    aria-hidden="true"
-                    className="h-4 w-4 transition-transform group-hover:translate-x-1"
-                    strokeWidth={2}
-                />
-            </Link>
         </article>
     );
 };
