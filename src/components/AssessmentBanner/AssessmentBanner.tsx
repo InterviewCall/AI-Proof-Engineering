@@ -26,7 +26,7 @@ const AssessmentBanner: FC = () => {
                     mx-auto
                     grid
                     w-full
-                    max-w-[1542px]
+                    max-w-370
                     grid-cols-1
                     overflow-hidden
                     rounded-[20px]

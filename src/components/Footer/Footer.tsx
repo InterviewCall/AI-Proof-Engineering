@@ -29,7 +29,7 @@ const Footer: FC = () => {
                 className="
                     mx-auto
                     w-full
-                    max-w-[1540px]
+                    max-w-370
                     box-border
                     px-4
                     pt-[50px]
@@ -881,7 +881,7 @@ const Footer: FC = () => {
                         mx-auto
                         flex
                         w-full
-                        max-w-345
+                        max-w-370
                         flex-col
                         items-center
                         gap-4

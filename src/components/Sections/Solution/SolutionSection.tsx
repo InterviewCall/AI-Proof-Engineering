@@ -34,7 +34,7 @@ const SolutionSection: FC = () => {
                 xl:py-20
             "
         >
-            <div className="mx-auto w-full max-w-[1540px]">
+            <div className="mx-auto w-full max-w-370">
                 {/* =====================================================
                     SECTION HEADER
                 ====================================================== */}

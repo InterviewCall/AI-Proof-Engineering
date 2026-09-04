@@ -24,7 +24,7 @@ const AlumniSection: FC = () => {
                 xl:px-12
             "
         >
-            <div className="mx-auto w-full max-w-[1540px]">
+            <div className="mx-auto w-full max-w-370">
                 {/* Header */}
                 <header className="mx-auto max-w-220 text-center">
                     <p

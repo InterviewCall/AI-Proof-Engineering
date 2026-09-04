@@ -50,7 +50,7 @@ const PracticeSystemSection: FC = () => {
                 xl:px-12
             "
         >
-            <div className="mx-auto w-full max-w-[1540px]">
+            <div className="mx-auto w-full max-w-370">
                 {/* Header */}
                 <header className="mx-auto max-w-[1100px] text-center">
                     <div

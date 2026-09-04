@@ -27,18 +27,18 @@ const FaqSection: FC = () => {
         <section
             id="faq"
             className="
-                mx-auto
                 w-full
                 box-border
-                max-w-[1540px]
-                px-[50px]
+                scroll-mt-25
+                px-4
                 pt-[50px]
                 pb-[50px]
-                scroll-mt-25
+                sm:px-6
+                lg:px-8
                 xl:px-12
             "
         >
-            <div className="mx-auto w-full max-w-[1540px]">
+            <div className="mx-auto w-full max-w-370">
                 {/* Desktop */}
                 <div className="hidden lg:block">
                     <header className="mx-auto max-w-220 text-center">

@@ -30,7 +30,7 @@ const WhyNowSection: FC = () => {
                 xl:px-12
             '
         >
-            <div className='mx-auto w-full max-w-[1540px]'>
+            <div className='mx-auto w-full max-w-370'>
                 {/* Section header */}
                 <div className='mx-auto max-w-240 text-center'>
                     <div

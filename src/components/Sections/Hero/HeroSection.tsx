@@ -32,10 +32,11 @@ const HeroSection: FC = () => {
                     mx-auto
                     grid
                     w-full
-                    max-w-[1540px]
+                    max-w-370
                     items-center
                     gap-6
                     lg:grid-cols-[0.9fr_1.1fr]
+                    2xl:grid-cols-[1.05fr_1fr]
                     lg:gap-8
                     xl:gap-10
                 "
@@ -362,7 +363,7 @@ const HeroSection: FC = () => {
                 {/* =====================================================
                     RIGHT VISUAL
                 ====================================================== */}
-                <div className="mx-auto w-full max-w-[710px]">
+                <div className="mx-auto w-full max-w-[710px] lg:max-w-none">
                     <div
                         className="
                             relative
