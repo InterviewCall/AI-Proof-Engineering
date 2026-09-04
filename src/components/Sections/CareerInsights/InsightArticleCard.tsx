@@ -57,7 +57,7 @@ const InsightArticleCard: FC<{ article: InsightArticle }> = ({ article }) => {
                         items-center
                         rounded-md
                         px-2.5
-                        text-[11px]
+                        text-[11.5px]
                         font-bold
                         uppercase
                         tracking-[0.02em]
@@ -116,7 +116,7 @@ const InsightArticleCard: FC<{ article: InsightArticle }> = ({ article }) => {
 
                     <span
                         className="
-                            text-[12px]
+                            text-[12.5px]
                             font-medium
                             whitespace-nowrap
                             text-(--career-insights-card-text)
@@ -133,7 +133,7 @@ const InsightArticleCard: FC<{ article: InsightArticle }> = ({ article }) => {
                         items-center
                         rounded-full
                         px-2.5
-                        text-[11px]
+                        text-[11.5px]
                         font-semibold
                         whitespace-nowrap
                         ${tagStyles[article.accent]}

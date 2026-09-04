@@ -56,7 +56,7 @@ const FeaturedTalkCard: FC = () => {
                         rounded-md
                         bg-(--career-insights-video-badge-bg)
                         px-3
-                        text-[12px]
+                        text-[12.5px]
                         font-bold
                         uppercase
                         tracking-[0.03em]
@@ -99,7 +99,7 @@ const FeaturedTalkCard: FC = () => {
                         max-w-full
                         sm:max-w-80
                         lg:max-w-67
-                        text-[15px]
+                        text-[15.5px]
                         leading-[1.6]
                         text-(--career-insights-video-muted-text)
                     "
@@ -152,7 +152,7 @@ const FeaturedTalkCard: FC = () => {
 
                         <span
                             className="
-                                text-[13px]
+                                text-[13.5px]
                                 font-medium
                                 text-(--career-insights-video-muted-text)
                             "
@@ -174,7 +174,7 @@ const FeaturedTalkCard: FC = () => {
                                     border-(--career-insights-video-tag-border)
                                     bg-(--career-insights-video-tag-bg)
                                     px-3
-                                    text-[12px]
+                                    text-[12.5px]
                                     font-semibold
                                     text-[#A2C5EC]
                                     text-(--career-insights-video-tag-text)

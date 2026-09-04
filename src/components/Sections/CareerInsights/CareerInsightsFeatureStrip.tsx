@@ -65,7 +65,7 @@ const CareerInsightsFeatureStrip: FC = () => {
                         <div className="min-w-0">
                             <p
                                 className="
-                                    text-[14px]
+                                    text-[14.5px]
                                     font-semibold
                                     leading-tight
                                     text-(--career-insights-strip-title-text)
@@ -77,7 +77,7 @@ const CareerInsightsFeatureStrip: FC = () => {
                             <p
                                 className="
                                     mt-1
-                                    text-[12px]
+                                    text-[12.5px]
                                     leading-[1.4]
                                     text-(--career-insights-strip-text)
                                 "

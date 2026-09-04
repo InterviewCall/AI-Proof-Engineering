@@ -41,12 +41,12 @@ const CareerInsightsSection: FC = () => {
                             border-(--color-brand-200)
                             bg-(--career-insights-section-eyebrow-bg)
                             px-5
-                            text-[13px]
+                            text-[13.5px]
                             font-semibold
                             uppercase
                             tracking-[-1%]
                             text-(--career-insights-section-eyebrow-text)
-                            sm:text-[15px]
+                            sm:text-[15.5px]
                         "
                     >
                         <Lightbulb
@@ -142,7 +142,7 @@ const CareerInsightsSection: FC = () => {
                         className="
                             mt-8
                             block
-                            text-[13px]
+                            text-[13.5px]
                             font-bold
                             uppercase
                             tracking-[0.04em]
@@ -167,7 +167,7 @@ const CareerInsightsSection: FC = () => {
                 </div>
 
                 {/* CTA */}
-                <div className="mx-auto mt-5 grid max-w-[735px] gap-2.5 lg:mt-6 lg:grid-cols-[1.2fr_1fr] lg:gap-6">
+                <div className="mx-auto mt-4.5 grid max-w-[735px] gap-2.5 lg:mt-5.5 lg:grid-cols-[1.2fr_1fr] lg:gap-6">
                     <Link
                         href="#career-insights"
                         className="
@@ -182,7 +182,7 @@ const CareerInsightsSection: FC = () => {
                             bg-(--button-primary-bg)
                             px-4
                             text-center
-                            text-[14px]
+                            text-[14.5px]
                             whitespace-nowrap
                             font-semibold
                             text-(--button-primary-text)
@@ -222,7 +222,7 @@ const CareerInsightsSection: FC = () => {
                             bg-white
                             px-4
                             text-center
-                            text-[14px]
+                            text-[14.5px]
                             font-semibold
                             text-(--color-brand-700)
                             transition-colors
