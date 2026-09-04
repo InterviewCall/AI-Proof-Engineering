@@ -86,12 +86,13 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
                 ))}
             </div>
 
+            {/* Code preview */}
             <div
                 className="
                     mt-4
                     flex
-                    h-[115px]
-                    w-[300px]
+                    h-[135px]
+                    w-full
                     self-center
                     overflow-hidden
                 "
@@ -99,14 +100,14 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
                 <Image
                     src="/image 114.svg"
                     alt="Practice task"
-                    width={300}
-                    height={115}
+                    width={360}
+                    height={135}
                     priority
                     className="
                         block
                         h-full
                         w-full
-                        object-contain
+                        object-fill
                     "
                 />
             </div>

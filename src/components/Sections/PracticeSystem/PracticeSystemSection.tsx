@@ -10,6 +10,7 @@ import {
     mobileFeatureStrip,
     practiceTaskByTab,
 } from '@/utils/practiceSystemItems';
+
 import FeatureStrip from './FeatureStrip';
 import LabChecklistCard from './LabChecklistCard';
 import MentorReviewCard from './MentorReviewCard';
@@ -72,6 +73,7 @@ const PracticeSystemSection: FC = () => {
                             className="h-4 w-4"
                             strokeWidth={1.8}
                         />
+
                         <span>Practice, Labs, Mocks, Reviews</span>
                     </div>
 
@@ -88,10 +90,9 @@ const PracticeSystemSection: FC = () => {
                         "
                     >
                         What You Actually Do Between{' '}
-                            <span className="text-[#0a53f2]">
-                                Sessions
-                            </span>
-                        
+                        <span className="text-[#0a53f2]">
+                            Sessions
+                        </span>
                     </h2>
 
                     <p
@@ -194,10 +195,11 @@ const PracticeSystemSection: FC = () => {
                             space-y-4
                             lg:hidden
                         "
-                    ><MobilePracticeTabs
-                        activeTab={activeTabId}
-                        onTabChange={setActiveTabId}
-                    />
+                    >
+                        <MobilePracticeTabs
+                            activeTab={activeTabId}
+                            onTabChange={setActiveTabId}
+                        />
 
                         <MobileLoopCard />
 
@@ -218,12 +220,12 @@ const PracticeSystemSection: FC = () => {
                         grid
                         max-w-[735px]
                         gap-2.5
-                        lg:mt-6
+                        lg:mt-
                         lg:grid-cols-[1.2fr_1fr]
-                        lg:gap-6
-                        
+                        lg:gap-1
                     "
                 >
+                    {/* See How Practice Works */}
                     <Link
                         href="#specialists"
                         className="
@@ -249,7 +251,9 @@ const PracticeSystemSection: FC = () => {
                             focus-visible:outline-none
                             focus-visible:ring-4
                             focus-visible:ring-[#0a53f2]/20
-                            lg:min-h-16
+                            lg:min-h-[58px]
+                            lg:w-[90%]
+                            lg:justify-self-start
                             lg:gap-4
                             lg:px-6
                             lg:text-[20px]
@@ -260,9 +264,11 @@ const PracticeSystemSection: FC = () => {
                             className="h-5 w-5 lg:h-7 lg:w-7"
                             strokeWidth={1.9}
                         />
+
                         <span>See How Practice Works</span>
                     </Link>
 
+                    {/* Download Curriculum */}
                     <a
                         href="/documents/ai-engineering-curriculum.pdf"
                         download
@@ -298,6 +304,7 @@ const PracticeSystemSection: FC = () => {
                             className="h-5 w-5 lg:h-7 lg:w-7"
                             strokeWidth={1.9}
                         />
+
                         <span>Download Curriculum</span>
                     </a>
                 </div>

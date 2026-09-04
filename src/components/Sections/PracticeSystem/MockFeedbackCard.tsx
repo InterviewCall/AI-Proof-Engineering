@@ -6,7 +6,7 @@ import { mockFeedbackMetrics } from '@/utils/practiceSystemItems';
 
 import StatusPill from './StatusPill';
 
-const RADIUS = 38;
+const RADIUS = 42;
 const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
 const PROGRESS = 0.72;
 
@@ -42,23 +42,25 @@ const MockFeedbackCard: FC = () => {
             </div>
 
             <div className="mt-4 flex flex-col items-center gap-4 sm:flex-row sm:items-center">
-                <div className="relative flex h-24 w-24 shrink-0 items-center justify-center">
+                {/* Overall Readiness */}
+                <div className="relative flex h-[104px] w-[104px] shrink-0 items-center justify-center">
                     <svg
-                        viewBox="0 0 96 96"
-                        className="h-24 w-24 -rotate-90"
+                        viewBox="0 0 104 104"
+                        className="h-[104px] w-[104px] -rotate-90"
                         aria-hidden="true"
                     >
                         <circle
-                            cx="48"
-                            cy="48"
+                            cx="52"
+                            cy="52"
                             r={RADIUS}
                             fill="none"
                             stroke="var(--practice-section-progress-track)"
                             strokeWidth="8"
                         />
+
                         <circle
-                            cx="48"
-                            cy="48"
+                            cx="52"
+                            cy="52"
                             r={RADIUS}
                             fill="none"
                             stroke="var(--practice-section-progress-fill)"
@@ -71,10 +73,22 @@ const MockFeedbackCard: FC = () => {
                         />
                     </svg>
 
-                    <div className="absolute inset-0 flex flex-col items-center justify-center gap-0.5 text-center">
+                    <div
+                        className="
+                            absolute
+                            inset-0
+                            flex
+                            flex-col
+                            items-center
+                            justify-center
+                            gap-0.5
+                            px-2
+                            text-center
+                        "
+                    >
                         <span
                             className="
-                                text-[11px]
+                                text-[10px]
                                 font-semibold
                                 leading-tight
                                 text-(--practice-section-card-text)
@@ -85,7 +99,15 @@ const MockFeedbackCard: FC = () => {
                             Readiness
                         </span>
 
-                        <span className="text-[12px] font-bold leading-tight text-(--color-brand-700)">
+                        <span
+                            className="
+                                text-[11px]
+                                font-bold
+                                leading-tight
+                                whitespace-nowrap
+                                text-(--color-brand-700)
+                            "
+                        >
                             Improving
                         </span>
                     </div>
@@ -170,6 +192,7 @@ const MockFeedbackCard: FC = () => {
                 "
             >
                 <span>View Detailed Feedback</span>
+
                 <ArrowRight
                     aria-hidden="true"
                     className="h-4 w-4 transition-transform group-hover:translate-x-1"
