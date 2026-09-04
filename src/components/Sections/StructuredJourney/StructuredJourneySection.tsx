@@ -53,8 +53,9 @@ const StructuredJourneySection: FC = () => {
                     <div
                         className="
                             mx-auto
-                            inline-flex
-                            min-h-9.5
+                            flex
+                            w-fit
+                            min-h-10
                             items-center
                             justify-center
                             gap-2
@@ -62,15 +63,15 @@ const StructuredJourneySection: FC = () => {
                             border
                             border-(--hero-section-badge-border)
                             bg-(--hero-section-badge-bg)
-                            px-5
-                            text-[16px]
+                            px-6
+                            text-[clamp(0.875rem,1.1vw,1.0625rem)]
                             font-semibold
-                            shadow-[0_7px_14px_rgba(1,17,57,0.18)]
                             uppercase
+                            tracking-[0.015em]
                             text-(--color-brand-700)
-                            leading-[1.58]
-                            tracking-[-2%]
-                            sm:text-[18px]
+                            shadow-[0_7px_14px_rgba(1,17,57,0.18)]
+                            ring-1
+                            ring-[#a9c3fc]
                         "
                     >
                         <BookOpen
@@ -412,7 +413,6 @@ const StructuredJourneySection: FC = () => {
                     "
                 >
                     <div className="relative">
-
                         <span
                             aria-hidden="true"
                             className="
@@ -646,19 +646,19 @@ const StructuredJourneySection: FC = () => {
                 {/* CTA bar */}
                 <div
                     className="
-                    mx-auto
-                    mt-5
-                    grid
-                    max-w-[735px]
-                    gap-2.5
-                    lg:mt-6
-                    lg:grid-cols-[1.2fr_1fr]
-                    lg:gap-6
-                    rounded-xl
-                    border
-                    border-blue-100
-                    p-3
-                "
+                        mx-auto
+                        mt-5
+                        grid
+                        max-w-[735px]
+                        gap-2.5
+                        lg:mt-6
+                        lg:grid-cols-[1.2fr_1fr]
+                        lg:gap-6
+                        rounded-xl
+                        border
+                        border-blue-100
+                        p-3
+                    "
                 >
                     <a
                         href="/documents/ai-engineering-curriculum.pdf"

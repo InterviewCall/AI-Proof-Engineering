@@ -31,22 +31,26 @@ const CareerInsightsSection: FC = () => {
                 <header className="mx-auto max-w-280 text-center">
                     <div
                         className="
-                            inline-flex
-                            min-h-9.5
+                            mx-auto
+                            flex
+                            w-fit
+                            min-h-10
                             items-center
                             justify-center
                             gap-2
                             rounded-full
                             border
-                            border-(--color-brand-200)
-                            bg-(--career-insights-section-eyebrow-bg)
-                            px-5
-                            text-[13.5px]
+                            border-[#AFC7FF]
+                            bg-[#EEF4FF]
+                            px-6
+                            text-[clamp(0.875rem,1.1vw,1.0625rem)]
                             font-semibold
                             uppercase
-                            tracking-[-1%]
+                            tracking-[0.015em]
                             text-(--career-insights-section-eyebrow-text)
-                            sm:text-[15.5px]
+                            shadow-[0_7px_14px_rgba(1,17,57,0.18)]
+                            ring-1
+                            ring-[#a9c3fc]
                         "
                     >
                         <Lightbulb

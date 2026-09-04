@@ -193,24 +193,25 @@ const GuidedSystemSection: FC = () => {
                     <div
                         className="
                             mx-auto
-                            inline-flex
-                            min-h-[50px]
+                            flex
+                            w-fit
+                            min-h-10
                             items-center
                             justify-center
                             gap-2.5
                             rounded-full
                             border
                             border-[#AFC7FF]
-                            bg-white
-                            px-7
-                            text-[18px]
+                            bg-[#EEF4FF]
+                            px-6
+                            text-[clamp(0.875rem,1.1vw,1.0625rem)]
                             font-semibold
                             uppercase
-                            tracking-[-0.02em]
-                            leading-none
+                            tracking-[0.015em]
                             text-[#0757F5]
-                            sm:text-[20px]
-                            lg:text-[20px]
+                            shadow-[0_7px_14px_rgba(1,17,57,0.18)]
+                            ring-1
+                            ring-[#a9c3fc]
                         "
                     >
                         <PlayCircle
