@@ -42,7 +42,7 @@ const WhyNowSection: FC = () => {
                             rounded-full
                             bg-(--why-now-section-header-bg)
                             px-5
-                            text-[11px]
+                            text-[clamp(0.7rem,0.75vw,0.9375rem)]
                             font-semibold
                             uppercase
                             tracking-[0.015em]
@@ -50,8 +50,6 @@ const WhyNowSection: FC = () => {
                             shadow-[0_7px_14px_rgba(1,17,57,0.18)]
                             ring-1
                             ring-[#a9c3fc]
-                            sm:text-[13px]
-                            lg:text-[14px]
                         '
                     >
                         Why This Program Now
@@ -60,18 +58,18 @@ const WhyNowSection: FC = () => {
                     <h2
                         className='
                             mt-5
-                            text-[clamp(1.75rem,5vw,3.125rem)]
+                            text-[clamp(2rem,4.2vw,3.125rem)]
                             font-bold
                             leading-[1.12]
                             tracking-[-0.042em]
                             text-(--why-now-section-title-text)
                             [text-shadow:0_6px_14px_rgba(1,13,47,0.18)]
-                            sm:text-[38px]
-                            lg:text-[50px]
                         '
                     >
-                        AI Has Already Changed How Many{' '} 
-                        <span className='text-(--why-now-section-title-highlight)'>Engineering Teams work</span>
+                        AI Has Already Changed How Many{' '}
+                        <span className='text-(--why-now-section-title-highlight)'>
+                            Engineering Teams work
+                        </span>
                     </h2>
 
                     <p
@@ -79,12 +77,10 @@ const WhyNowSection: FC = () => {
                             mx-auto
                             mt-5
                             max-w-227.5
-                            text-[15px]
+                            text-[clamp(0.9rem,1.15vw,1.1875rem)]
                             leading-[1.65]
                             text-(--why-now-section-subtitle-text)
                             [text-shadow:0_3px_8px_rgba(1,13,47,0.12)]
-                            sm:text-[17px]
-                            lg:text-[19px]
                         '
                     >
                         It can draft an endpoint, write a first pass at
@@ -100,9 +96,9 @@ const WhyNowSection: FC = () => {
                         mt-8
                         grid
                         items-stretch
-                        gap-4
-                        xl:grid-cols-[0.78fr_1.22fr]
-                        xl:gap-5
+                        gap-3
+                        xl:grid-cols-[0.74fr_1.26fr]
+                        xl:gap-3
                     '
                 >
                     {/* Left automation visual */}
@@ -136,7 +132,6 @@ const WhyNowSection: FC = () => {
                                 '
                             />
 
-                            {/* Mobile text overlay */}
                             <div
                                 className='
                                     absolute
@@ -193,7 +188,7 @@ const WhyNowSection: FC = () => {
                             className='
                                 relative
                                 hidden
-                                aspect-756/805
+                                aspect-[756/735]
                                 h-auto
                                 w-full
                                 overflow-hidden
@@ -207,16 +202,16 @@ const WhyNowSection: FC = () => {
                                 fill
                                 aria-hidden='true'
                                 loading='eager'
-                                sizes='(min-width: 1280px) 38vw, 1px'
+                                sizes='(min-width: 1280px) 34vw, 1px'
                                 className='
                                     pointer-events-none
                                     select-none
                                     object-contain
                                     object-center
+                                    xl:object-left
                                 '
                             />
 
-                            {/* Desktop text overlay */}
                             <div
                                 className='
                                     absolute
@@ -229,7 +224,7 @@ const WhyNowSection: FC = () => {
                                 <h3
                                     className='
                                         max-w-[92%]
-                                        text-[clamp(1.55rem,1.95vw,2rem)]
+                                        text-[clamp(1.45rem,1.8vw,2rem)]
                                         font-bold
                                         leading-[1.13]
                                         tracking-[-0.035em]
@@ -241,7 +236,7 @@ const WhyNowSection: FC = () => {
 
                                 <div
                                     className='
-                                        mt-[5%]
+                                        mt-[4.5%]
                                         h-0.75
                                         w-[11%]
                                         min-w-10
@@ -253,14 +248,14 @@ const WhyNowSection: FC = () => {
 
                                 <div
                                     className='
-                                        mt-[5.5%]
+                                        mt-[5%]
                                         max-w-[94%]
                                     '
                                 >
                                     <p
                                         className='
-                                            text-[clamp(0.875rem,1.05vw,1rem)]
-                                            leading-[1.6]
+                                            text-[clamp(0.9rem,1.05vw,1.125rem)]
+                                            leading-[1.55]
                                             text-(--why-now-section-left-box-subtitle-text)
                                         '
                                     >
@@ -271,10 +266,10 @@ const WhyNowSection: FC = () => {
 
                                     <p
                                         className='
-                                            mt-[4%]
-                                            text-[clamp(0.875rem,1.05vw,1rem)]
+                                            mt-[3.5%]
+                                            text-[clamp(0.9rem,1.05vw,1.125rem)]
                                             font-semibold
-                                            leading-[1.6]
+                                            leading-[1.55]
                                             text-(--why-now-section-left-box-subtitle-text)
                                         '
                                     >
@@ -299,7 +294,6 @@ const WhyNowSection: FC = () => {
                             xl:hidden
                         '
                     >
-                        {/* Execution-only engineer */}
                         <div>
                             <div className='flex items-center gap-3'>
                                 <div
@@ -390,7 +384,6 @@ const WhyNowSection: FC = () => {
                             </div>
                         </div>
 
-                        {/* Mobile transition */}
                         <div
                             className='
                                 flex
@@ -433,7 +426,6 @@ const WhyNowSection: FC = () => {
                             </span>
                         </div>
 
-                        {/* AI-Proof engineer */}
                         <div>
                             <div className='flex items-center gap-3'>
                                 <div
@@ -529,14 +521,17 @@ const WhyNowSection: FC = () => {
                     <article
                         className='
                             hidden
+                            min-h-[clamp(430px,31vw,520px)]
                             rounded-[22px]
                             border
                             border-(--why-now-section-right-box-border)
                             bg-(--why-now-section-right-box-bg)
                             p-4
+                            pt-10
                             shadow-[0_16px_24px_rgba(1,13,47,0.18),0_2px_7px_rgba(1,13,47,0.10)]
                             xl:block
                             2xl:p-5
+                            2xl:pt-10
                         '
                     >
                         <div
@@ -544,9 +539,9 @@ const WhyNowSection: FC = () => {
                                 grid
                                 h-full
                                 items-stretch
-                                gap-4
-                                xl:grid-cols-[minmax(0,1fr)_90px_minmax(0,1fr)]
-2xl:                            grid-cols-[minmax(0,1fr)_105px_minmax(0,1fr)]
+                                gap-2
+                                xl:grid-cols-[minmax(0,1fr)_62px_minmax(0,1fr)]
+                                2xl:grid-cols-[minmax(0,1fr)_76px_minmax(0,1fr)]
                             '
                         >
                             {/* Desktop execution-only engineer */}
@@ -555,8 +550,8 @@ const WhyNowSection: FC = () => {
                                     <div
                                         className='
                                             flex
-                                            h-12
-                                            w-12
+                                            h-16
+                                            w-16
                                             items-center
                                             justify-center
                                             rounded-full
@@ -567,7 +562,7 @@ const WhyNowSection: FC = () => {
                                     >
                                         <Bot
                                             aria-hidden='true'
-                                            className='h-7 w-7'
+                                            className='h-9 w-9'
                                             strokeWidth={2}
                                         />
                                     </div>
@@ -575,10 +570,9 @@ const WhyNowSection: FC = () => {
                                     <h3
                                         className='
                                             mt-4
-                                            text-[16px]
+                                            text-[clamp(1.15rem,1.35vw,1.35rem)]
                                             font-semibold
                                             text-(--why-now-section-right-box-sub-box-one-title)
-                                            2xl:text-[17px]
                                         '
                                     >
                                         What AI Handles Well
@@ -588,7 +582,6 @@ const WhyNowSection: FC = () => {
                                 <div
                                     className='
                                         mt-4
-                                        flex-1
                                         rounded-[14px]
                                         border
                                         border-(--why-now-section-right-box-sub-box-one-border)
@@ -631,11 +624,11 @@ const WhyNowSection: FC = () => {
 
                                                 <p
                                                     className='
-                                                        text-[13px]
+                                                        whitespace-nowrap
+                                                        text-[clamp(0.82rem,0.86vw,1rem)]
                                                         font-medium
                                                         leading-[1.45]
                                                         text-(--why-now-section-right-box-sub-box-one-point-text)
-                                                        2xl:text-[14px]
                                                     '
                                                 >
                                                     {point.text}
@@ -656,19 +649,18 @@ const WhyNowSection: FC = () => {
                                     border-x
                                     border-dashed
                                     border-(--why-now-section-right-box-sub-box-one-divider)
-                                    px-3
+                                    px-1
                                     text-center
                                 '
                             >
                                 <span
                                     className='
-                                        text-[13px]
+                                        text-[clamp(0.72rem,0.78vw,0.875rem)]
                                         leading-[1.4]
                                         text-(--why-now-section-right-box-sub-box-middle-upper-text)
                                     '
                                 >
                                     From
-
                                     <span className='block'>
                                         AI&apos;s first draft
                                     </span>
@@ -687,16 +679,15 @@ const WhyNowSection: FC = () => {
 
                                 <span
                                     className='
-                                        text-[13px]
+                                        text-[clamp(0.72rem,0.78vw,0.875rem)]
                                         font-medium
                                         leading-[1.4]
                                         text-(--why-now-section-right-box-sub-box-middle-down-text)
                                     '
                                 >
-                                    to
-
+                                    to your
                                     <span className='block'>
-                                        your judgment call
+                                        judgment call
                                     </span>
                                 </span>
                             </div>
@@ -707,8 +698,8 @@ const WhyNowSection: FC = () => {
                                     <div
                                         className='
                                             flex
-                                            h-12
-                                            w-12
+                                            h-16
+                                            w-16
                                             items-center
                                             justify-center
                                             rounded-full
@@ -719,7 +710,7 @@ const WhyNowSection: FC = () => {
                                     >
                                         <UserRound
                                             aria-hidden='true'
-                                            className='h-7 w-7'
+                                            className='h-9 w-9'
                                             strokeWidth={2}
                                         />
                                     </div>
@@ -727,10 +718,9 @@ const WhyNowSection: FC = () => {
                                     <h3
                                         className='
                                             mt-4
-                                            text-[16px]
+                                            text-[clamp(1.15rem,1.35vw,1.35rem)]
                                             font-semibold
                                             text-(--why-now-section-right-box-sub-box-two-title)
-                                            2xl:text-[17px]
                                         '
                                     >
                                         What Still Needs an Engineer
@@ -740,7 +730,6 @@ const WhyNowSection: FC = () => {
                                 <div
                                     className='
                                         mt-4
-                                        flex-1
                                         rounded-[14px]
                                         border
                                         border-(--why-now-section-right-box-sub-box-two-border)
@@ -781,11 +770,11 @@ const WhyNowSection: FC = () => {
 
                                             <p
                                                 className='
-                                                    text-[13px]
+                                                    whitespace-nowrap
+                                                    text-[clamp(0.82rem,0.86vw,1rem)]
                                                     font-medium
                                                     leading-[1.45]
                                                     text-(--why-now-section-right-box-sub-box-two-point-text)
-                                                    2xl:text-[14px]
                                                 '
                                             >
                                                 {point.text}
@@ -801,7 +790,7 @@ const WhyNowSection: FC = () => {
                 {/* Program outcome bar */}
                 <div
                     className='
-                        mt-4
+                        mt-8
                         rounded-2xl
                         border
                         border-(--program-outcome-bar-border)
@@ -846,12 +835,10 @@ const WhyNowSection: FC = () => {
                         <p
                             className='
                                 max-w-[680px]
-                                text-[13px]
+                                text-[clamp(0.8rem,1.05vw,1.0625rem)]
                                 font-semibold
                                 leading-[1.5]
                                 text-(--program-outcome-bar-title-text)
-                                sm:text-[15px]
-                                lg:text-[17px]
                             '
                         >
                             This program is built around what&apos;s still
@@ -866,7 +853,7 @@ const WhyNowSection: FC = () => {
 
                     <div
                         className='
-                           mt-4
+                            mt-4
                             border-t
                             border-(--program-outcome-bar-divider)
                             pt-4
@@ -880,7 +867,7 @@ const WhyNowSection: FC = () => {
                         <Link
                             href='#solution'
                             className='
-                                 group
+                                group
                                 inline-flex
                                 min-h-14
                                 w-full
@@ -892,7 +879,7 @@ const WhyNowSection: FC = () => {
                                 bg-(--assessment-banner-button-bg)
                                 px-6
                                 text-center
-                                text-[14px]
+                                text-[clamp(0.8rem,0.95vw,0.9375rem)]
                                 font-semibold
                                 leading-none
                                 text-white
@@ -905,8 +892,6 @@ const WhyNowSection: FC = () => {
                                 focus-visible:outline-none
                                 focus-visible:ring-4
                                 focus-visible:ring-(--focus-ring-color)
-                                sm:min-h-15
-                                sm:text-[15px]
                             '
                         >
                             <span>See What the Program Covers</span>

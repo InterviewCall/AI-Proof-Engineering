@@ -363,7 +363,7 @@ const TrackDetail: FC<TrackDetailProps> = ({
                 />
             </div>
 
-            <div className="mt-7 flex flex-col gap-3 xl:flex-row">
+            <div className="mt-7 flex flex-col gap-3 xl:flex-row xl:justify-center xl:px-4">
                 <a
                     href={track.curriculumPath}
                     download
@@ -371,14 +371,14 @@ const TrackDetail: FC<TrackDetailProps> = ({
                         group
                         inline-flex
                         min-h-14.5
-                        flex-1
+                        xl:w-[38%]
                         items-center
                         justify-center
                         gap-4
                         rounded-md
                         bg-(--button-primary-bg)
                         px-7
-                        text-[17px]
+                        text-[15px]
                         font-medium
                         text-(--button-primary-text)
                         transition-all
@@ -404,7 +404,7 @@ const TrackDetail: FC<TrackDetailProps> = ({
                     className="
                         inline-flex
                         min-h-14.5
-                        flex-1
+                        xl:w-[38%]
                         items-center
                         justify-center
                         gap-4
@@ -413,7 +413,7 @@ const TrackDetail: FC<TrackDetailProps> = ({
                         border-(--color-brand-600)
                         bg-white
                         px-7
-                        text-[17px]
+                        text-[15px]
                         font-semibold
                         text-(--color-brand-700)
                         transition-all

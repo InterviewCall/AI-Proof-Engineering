@@ -18,16 +18,7 @@ const MobilePracticeTabs: FC<MobilePracticeTabsProps> = ({
         <div
             role="tablist"
             aria-label="Practice system categories"
-            className="
-                flex
-                items-stretch
-                overflow-hidden
-                rounded-t-2xl
-                border
-                border-(--practice-section-board-border)
-                bg-(--practice-section-board-bg)
-                p-1
-            "
+            className="flex items-stretch overflow-hidden rounded-2xl border border-(--practice-section-board-border) bg-white"
         >
             {practiceTabs.map((tab) => {
                 const isActive = activeTab === tab.id;
@@ -50,18 +41,20 @@ const MobilePracticeTabs: FC<MobilePracticeTabsProps> = ({
                             items-center
                             justify-center
                             gap-1
-                            rounded-xl
-                            border-r
-                            ${tab.id !== "reviews" ? "border-r border-(--practice-section-board-border)" : ""}
                             px-2
                             text-[12px]
                             font-semibold
                             whitespace-nowrap
                             transition-colors
                             ${
+                                tab.id !== "reviews"
+                                    ? "border-r border-(--practice-section-board-border)"
+                                    : ""
+                            }
+                            ${
                                 isActive
-                                    ? "bg-white text-(--color-brand-700)"
-                                    : "bg-transparent text-black"
+                                    ? "text-(--color-brand-700)"
+                                    : "text-black"
                             }
                         `}
                     >
