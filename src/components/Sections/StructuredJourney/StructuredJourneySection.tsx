@@ -681,10 +681,10 @@ const StructuredJourneySection: FC = () => {
                             focus-visible:outline-none
                             focus-visible:ring-4
                             focus-visible:ring-(--focus-ring-color)
-                            lg:min-h-16
+                            lg:min-h-14
                             lg:gap-4
                             lg:px-6
-                            lg:text-[20px]
+                            lg:text-[15px]
                         "
                     >
                         <Download
@@ -722,10 +722,10 @@ const StructuredJourneySection: FC = () => {
                             focus-visible:outline-none
                             focus-visible:ring-4
                             focus-visible:ring-(--focus-ring-color)
-                            lg:min-h-16
+                            lg:min-h-14
                             lg:gap-4
                             lg:px-6
-                            lg:text-[20px]
+                            lg:text-[15px]
                         "
                     >
                         <FileText
