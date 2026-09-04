@@ -145,21 +145,22 @@ const ProgramGlanceSection: FC = () => {
                         <ProgramAudienceBand />
                     </div>
 
-                    <div className="mt-8 flex justify-center gap-3">
+                    <div className="mx-auto mt-5 grid max-w-[735px] gap-2.5 lg:mt-6 lg:grid-cols-[1.2fr_1fr] lg:gap-6">
                         <Link
                             href="#build-proof"
                             className="
                                 group
                                 inline-flex
-                                min-h-14
+                                min-h-11
+                                w-full
                                 items-center
                                 justify-center
-                                gap-3
+                                gap-2.5
                                 rounded-lg
                                 bg-(--button-primary-bg)
-                                px-7
+                                px-4
                                 text-center
-                                text-[16px]
+                                text-[14px]
                                 font-semibold
                                 text-(--button-primary-text)
                                 transition-all
@@ -169,11 +170,16 @@ const ProgramGlanceSection: FC = () => {
                                 focus-visible:outline-none
                                 focus-visible:ring-4
                                 focus-visible:ring-(--focus-ring-color)
+                                lg:min-h-16
+                                lg:gap-4
+                                lg:px-6
+                                lg:text-[20px]
+                                whitespace-nowrap
                             "
                         >
                             <CircleArrowRight
                                 aria-hidden="true"
-                                className="h-5 w-5"
+                                className="h-5 w-5 lg:h-7 lg:w-7"
                                 strokeWidth={1.9}
                             />
                             <span>See Admissions &amp; Fee Guidance</span>
@@ -183,17 +189,18 @@ const ProgramGlanceSection: FC = () => {
                             href="#program-glance"
                             className="
                                 inline-flex
-                                min-h-14
+                                min-h-11
+                                w-full
                                 items-center
                                 justify-center
-                                gap-3
+                                gap-2.5
                                 rounded-lg
                                 border
                                 border-(--color-brand-300)
                                 bg-white
-                                px-7
+                                px-4
                                 text-center
-                                text-[16px]
+                                text-[14px]
                                 font-semibold
                                 text-(--color-brand-700)
                                 transition-colors
@@ -201,11 +208,16 @@ const ProgramGlanceSection: FC = () => {
                                 focus-visible:outline-none
                                 focus-visible:ring-4
                                 focus-visible:ring-(--focus-ring-color)
+                                lg:min-h-16
+                                lg:gap-4
+                                lg:px-6
+                                lg:text-[20px]
+                                whitespace-nowrap
                             "
                         >
                             <CalendarCheck
                                 aria-hidden="true"
-                                className="h-5 w-5"
+                                className="h-5 w-5 lg:h-7 lg:w-7"
                                 strokeWidth={1.9}
                             />
                             <span>Subscribe for Updates</span>
