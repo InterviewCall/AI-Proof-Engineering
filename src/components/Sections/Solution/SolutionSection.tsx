@@ -91,10 +91,11 @@ const SolutionSection: FC = () => {
                     <h2
                         className="
                             mt-4
-                            text-[clamp(2.4rem,9vw,3.5rem)]
+                            text-[clamp(2rem,8vw,3.5rem)]
                             font-bold
                             leading-[1.05]
                             tracking-[-0.02em]
+                            text-center
                             text-(--solution-section-title-text)
                             lg:hidden
                         "

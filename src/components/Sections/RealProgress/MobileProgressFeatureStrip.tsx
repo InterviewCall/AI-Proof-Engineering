@@ -1,4 +1,4 @@
-import { FC, Fragment } from 'react';
+import { FC } from 'react';
 
 import { type ProgressAccent } from '@/types/realProgress';
 import { progressFeatureStrip } from '@/utils/realProgressItems';
@@ -17,66 +17,59 @@ const MobileProgressFeatureStrip: FC = () => {
     return (
         <div
             className="
-                flex
-                items-center
-                justify-between
+                grid
+                grid-cols-2
+                overflow-hidden
                 rounded-2xl
                 bg-(--progress-section-mobile-strip-bg)
-                px-4
-                py-4
             "
         >
-            {items.map((item, index) => {
+            {items.map((item) => {
                 const Icon = item.icon;
-                const isLastItem = index === items.length - 1;
 
                 return (
-                    <Fragment key={item.title}>
-                        <div className="flex min-w-0 flex-1 items-center gap-2">
-                            <span
-                                className={`
-                                    flex
-                                    h-10
-                                    w-10
-                                    shrink-0
-                                    items-center
-                                    justify-center
-                                    rounded-full
-                                    ${accentStyles[item.accent]}
-                                `}
-                            >
-                                <Icon
-                                    aria-hidden="true"
-                                    className="h-5 w-5"
-                                    strokeWidth={1.8}
-                                />
-                            </span>
-
-                            <span
-                                className="
-                                    text-[12px]
-                                    font-bold
-                                    leading-tight
-                                    text-(--progress-section-strip-title-text)
-                                "
-                            >
-                                {item.title}
-                            </span>
-                        </div>
-
-                        {!isLastItem && (
-                            <span
+                    <div
+                        key={item.title}
+                        className="
+                            flex
+                            min-w-0
+                            items-center
+                            gap-2.5
+                            px-4
+                            py-4
+                        "
+                    >
+                        <span
+                            className={`
+                                flex
+                                h-10
+                                w-10
+                                shrink-0
+                                items-center
+                                justify-center
+                                rounded-full
+                                ${accentStyles[item.accent]}
+                            `}
+                        >
+                            <Icon
                                 aria-hidden="true"
-                                className="
-                                    h-8
-                                    w-px
-                                    shrink-0
-                                    bg-(--progress-section-sidebar-divider)
-                                "
-                                
+                                className="h-5 w-5"
+                                strokeWidth={1.8}
                             />
-                        )}
-                    </Fragment>
+                        </span>
+
+                        <span
+                            className="
+                                min-w-0
+                                text-[12px]
+                                font-bold
+                                leading-tight
+                                text-(--progress-section-strip-title-text)
+                            "
+                        >
+                            {item.title}
+                        </span>
+                    </div>
                 );
             })}
         </div>
