@@ -119,7 +119,6 @@ const HeroSection: FC = () => {
                                 tracking-[-3%]
                                 text-(--hero-section-title-one-text)
                                 md:tracking-[-4%]
-                                
                             "
                         >
                             AI writes more of the code now.
@@ -127,18 +126,15 @@ const HeroSection: FC = () => {
 
                         <span
                             className="
-                            bg-clip-text
-                            text-[clamp(2.6rem,10vw,3.8rem)]
-                            font-bold
-                            tracking-[-3%]
-                            text-(--hero-section-title-two-text-desktop)
-                            max-md:hidden
-                            
-                            md:tracking-[-4%]
-                            lg:mt-2
-                            
+                                bg-clip-text
+                                text-[clamp(2.6rem,10vw,3.8rem)]
+                                font-bold
+                                tracking-[-3%]
+                                text-(--hero-section-title-two-text-desktop)
+                                max-md:hidden
+                                md:tracking-[-4%]
+                                lg:mt-2
                             "
-                        
                             style={{
                                 backgroundImage:
                                     'var(--hero-section-title-gradient-mobile)',
@@ -396,46 +392,47 @@ const HeroSection: FC = () => {
                                 object-cover
                             "
                         />
+
                         <div
                             className="
-                            pointer-events-none
-                            absolute
-                            inset-0
-                            z-20
-                            flex
-                            items-center
-                            justify-center
-                        "
-                        >
-                        <span
-                            className="
+                                pointer-events-none
+                                absolute
+                                inset-0
+                                z-20
                                 flex
-                                h-20
-                                w-20
                                 items-center
                                 justify-center
-                                rounded-full
-                                bg-white
-                                shadow-[0_8px_30px_rgba(4,13,87,0.18)]
-                                sm:h-24
-                                sm:w-24
                             "
                         >
-                        <Play
-                            aria-hidden="true"
-                            className="
-                            ml-1
-                            h-9
-                            w-9
-                            fill-[#0b62ff]
-                            text-[#0b62ff]
-                            sm:h-11
-                            sm:w-11
-                        "
-                        strokeWidth={1.8}
-                        />
-                        </span>
-                    </div>
+                            <span
+                                className="
+                                    flex
+                                    h-14
+                                    w-14
+                                    items-center
+                                    justify-center
+                                    rounded-full
+                                    bg-white
+                                    shadow-[0_8px_30px_rgba(4,13,87,0.18)]
+                                    sm:h-24
+                                    sm:w-24
+                                "
+                            >
+                                <Play
+                                    aria-hidden="true"
+                                    className="
+                                        ml-1
+                                        h-7
+                                        w-7
+                                        fill-[#0b62ff]
+                                        text-[#0b62ff]
+                                        sm:h-11
+                                        sm:w-11
+                                    "
+                                    strokeWidth={1.8}
+                                />
+                            </span>
+                        </div>
 
                         <div
                             className="
@@ -463,9 +460,10 @@ const HeroSection: FC = () => {
                                         lg:w-75
                                         font-inter
                                     "
-                                    >
+                                >
                                     What AI Actually Changes About the Job
-                                    </h2>
+                                </h2>
+
                                 <div
                                     aria-hidden="true"
                                     className="
@@ -475,7 +473,6 @@ const HeroSection: FC = () => {
                                         min-w-10
                                         bg-[#0b62ff]
                                         sm:h-0.75
-                                        
                                     "
                                 />
 
@@ -484,7 +481,6 @@ const HeroSection: FC = () => {
                                         mt-[8%]
                                         space-y-1
                                         sm:space-y-1
-                                        
                                     "
                                 >
                                     <p
@@ -495,11 +491,11 @@ const HeroSection: FC = () => {
                                             tracking-[-4%]
                                             sm:text-[18px]
                                             lg:text-[24px]
-                                            
                                         "
                                     >
                                         Sunyul Hossen
                                     </p>
+
                                     <p
                                         className="
                                             text-[13px]
@@ -512,6 +508,7 @@ const HeroSection: FC = () => {
                                     >
                                         Founder &amp; CEO,
                                     </p>
+
                                     <p
                                         className="
                                             text-[12px]

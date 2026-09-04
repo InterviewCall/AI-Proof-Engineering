@@ -32,7 +32,7 @@ const ProgramInfoCard: FC<{ card: GlanceInfoCard }> = ({ card }) => {
                 lg:flex
                 lg:min-h-[180px]
                 lg:flex-col
-                lg:justify-center
+                lg:justify-start
             "
         >
             <span
@@ -40,6 +40,7 @@ const ProgramInfoCard: FC<{ card: GlanceInfoCard }> = ({ card }) => {
                     flex
                     h-11
                     w-11
+                    shrink-0
                     items-center
                     justify-center
                     rounded-[11px]
