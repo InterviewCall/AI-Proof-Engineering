@@ -22,7 +22,7 @@ const ProgramGlanceSection: FC = () => {
                 sm:px-6
                 sm:py-16
                 lg:px-8
-                lg:py-20
+                lg:py-25
                 xl:px-12
             "
         >
@@ -58,7 +58,9 @@ const ProgramGlanceSection: FC = () => {
                             className="h-4.5 w-4.5"
                             strokeWidth={1.9}
                         />
-                        <span>Program at a Glance</span>
+                        <span>
+                            Program at a <span className="text-[#0840FD]">Glance</span>
+                        </span>
                     </div>
 
                     {/* Desktop heading */}
@@ -74,7 +76,7 @@ const ProgramGlanceSection: FC = () => {
                             lg:block
                         "
                     >
-                        The Program at a Glance
+                        The Program at a <span className="text-[#0840FD]">Glance</span>
                     </h2>
 
                     {/* Mobile / tablet heading */}
@@ -90,7 +92,7 @@ const ProgramGlanceSection: FC = () => {
                             lg:hidden
                         "
                     >
-                        Program at a Glance
+                        Program at a <span className="text-[#0840FD]">Glance</span>
                     </h2>
 
                     {/* Desktop subtitle */}

@@ -25,9 +25,10 @@ const ProgressProofCard: FC<{ proof: ProgressProof }> = ({ proof }) => {
     return (
         <article
             className="
-                flex
-                flex-col
-                items-center
+                grid
+                grid-rows-subgrid
+                row-span-6
+                justify-items-center
                 rounded-2xl
                 border
                 border-(--progress-section-card-border)
@@ -51,7 +52,7 @@ const ProgressProofCard: FC<{ proof: ProgressProof }> = ({ proof }) => {
 
             <h3
                 className="
-                    mt-3
+                    
                     text-[17px]
                     whitespace-nowrap
                     font-bold
@@ -65,9 +66,9 @@ const ProgressProofCard: FC<{ proof: ProgressProof }> = ({ proof }) => {
             {/* Before */}
             <div
                 className="
-                    mt-4
+                    
                     w-full
-                    min-h-[118px]
+                    
                     overflow-hidden
                     rounded-xl
                     border
@@ -78,10 +79,10 @@ const ProgressProofCard: FC<{ proof: ProgressProof }> = ({ proof }) => {
             <div
                 className="
                     flex
-                    h-10
+                    h-5
                     items-center
                     justify-between
-                    gap-2
+                    gap-1
                     bg-(--progress-section-before-bg)
                     px-3.5
                     
@@ -119,7 +120,7 @@ const ProgressProofCard: FC<{ proof: ProgressProof }> = ({ proof }) => {
                 </p>
             </div>
 
-            <div className="flex h-10 items-center justify-center">
+            <div className="flex h-3 items-center justify-center">
                 <ArrowDown
                     aria-hidden="true"
                     className="h-4 w-4 text-(--progress-section-before-text)"
@@ -183,7 +184,7 @@ const ProgressProofCard: FC<{ proof: ProgressProof }> = ({ proof }) => {
             {/* Badge */}
             <div
                 className={`
-                    mt-4
+                    
                     flex
                     w-full
                     items-center

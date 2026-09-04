@@ -140,7 +140,16 @@ const RealProgressSection: FC = () => {
                             <ProgressSidebarPanel />
                         </div>
 
-                        <div className="grid grid-cols-4 gap-4 p-6">
+                        <div 
+                            className="
+                                grid 
+                                grid-cols-4
+                                grid-rows-[auto_auto_auto_auto_auto_auto]
+                                items-stretch
+                                gap-4
+                                p-6
+                            "
+                        >
                             {progressProofs.map((proof) => (
                                 <ProgressProofCard
                                     key={proof.title}
@@ -193,6 +202,8 @@ const RealProgressSection: FC = () => {
                             justify-center
                             gap-2.5
                             rounded-lg
+                            border
+                            border-[#144EFE]
                             bg-(--button-primary-bg)
                             px-4
                             text-center

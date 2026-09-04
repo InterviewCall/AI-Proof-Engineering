@@ -74,7 +74,7 @@ const EcosystemSection: FC = () => {
                             lg:leading-[1.15]
                         "
                     >
-                        Recent Updates
+                        Recent <span className="text-(--color-brand-700)">Updates</span>
                     </h2>
 
                     {/* Subtitle */}
