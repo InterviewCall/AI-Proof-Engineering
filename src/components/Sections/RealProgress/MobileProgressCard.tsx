@@ -34,7 +34,7 @@ const MobileProgressCard: FC<{ proof: MobileProgressProof }> = ({ proof }) => {
                 className="
                     flex
                     min-w-0
-                    w-[43%]
+                    w-[45%]
                     shrink-0
                     items-center
                     gap-2.5
@@ -65,7 +65,7 @@ const MobileProgressCard: FC<{ proof: MobileProgressProof }> = ({ proof }) => {
                 <h3
                     className="
                         min-w-0
-                        text-[15px]
+                        text-[13px]
                         font-bold
                         leading-[1.2]
                         text-(--progress-section-card-title)
