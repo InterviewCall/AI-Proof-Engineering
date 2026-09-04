@@ -486,7 +486,7 @@ const StructuredJourneySection: FC = () => {
                                             className="
                                                 min-w-0
                                                 pr-1
-                                                text-[11px]
+                                                text-[15px]
                                                 font-semibold
                                                 leading-[1.25]
                                                 text-(--journey-section-card-title)
@@ -577,7 +577,7 @@ const StructuredJourneySection: FC = () => {
                                     />
                                 </span>
 
-                                <span className="text-[11px] font-semibold">
+                                <span className="text-[14px] font-semibold">
                                     View remaining phases (05–10)
                                 </span>
 

@@ -30,7 +30,7 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                         rounded-[5px]
                         bg-(--button-primary-bg)
                         px-2
-                        text-[9px]
+                        text-[13px]
                         font-semibold
                         uppercase
                         leading-none
@@ -43,7 +43,7 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                 <h3
                     className="
                         mt-2
-                        text-[16px]
+                        text-[21px]
                         font-bold
                         leading-[1.15]
                         tracking-[-0.025em]
@@ -59,7 +59,7 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                         flex
                         items-center
                         gap-1.5
-                        text-[11px]
+                        text-[15px]
                         font-semibold
                         leading-none
                         text-(--color-brand-700)
@@ -76,7 +76,7 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                 <p
                     className="
                         mt-2.5
-                        text-[11px]
+                        text-[16px]
                         font-medium
                         leading-[1.4]
                         text-(--journey-section-card-text)
@@ -139,7 +139,7 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                                 <div className="min-w-0">
                                     <h4
                                         className="
-                                            text-[11px]
+                                            text-[16px]
                                             font-semibold
                                             leading-[1.25]
                                             text-(--journey-section-card-title)
@@ -155,7 +155,7 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                                                 className="
                                                     flex
                                                     gap-1.5
-                                                    text-[10px]
+                                                    text-[15px]
                                                     font-medium
                                                     leading-[1.35]
                                                     text-(--journey-section-card-text)
