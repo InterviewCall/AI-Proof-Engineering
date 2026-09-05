@@ -23,21 +23,40 @@ const iconStyles: Record<InsightAccent, string> = {
     blue: 'bg-(--career-insights-card-blue-bg) text-(--career-insights-card-blue-accent)',
 };
 
-const MobileInsightRow: FC<{ article: InsightArticle }> = ({ article }) => {
+interface MobileInsightRowProps {
+    article: InsightArticle;
+    isSelected: boolean;
+    onSelect: () => void;
+}
+
+const MobileInsightRow: FC<MobileInsightRowProps> = ({
+    article,
+    isSelected,
+    onSelect,
+}) => {
     const Icon = article.icon;
 
     return (
-        <div
-            className="
+        <button
+            type="button"
+            onClick={onSelect}
+            aria-pressed={isSelected}
+            className={`
                 flex
+                w-full
                 items-center
                 gap-4
                 rounded-2xl
                 border
-                border-(--career-insights-card-border)
                 bg-(--career-insights-card-bg)
                 p-4
-            "
+                text-left
+                ${
+                    isSelected
+                        ? 'border-[#0757F5]'
+                        : 'border-(--career-insights-card-border)'
+                }
+            `}
         >
             <span
                 className={`
@@ -108,7 +127,7 @@ const MobileInsightRow: FC<{ article: InsightArticle }> = ({ article }) => {
                 className="h-5 w-5 shrink-0 text-(--career-insights-mobile-chevron)"
                 strokeWidth={2.2}
             />
-        </div>
+        </button>
     );
 };
 

@@ -152,7 +152,7 @@ const CareerInsightsSection: FC = () => {
 
                 {/* Mobile / tablet: featured talk + insight rows + feature strip */}
                 <div className="mt-10 lg:hidden">
-                    <MobileFeaturedTalkCard />
+                    <MobileFeaturedTalkCard article={selectedArticle} />
 
                     <span
                         className="
@@ -173,6 +173,10 @@ const CareerInsightsSection: FC = () => {
                             <MobileInsightRow
                                 key={article.title}
                                 article={article}
+                                isSelected={
+                                    selectedArticle.title === article.title
+                                }
+                                onSelect={() => setSelectedArticle(article)}
                             />
                         ))}
                     </div>
