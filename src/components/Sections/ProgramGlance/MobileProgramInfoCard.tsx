@@ -1,4 +1,4 @@
-import { ChevronRight } from 'lucide-react';
+//import { ChevronRight } from 'lucide-react';
 import { FC } from 'react';
 
 import { type GlanceAccent, type GlanceInfoCard } from '@/types/programGlance';
@@ -50,12 +50,12 @@ const MobileProgramInfoCard: FC<{ card: GlanceInfoCard }> = ({ card }) => {
                         strokeWidth={1.7}
                     />
                 </span>
-
+{/* 
                 <ChevronRight
                     aria-hidden="true"
                     className="mt-1 h-5 w-5 shrink-0 text-(--program-glance-mobile-chevron)"
                     strokeWidth={2.2}
-                />
+                /> */}
             </div>
 
             <h3
