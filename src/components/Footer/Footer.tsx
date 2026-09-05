@@ -562,7 +562,9 @@ const Footer: FC = () => {
                                     text-[14px]
                                     font-semibold
                                     text-(--footer-cta-secondary-button-text)
-                                    transition-colors
+                                    transition-all
+                                    duration-200
+                                    hover:-translate-y-0.5
                                     hover:bg-(--footer-cta-secondary-button-hover-bg)
                                     focus-visible:outline-none
                                     focus-visible:ring-4

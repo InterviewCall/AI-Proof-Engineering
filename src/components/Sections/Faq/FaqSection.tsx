@@ -291,13 +291,13 @@ const FaqSection: FC = () => {
                                     focus-visible:ring-(--focus-ring-color)
                                 "
                             >
-                                <CalendarDays
+                                <Download
                                     aria-hidden="true"
                                     className="h-5 w-5"
                                     strokeWidth={1.8}
                                 />
 
-                                <span>Book a Track Counselling Call</span>
+                                <span>Download Curriculum</span>
                             </Link>
 
                             <Link
@@ -325,12 +325,12 @@ const FaqSection: FC = () => {
                                     focus-visible:ring-(--focus-ring-color)
                                 "
                             >
-                                <Download
+                                <CalendarDays
                                     aria-hidden="true"
                                     className="h-5 w-5"
                                     strokeWidth={1.9}
                                 />
-                                <span>Download Curriculum</span>
+                                <span>Book a Track Counselling Call</span>
                             </Link>
                         </div>
                     </div>

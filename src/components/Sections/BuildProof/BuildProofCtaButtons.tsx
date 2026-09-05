@@ -30,13 +30,13 @@ const BuildProofCtaButtons: FC = () => {
                     focus-visible:ring-(--focus-ring-color)
                 "
             >
-                <CalendarDays
+                <Download
                         aria-hidden="true"
                         className="h-5 w-5"
                         strokeWidth={1.8}
                     />
 
-                    <span>Book a Track Counselling Call</span>
+                    <span>Download Curriculum</span>
 
                 {/* <CircleArrowRight
                     aria-hidden="true"
@@ -77,8 +77,8 @@ const BuildProofCtaButtons: FC = () => {
                     focus-visible:ring-(--focus-ring-color)
                 "
             >
-                <Download aria-hidden="true" className="h-5 w-5" strokeWidth={1.9} />
-                <span>Download Curriculum</span>
+                <CalendarDays aria-hidden="true" className="h-5 w-5" strokeWidth={1.9} />
+                <span>Book a Track Counselling Call</span>
             </a>
         </div>
     );

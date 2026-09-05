@@ -191,7 +191,7 @@ const TrackDetail: FC<TrackDetailProps> = ({
                             strokeWidth={1.9}
                         />
 
-                        <span>Download Track Curriculum</span>
+                        <span>Download Curriculum</span>
                     </a>
 
                     <Link
@@ -397,7 +397,7 @@ const TrackDetail: FC<TrackDetailProps> = ({
                         strokeWidth={1.9}
                     />
 
-                    <span>Download Track Curriculum</span>
+                    <span>Download Curriculum</span>
                 </a>
 
                 <Link

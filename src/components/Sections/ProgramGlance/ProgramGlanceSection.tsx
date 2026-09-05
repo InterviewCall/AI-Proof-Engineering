@@ -315,12 +315,12 @@ const ProgramGlanceSection: FC = () => {
                                 focus-visible:ring-(--focus-ring-color)
                             "
                         >
-                            <CircleArrowRight
+                            <Download
                                 aria-hidden="true"
                                 className="h-5 w-5"
                                 strokeWidth={1.9}
                             />
-                            <span>See Admissions &amp; Fee Guidance</span>
+                            <span>Download Curriculum</span>
                         </Link>
 
                         <Link

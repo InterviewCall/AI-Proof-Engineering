@@ -288,13 +288,13 @@ const SpecialistsSection: FC = () => {
                             sm:px-10
                         "
                     >
-                        <CalendarDays
+                        <Download
                             aria-hidden="true"
                             className="h-5 w-5"
                             strokeWidth={1.8}
                     />
 
-                        <span>Book a Track Counselling Call</span>
+                        <span>Download Curriculum</span>
                     </Link>
 
                     <a
@@ -302,25 +302,36 @@ const SpecialistsSection: FC = () => {
                         download
                         className="
                             inline-flex
+                            min-h-14
+                            w-full
                             items-center
-                            gap-2
+                            justify-center
+                            gap-3
+                            rounded-lg
+                            bg-white
+                            px-7
+                            text-center
                             text-[14px]
                             font-semibold
                             text-(--color-brand-700)
-                            transition-colors
-                            hover:text-(--color-brand-800)
+                            transition-all
+                            duration-200
+                            border
+                            border-(--color-brand-300)
                             focus-visible:outline-none
                             focus-visible:ring-4
                             focus-visible:ring-(--focus-ring-color)
+                            sm:w-auto
+                            sm:px-10
                         "
                     >
-                        <span>Download Curriculum</span>
-
-                        <ArrowRight
+                        <CalendarDays
                             aria-hidden="true"
-                            className="h-4.5 w-4.5"
-                            strokeWidth={2}
+                            className="h-5 w-5"
+                            strokeWidth={1.9}
                         />
+
+                        <span>Book a Track Counselling Call</span>
                     </a>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import {
+    CalendarDays,
     CircleArrowRight,
     Download,
     FolderClosed,
@@ -431,12 +432,12 @@ const CapstoneMobileSection: FC = () => {
                             text-(--button-primary-text)
                         "
                     >
-                        <CircleArrowRight
+                        <Download
                             aria-hidden="true"
                             className="h-4 w-4"
                             strokeWidth={1.9}
                         />
-                        <span>Explore Capstone Projects</span>
+                        <span>Download Curriculum</span>
                     </Link>
 
                     <a
@@ -458,12 +459,12 @@ const CapstoneMobileSection: FC = () => {
                             text-(--color-brand-700)
                         "
                     >
-                        <Download
+                        <CalendarDays
                             aria-hidden="true"
                             className="h-4 w-4"
                             strokeWidth={1.9}
                         />
-                        <span>Download Curriculum</span>
+                        <span>Book a Track Counselling Call</span>
                     </a>
                 </div>
             </div>
