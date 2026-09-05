@@ -146,7 +146,11 @@ const AlumniSection: FC = () => {
                     </h3>
 
                     <div className="mt-4">
-                        <AlumniMobileCarousel stories={alumniStories} />
+                        <AlumniMobileCarousel
+    stories={alumniStories}
+    selectedAlumni={selectedAlumni}
+    onSelect={setSelectedAlumni}
+/>
                     </div>
                 </div>
 

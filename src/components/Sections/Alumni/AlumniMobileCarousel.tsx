@@ -1,23 +1,31 @@
-'use client';
-
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
-import { FC, useState } from 'react';
+import { FC } from 'react';
 
 import { type AlumniStory } from '@/types/alumni';
 
 type AlumniMobileCarouselProps = {
     stories: AlumniStory[];
+    selectedAlumni: AlumniStory;
+    onSelect: (story: AlumniStory) => void;
 };
 
-const AlumniMobileCarousel: FC<AlumniMobileCarouselProps> = ({ stories }) => {
-    const [activeIndex, setActiveIndex] = useState(0);
-    const story = stories[activeIndex];
+const AlumniMobileCarousel: FC<AlumniMobileCarouselProps> = ({
+    stories,
+    selectedAlumni,
+    onSelect,
+}) => {
+    const activeIndex = stories.findIndex(
+        (s) => s.name === selectedAlumni.name,
+    );
+
+    const story = stories[activeIndex] ?? stories[0];
 
     if (!story) return null;
 
     const handleNext = () => {
-        setActiveIndex((prev) => (prev + 1) % stories.length);
+        const nextIndex = (activeIndex + 1) % stories.length;
+        onSelect(stories[nextIndex]);
     };
 
     return (
@@ -147,8 +155,12 @@ const AlumniMobileCarousel: FC<AlumniMobileCarouselProps> = ({ stories }) => {
 
             <div className="mt-4 flex items-center justify-center gap-1.5">
                 {stories.map((s, index) => (
-                    <span
+                    <button
                         key={s.name}
+                        type="button"
+                        onClick={() => onSelect(s)}
+                        aria-label={`Show ${s.name}'s story`}
+                        aria-current={index === activeIndex}
                         className={`
                             h-1.5
                             rounded-full
