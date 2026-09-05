@@ -1,68 +1,60 @@
-import {
-    type AlumniCompany,
-    type AlumniMiniStory,
-    type FeaturedAlumniStory,
-} from '@/types/alumni';
+import { type AlumniCompany, type AlumniStory } from '@/types/alumni';
 
 const ALUMNI_FEATURED_IMAGE = '/images/optimized-svg/alumnis/Alumni_feature_section.svg';
-const ALUMNI_FEATURED_LOGO = '/images/optimized-svg/alumnis/Alumni_feature_company.svg';
 const ALUMNI_IMAGE_1 = '/images/optimized-svg/alumnis-photos/Alumni1.png';
 const ALUMNI_IMAGE_2 = '/images/optimized-svg/alumnis-photos/Alumni2.png';
 const ALUMNI_IMAGE_3 = '/images/optimized-svg/alumnis-photos/Alumni3.png';
 
 const COMPANY_LOGO_PATH = '/images/optimized-svg/companies-for-alumni';
 
-export const featuredAlumniStory: FeaturedAlumniStory = {
-    name: 'Rahul Sharma',
-    image: ALUMNI_FEATURED_IMAGE,
-    role: 'Backend Engineer',
-    yoe: '2.3 YOE',
-    priorFocus: 'Backend Implementation',
-    builtWith: ['System Design', 'AI Workflows', 'Mock Reviews'],
-    careerStepRole: 'Software Engineer II',
-    careerStepCompany: 'Amazon',
-    careerStepCompanyLogo: ALUMNI_FEATURED_LOGO,
-    quote: 'The capstone project and mock reviews helped me think like an engineer. The structured learning path gave me the confidence to clear interviews I once struggled with.',
-    quoteAuthor: 'Rahul Sharma',
-    videoLabel: 'Watch Rahul\'s Story',
-};
-
-export const alumniMiniStories: AlumniMiniStory[] = [
+export const alumniStories: AlumniStory[] = [
     {
         name: 'Ananya Iyer',
         image: ALUMNI_IMAGE_1,
+        featuredImage: ALUMNI_FEATURED_IMAGE, // static for now
         role: 'SDE',
         yoe: '1.8 YOE',
         priorFocus: 'QA Engineer',
+        builtWith: ['System Design', 'AI Workflows', 'Mock Reviews'],
         careerStepRole: 'Software Engineer',
-        company: 'Microsoft',
-        companyLogo: `${COMPANY_LOGO_PATH}/Microsoft.svg`,
+        careerStepCompany: 'Microsoft',
+        careerStepCompanyLogo: `${COMPANY_LOGO_PATH}/Microsoft.svg`,
         quote: 'The mentorship and mock interviews helped me improve my clarity and communication.',
-        ctaLabel: 'View Ananya\'s Story',
+        quoteAuthor: 'Ananya Iyer',
+        videoLabel: "Watch Ananya's Story",
+        ctaLabel: "View Ananya's Story",
     },
     {
         name: 'Vikram Singh',
         image: ALUMNI_IMAGE_2,
+        featuredImage: ALUMNI_FEATURED_IMAGE,
         role: 'Software Developer',
         yoe: '3 YOE',
         priorFocus: 'Software Developer',
+        builtWith: ['System Design', 'AI Workflows', 'Mock Reviews'],
         careerStepRole: 'Senior Software Engineer',
-        company: 'Uber',
-        companyLogo: `${COMPANY_LOGO_PATH}/Uber.svg`,
+        careerStepCompany: 'Uber',
+        careerStepCompanyLogo: `${COMPANY_LOGO_PATH}/Uber.svg`,
         quote: 'InterviewCall pushed me to think deeper and communicate better in interviews.',
-        ctaLabel: 'View Vikram\'s Story',
+        quoteAuthor: 'Vikram Singh',
+        videoLabel: "Watch Vikram's Story",
+        ctaLabel: "View Vikram's Story",
     },
     {
         name: 'Arjun Patel',
         image: ALUMNI_IMAGE_3,
+        featuredImage: ALUMNI_FEATURED_IMAGE,
         role: 'SDE',
         yoe: '2 YOE',
         priorFocus: 'Junior Developer',
+        builtWith: ['System Design', 'AI Workflows', 'Mock Reviews'],
         careerStepRole: 'Software Engineer II',
-        company: 'Flipkart',
-        companyLogo: `${COMPANY_LOGO_PATH}/Flipkart.svg`,
+        careerStepCompany: 'Flipkart',
+        careerStepCompanyLogo: `${COMPANY_LOGO_PATH}/Flipkart.svg`,
         quote: 'The mock interviews and feedback loop were the real game-changer for me.',
-        ctaLabel: 'View Arjun\'s Story',
+        quoteAuthor: 'Arjun Patel',
+        videoLabel: "Watch Arjun's Story",
+        ctaLabel: "View Arjun's Story",
     },
 ];
 

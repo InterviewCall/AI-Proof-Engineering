@@ -1,6 +1,9 @@
-import { FC } from 'react';
+'use client';
+
+import { FC, useState } from 'react';
 import { Users } from 'lucide-react';
-import { alumniMiniStories } from '@/utils/alumniItems';
+import { alumniStories } from '@/utils/alumniItems';
+import { type AlumniStory } from '@/types/alumni';
 
 import AlumniCompanyBar from './AlumniCompanyBar';
 import AlumniCtaBar from './AlumniCtaBar';
@@ -9,6 +12,10 @@ import FeaturedAlumniCard from './FeaturedAlumniCard';
 import AlumniMobileCarousel from './AlumniMobileCarousel';
 
 const AlumniSection: FC = () => {
+    const [selectedAlumni, setSelectedAlumni] = useState<AlumniStory>(
+        alumniStories[0], // Ananya Iyer is default
+    );
+
     return (
         <section
             id="alumni"
@@ -109,17 +116,22 @@ const AlumniSection: FC = () => {
                     "
                 >
                     <div className="sm:col-span-3 lg:col-span-1 h-full">
-                        <FeaturedAlumniCard />
+                        <FeaturedAlumniCard story={selectedAlumni} />
                     </div>
 
-                    {alumniMiniStories.map((story) => (
-                        <AlumniMiniCard key={story.name} story={story} />
+                    {alumniStories.map((story) => (
+                        <AlumniMiniCard
+                            key={story.name}
+                            story={story}
+                            isSelected={story.name === selectedAlumni.name}
+                            onSelect={() => setSelectedAlumni(story)}
+                        />
                     ))}
                 </div>
 
                 {/* Mobile-only layout */}
                 <div className="mt-10 sm:hidden">
-                    <FeaturedAlumniCard />
+                    <FeaturedAlumniCard story={selectedAlumni} />
 
                     <h3
                         className="
@@ -134,7 +146,7 @@ const AlumniSection: FC = () => {
                     </h3>
 
                     <div className="mt-4">
-                        <AlumniMobileCarousel stories={alumniMiniStories} />
+                        <AlumniMobileCarousel stories={alumniStories} />
                     </div>
                 </div>
 

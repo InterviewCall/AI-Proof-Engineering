@@ -9,9 +9,13 @@ import {
 import Image from 'next/image';
 import { FC } from 'react';
 
-import { featuredAlumniStory } from '@/utils/alumniItems';
+import { type AlumniStory } from '@/types/alumni';
 
-const FeaturedAlumniCard: FC = () => {
+type FeaturedAlumniCardProps = {
+    story: AlumniStory;
+};
+
+const FeaturedAlumniCard: FC<FeaturedAlumniCardProps> = ({ story }) => {
     return (
         <div
             className="
@@ -31,7 +35,7 @@ const FeaturedAlumniCard: FC = () => {
         >
             {/* Background image */}
             <Image
-                src={featuredAlumniStory.image}
+                src={story.featuredImage}
                 alt=""
                 aria-hidden="true"
                 fill
@@ -113,7 +117,7 @@ const FeaturedAlumniCard: FC = () => {
                             lg:text-[28px]
                         "
                     >
-                        {featuredAlumniStory.name}
+                        {story.name}
                     </h3>
 
                     <p
@@ -125,9 +129,9 @@ const FeaturedAlumniCard: FC = () => {
                             text-(--alumni-featured-meta-text)
                         "
                     >
-                        {featuredAlumniStory.role}
+                        {story.role}
                         <span className="mx-2">•</span>
-                        {featuredAlumniStory.yoe}
+                        {story.yoe}
                     </p>
 
                     <div
@@ -193,7 +197,7 @@ const FeaturedAlumniCard: FC = () => {
                                     text-(--alumni-featured-info-value)
                                 "
                             >
-                                {featuredAlumniStory.priorFocus}
+                                {story.priorFocus}
                             </p>
                         </div>
 
@@ -255,7 +259,7 @@ const FeaturedAlumniCard: FC = () => {
                             </div>
 
                             <ul className="mt-2 space-y-0.5">
-                                {featuredAlumniStory.builtWith.map((item) => (
+                                {story.builtWith.map((item) => (
                                     <li
                                         key={item}
                                         className="
@@ -337,13 +341,13 @@ const FeaturedAlumniCard: FC = () => {
                                     text-(--alumni-featured-info-value)
                                 "
                             >
-                                {featuredAlumniStory.careerStepRole}
+                                {story.careerStepRole}
                             </p>
 
                             <div className="relative mt-1.5 h-5 w-20">
                                 <Image
-                                    src={featuredAlumniStory.careerStepCompanyLogo}
-                                    alt={featuredAlumniStory.careerStepCompany}
+                                    src={story.careerStepCompanyLogo}
+                                    alt={story.careerStepCompany}
                                     fill
                                     sizes="80px"
                                     className="object-contain object-left"
@@ -363,7 +367,7 @@ const FeaturedAlumniCard: FC = () => {
                             text-(--alumni-featured-quote-text)
                         "
                     >
-                        {featuredAlumniStory.quote}
+                        {story.quote}
                     </p>
 
                     <p
@@ -373,7 +377,7 @@ const FeaturedAlumniCard: FC = () => {
                             text-(--alumni-featured-quote-author)
                         "
                     >
-                        &mdash; {featuredAlumniStory.quoteAuthor}
+                        &mdash; {story.quoteAuthor}
                     </p>
 
                     <button
@@ -421,7 +425,7 @@ const FeaturedAlumniCard: FC = () => {
                             />
                         </span>
 
-                        <span>{featuredAlumniStory.videoLabel}</span>
+                        <span>{story.videoLabel}</span>
 
                         <ArrowRight
                             aria-hidden="true"

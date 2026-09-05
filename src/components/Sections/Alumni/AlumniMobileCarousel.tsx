@@ -4,10 +4,10 @@ import { ArrowRight, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import { FC, useState } from 'react';
 
-import { type AlumniMiniStory } from '@/types/alumni';
+import { type AlumniStory } from '@/types/alumni';
 
 type AlumniMobileCarouselProps = {
-    stories: AlumniMiniStory[];
+    stories: AlumniStory[];
 };
 
 const AlumniMobileCarousel: FC<AlumniMobileCarouselProps> = ({ stories }) => {
@@ -106,8 +106,8 @@ const AlumniMobileCarousel: FC<AlumniMobileCarouselProps> = ({ stories }) => {
 
                         <div className="relative mt-2 h-5 w-20">
                             <Image
-                                src={story.companyLogo}
-                                alt={story.company}
+                                src={story.careerStepCompanyLogo}
+                                alt={story.careerStepCompany}
                                 fill
                                 sizes="80px"
                                 className="object-contain object-left"

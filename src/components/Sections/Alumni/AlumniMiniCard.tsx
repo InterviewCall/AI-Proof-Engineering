@@ -2,30 +2,48 @@ import { ArrowDown, ArrowRight, CircleCheck } from 'lucide-react';
 import Image from 'next/image';
 import { FC } from 'react';
 
-import { type AlumniMiniStory } from '@/types/alumni';
+import { type AlumniStory } from '@/types/alumni';
 
 type AlumniMiniCardProps = {
-    story: AlumniMiniStory;
+    story: AlumniStory;
+    isSelected: boolean;
+    onSelect: () => void;
 };
 
-const AlumniMiniCard: FC<AlumniMiniCardProps> = ({ story }) => {
+const AlumniMiniCard: FC<AlumniMiniCardProps> = ({
+    story,
+    isSelected,
+    onSelect,
+}) => {
     return (
-        <div
-            className="
+        <button
+            type="button"
+            onClick={onSelect}
+            aria-pressed={isSelected}
+            className={`
                 mx-auto
                 flex
                 h-full
                 w-full
                 max-w-[220px]
+                cursor-pointer
                 flex-col
                 items-center
                 rounded-2xl
                 border
-                border-(--alumni-mini-card-border)
                 bg-(--alumni-mini-card-bg)
                 p-5
                 text-center
-            "
+                transition-colors
+                focus-visible:outline-none
+                focus-visible:ring-4
+                focus-visible:ring-(--focus-ring-color)
+                ${
+                    isSelected
+                        ? 'border-2 border-[#144EFE]'
+                        : 'border-(--alumni-mini-card-border)'
+                }
+            `}
         >
             <span
                 className="
@@ -154,8 +172,8 @@ const AlumniMiniCard: FC<AlumniMiniCardProps> = ({ story }) => {
 
             <div className="relative mt-1 h-6 w-24">
                 <Image
-                    src={story.companyLogo}
-                    alt={story.company}
+                    src={story.careerStepCompanyLogo}
+                    alt={story.careerStepCompany}
                     fill
                     sizes="96px"
                     className="object-contain"
@@ -174,15 +192,12 @@ const AlumniMiniCard: FC<AlumniMiniCardProps> = ({ story }) => {
                 </p>
             </div>
 
-            <button
-                type="button"
+            <span
                 className="
                     group
                     mt-2
                     inline-flex
                     w-fit
-                    
-                    cursor-pointer
                     items-center
                     justify-center
                     gap-2
@@ -196,7 +211,7 @@ const AlumniMiniCard: FC<AlumniMiniCardProps> = ({ story }) => {
                     whitespace-nowrap
                     text-(--alumni-mini-link-text)
                     transition-colors
-                    hover:text-(--alumni-mini-link-hover-text)
+                    group-hover:text-(--alumni-mini-link-hover-text)
                 "
             >
                 <span>{story.ctaLabel}</span>
@@ -211,8 +226,8 @@ const AlumniMiniCard: FC<AlumniMiniCardProps> = ({ story }) => {
                     "
                     strokeWidth={2}
                 />
-            </button>
-        </div>
+            </span>
+        </button>
     );
 };
 

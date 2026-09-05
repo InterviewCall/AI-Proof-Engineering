@@ -1,6 +1,7 @@
-export type FeaturedAlumniStory = {
+export type AlumniStory = {
     name: string;
-    image: string;
+    image: string;            // small avatar (mini card)
+    featuredImage: string;    // hero background (featured card) — static for now
     role: string;
     yoe: string;
     priorFocus: string;
@@ -10,20 +11,8 @@ export type FeaturedAlumniStory = {
     careerStepCompanyLogo: string;
     quote: string;
     quoteAuthor: string;
-    videoLabel: string;
-};
-
-export type AlumniMiniStory = {
-    name: string;
-    image: string;
-    role: string;
-    yoe: string;
-    priorFocus: string;
-    careerStepRole: string;
-    company: string;
-    companyLogo: string;
-    quote: string;
-    ctaLabel: string;
+    videoLabel: string;   // featured card CTA, e.g. "Watch Ananya's Story"
+    ctaLabel: string;     // mini card CTA, e.g. "View Ananya's Story"
 };
 
 export type AlumniCompany = {
