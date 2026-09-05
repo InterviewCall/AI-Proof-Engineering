@@ -38,7 +38,7 @@ const BuildProofCtaButtons: FC = () => {
 
                     <span>Book a Track Counselling Call</span>
 
-                <CircleArrowRight
+                {/* <CircleArrowRight
                     aria-hidden="true"
                     className="
                         h-5
@@ -48,7 +48,7 @@ const BuildProofCtaButtons: FC = () => {
                         group-hover:translate-x-1
                     "
                     strokeWidth={1.9}
-                />
+                /> */}
             </Link>
 
             <a
@@ -71,6 +71,7 @@ const BuildProofCtaButtons: FC = () => {
                     text-(--color-brand-700)
                     transition-colors
                     hover:bg-(--color-brand-50)
+                    hover:-translate-y-0.5
                     focus-visible:outline-none
                     focus-visible:ring-4
                     focus-visible:ring-(--focus-ring-color)

@@ -343,7 +343,7 @@ const ProgramGlanceSection: FC = () => {
                                 aria-hidden="true"
                                 className="h-5 w-5"
                                 strokeWidth={1.8}
-                        />
+                            />
 
                             <span>Book a Track Counselling Call</span>
                         </Link>

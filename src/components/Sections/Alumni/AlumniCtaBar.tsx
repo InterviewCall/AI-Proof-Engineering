@@ -1,4 +1,4 @@
-import { ArrowRight, CalendarCheck, UsersRound } from 'lucide-react';
+import { Download, CalendarDays, UsersRound } from 'lucide-react';
 import Link from 'next/link';
 import { FC } from 'react';
 
@@ -105,12 +105,13 @@ const AlumniCtaBar: FC = () => {
                         sm:min-w-[248px]
                     "
                 >
-                    <span>View Alumni Stories</span>
-                    <ArrowRight
-                        aria-hidden="true"
-                        className="h-4.5 w-4.5 shrink-0 transition-transform duration-200 group-hover:translate-x-1"
-                        strokeWidth={1.8}
-                    />
+                    <Download
+                            aria-hidden="true"
+                            className="h-5 w-5 lg:h-7 lg:w-7"
+                            strokeWidth={1.9}
+                        />
+
+                        <span>Download Curriculum</span>
                 </Link>
 
                 <Link
@@ -142,8 +143,13 @@ const AlumniCtaBar: FC = () => {
                         sm:min-w-[248px]
                     "
                 >
-                    <CalendarCheck aria-hidden="true" className="h-4.5 w-4.5 shrink-0" strokeWidth={1.9} />
-                    <span>Book a Counselling Call</span>
+                    <CalendarDays
+                        aria-hidden="true"
+                        className="h-5 w-5"
+                        strokeWidth={1.8}
+                    />
+
+                            <span>Book a Track Counselling Call</span>
                 </Link>
             </div>
         </div>

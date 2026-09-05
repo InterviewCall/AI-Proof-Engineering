@@ -2,7 +2,6 @@
 
 import {
     ArrowRight,
-    CalendarCheck,
     Download,
     ChevronDown,
     CalendarDays,
@@ -151,7 +150,7 @@ const Footer: FC = () => {
                                 focus-visible:ring-(--focus-ring-color)
                             "
                         >
-                            <CalendarCheck
+                            <CalendarDays
                                 aria-hidden="true"
                                 className="h-4.5 w-4.5"
                                 strokeWidth={1.9}
