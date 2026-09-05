@@ -417,7 +417,7 @@ const StructuredJourneySection: FC = () => {
                             aria-hidden="true"
                             className="
                                 absolute
-                                left-7.5
+                                left-[25px]
                                 top-7
                                 bottom-8
                                 w-px

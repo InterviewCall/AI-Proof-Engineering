@@ -53,7 +53,7 @@ const MobileLoopCard: FC = () => {
                         className="
                             mt-2
                             max-w-[220px]
-                            text-justify
+                            text-left
                             text-[14px]
                             leading-[1.45]
                             text-(--practice-section-card-text)

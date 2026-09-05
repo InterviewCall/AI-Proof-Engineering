@@ -42,7 +42,7 @@ const MobilePracticeTabs: FC<MobilePracticeTabsProps> = ({
                             text-[12px]
                             font-semibold
                             whitespace-nowrap
-                            text-blue
+                            text-(--color-brand-700)
                             ${
                                 tab.id !== "reviews"
                                     ? "border-r border-(--practice-section-board-border)"
