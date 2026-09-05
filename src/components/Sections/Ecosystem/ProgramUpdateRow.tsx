@@ -1,4 +1,3 @@
-import { ChevronRight } from 'lucide-react';
 import { FC } from 'react';
 
 import { type EcosystemAccent, type ProgramUpdate } from '@/types/ecosystem';
@@ -47,7 +46,11 @@ const ProgramUpdateRow: FC<{ update: ProgramUpdate; isLast: boolean }> = ({
                     ${iconStyles[update.accent]}
                 `}
             >
-                <Icon aria-hidden="true" className="h-12.5 w-12.5" strokeWidth={1.7} />
+                <Icon
+                    aria-hidden="true"
+                    className="h-12.5 w-12.5"
+                    strokeWidth={1.7}
+                />
             </span>
 
             <div className="min-w-0 flex-1">
@@ -88,12 +91,6 @@ const ProgramUpdateRow: FC<{ update: ProgramUpdate; isLast: boolean }> = ({
                     </p>
                 )}
             </div>
-
-            <ChevronRight
-                aria-hidden="true"
-                className="mt-1 h-8 w-8 shrink-0 text-(--ecosystem-updates-chevron)"
-                strokeWidth={2.2}
-            />
         </div>
     );
 };

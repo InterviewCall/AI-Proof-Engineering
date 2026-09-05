@@ -13,7 +13,11 @@ const TrackMetaItem: FC<TrackMetaItemProps> = ({
                 flex
                 items-center
                 justify-center
+<<<<<<< HEAD
                 gap-1
+=======
+                gap-2
+>>>>>>> 073a7f278414f6bca72282df00e8c0bd0857ca43
                 overflow-hidden
                 rounded-[7px]
                 border
