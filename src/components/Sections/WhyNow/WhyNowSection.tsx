@@ -881,7 +881,7 @@ const WhyNowSection: FC = () => {
                                 bg-(--assessment-banner-button-bg)
                                 px-6
                                 text-center
-                                text-[clamp(0.8rem,0.95vw,0.9375rem)]
+                                text-[clamp(0.875rem,1vw,1rem)]
                                 font-semibold
                                 leading-none
                                 text-white
