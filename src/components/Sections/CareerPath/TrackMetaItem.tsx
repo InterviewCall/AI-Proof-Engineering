@@ -12,7 +12,7 @@ const TrackMetaItem: FC<TrackMetaItemProps> = ({
             className={`
                 flex
                 items-center
-                justify-start
+                justify-center
                 gap-2
                 overflow-hidden
                 rounded-[7px]
