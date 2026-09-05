@@ -99,7 +99,8 @@ const CapstoneMobileSection: FC = () => {
                             text-(--proof-section-subtitle-text)
                         "
                     >
-                        A capstone with a repository, an architecture write-up, a recorded walkthrough, and mentor comments on all of it.
+                        A capstone with a repository, an architecture write-up, a
+                        recorded walkthrough, and mentor comments on all of it.
                     </p>
                 </header>
 
@@ -229,10 +230,6 @@ const CapstoneMobileSection: FC = () => {
                                     {sourceCodeDeliverable.description}
                                 </p>
                             </div>
-
-                            <span className="text-[24px] leading-none text-(--color-brand-700)">
-                                ›
-                            </span>
                         </div>
 
                         {gridDeliverables.map((deliverable) => {
@@ -293,10 +290,6 @@ const CapstoneMobileSection: FC = () => {
                                             {deliverable.description}
                                         </p>
                                     </div>
-
-                                    <span className="text-[24px] leading-none text-(--color-brand-700)">
-                                        ›
-                                    </span>
                                 </div>
                             );
                         })}
@@ -383,10 +376,6 @@ const CapstoneMobileSection: FC = () => {
                                             {project.description}
                                         </p>
                                     </div>
-
-                                    <span className="text-[24px] leading-none text-(--color-brand-700)">
-                                        ›
-                                    </span>
                                 </div>
                             );
                         })}
