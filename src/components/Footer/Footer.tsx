@@ -3,8 +3,9 @@
 import {
     ArrowRight,
     CalendarCheck,
+    Download,
     ChevronDown,
-    Copy,
+    CalendarDays,
     Headphones,
     Rocket,
 } from 'lucide-react';
@@ -183,11 +184,12 @@ const Footer: FC = () => {
                                 focus-visible:ring-(--focus-ring-color)
                             "
                         >
-                            <Copy
+                            <Download
                                 aria-hidden="true"
-                                className="h-4.5 w-4.5"
+                                className="h-5 w-5 lg:h-7 lg:w-7"
                                 strokeWidth={1.9}
-                            />
+                        />
+
                             <span>Download Curriculum</span>
                         </Link>
                     </div>
@@ -528,12 +530,14 @@ const Footer: FC = () => {
                                     focus-visible:ring-(--focus-ring-color)
                                 "
                             >
-                                <CalendarCheck
+                                <CalendarDays
                                     aria-hidden="true"
-                                    className="h-4.5 w-4.5"
-                                    strokeWidth={1.9}
+                                    className="h-5 w-5"
+                                    strokeWidth={1.8}
                                 />
-                                <span>Book a Program Counselling Call</span>
+
+                                <span>Book a Track Counselling Call</span>
+
                                 <ArrowRight
                                     aria-hidden="true"
                                     className="h-4 w-4"
@@ -566,12 +570,13 @@ const Footer: FC = () => {
                                     focus-visible:ring-(--focus-ring-color)
                                 "
                             >
-                                <Copy
-                                    aria-hidden="true"
-                                    className="h-4.5 w-4.5"
-                                    strokeWidth={1.9}
-                                />
-                                <span>Download Curriculum</span>
+                                <Download
+                                aria-hidden="true"
+                                className="h-5 w-5 lg:h-7 lg:w-7"
+                                strokeWidth={1.9}
+                        />
+
+                            <span>Download Curriculum</span>
                                 <ArrowRight
                                     aria-hidden="true"
                                     className="h-4 w-4"

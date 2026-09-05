@@ -214,6 +214,7 @@ const TrackDetail: FC<TrackDetailProps> = ({
                             text-(--color-brand-700)
                             transition-colors
                             hover:bg-(--color-brand-50)
+                            hover:-translate-y-0.5
                             focus-visible:outline-none
                             focus-visible:ring-4
                             focus-visible:ring-(--focus-ring-color)

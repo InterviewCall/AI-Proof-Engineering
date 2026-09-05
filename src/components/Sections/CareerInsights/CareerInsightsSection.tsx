@@ -1,4 +1,4 @@
-import { CircleArrowRight, Lightbulb, Mail } from 'lucide-react';
+import { Download, Lightbulb, CalendarDays } from 'lucide-react';
 import Link from 'next/link';
 import { FC } from 'react';
 
@@ -200,15 +200,16 @@ const CareerInsightsSection: FC = () => {
                             lg:min-h-16
                             lg:gap-4
                             lg:px-6
-                            lg:text-[20px]
+                            lg:text-[15px]
                         "
                     >
-                        <CircleArrowRight
+                        <Download
                             aria-hidden="true"
                             className="h-5 w-5 lg:h-7 lg:w-7"
                             strokeWidth={1.9}
                         />
-                        <span>See More From the Career Desk</span>
+
+                        <span>Download Curriculum</span>
                     </Link>
 
                     <Link
@@ -231,21 +232,23 @@ const CareerInsightsSection: FC = () => {
                             text-(--color-brand-700)
                             transition-colors
                             hover:bg-(--color-brand-50)
+                            hover:-translate-y-0.5
                             focus-visible:outline-none
                             focus-visible:ring-4
                             focus-visible:ring-(--focus-ring-color)
                             lg:min-h-16
                             lg:gap-4
                             lg:px-6
-                            lg:text-[20px]
+                            lg:text-[15px]
                         "
                     >
-                        <Mail
+                        <CalendarDays
                             aria-hidden="true"
-                            className="h-5 w-5 lg:h-7 lg:w-7"
-                            strokeWidth={1.9}
-                        />
-                        <span>Subscribe for Updates</span>
+                            className="h-5 w-5"
+                            strokeWidth={1.8}
+                    />
+
+                        <span>Book a Track Counselling Call</span>
                     </Link>
                 </div>
             </div>

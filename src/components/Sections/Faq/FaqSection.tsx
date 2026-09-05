@@ -1,6 +1,6 @@
 'use client';
 
-import { CalendarCheck, Download, MessageCircleQuestion } from 'lucide-react';
+import { CalendarDays, Download, MessageCircleQuestion } from 'lucide-react';
 import Link from 'next/link';
 import { FC, useState } from 'react';
 
@@ -291,12 +291,13 @@ const FaqSection: FC = () => {
                                     focus-visible:ring-(--focus-ring-color)
                                 "
                             >
-                                <CalendarCheck
+                                <CalendarDays
                                     aria-hidden="true"
                                     className="h-5 w-5"
-                                    strokeWidth={1.9}
+                                    strokeWidth={1.8}
                                 />
-                                <span>Book a Program Counselling Call</span>
+
+                                <span>Book a Track Counselling Call</span>
                             </Link>
 
                             <Link

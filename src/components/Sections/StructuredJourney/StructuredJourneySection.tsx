@@ -6,7 +6,7 @@ import {
     ChevronDown,
     ChevronRight,
     Download,
-    FileText,
+    CalendarDays,
     List,
     Target,
 } from 'lucide-react';
@@ -732,13 +732,13 @@ const StructuredJourneySection: FC = () => {
                             lg:text-[15px]
                         "
                     >
-                        <FileText
+                        <CalendarDays
                             aria-hidden="true"
-                            className="hidden h-4 w-4 lg:block"
+                            className="h-5 w-5"
                             strokeWidth={1.8}
-                        />
+                    />
 
-                        <span>View Full Curriculum</span>
+                        <span>Book a Track Counselling Call</span>
 
                         <ArrowRight
                             aria-hidden="true"

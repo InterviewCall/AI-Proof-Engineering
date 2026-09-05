@@ -1,4 +1,4 @@
-import { ArrowRight, CircleArrowRight, Download, Users } from 'lucide-react'; 
+import { ArrowRight, CalendarDays, Download, Users } from 'lucide-react'; 
 import Link from 'next/link'; 
 import { FC } from 'react';
 
@@ -177,13 +177,13 @@ const SpecialistsSection: FC = () => {
                                 lg:text-[16px]
                             "
                         >
-                            <CircleArrowRight
+                            <Download
                                 aria-hidden="true"
                                 className="h-5 w-5 lg:h-7 lg:w-7"
                                 strokeWidth={1.9}
-                            />
+                        />
 
-                            <span>Meet the Mentor Panel</span>
+                            <span>Download Curriculum</span>
                         </Link>
 
                         <a
@@ -221,13 +221,13 @@ const SpecialistsSection: FC = () => {
                                 lg:text-[16px]
                             "
                         >
-                            <Download
+                            <CalendarDays
                                 aria-hidden="true"
-                                className="h-5 w-5 lg:h-7 lg:w-7"
-                                strokeWidth={1.9}
+                                className="h-5 w-5"
+                                strokeWidth={1.8}
                             />
 
-                            <span>Download Curriculum</span>
+                            <span>Book a Track Counselling Call</span>
                         </a>
                     </div>
                 </div>
@@ -288,13 +288,13 @@ const SpecialistsSection: FC = () => {
                             sm:px-10
                         "
                     >
-                        <CircleArrowRight
+                        <CalendarDays
                             aria-hidden="true"
                             className="h-5 w-5"
-                            strokeWidth={1.9}
-                        />
+                            strokeWidth={1.8}
+                    />
 
-                        <span>Meet the Mentor Panel</span>
+                        <span>Book a Track Counselling Call</span>
                     </Link>
 
                     <a

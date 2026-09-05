@@ -9,6 +9,7 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
         <article
             className="
                 flex
+                h-full
                 flex-col
                 rounded-2xl
                 border
@@ -89,7 +90,7 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
             {/* Enlarged code preview */}
             <div
                 className="
-                    mt-4
+                    mt-auto
                     flex
                     min-h-[190px]
                     w-full
@@ -103,7 +104,7 @@ const PracticeTaskCard: FC<{ task: PracticeTaskContent }> = ({ task }) => {
                     src="/image 114.svg"
                     alt="Practice task"
                     width={500}
-                    height={190}
+                    height={195}
                     priority
                     className="
                         block

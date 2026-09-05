@@ -1,4 +1,4 @@
-import { CircleArrowRight, Download, Trophy } from 'lucide-react'; 
+import { CalendarDays, Download, Trophy } from 'lucide-react'; 
 import Link from 'next/link'; 
 import { FC } from 'react'; 
 import Image from 'next/image'; 
@@ -173,16 +173,16 @@ const CapstoneProofSection: FC = () => {
                                 lg:justify-self-start 
                                 lg:gap-4 
                                 lg:px-6 
-                                lg:text-[20px] 
+                                lg:text-[15px] 
                             " 
                         > 
-                            <CircleArrowRight 
-                                aria-hidden="true" 
-                                className="h-5 w-5 lg:h-7 lg:w-7" 
-                                strokeWidth={1.9} 
-                            /> 
- 
-                            <span>See Example Capstones</span> 
+                            <Download
+                            aria-hidden="true"
+                            className="h-5 w-5 lg:h-7 lg:w-7"
+                            strokeWidth={1.9}
+                        />
+
+                            <span>Download Curriculum</span>
                         </Link> 
  
                         {/* Download Curriculum */} 
@@ -208,23 +208,23 @@ const CapstoneProofSection: FC = () => {
                                 transition-all 
                                 duration-200 
                                 hover:-translate-y-0.5 
-                                hover:bg-white 
+                                hover:bg-[#f6f8fd]
                                 focus-visible:outline-none 
                                 focus-visible:ring-4 
                                 focus-visible:ring-(--focus-ring-color) 
                                 lg:min-h-16 
                                 lg:gap-4 
                                 lg:px-6 
-                                lg:text-[20px] 
+                                lg:text-[15px] 
                             " 
                         > 
-                            <Download 
-                                aria-hidden="true" 
-                                className="h-5 w-5 lg:h-7 lg:w-7" 
-                                strokeWidth={1.9} 
-                            /> 
- 
-                            <span>Download Curriculum</span> 
+                            <CalendarDays
+                                aria-hidden="true"
+                                className="h-5 w-5"
+                                strokeWidth={1.8}
+                        />
+
+                            <span>Book a Track Counselling Call</span>
                         </a> 
                     </div> 
                 </div> 

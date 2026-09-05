@@ -1,4 +1,4 @@
-import { CalendarCheck, CircleArrowRight, Download } from 'lucide-react';
+import { CalendarDays, CircleArrowRight, Download } from 'lucide-react';
 import Link from 'next/link';
 import { FC } from 'react';
 
@@ -30,12 +30,13 @@ const BuildProofCtaButtons: FC = () => {
                     focus-visible:ring-(--focus-ring-color)
                 "
             >
-                <CalendarCheck
-                    aria-hidden="true"
-                    className="h-5 w-5"
-                    strokeWidth={1.9}
-                />
-                <span>Book a Program Counselling Call</span>
+                <CalendarDays
+                        aria-hidden="true"
+                        className="h-5 w-5"
+                        strokeWidth={1.8}
+                    />
+
+                    <span>Book a Track Counselling Call</span>
 
                 <CircleArrowRight
                     aria-hidden="true"

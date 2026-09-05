@@ -6,6 +6,7 @@ import {
     ClipboardCheck,
     Code2,
     Download,
+    CalendarDays,
     FlaskConical,
     type LucideIcon,
     Mic,
@@ -961,16 +962,16 @@ const GuidedSystemSection: FC = () => {
                             lg:min-h-16
                             lg:gap-4
                             lg:px-6
-                            lg:text-[20px]
+                            lg:text-[15px]
                         "
                     >
-                        <PlayCircle
+                        <Download
                             aria-hidden="true"
                             className="h-5 w-5 lg:h-7 lg:w-7"
-                            strokeWidth={1.8}
+                            strokeWidth={1.9}
                         />
 
-                        <span>See How It&apos;s Organized</span>
+                        <span>Download Curriculum</span>
                     </Link>
 
                     <a
@@ -1004,23 +1005,18 @@ const GuidedSystemSection: FC = () => {
                             lg:gap-4
                             lg:border
                             lg:px-6
-                            lg:text-[20px]
+                            lg:text-[15px]
                         "
                     >
-                        <Download
+                        <CalendarDays
                             aria-hidden="true"
-                            className="
-                                hidden
-                                h-5
-                                w-5
-                                lg:block
-                            "
+                            className="h-5 w-5"
                             strokeWidth={1.8}
-                        />
+                    />
 
-                        <span>Download Curriculum</span>
+                        <span>Book a Track Counselling Call</span>
 
-                        <ArrowRight
+                        {/* <ArrowRight
                             aria-hidden="true"
                             className="
                                 h-5
@@ -1028,7 +1024,7 @@ const GuidedSystemSection: FC = () => {
                                 lg:hidden
                             "
                             strokeWidth={1.8}
-                        />
+                        /> */}
                     </a>
                 </div>
             </div>

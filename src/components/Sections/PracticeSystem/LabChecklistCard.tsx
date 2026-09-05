@@ -8,6 +8,7 @@ const LabChecklistCard: FC = () => {
         <article
             className="
                 flex
+                h-full
                 flex-col
                 rounded-2xl
                 border
@@ -84,7 +85,7 @@ const LabChecklistCard: FC = () => {
 
             <div
                 className="
-                    mt-3
+                    mt-auto
                     flex
                     items-start
                     gap-2

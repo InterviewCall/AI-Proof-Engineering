@@ -1,4 +1,4 @@
-import { CircleArrowRight, Download, Users } from 'lucide-react';
+import { CircleArrowRight, Download, Users, CalendarDays } from 'lucide-react';
 import Link from 'next/link';
 import { FC } from 'react';
 
@@ -223,12 +223,13 @@ const RealProgressSection: FC = () => {
                             lg:text-[16px]
                         "
                     >
-                        <CircleArrowRight
+                        <Download
                             aria-hidden="true"
                             className="h-5 w-5 lg:h-7 lg:w-7"
                             strokeWidth={1.9}
                         />
-                        <span>View Learner Progress</span>
+
+                        <span>Download Curriculum</span>
                     </Link>
 
                     <a
@@ -252,6 +253,7 @@ const RealProgressSection: FC = () => {
                             text-(--color-brand-700)
                             transition-colors
                             hover:bg-(--color-brand-50)
+                            hover:-translate-y-0.5
                             focus-visible:outline-none
                             focus-visible:ring-4
                             focus-visible:ring-(--focus-ring-color)
@@ -261,12 +263,13 @@ const RealProgressSection: FC = () => {
                             lg:text-[16px]
                         "
                     >
-                        <Download
+                        <CalendarDays
                             aria-hidden="true"
-                            className="h-5 w-5 lg:h-7 lg:w-7"
-                            strokeWidth={1.9}
-                        />
-                        <span>Download Curriculum</span>
+                            className="h-5 w-5"
+                            strokeWidth={1.8}
+                    />
+
+                        <span>Book a Track Counselling Call</span>
                     </a>
                 </div>
 

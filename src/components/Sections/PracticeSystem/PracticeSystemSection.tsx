@@ -1,6 +1,6 @@
 "use client";
 
-import { CircleArrowRight, Download, Settings2 } from "lucide-react";
+import { CalendarDays, Download, Settings2 } from "lucide-react";
 import Link from "next/link";
 import { FC, useState } from "react";
 
@@ -257,16 +257,16 @@ const PracticeSystemSection: FC = () => {
                             lg:justify-self-start
                             lg:gap-4
                             lg:px-6
-                            lg:text-[20px]
+                            lg:text-[15px]
                         "
                     >
-                        <CircleArrowRight
+                        <Download
                             aria-hidden="true"
                             className="h-5 w-5 lg:h-7 lg:w-7"
                             strokeWidth={1.9}
                         />
 
-                        <span>See How Practice Works</span>
+                        <span>Download Curriculum</span>
                     </Link>
 
                     {/* Download Curriculum */}
@@ -291,22 +291,23 @@ const PracticeSystemSection: FC = () => {
                             text-[#0a53f2]
                             transition-colors
                             hover:bg-[#f6f8fd]
+                            hover:-translate-y-0.5
                             focus-visible:outline-none
                             focus-visible:ring-4
                             focus-visible:ring-[#0a53f2]/20
                             lg:min-h-16
                             lg:gap-4
                             lg:px-6
-                            lg:text-[20px]
+                            lg:text-[15px]
                         "
                     >
-                        <Download
+                        <CalendarDays
                             aria-hidden="true"
-                            className="h-5 w-5 lg:h-7 lg:w-7"
-                            strokeWidth={1.9}
-                        />
+                            className="h-5 w-5"
+                            strokeWidth={1.8}
+                    />
 
-                        <span>Download Curriculum</span>
+                        <span>Book a Track Counselling Call</span>
                     </a>
                 </div>
             </div>

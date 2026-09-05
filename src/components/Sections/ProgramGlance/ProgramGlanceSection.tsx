@@ -1,4 +1,4 @@
-import { ArrowRight, CalendarCheck, CircleArrowRight, UsersRound } from 'lucide-react';
+import { Download, CalendarDays, CalendarCheck, CircleArrowRight, UsersRound } from 'lucide-react';
 import Link from 'next/link';
 import { FC } from 'react';
 
@@ -179,16 +179,17 @@ const ProgramGlanceSection: FC = () => {
                                 lg:min-h-16
                                 lg:gap-4
                                 lg:px-6
-                                lg:text-[20px]
+                                lg:text-[16px]
                                 whitespace-nowrap
                             "
                         >
-                            <CircleArrowRight
+                            <Download
                                 aria-hidden="true"
                                 className="h-5 w-5 lg:h-7 lg:w-7"
                                 strokeWidth={1.9}
-                            />
-                            <span>See Admissions &amp; Fee Guidance</span>
+                        />
+
+                            <span>Download Curriculum</span>
                         </Link>
 
                         <Link
@@ -211,22 +212,24 @@ const ProgramGlanceSection: FC = () => {
                                 text-(--color-brand-700)
                                 transition-colors
                                 hover:bg-(--color-brand-50)
+                                hover:-translate-y-0.5
                                 focus-visible:outline-none
                                 focus-visible:ring-4
                                 focus-visible:ring-(--focus-ring-color)
                                 lg:min-h-16
                                 lg:gap-4
                                 lg:px-6
-                                lg:text-[20px]
+                                lg:text-[16px]
                                 whitespace-nowrap
                             "
                         >
-                            <CalendarCheck
-                                aria-hidden="true"
-                                className="h-5 w-5 lg:h-7 lg:w-7"
-                                strokeWidth={1.9}
-                            />
-                            <span>Subscribe for Updates</span>
+                            <CalendarDays
+                            aria-hidden="true"
+                            className="h-5 w-5"
+                            strokeWidth={1.8}
+                    />
+
+                            <span>Book a Track Counselling Call</span>
                         </Link>
                     </div>
                 </div>
@@ -336,12 +339,13 @@ const ProgramGlanceSection: FC = () => {
                                 focus-visible:ring-(--focus-ring-color)
                             "
                         >
-                            <span>Book a Track Counselling Call</span>
-                            <ArrowRight
+                            <CalendarDays
                                 aria-hidden="true"
-                                className="h-4.5 w-4.5"
-                                strokeWidth={2}
-                            />
+                                className="h-5 w-5"
+                                strokeWidth={1.8}
+                        />
+
+                            <span>Book a Track Counselling Call</span>
                         </Link>
                     </div>
                 </div>

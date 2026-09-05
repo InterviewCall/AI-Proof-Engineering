@@ -14,6 +14,7 @@ const MockFeedbackCard: FC = () => {
         <article
             className="
                 flex
+                h-full
                 flex-col
                 rounded-2xl
                 border
@@ -176,7 +177,7 @@ const MockFeedbackCard: FC = () => {
                     className="
                         text-[14px]
                         font-medium
-                        leading-[1.5]
+                        leading-[1.55]
                         text-(--practice-section-card-text)
                     "
                 >
