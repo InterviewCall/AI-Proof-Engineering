@@ -34,7 +34,7 @@ const SolutionSection: FC = () => {
                 xl:py-20
             "
         >
-            <div className="mx-auto w-full max-w-370">
+            <div className="mx-auto w-full max-w-[#1500] lg:max-w-[1200px]">
                 {/* =====================================================
                     SECTION HEADER
                 ====================================================== */}
@@ -173,7 +173,7 @@ const SolutionSection: FC = () => {
                         <h3
                             className="
                                 text-center
-                                text-[14px]
+                                text-[16px]
                                 font-semibold
                                 leading-[1.3]
                                 uppercase
@@ -189,7 +189,7 @@ const SolutionSection: FC = () => {
                         <h3
                             className="
                                 text-center
-                                text-[14px]
+                                text-[16px]
                                 font-semibold
                                 leading-[1.3]
                                 uppercase
@@ -356,32 +356,34 @@ const SolutionSection: FC = () => {
                     <div
                         className="
                             mt-3
-                            flex
+                            grid
+                            grid-cols-[minmax(0,1fr)_80px_minmax(0,1fr)]
                             items-center
-                            justify-center
                             gap-4
-                            text-[10px]
+                            text-[13px]
                             font-semibold
                             uppercase
                             leading-[1.3]
                             tracking-[0.1em]
                         "
                     >
-                        <span className="text-(--solution-section-different-box-footer-from-text)">
+                        <span className="text-right text-(--solution-section-different-box-footer-from-text)">
                             From Passive Content
                         </span>
 
                         <ArrowRight
                             aria-hidden="true"
                             className="
+                                mx-auto
                                 h-5
                                 w-5
                                 text-(--solution-section-different-box-footer-from-arrow)
+                                
                             "
                             strokeWidth={1.8}
                         />
 
-                        <span className="text-(--solution-section-different-box-footer-to-text)">
+                        <span className="text-left text-(--solution-section-different-box-footer-to-text)">
                             Reviewed Engineering Work
                         </span>
                     </div>
@@ -479,7 +481,7 @@ const SolutionSection: FC = () => {
                     >
                         <p
                             className="
-                                text-[15px]
+                                text-[17px]
                                 font-semibold
                                 text-(--solution-section-different-box-left-title)
                             "
@@ -509,7 +511,7 @@ const SolutionSection: FC = () => {
 
                         <p
                             className="
-                                text-[15px]
+                                text-[17px]
                                 font-semibold
                                 text-(--solution-section-different-box-footer-to-text)
                             "
