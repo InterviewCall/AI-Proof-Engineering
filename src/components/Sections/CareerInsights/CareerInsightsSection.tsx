@@ -169,7 +169,7 @@ const CareerInsightsSection: FC = () => {
                     </span>
 
                     <div className="mt-4 space-y-3">
-                        {insightArticles.slice(0, 2).map((article) => (
+                        {insightArticles.slice(0, 4).map((article) => (
                             <MobileInsightRow
                                 key={article.title}
                                 article={article}
