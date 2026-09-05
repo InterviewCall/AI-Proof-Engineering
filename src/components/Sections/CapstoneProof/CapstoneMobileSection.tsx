@@ -36,7 +36,7 @@ const CapstoneMobileSection: FC = () => {
                 lg:hidden
             "
         >
-            <div className="mx-auto w-full max-w-[500px]">
+            <div className="mx-auto w-full max-w-[540px]">
                 {/* Header */}
                 <header className="text-center">
                     <div
@@ -53,7 +53,7 @@ const CapstoneMobileSection: FC = () => {
                             border-[#AFC7FF]
                             bg-[#EEF4FF]
                             px-6
-                            text-[clamp(0.875rem,1.1vw,1.0625rem)]
+                            text-[clamp(1rem,1.1vw,1.125rem)]
                             font-semibold
                             uppercase
                             tracking-[0.015em]
@@ -74,7 +74,7 @@ const CapstoneMobileSection: FC = () => {
                     <h2
                         className="
                             mt-4
-                            text-[36px]
+                            text-[38px]
                             font-bold
                             leading-[1.05]
                             tracking-[-1.5%]
@@ -92,7 +92,7 @@ const CapstoneMobileSection: FC = () => {
                             mx-auto
                             mt-3
                             max-w-[330px]
-                            text-[14px]
+                            text-[16px]
                             font-medium
                             leading-[1.45]
                             text-(--proof-section-subtitle-text)
@@ -146,7 +146,7 @@ const CapstoneMobileSection: FC = () => {
                             <div className="min-w-0">
                                 <h3
                                     className="
-                                        text-[17px]
+                                        text-[19px]
                                         font-bold
                                         leading-tight
                                         text-(--proof-section-card-title)
@@ -158,7 +158,7 @@ const CapstoneMobileSection: FC = () => {
                                 <p
                                     className="
                                         mt-1
-                                        text-[12px]
+                                        text-[14px]
                                         leading-[1.4]
                                         text-(--proof-section-card-text)
                                     "
@@ -209,7 +209,7 @@ const CapstoneMobileSection: FC = () => {
                             <div className="min-w-0 flex-1">
                                 <h4
                                     className="
-                                        text-[14px]
+                                        text-[16px]
                                         font-semibold
                                         text-(--proof-section-card-title)
                                     "
@@ -220,7 +220,7 @@ const CapstoneMobileSection: FC = () => {
                                 <p
                                     className="
                                         mt-0.5
-                                        text-[12px]
+                                        text-[14px]
                                         leading-[1.4]
                                         text-(--proof-section-card-text)
                                     "
@@ -272,7 +272,7 @@ const CapstoneMobileSection: FC = () => {
                                     <div className="min-w-0 flex-1">
                                         <h4
                                             className="
-                                                text-[14px]
+                                                text-[16px]
                                                 font-semibold
                                                 leading-tight
                                                 text-(--proof-section-card-title)
@@ -284,7 +284,7 @@ const CapstoneMobileSection: FC = () => {
                                         <p
                                             className="
                                                 mt-0.5
-                                                text-[12px]
+                                                text-[14px]
                                                 leading-[1.4]
                                                 text-(--proof-section-card-text)
                                             "
@@ -315,7 +315,7 @@ const CapstoneMobileSection: FC = () => {
                 >
                     <h3
                         className="
-                            text-[14px]
+                            text-[16px]
                             font-semibold
                             text-(--proof-section-card-title)
                         "
@@ -362,7 +362,7 @@ const CapstoneMobileSection: FC = () => {
                                     <div className="min-w-0 flex-1">
                                         <h4
                                             className="
-                                                text-[13px]
+                                                text-[15px]
                                                 font-semibold
                                                 leading-tight
                                                 text-(--proof-section-card-title)
@@ -374,7 +374,7 @@ const CapstoneMobileSection: FC = () => {
                                         <p
                                             className="
                                                 mt-0.5
-                                                text-[11px]
+                                                text-[13px]
                                                 leading-[1.35]
                                                 text-(--proof-section-card-text)
                                             "
@@ -399,7 +399,7 @@ const CapstoneMobileSection: FC = () => {
                             items-center
                             justify-center
                             gap-2
-                            text-[12px]
+                            text-[14px]
                             font-semibold
                             text-(--color-brand-700)
                         "
@@ -426,7 +426,7 @@ const CapstoneMobileSection: FC = () => {
                             rounded-lg
                             bg-(--button-primary-bg)
                             px-4
-                            text-[12px]
+                            text-[14px]
                             font-semibold
                             text-(--button-primary-text)
                         "
@@ -453,7 +453,7 @@ const CapstoneMobileSection: FC = () => {
                             border-(--color-brand-300)
                             bg-white
                             px-4
-                            text-[12px]
+                            text-[14px]
                             font-semibold
                             text-(--color-brand-700)
                         "
