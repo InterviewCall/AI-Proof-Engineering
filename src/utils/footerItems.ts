@@ -12,7 +12,7 @@ export const footerColumns: FooterColumn[] = [
             { label: 'Foundation Track', href: '#career-path' },
             { label: 'Growth Track', href: '#career-path' },
             { label: 'Leadership Track', href: '#career-path' },
-            { label: '10-Phase Curriculum', href: '#structured-journey' },
+            { label: '10-Phase Curriculum', href: '#curriculum' },
             { label: 'How It Works', href: '#solution' },
         ],
     },
