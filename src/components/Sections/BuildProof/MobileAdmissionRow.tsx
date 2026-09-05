@@ -1,4 +1,3 @@
-import { ChevronRight } from 'lucide-react';
 import { FC } from 'react';
 
 import { type AdmissionInfoChip, type ChipAccent } from '@/types/buildProof';
@@ -39,7 +38,11 @@ const MobileAdmissionRow: FC<{ chip: AdmissionInfoChip }> = ({ chip }) => {
                     ${iconStyles[chip.accent]}
                 `}
             >
-                <Icon aria-hidden="true" className="h-5 w-5" strokeWidth={1.8} />
+                <Icon
+                    aria-hidden="true"
+                    className="h-5 w-5"
+                    strokeWidth={1.8}
+                />
             </span>
 
             <p
@@ -52,12 +55,6 @@ const MobileAdmissionRow: FC<{ chip: AdmissionInfoChip }> = ({ chip }) => {
             >
                 {chip.label}
             </p>
-
-            <ChevronRight
-                aria-hidden="true"
-                className="h-5 w-5 shrink-0 text-(--build-proof-mobile-chevron)"
-                strokeWidth={2.2}
-            />
         </div>
     );
 };

@@ -1,4 +1,3 @@
-import { ChevronRight } from 'lucide-react';
 import { FC } from 'react';
 
 import { type EcosystemAccent, type ProgramUpdate } from '@/types/ecosystem';
@@ -45,7 +44,11 @@ const MobileUpdateCard: FC<{ update: ProgramUpdate }> = ({ update }) => {
                     ${iconStyles[update.accent]}
                 `}
             >
-                <Icon aria-hidden="true" className="h-6 w-6" strokeWidth={1.7} />
+                <Icon
+                    aria-hidden="true"
+                    className="h-6 w-6"
+                    strokeWidth={1.7}
+                />
             </span>
 
             <div className="min-w-0 flex-1">
@@ -86,12 +89,6 @@ const MobileUpdateCard: FC<{ update: ProgramUpdate }> = ({ update }) => {
                     </p>
                 )}
             </div>
-
-            <ChevronRight
-                aria-hidden="true"
-                className="mt-1 h-5 w-5 shrink-0 text-(--ecosystem-updates-chevron)"
-                strokeWidth={2.2}
-            />
         </div>
     );
 };
