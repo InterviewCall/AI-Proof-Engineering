@@ -629,7 +629,7 @@ const StructuredJourneySection: FC = () => {
 
                     <p
                         className="
-                            text-[10px]
+                            text-[14px]
                             font-medium
                             leading-[1.4]
                             text-(--journey-section-card-text)

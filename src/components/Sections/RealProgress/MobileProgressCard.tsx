@@ -99,7 +99,7 @@ const MobileProgressCard: FC<{ proof: MobileProgressProof }> = ({ proof }) => {
                             rounded-full
                             bg-(--progress-section-mobile-before-bg)
                             px-2.5
-                            text-[11px]
+                            text-[12px]
                             font-bold
                             text-(--progress-section-mobile-before-text)
                         "
@@ -110,7 +110,7 @@ const MobileProgressCard: FC<{ proof: MobileProgressProof }> = ({ proof }) => {
                     <p
                         className="
                             mt-1
-                            text-[12px]
+                            text-[13px]
                             leading-[1.3]
                             text-(--progress-section-card-text)
                         "
@@ -142,7 +142,7 @@ const MobileProgressCard: FC<{ proof: MobileProgressProof }> = ({ proof }) => {
                             rounded-full
                             bg-(--progress-section-after-bg)
                             px-2.5
-                            text-[11px]
+                            text-[12px]
                             font-bold
                             text-(--progress-section-after-text)
                         "
@@ -153,7 +153,7 @@ const MobileProgressCard: FC<{ proof: MobileProgressProof }> = ({ proof }) => {
                     <p
                         className="
                             mt-1
-                            text-[12px]
+                            text-[13px]
                             leading-[1.3]
                             text-(--progress-section-card-text)
                         "

@@ -81,7 +81,7 @@ const MobileSpecialistsFeatureStrip: FC = () => {
                         <span
                             className="
                                 min-w-0
-                                text-[12px]
+                                text-[13px]
                                 font-semibold
                                 leading-[1.3]
                                 text-(--specialists-strip-title-text)

@@ -66,7 +66,7 @@ const MobileProgressFeatureStrip: FC = () => {
                         <span
                             className="
                                 min-w-0
-                                text-[12px]
+                                text-[13px]
                                 font-bold
                                 leading-tight
                                 text-(--progress-section-strip-title-text)

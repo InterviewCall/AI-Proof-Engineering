@@ -557,8 +557,7 @@ const CareerPathSection: FC = () => {
 
                             <p
                                 className="
-                                    mt-1
-                                    text-[12px]
+                                    mt-13px]
                                     font-medium
                                     leading-[1.67]
                                     tracking-[-2%]

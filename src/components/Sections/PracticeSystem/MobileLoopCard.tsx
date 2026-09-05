@@ -54,7 +54,7 @@ const MobileLoopCard: FC = () => {
                             mt-2
                             max-w-[220px]
                             text-justify
-                            text-[13px]
+                            text-[14px]
                             leading-[1.45]
                             text-(--practice-section-card-text)
                         "

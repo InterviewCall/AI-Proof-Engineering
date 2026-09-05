@@ -84,7 +84,7 @@ const MobileProgramInfoCard: FC<{ card: GlanceInfoCard }> = ({ card }) => {
             <p
                 className="
                     mt-2
-                    text-[13px]
+                    text-[14px]
                     leading-[1.5]
                     text-(--program-glance-info-card-text)
                 "

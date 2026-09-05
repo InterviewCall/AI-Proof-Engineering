@@ -624,7 +624,7 @@ const GuidedSystemSection: FC = () => {
                                             <div className="min-w-0">
                                                 <h3
                                                     className="
-                                                        text-[14px]
+                                                        text-[17px]
                                                         font-bold
                                                         leading-[1.2]
                                                         tracking-[-0.02em]
@@ -637,7 +637,7 @@ const GuidedSystemSection: FC = () => {
                                                 <p
                                                     className="
                                                         mt-1
-                                                        text-[11px]
+                                                        text-[14px]
                                                         font-medium
                                                         leading-[1.4]
                                                         text-[#465272]
@@ -668,7 +668,7 @@ const GuidedSystemSection: FC = () => {
                                                     min-w-0
                                                     items-center
                                                     gap-1.5
-                                                    text-[10px]
+                                                    text-[13px]
                                                     font-medium
                                                     leading-[1.25]
                                                     text-[#465272]
@@ -888,7 +888,7 @@ const GuidedSystemSection: FC = () => {
                     <p
                         className="
                             pt-0.5
-                            text-[12px]
+                            text-[16px]
                             font-medium
                             leading-[1.55]
                             text-(--guided-system-step-title)
