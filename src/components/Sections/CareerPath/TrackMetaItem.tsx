@@ -37,7 +37,7 @@ const TrackMetaItem: FC<TrackMetaItemProps> = ({
                 strokeWidth={1.8}
             />
 
-            <span className="break-words text-center text-[12px] font-bold leading-tight">
+            <span className="break-words text-center text-[12px] font-bold leading-tight lg:whitespace-nowrap lg:break-normal lg:text-[14.5px]">
                 {label}
             </span>
         </div>

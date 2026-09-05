@@ -42,6 +42,7 @@ const SpecialistsFeatureStrip: FC = () => {
                             px-4
                             first:pl-0
                             last:pr-0
+                            lg:items-start
                         "
                     >
                         <span

@@ -88,7 +88,7 @@ const FeatureStrip: FC<FeatureStripProps> = ({ items, compact = false }) => {
                 border-(--practice-section-board-border)
                 pt-6
                 sm:grid-cols-3
-                lg:grid-cols-5
+                lg:grid-cols-4
             "
         >
             {items.map((item) => {
@@ -97,7 +97,8 @@ const FeatureStrip: FC<FeatureStripProps> = ({ items, compact = false }) => {
                 return (
                     <div
                         key={item.title}
-                        className="flex items-center gap-3"
+                        className={`flex items-start gap-3 ${item.title === 'Readiness Tracking' ? 'lg:hidden' : ''}`}
+
                     >
                         <span
                             className="
@@ -121,13 +122,14 @@ const FeatureStrip: FC<FeatureStripProps> = ({ items, compact = false }) => {
                             />
                         </span>
 
-                        <div className="min-w-0">
+                        <div className="min-w-0 self-start">
                             <p
                                 className="
                                     text-[16px]
                                     font-semibold
                                     leading-[1.25]
                                     text-(--practice-section-card-title)
+                                    lg:whitespace-nowrap
                                 "
                             >
                                 {item.title}

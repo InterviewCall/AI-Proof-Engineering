@@ -25,6 +25,7 @@ const FeatureStripGrid: FC<{
                             gap-3
                             px-4
                             text-left
+                            lg:items-start
                             lg:min-h-16
                             lg:first:pl-0
                             lg:last:pr-0
@@ -54,6 +55,7 @@ const FeatureStripGrid: FC<{
                             className="
                                 min-w-0
                                 flex-1
+                                lg:self-start
                             "
                         >
                             <p
@@ -62,6 +64,7 @@ const FeatureStripGrid: FC<{
                                     font-semibold
                                     leading-[1.2]
                                     text-(--proof-section-card-title)
+                                    
                                 "
                             >
                                 {item.title}

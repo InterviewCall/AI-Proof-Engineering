@@ -324,7 +324,7 @@ export const PhaseDetails: FC<PhaseDetailProps> = ({
                                             className="
                                                 flex
                                                 gap-3
-                                                text-[14px]
+                                                text-[15px]
                                                 font-medium
                                                 leading-[1.61]
                                                 tracking-[-4%]

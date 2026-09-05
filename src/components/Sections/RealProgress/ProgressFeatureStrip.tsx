@@ -39,7 +39,7 @@ const ProgressFeatureStrip: FC = () => {
                 return (
                     <div
                         key={item.title}
-                        className="flex items-center gap-3 px-2 lg:first:pl-0"
+                        className="flex items-center gap-3 px-2 lg:items-start lg:first:pl-0"
                     >
                         <span
                             className={`
