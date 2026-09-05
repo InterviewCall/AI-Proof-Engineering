@@ -1,8 +1,11 @@
+'use client';
+
 import { Download, Lightbulb, CalendarDays } from 'lucide-react';
 import Link from 'next/link';
-import { FC } from 'react';
+import { FC, useState } from 'react';
 
 import { insightArticles } from '@/utils/careerInsightsItems';
+import { type InsightArticle } from '@/types/careerInsights';
 
 import CareerInsightsFeatureStrip from './CareerInsightsFeatureStrip';
 import FeaturedTalkCard from './FeaturedTalkCard';
@@ -12,6 +15,11 @@ import MobileFeaturedTalkCard from './MobileFeaturedTalkCard';
 import MobileInsightRow from './MobileInsightRow';
 
 const CareerInsightsSection: FC = () => {
+    const defaultArticle = insightArticles[0];
+
+    const [selectedArticle, setSelectedArticle] =
+        useState<InsightArticle>(defaultArticle);
+
     return (
         <section
             id="career-insights"
@@ -121,13 +129,17 @@ const CareerInsightsSection: FC = () => {
                 {/* Desktop: featured talk + insight articles + feature strip */}
                 <div className="hidden lg:block">
                     <div className="mt-10 grid grid-cols-2 gap-5">
-                        <FeaturedTalkCard />
+                        <FeaturedTalkCard article={selectedArticle} />
 
                         <div className="grid grid-cols-2 gap-4">
                             {insightArticles.map((article) => (
                                 <InsightArticleCard
                                     key={article.title}
                                     article={article}
+                                    isSelected={
+                                        selectedArticle.title === article.title
+                                    }
+                                    onSelect={() => setSelectedArticle(article)}
                                 />
                             ))}
                         </div>
@@ -140,7 +152,7 @@ const CareerInsightsSection: FC = () => {
 
                 {/* Mobile / tablet: featured talk + insight rows + feature strip */}
                 <div className="mt-10 lg:hidden">
-                    <MobileFeaturedTalkCard />
+                    <MobileFeaturedTalkCard article={selectedArticle} />
 
                     <span
                         className="
@@ -161,6 +173,10 @@ const CareerInsightsSection: FC = () => {
                             <MobileInsightRow
                                 key={article.title}
                                 article={article}
+                                isSelected={
+                                    selectedArticle.title === article.title
+                                }
+                                onSelect={() => setSelectedArticle(article)}
                             />
                         ))}
                     </div>
@@ -246,7 +262,7 @@ const CareerInsightsSection: FC = () => {
                             aria-hidden="true"
                             className="h-5 w-5"
                             strokeWidth={1.8}
-                    />
+                        />
 
                         <span>Book a Track Counselling Call</span>
                     </Link>

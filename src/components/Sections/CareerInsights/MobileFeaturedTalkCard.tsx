@@ -2,9 +2,11 @@ import { Clock, Play } from 'lucide-react';
 import Image from 'next/image';
 import { FC } from 'react';
 
-import { featuredTalk } from '@/utils/careerInsightsItems';
+import { type InsightArticle } from '@/types/careerInsights';
 
-const MobileFeaturedTalkCard: FC = () => {
+const MobileFeaturedTalkCard: FC<{ article: InsightArticle }> = ({
+    article,
+}) => {
     return (
         <div
             className="
@@ -57,7 +59,7 @@ const MobileFeaturedTalkCard: FC = () => {
                     text-(--career-insights-video-badge-text)
                 "
             >
-                {featuredTalk.badge}
+                {article.label}
             </span>
 
             <h3
@@ -71,7 +73,7 @@ const MobileFeaturedTalkCard: FC = () => {
                     text-(--career-insights-video-text)
                 "
             >
-                {featuredTalk.title}
+                {article.title}
             </h3>
 
             <span
@@ -85,21 +87,9 @@ const MobileFeaturedTalkCard: FC = () => {
                 "
             />
 
-            <p
-                className="
-                    mt-2
-                    max-w-28
-                    text-[14.5px]
-                    leading-[1.6]
-                    text-(--career-insights-video-muted-text)
-                "
-            >
-                {featuredTalk.descriptionMobile}
-            </p>
-
             <button
                 type="button"
-                aria-label="Play featured career insight video"
+                aria-label={`Play ${article.label} video`}
                 className="
                     absolute
                     top-1/2
@@ -142,31 +132,28 @@ const MobileFeaturedTalkCard: FC = () => {
                         text-(--career-insights-video-muted-text)
                     "
                 >
-                    {featuredTalk.duration}
+                    {article.duration}
                 </span>
             </div>
 
             <div className="mt-3 flex flex-wrap gap-2">
-                {featuredTalk.tags.map((tag) => (
-                    <span
-                        key={tag}
-                        className="
-                            inline-flex
-                            min-h-7
-                            items-center
-                            rounded-full
-                            border
-                            border-(--career-insights-video-tag-border)
-                            bg-(--career-insights-video-tag-bg)
-                            px-3
-                            text-[12.5px]
-                            font-semibold
-                            text-(--career-insights-video-tag-text)
-                        "
-                    >
-                        {tag}
-                    </span>
-                ))}
+                <span
+                    className="
+                        inline-flex
+                        min-h-7
+                        items-center
+                        rounded-full
+                        border
+                        border-(--career-insights-video-tag-border)
+                        bg-(--career-insights-video-tag-bg)
+                        px-3
+                        text-[12.5px]
+                        font-semibold
+                        text-(--career-insights-video-tag-text)
+                    "
+                >
+                    {article.tag}
+                </span>
             </div>
         </div>
     );

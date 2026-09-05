@@ -48,8 +48,8 @@ const SpecialistsFeatureStrip: FC = () => {
                         <span
                             className={`
                                 flex
-                                h-11
-                                w-11
+                                h-16
+                                w-16
                                 shrink-0
                                 items-center
                                 justify-center
@@ -59,7 +59,7 @@ const SpecialistsFeatureStrip: FC = () => {
                         >
                             <Icon
                                 aria-hidden="true"
-                                className="h-5.5 w-5.5"
+                                className="h-8 w-8"
                                 strokeWidth={1.8}
                             />
                         </span>
