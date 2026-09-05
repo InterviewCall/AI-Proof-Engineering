@@ -12,8 +12,12 @@ const TrackMetaItem: FC<TrackMetaItemProps> = ({
             className={`
                 flex
                 items-center
-                justify-start
+                justify-center
+<<<<<<< HEAD
+                gap-1
+=======
                 gap-2
+>>>>>>> 073a7f278414f6bca72282df00e8c0bd0857ca43
                 overflow-hidden
                 rounded-[7px]
                 border
@@ -37,7 +41,7 @@ const TrackMetaItem: FC<TrackMetaItemProps> = ({
                 strokeWidth={1.8}
             />
 
-            <span className="whitespace-normal break-words text-left text-[14px] font-bold leading-tight">
+            <span className="break-words text-center text-[12px] font-bold leading-tight">
                 {label}
             </span>
         </div>
