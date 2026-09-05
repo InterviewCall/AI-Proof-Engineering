@@ -70,7 +70,7 @@ const ProgramAudienceBand: FC = () => {
                                 inline-flex
                                 h-[65px]
                                 w-fit
-                                max-w-[220px]
+                                max-w-[230px]
                                 shrink-0
                                 items-center
                                 gap-2
