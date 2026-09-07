@@ -152,6 +152,7 @@ const FeaturedAlumniCard: FC<FeaturedAlumniCardProps> = ({ story }) => {
                             grid
                             grid-cols-1
                             gap-y-4
+                            max-sm:gap-y-7
                             lg:grid-cols-[1fr_24px_1.32fr_24px_0.9fr]
                             lg:items-stretch
                             lg:gap-x-2
