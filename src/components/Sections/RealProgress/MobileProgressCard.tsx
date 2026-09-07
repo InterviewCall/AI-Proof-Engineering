@@ -102,6 +102,7 @@ const MobileProgressCard: FC<{ proof: MobileProgressProof }> = ({ proof }) => {
                             text-[12px]
                             font-bold
                             text-(--progress-section-mobile-before-text)
+                            
                         "
                     >
                         Before
