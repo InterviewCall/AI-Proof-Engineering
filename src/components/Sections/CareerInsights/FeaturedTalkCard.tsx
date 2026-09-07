@@ -19,7 +19,8 @@ const FeaturedTalkCard: FC<FeaturedTalkCardProps> = ({ article }) => {
                 relative
                 isolate
                 flex
-                min-h-full
+                min-h-[420px]
+                sm:min-h-[460px]
                 flex-col
                 justify-between
                 overflow-hidden
@@ -62,7 +63,7 @@ const FeaturedTalkCard: FC<FeaturedTalkCardProps> = ({ article }) => {
                         rounded-md
                         bg-(--career-insights-video-badge-bg)
                         px-3
-                        text-[12.5px]
+                        text-[13px]
                         font-bold
                         uppercase
                         tracking-[0.03em]
@@ -75,13 +76,13 @@ const FeaturedTalkCard: FC<FeaturedTalkCardProps> = ({ article }) => {
                 <h3
                     className="
                         mt-4
-                        max-w-90
-                        text-[28px]
+                        max-w-100
+                        text-[34px]
                         font-bold
                         leading-[1.2]
                         tracking-[-1%]
                         text-(--career-insights-video-text)
-                        sm:text-[30px]
+                        sm:text-[38px]
                     "
                 >
                     {article.title}
@@ -93,11 +94,11 @@ const FeaturedTalkCard: FC<FeaturedTalkCardProps> = ({ article }) => {
                 aria-label={`Play ${article.label} video`}
                 className="
                     absolute
-                    top-1/2
+                    top-[65%]
                     left-1/2
                     flex
-                    h-16
-                    w-16
+                    h-20
+                    w-20
                     shrink-0
                     -translate-x-1/2
                     -translate-y-1/2
@@ -114,7 +115,7 @@ const FeaturedTalkCard: FC<FeaturedTalkCardProps> = ({ article }) => {
             >
                 <Play
                     aria-hidden="true"
-                    className="ml-0.5 h-6 w-6 fill-current"
+                    className="ml-0.5 h-7 w-7 fill-current"
                     strokeWidth={0}
                 />
             </button>
@@ -126,13 +127,13 @@ const FeaturedTalkCard: FC<FeaturedTalkCardProps> = ({ article }) => {
                     <div className="flex items-center gap-2">
                         <Clock
                             aria-hidden="true"
-                            className="h-4 w-4 text-(--career-insights-video-muted-text)"
+                            className="h-4.5 w-4.5 text-(--career-insights-video-muted-text)"
                             strokeWidth={1.9}
                         />
 
                         <span
                             className="
-                                text-[13.5px]
+                                text-[14.5px]
                                 font-medium
                                 text-(--career-insights-video-muted-text)
                             "
@@ -152,7 +153,7 @@ const FeaturedTalkCard: FC<FeaturedTalkCardProps> = ({ article }) => {
                                 border-(--career-insights-video-tag-border)
                                 bg-(--career-insights-video-tag-bg)
                                 px-3
-                                text-[12.5px]
+                                text-[13px]
                                 font-semibold
                                 text-(--career-insights-video-tag-text)
                             "
