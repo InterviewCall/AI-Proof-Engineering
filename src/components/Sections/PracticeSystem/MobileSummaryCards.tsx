@@ -76,6 +76,7 @@ const MobileSummaryCards: FC = () => {
                         <p
                             className="
                                 mt-2
+                                break-words
                                 text-[13px]
                                 leading-[1.4]
                                 text-(--practice-section-card-text)
