@@ -44,6 +44,9 @@ export const footerColumns: FooterColumn[] = [
             { label: 'Contact Us', href: '#callback' },
         ],
     },
+
+
+
 ];
 
 export const socialLinks: SocialLink[] = [

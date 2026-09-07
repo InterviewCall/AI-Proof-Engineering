@@ -178,7 +178,7 @@ const FaqSection: FC = () => {
                                 text-(--faq-section-title-text)
                             "
                         >
-                            Questions Before You Apply?
+                            Frequently Asked Question
                         </h2>
 
                         <p
