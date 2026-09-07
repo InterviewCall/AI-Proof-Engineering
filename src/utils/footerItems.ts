@@ -41,10 +41,10 @@ export const footerColumns: FooterColumn[] = [
         title: 'Company',
         links: [
             { label: 'About InterviewCall', href: '#program' },
+            { label: 'Contact Us', href: '#callback' },
             { label: 'Terms & Conditions', href: '#terms' },
             { label: 'Privacy Policy', href: '#privacy' },
             { label: 'Refund Policy', href: '#refund' },
-            { label: 'Contact Us', href: '#callback' },
         ],
     },
 
