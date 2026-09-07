@@ -21,6 +21,7 @@ import {
 
 export const specialists: Specialist[] = [
     {
+        id: 'dsa',
         number: 1,
         name: 'DSA & Problem Solving Mentor',
         description:
@@ -29,6 +30,7 @@ export const specialists: Specialist[] = [
         accent: 'blue',
     },
     {
+        id: 'system-design',
         number: 2,
         name: 'System Design Mentor',
         description:
@@ -37,6 +39,7 @@ export const specialists: Specialist[] = [
         accent: 'green',
     },
     {
+        id: 'ai-engineering',
         number: 3,
         name: 'AI Engineering Mentor',
         description:
@@ -45,6 +48,7 @@ export const specialists: Specialist[] = [
         accent: 'purple',
     },
     {
+        id: 'mock-interview',
         number: 4,
         name: 'Mock Interview Mentor',
         description:
@@ -53,6 +57,7 @@ export const specialists: Specialist[] = [
         accent: 'orange',
     },
     {
+        id: 'capstone-review',
         number: 5,
         name: 'Capstone Review Mentor',
         description:
@@ -61,7 +66,6 @@ export const specialists: Specialist[] = [
         accent: 'blue',
     },
 ];
-
 export const mentorshipSystemPoints: MentorshipSystemPoint[] = [
     {
         label: 'DSA and problem-solving guidance',
@@ -123,37 +127,41 @@ export const specialistFeatureStrip: SpecialistFeatureStripItem[] = [
 
 export const mobileSpecialists: MobileSpecialist[] = [
     {
+        id: 'dsa',
         title: 'DSA & Problem Solving',
         tags: ['Patterns', 'Complexity', 'Debugging'],
         icon: Code2,
         accent: 'blue',
     },
     {
+        id: 'system-design',
         title: 'System Design',
         tags: ['HLD/LLD', 'Scaling', 'Trade-offs'],
         icon: Layers,
         accent: 'green',
     },
     {
+        id: 'ai-engineering',
         title: 'AI Engineering',
         tags: ['AI Workflows', 'Code Review', 'Agents'],
         icon: Sparkles,
         accent: 'purple',
     },
     {
+        id: 'mock-interview',
         title: 'Mock Interviews',
         tags: ['Communication', 'Technical Rounds', 'Feedback'],
         icon: MessageSquare,
         accent: 'orange',
     },
     {
+        id: 'capstone-review',
         title: 'Capstone Review',
         tags: ['Architecture', 'Documentation', 'Demo'],
         icon: FolderClosed,
         accent: 'blue',
     },
 ];
-
 export const mobileSpecialistFeatureStrip: MobileFeatureStripItem[] = [
     {
         title: 'Live Guidance',

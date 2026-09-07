@@ -1,5 +1,5 @@
 import { ChevronRight } from 'lucide-react';
-import { FC } from 'react';
+import { FC, KeyboardEvent } from 'react';
 
 import {
     type MobileSpecialist,
@@ -15,14 +15,33 @@ const iconStyles: Record<SpecialistAccent, string> = {
         'bg-(--specialist-card-orange-bg) text-(--specialist-card-orange-text)',
 };
 
-const MobileMentorRow: FC<{ specialist: MobileSpecialist }> = ({
+type MobileMentorRowProps = {
+    specialist: MobileSpecialist;
+    onClick?: () => void;
+};
+
+const MobileMentorRow: FC<MobileMentorRowProps> = ({
     specialist,
+    onClick,
 }) => {
     const Icon = specialist.icon;
 
+    const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+        if (!onClick) return;
+
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            onClick();
+        }
+    };
+
     return (
         <div
-            className="
+            role={onClick ? 'button' : undefined}
+            tabIndex={onClick ? 0 : undefined}
+            onClick={onClick}
+            onKeyDown={handleKeyDown}
+            className={`
                 flex
                 min-w-0
                 items-center
@@ -36,7 +55,20 @@ const MobileMentorRow: FC<{ specialist: MobileSpecialist }> = ({
                 sm:gap-4
                 sm:px-5
                 sm:py-4
-            "
+                ${
+                    onClick
+                        ? `
+                    cursor-pointer
+                    transition-colors
+                    duration-150
+                    active:bg-(--specialist-card-active-bg,theme(colors.gray.50))
+                    focus-visible:outline-none
+                    focus-visible:ring-4
+                    focus-visible:ring-(--focus-ring-color)
+                `
+                        : ''
+                }
+            `}
         >
             {/* Specialist icon */}
             <span

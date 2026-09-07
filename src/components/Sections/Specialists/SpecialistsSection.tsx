@@ -2,13 +2,14 @@ import { ArrowRight, CalendarDays, Download, Users } from 'lucide-react';
 import Link from 'next/link'; 
 import { FC } from 'react';
 
-import { mobileSpecialists, specialists } from '@/utils/specialistsItems';
+import { specialists } from '@/utils/specialistsItems';
 
 import MentorshipSystemPanel from './MentorshipSystemPanel';
-import MobileMentorRow from './MobileMentorRow';
 import MobileSpecialistsFeatureStrip from './MobileSpecialistsFeatureStrip';
+import MobileSpecialistsList from './MobileSpecialistsList';
 import SpecialistCard from './SpecialistCard';
 import SpecialistsFeatureStrip from './SpecialistsFeatureStrip';
+
 
 const SpecialistsSection: FC = () => {
     return (
@@ -246,14 +247,7 @@ const SpecialistsSection: FC = () => {
                         Mentor Specialists
                     </span>
 
-                    <div className="mt-4 space-y-3">
-                        {mobileSpecialists.map((specialist) => (
-                            <MobileMentorRow
-                                key={specialist.title}
-                                specialist={specialist}
-                            />
-                        ))}
-                    </div>
+                    <MobileSpecialistsList />
 
                     <div className="mt-6">
                         <MobileSpecialistsFeatureStrip />
