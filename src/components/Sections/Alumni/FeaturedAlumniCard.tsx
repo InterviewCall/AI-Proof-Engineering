@@ -384,12 +384,15 @@ const FeaturedAlumniCard: FC<FeaturedAlumniCardProps> = ({ story }) => {
                         type="button"
                         className="
                             group
-                            mt-4
+                            mt-6
+                            max-sm:mt-16
+                            max-sm:!mb-0
                             inline-flex
                             min-h-9
                             cursor-pointer
                             items-center
                             gap-2.5
+                            whitespace-nowrap
                             rounded-md
                             border
                             border-(--alumni-featured-cta-border)
