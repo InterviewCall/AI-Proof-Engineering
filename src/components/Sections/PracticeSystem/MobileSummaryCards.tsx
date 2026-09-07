@@ -33,7 +33,7 @@ const MobileSummaryCards: FC = () => {
                             border
                             border-(--practice-section-card-border)
                             bg-(--practice-section-card-bg)
-                            p-5
+                            p-2
                             text-center
                         "
                     >
@@ -76,7 +76,6 @@ const MobileSummaryCards: FC = () => {
                         <p
                             className="
                                 mt-2
-                                break-words
                                 text-[13px]
                                 leading-[1.4]
                                 text-(--practice-section-card-text)

@@ -92,11 +92,12 @@ const RealProgressSection: FC = () => {
                             tracking-[-2%]
                             text-(--progress-section-title-text)
                             lg:hidden
+                            whitespace-nowrap
                         "
                     >
-                        Before
+                        Before{' '}
 
-                        <span className="block text-(--progress-section-title-highlight)">
+                        <span className="text-(--progress-section-title-highlight)">
                             and After
                         </span>
                     </h2>
