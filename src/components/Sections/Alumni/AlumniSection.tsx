@@ -147,10 +147,10 @@ const AlumniSection: FC = () => {
 
                     <div className="mt-4">
                         <AlumniMobileCarousel
-    stories={alumniStories}
-    selectedAlumni={selectedAlumni}
-    onSelect={setSelectedAlumni}
-/>
+                            stories={alumniStories}
+                            selectedAlumni={selectedAlumni}
+                            onSelect={setSelectedAlumni}
+                        />
                     </div>
                 </div>
 
