@@ -178,7 +178,7 @@ const FaqSection: FC = () => {
                                 text-(--faq-section-title-text)
                             "
                         >
-                            Questions Before You Apply?
+                            Frequently Asked <span className="text-(--color-brand-700)">Questions</span>
                         </h2>
 
                         <p
