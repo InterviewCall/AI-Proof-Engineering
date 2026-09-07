@@ -129,7 +129,7 @@ const EcosystemSection: FC = () => {
                     <span className="mt-2 block h-1 w-9 rounded-full bg-(--color-blue)" />
 
                     <div className="mt-4 space-y-3">
-                        {programUpdates.slice(0, 2).map((update) => (
+                        {programUpdates.slice(0, 3).map((update) => (
                             <MobileUpdateCard key={update.title} update={update} />
                         ))}
                     </div>
@@ -137,7 +137,7 @@ const EcosystemSection: FC = () => {
                     <div className="mt-5">
                         <MobileEcosystemPanel />
                     </div>
-
+                    
                     <Link
                         href="#ecosystem"
                         className="
