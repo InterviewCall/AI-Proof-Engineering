@@ -17,47 +17,39 @@ const MobileProgressCard: FC<{ proof: MobileProgressProof }> = ({ proof }) => {
     return (
         <article
             className="
-                flex
-                flex-wrap
-                items-center
-                gap-3
+                overflow-hidden
                 rounded-2xl
                 border
                 border-(--progress-section-card-border)
                 bg-(--progress-section-card-bg)
-                p-4
-                sm:flex-nowrap
             "
         >
-            {/* Left: icon + title */}
+            {/* Top: icon + title */}
             <div
                 className="
                     flex
-                    min-w-0
-                    w-[45%]
-                    shrink-0
-                    items-center
-                    gap-2.5
-                    sm:w-auto
-                    sm:flex-1
+                    items-center  
+                    justify-center      
+                    gap-3
+                    px-4
+                    py-4
                 "
             >
                 <span
-                    className="
+                    className={`
                         flex
-                        h-14
-                        w-14
+                        h-12
+                        w-12
                         shrink-0
                         items-center
                         justify-center
                         rounded-full
-                        bg-(--progress-section-card-one-bg)
-                        text-(--progress-section-card-one-accent)
-                    "
+                        ${iconAccentStyles[proof.accent]}
+                    `}
                 >
                     <Icon
                         aria-hidden="true"
-                        className="h-7 w-7"
+                        className="h-6 w-6"
                         strokeWidth={1.7}
                     />
                 </span>
@@ -65,7 +57,8 @@ const MobileProgressCard: FC<{ proof: MobileProgressProof }> = ({ proof }) => {
                 <h3
                     className="
                         min-w-0
-                        text-[13px]
+                        text-center
+                        text-[15px]
                         font-bold
                         leading-[1.2]
                         text-(--progress-section-card-title)
@@ -75,34 +68,32 @@ const MobileProgressCard: FC<{ proof: MobileProgressProof }> = ({ proof }) => {
                 </h3>
             </div>
 
-            {/* Right: Before → After */}
+            {/* Before → After */}
             <div
                 className="
-                    flex
-                    min-w-0
-                    flex-1
+                    grid
+                    grid-cols-[1fr_auto_1fr]
                     items-start
-                    justify-end
-                    gap-2
-                    border-l
+                    border-t
                     border-(--progress-section-sidebar-divider)
-                    pl-3
+                    px-4
+                    py-3
                 "
             >
                 {/* Before */}
-                <div className="min-w-0 flex-1 text-left">
+                <div className="min-w-0 text-center">
                     <span
                         className="
                             inline-flex
                             min-h-5.5
                             items-center
+                            justify-center
                             rounded-full
                             bg-(--progress-section-mobile-before-bg)
-                            px-2.5
+                            px-2
                             text-[12px]
                             font-bold
                             text-(--progress-section-mobile-before-text)
-                            
                         "
                     >
                         Before
@@ -111,7 +102,7 @@ const MobileProgressCard: FC<{ proof: MobileProgressProof }> = ({ proof }) => {
                     <p
                         className="
                             mt-1
-                            text-[13px]
+                            text-[12px]
                             leading-[1.3]
                             text-(--progress-section-card-text)
                         "
@@ -121,28 +112,39 @@ const MobileProgressCard: FC<{ proof: MobileProgressProof }> = ({ proof }) => {
                 </div>
 
                 {/* Arrow */}
-                <ArrowRight
-                    aria-hidden="true"
+                <div
                     className="
-                        mt-8
-                        h-4
-                        w-4
-                        shrink-0
-                        text-(--progress-section-before-text)
+                        flex
+                        h-full
+                        items-center
+                        justify-center
+                        px-2
+                        pt-5
                     "
-                    strokeWidth={2.2}
-                />
+                >
+                    <ArrowRight
+                        aria-hidden="true"
+                        className="
+                            h-4
+                            w-4
+                            shrink-0
+                            text-(--progress-section-before-text)
+                        "
+                        strokeWidth={2.2}
+                    />
+                </div>
 
                 {/* After */}
-                <div className="min-w-0 flex-1 text-left">
+                <div className="min-w-0 text-center">
                     <span
                         className="
                             inline-flex
                             min-h-5.5
                             items-center
+                            justify-center
                             rounded-full
                             bg-(--progress-section-after-bg)
-                            px-2.5
+                            px-2
                             text-[12px]
                             font-bold
                             text-(--progress-section-after-text)
@@ -154,7 +156,7 @@ const MobileProgressCard: FC<{ proof: MobileProgressProof }> = ({ proof }) => {
                     <p
                         className="
                             mt-1
-                            text-[13px]
+                            text-[12px]
                             leading-[1.3]
                             text-(--progress-section-card-text)
                         "
