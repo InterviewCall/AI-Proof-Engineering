@@ -18,6 +18,8 @@ import { journeyStats, phases } from '@/utils/structuredJourneyItems';
 
 import { PhaseDetails } from './PhaseDetails';
 
+const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
+
 const StructuredJourneySection: FC = () => {
     const [activePhaseId, setActivePhaseId] =
         useState<PhaseId>('03');
@@ -701,7 +703,9 @@ const StructuredJourneySection: FC = () => {
                     </a>
 
                     <Link
-                        href="#all-phases"
+                        href={readinessCheckUrl ?? "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="
                             group
                             inline-flex

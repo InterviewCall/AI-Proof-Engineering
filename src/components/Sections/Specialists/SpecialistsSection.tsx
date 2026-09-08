@@ -10,6 +10,7 @@ import MobileSpecialistsList from './MobileSpecialistsList';
 import SpecialistCard from './SpecialistCard';
 import SpecialistsFeatureStrip from './SpecialistsFeatureStrip';
 
+const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
 
 const SpecialistsSection: FC = () => {
     return (
@@ -188,7 +189,9 @@ const SpecialistsSection: FC = () => {
                         </Link>
 
                         <a
-                            href="/documents/ai-engineering-curriculum.pdf"
+                            href={readinessCheckUrl ?? "#"}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             download
                             className="
                                 inline-flex
@@ -292,7 +295,9 @@ const SpecialistsSection: FC = () => {
                     </Link>
 
                     <a
-                        href="/documents/ai-engineering-curriculum.pdf"
+                        href={readinessCheckUrl ?? "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         download
                         className="
                             inline-flex

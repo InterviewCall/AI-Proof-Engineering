@@ -14,6 +14,8 @@ import { FC, useState } from 'react';
 
 import { footerColumns, socialLinks } from '@/utils/footerItems';
 
+const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
+
 const brandTags = ['Skills', 'Practice', 'Feedback', 'Proof'];
 
 const Footer: FC = () => {
@@ -125,7 +127,9 @@ const Footer: FC = () => {
 
                     <div className="flex w-full flex-col gap-3 sm:flex-row lg:w-auto lg:shrink-0">
                         <Link
-                            href="#callback"
+                            href={readinessCheckUrl ?? "#"}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="
                                 group
                                 inline-flex
@@ -505,7 +509,9 @@ const Footer: FC = () => {
 
                         <div className="flex flex-col gap-3 sm:flex-row">
                             <Link
-                                href="#callback"
+                                href={readinessCheckUrl ?? "#"}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="
                                     group
                                     inline-flex

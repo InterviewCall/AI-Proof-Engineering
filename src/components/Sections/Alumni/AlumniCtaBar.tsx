@@ -2,6 +2,7 @@ import { Download, CalendarDays, UsersRound } from 'lucide-react';
 import Link from 'next/link';
 import { FC } from 'react';
 const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
+
 const AlumniCtaBar: FC = () => {
     console.log("URL:", JSON.stringify(readinessCheckUrl));
     return (

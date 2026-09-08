@@ -16,6 +16,7 @@ import {
 } from '@/utils/capstoneProofItems';
 
 import MentorReviewedBadge from './MentorReviewedBadge';
+const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
 
 const accentStyles: Record<CapstoneAccent, string> = {
     blue: 'bg-(--proof-section-blue-bg) text-(--proof-section-blue-text)',
@@ -430,7 +431,9 @@ const CapstoneMobileSection: FC = () => {
                     </Link>
 
                     <a
-                        href="/documents/ai-engineering-curriculum.pdf"
+                        href={readinessCheckUrl ?? "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         download
                         className="
                             flex
