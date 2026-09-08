@@ -10,7 +10,8 @@ import {
     mobileFeatureStrip,
     practiceTaskByTab,
 } from "@/utils/practiceSystemItems";
-const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
+import DownloadCurriculumButton from "@/components/Shared/DownloadCurriculumButton";
+import BookTrackCounsellingButton from "@/components/Shared/BookTrackCounsellingButton";
 
 import FeatureStrip from "./FeatureStrip";
 import LabChecklistCard from "./LabChecklistCard";
@@ -228,90 +229,11 @@ const PracticeSystemSection: FC = () => {
                     "
                 >
                     {/* See How Practice Works */}
-                    <Link
-                        href="#specialists"
-                        className="
-                            group
-                            inline-flex
-                            min-h-11
-                            w-full
-                            items-center
-                            justify-center
-                            gap-2.5
-                            rounded-lg
-                            bg-[#0a53f2]
-                            px-4
-                            text-center
-                            text-[14px]
-                            font-semibold
-                            text-white
-                            shadow-[0_8px_20px_rgba(10,83,242,0.12)]
-                            transition-all
-                            duration-200
-                            hover:-translate-y-0.5
-                            hover:bg-[#0847d4]
-                            focus-visible:outline-none
-                            focus-visible:ring-4
-                            focus-visible:ring-[#0a53f2]/20
-                            lg:min-h-[58px]
-                            lg:w-[90%]
-                            lg:justify-self-start
-                            lg:gap-4
-                            lg:px-6
-                            lg:text-[15px]
-                        "
-                    >
-                        <Download
-                            aria-hidden="true"
-                            className="h-5 w-5 lg:h-7 lg:w-7"
-                            strokeWidth={1.9}
-                        />
-
-                        <span>Download Curriculum</span>
-                    </Link>
-
-                    {/* Download Curriculum */}
-                    <a
-                        href={readinessCheckUrl ?? "#"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        download
-                        className="
-                            inline-flex
-                            min-h-11
-                            w-full
-                            items-center
-                            justify-center
-                            gap-2.5
-                            rounded-lg
-                            border
-                            border-[#cbd8f0]
-                            bg-white
-                            px-4
-                            text-center
-                            text-[14px]
-                            font-semibold
-                            text-[#0a53f2]
-                            transition-colors
-                            hover:bg-[#f6f8fd]
-                            hover:-translate-y-0.5
-                            focus-visible:outline-none
-                            focus-visible:ring-4
-                            focus-visible:ring-[#0a53f2]/20
-                            lg:min-h-16
-                            lg:gap-4
-                            lg:px-6
-                            lg:text-[15px]
-                        "
-                    >
-                        <CalendarDays
-                            aria-hidden="true"
-                            className="h-5 w-5"
-                            strokeWidth={1.8}
-                        />
-
-                        <span>Book a Track Counselling Call</span>
-                    </a>
+                    {/* CTA */}
+                    <div className="mt-5 flex flex-col gap-3">
+                        <DownloadCurriculumButton />
+                        <BookTrackCounsellingButton />
+                    </div>
                 </div>
             </div>
         </section>

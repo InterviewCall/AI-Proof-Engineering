@@ -8,7 +8,8 @@ import CapstoneFeatureStrip from './CapstoneFeatureStrip';
 import CapstonePortfolioCard from './CapstonePortfolioCard'; 
 import ExampleProjectsPanel from './ExampleProjectsPanel'; 
 import CapstoneMobileSection from './CapstoneMobileSection'; 
-const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
+import DownloadCurriculumButton from '@/components/Shared/DownloadCurriculumButton';
+import BookTrackCounsellingButton from '@/components/Shared/BookTrackCounsellingButton';
 
 const CapstoneProofSection: FC = () => { 
     return ( 
@@ -131,111 +132,18 @@ const CapstoneProofSection: FC = () => {
                         <CapstoneFeatureStrip /> 
                     </div> 
  
-                    {/* CTA */} 
-                    <div 
-                        className=" 
-                            mx-auto 
-                            mt-5 
-                            grid 
-                            max-w-[735px] 
-                            gap-2.5 
-                            lg:mt-6 
-                            lg:grid-cols-[1.2fr_1fr] 
-                            lg:gap-1 
-                        " 
-                    > 
-                        {/* See Example Capstones */} 
-                        <Link 
-                            href="#capstone-proof" 
-                            className=" 
-                                group 
-                                inline-flex 
-                                min-h-11 
-                                w-full 
-                                items-center 
-                                justify-center 
-                                gap-2.5 
-                                rounded-lg 
-                                bg-(--button-primary-bg) 
-                                px-4 
-                                text-center 
-                                text-[14px] 
-                                font-semibold 
-                                text-(--button-primary-text) 
-                                transition-all 
-                                duration-200 
-                                hover:-translate-y-0.5 
-                                hover:bg-(--button-primary-bg-hover) 
-                                focus-visible:outline-none 
-                                focus-visible:ring-4 
-                                focus-visible:ring-(--focus-ring-color) 
-                                lg:min-h-[58px] 
-                                lg:w-[90%] 
-                                lg:justify-self-start 
-                                lg:gap-4 
-                                lg:px-6 
-                                lg:text-[15px] 
-                            " 
-                        > 
-                            <Download
-                            aria-hidden="true"
-                            className="h-5 w-5 lg:h-7 lg:w-7"
-                            strokeWidth={1.9}
-                        />
+                    {/* CTA */}
+                    <div className="mt-3 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:shrink-0">
+                        <DownloadCurriculumButton />
+                        <BookTrackCounsellingButton />
+                    </div>
 
-                            <span>Download Curriculum</span>
-                        </Link> 
- 
-                        {/* Download Curriculum */} 
-                        <a 
-                            href={readinessCheckUrl ?? "#"}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            download 
-                            className=" 
-                                inline-flex 
-                                min-h-11 
-                                w-full 
-                                items-center 
-                                justify-center 
-                                gap-2.5 
-                                rounded-lg 
-                                border 
-                                border-(--color-brand-300) 
-                                bg-white 
-                                px-4 
-                                text-center 
-                                text-[14px] 
-                                font-semibold 
-                                text-(--button-primary-bg) 
-                                transition-all 
-                                duration-200 
-                                hover:-translate-y-0.5 
-                                hover:bg-[#f6f8fd]
-                                focus-visible:outline-none 
-                                focus-visible:ring-4 
-                                focus-visible:ring-(--focus-ring-color) 
-                                lg:min-h-16 
-                                lg:gap-4 
-                                lg:px-6 
-                                lg:text-[15px] 
-                            " 
-                        > 
-                            <CalendarDays
-                                aria-hidden="true"
-                                className="h-5 w-5"
-                                strokeWidth={1.8}
-                        />
+                </div>{/* closes mx-auto w-full max-w-370 */}
+                </section>
 
-                            <span>Book a Track Counselling Call</span>
-                        </a> 
-                    </div> 
-                </div> 
-            </section> 
- 
-            <CapstoneMobileSection /> 
-        </> 
-    ); 
-}; 
+            <CapstoneMobileSection />
+        </>
+    );
+};
  
 export default CapstoneProofSection;

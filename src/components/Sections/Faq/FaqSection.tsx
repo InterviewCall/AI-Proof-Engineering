@@ -10,7 +10,8 @@ import FaqAccordionItem from './FaqAccordionItem';
 import FaqSidebar from './FaqSidebar';
 import FaqTrustBar from './FaqTrustBar';
 import MobileFaqAccordionItem from './MobileFaqAccordionItem';
-const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
+import BookTrackCounsellingButton from '@/components/Shared/BookTrackCounsellingButton';
+import DownloadCurriculumButton from '@/components/Shared/DownloadCurriculumButton';
 
 const FaqSection: FC = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -265,77 +266,14 @@ const FaqSection: FC = () => {
                             understanding the program before enrollment.
                         </p>
 
-                        <div className="mt-5 flex flex-col gap-3">
-                            <Link
-                                href="#callback"
-                                className="
-                                    group
-                                    inline-flex
-                                    min-h-12.5
-                                    w-full
-                                    items-center
-                                    justify-center
-                                    gap-3
-                                    rounded-lg
-                                    bg-(--faq-support-button-bg)
-                                    px-6
-                                    text-center
-                                    text-[15px]
-                                    font-semibold
-                                    text-(--faq-support-button-text)
-                                    transition-all
-                                    duration-200
-                                    hover:-translate-y-0.5
-                                    hover:bg-(--faq-support-button-hover-bg)
-                                    focus-visible:outline-none
-                                    focus-visible:ring-4
-                                    focus-visible:ring-(--focus-ring-color)
-                                "
-                            >
-                                <Download
-                                    aria-hidden="true"
-                                    className="h-5 w-5"
-                                    strokeWidth={1.8}
-                                />
+                        {/* CTA */}
+                    <div className="mt-5 flex flex-col gap-3">
 
-                                <span>Download Curriculum</span>
-                            </Link>
+                        <DownloadCurriculumButton />
 
-                            <Link
-                                href={readinessCheckUrl ?? "#"}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="
-                                    inline-flex
-                                    min-h-12.5
-                                    w-full
-                                    items-center
-                                    justify-center
-                                    gap-3
-                                    rounded-lg
-                                    border
-                                    border-(--color-brand-300)
-                                    bg-white
-                                    px-6
-                                    text-center
-                                    text-[15px]
-                                    font-semibold
-                                    text-(--color-brand-700)
-                                    transition-colors
-                                    hover:bg-(--color-brand-50)
-                                    focus-visible:outline-none
-                                    focus-visible:ring-4
-                                    focus-visible:ring-(--focus-ring-color)
-                                "
-                            >
-                                <CalendarDays
-                                    aria-hidden="true"
-                                    className="h-5 w-5"
-                                    strokeWidth={1.9}
-                                />
-                                <span>Book a Track Counselling Call</span>
-                            </Link>
-                        </div>
+                        <BookTrackCounsellingButton />
+
+                    </div>
                     </div>
                 </div>
             </div>

@@ -17,6 +17,8 @@ import { type PhaseId } from '@/types/structuredJourney';
 import { journeyStats, phases } from '@/utils/structuredJourneyItems';
 
 import { PhaseDetails } from './PhaseDetails';
+import DownloadCurriculumButton from '@/components/Shared/DownloadCurriculumButton';
+import BookTrackCounsellingButton from '@/components/Shared/BookTrackCounsellingButton';
 
 const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
 
@@ -645,10 +647,8 @@ const StructuredJourneySection: FC = () => {
                     </p>
                 </div>
 
-                {/* CTA bar */}
-                <div
-                    className="
-                        mx-auto
+                {/* CTA */}
+                    <div className="mx-auto
                         mt-5
                         grid
                         max-w-[735px]
@@ -657,100 +657,12 @@ const StructuredJourneySection: FC = () => {
                         lg:grid-cols-[1.2fr_1fr]
                         lg:gap-6
                         rounded-xl
-                        border
-                        border-blue-100
-                        p-3
-                    "
-                >
-                    <a
-                        href="/documents/ai-engineering-curriculum.pdf"
-                        download
-                        className="
-                            group
-                            inline-flex
-                            min-h-11
-                            w-full
-                            items-center
-                            justify-center
-                            gap-2.5
-                            rounded-lg
-                            bg-(--button-primary-bg)
-                            px-4
-                            text-center
-                            text-[14px]
-                            font-medium
-                            text-white
-                            transition-all
-                            duration-200
-                            hover:-translate-y-0.5
-                            hover:bg-(--button-primary-bg-hover)
-                            focus-visible:outline-none
-                            focus-visible:ring-4
-                            focus-visible:ring-(--focus-ring-color)
-                            lg:min-h-14
-                            lg:gap-4
-                            lg:px-6
-                            lg:text-[15px]
-                        "
-                    >
-                        <Download
-                            aria-hidden="true"
-                            className="h-5 w-5 lg:h-7 lg:w-7"
-                            strokeWidth={1.9}
-                        />
-
-                        <span>Download Curriculum</span>
-                    </a>
-
-                    <Link
-                        href={readinessCheckUrl ?? "#"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="
-                            group
-                            inline-flex
-                            min-h-11
-                            w-full
-                            items-center
-                            justify-center
-                            gap-2.5
-                            rounded-lg
-                            border
-                            border-(--color-brand-600)
-                            bg-white
-                            px-4
-                            text-center
-                            text-[14px]
-                            font-semibold
-                            text-(--color-brand-700)
-                            transition-all
-                            duration-200
-                            hover:-translate-y-0.5
-                            hover:bg-(--color-brand-50)
-                            focus-visible:outline-none
-                            focus-visible:ring-4
-                            focus-visible:ring-(--focus-ring-color)
-                            lg:min-h-14
-                            lg:gap-4
-                            lg:px-6
-                            lg:text-[15px]
-                        "
-                    >
-                        <CalendarDays
-                            aria-hidden="true"
-                            className="h-5 w-5"
-                            strokeWidth={1.8}
-                    />
-
-                        <span>Book a Track Counselling Call</span>
-
-                        <ArrowRight
-                            aria-hidden="true"
-                            className="h-4 w-4 lg:hidden"
-                            strokeWidth={1.8}
-                        />
-                    </Link>
-                </div>
+                    
+                        p-3">
+                            
+                        <DownloadCurriculumButton />
+                        <BookTrackCounsellingButton />
+                    </div>
             </div>
         </section>
     );

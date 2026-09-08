@@ -15,7 +15,8 @@ import type { FC } from 'react';
 import { type TrackDetailProps } from '@/types/careerPath';
 
 import TrackMetaItem from './TrackMetaItem';
-const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
+import DownloadCurriculumButton from '@/components/Shared/DownloadCurriculumButton';
+import BookTrackCounsellingButton from '@/components/Shared/BookTrackCounsellingButton';
 
 const TrackDetail: FC<TrackDetailProps> = ({
     track,
@@ -158,79 +159,12 @@ const TrackDetail: FC<TrackDetailProps> = ({
                     />
                 </div>
 
-                <div className="mt-4 flex flex-col gap-2">
-                    <a
-                        href={track.curriculumPath}
-                        download
-                        className="
-                            group
-                            inline-flex
-                            min-h-13.5
-                            w-full
-                            items-center
-                            justify-center
-                            gap-3
-                            rounded-[5px]
-                            bg-(--button-primary-bg)
-                            px-5
-                            text-center
-                            text-[16px]
-                            font-medium
-                            text-(--button-primary-text)
-                            transition-all
-                            duration-200
-                            hover:-translate-y-0.5
-                            hover:bg-(--button-primary-bg-hover)
-                            focus-visible:outline-none
-                            focus-visible:ring-4
-                            focus-visible:ring-(--focus-ring-color)
-                        "
-                    >
-                        <Download
-                            aria-hidden="true"
-                            className="h-5 w-5"
-                            strokeWidth={1.9}
-                        />
+                {/* CTA */}
+                
+                <div className="mt-5 flex flex-col gap-3">
+                    <DownloadCurriculumButton />
 
-                        <span>Download Curriculum</span>
-                    </a>
-
-                    <Link
-                        href={readinessCheckUrl ?? "#"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="
-                            inline-flex
-                            min-h-12.5
-                            w-full
-                            items-center
-                            justify-center
-                            gap-3
-                            rounded-[5px]
-                            border
-                            border-(--color-brand-600)
-                            bg-white
-                            px-5
-                            text-center
-                            text-[15px]
-                            font-semibold
-                            text-(--color-brand-700)
-                            transition-colors
-                            hover:bg-(--color-brand-50)
-                            hover:-translate-y-0.5
-                            focus-visible:outline-none
-                            focus-visible:ring-4
-                            focus-visible:ring-(--focus-ring-color)
-                        "
-                    >
-                        <CalendarDays
-                            aria-hidden="true"
-                            className="h-5 w-5"
-                            strokeWidth={1.8}
-                        />
-
-                        <span>Book a Track Counselling Call</span>
-                    </Link>
+                    <BookTrackCounsellingButton />
                 </div>
             </div>
         );
@@ -367,79 +301,13 @@ const TrackDetail: FC<TrackDetailProps> = ({
                 />
             </div>
 
-            <div className="mt-7 flex flex-col gap-3 xl:flex-row xl:justify-center xl:px-4">
-                <a
-                    href={track.curriculumPath}
-                    download
-                    className="
-                        group
-                        inline-flex
-                        min-h-14.5
-                        xl:w-[38%]
-                        items-center
-                        justify-center
-                        gap-4
-                        rounded-md
-                        bg-(--button-primary-bg)
-                        px-7
-                        text-[15px]
-                        font-medium
-                        text-(--button-primary-text)
-                        transition-all
-                        duration-200
-                        hover:-translate-y-0.5
-                        hover:bg-(--button-primary-bg-hover)
-                        focus-visible:outline-none
-                        focus-visible:ring-4
-                        focus-visible:ring-(--focus-ring-color)
-                    "
-                >
-                    <Download
-                        aria-hidden="true"
-                        className="h-5 w-5"
-                        strokeWidth={1.9}
-                    />
+            {/* CTA */}
+                
+                <div className="mt-5 flex flex-col gap-3">
+                    <DownloadCurriculumButton />
 
-                    <span>Download Curriculum</span>
-                </a>
-
-                <Link
-                    href={readinessCheckUrl ?? "#"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="
-                        inline-flex
-                        min-h-14.5
-                        xl:w-[38%]
-                        items-center
-                        justify-center
-                        gap-4
-                        rounded-md
-                        border
-                        border-(--color-brand-600)
-                        bg-white
-                        px-7
-                        text-[15px]
-                        font-semibold
-                        text-(--color-brand-700)
-                        transition-all
-                        duration-200
-                        hover:-translate-y-0.5
-                        hover:bg-(--color-brand-50)
-                        focus-visible:outline-none
-                        focus-visible:ring-4
-                        focus-visible:ring-(--focus-ring-color)
-                    "
-                >
-                    <CalendarDays
-                        aria-hidden="true"
-                        className="h-5 w-5"
-                        strokeWidth={1.8}
-                    />
-
-                    <span>Book a Track Counselling Call</span>
-                </Link>
-            </div>
+                    <BookTrackCounsellingButton />
+                </div>
         </div>
     );
 };

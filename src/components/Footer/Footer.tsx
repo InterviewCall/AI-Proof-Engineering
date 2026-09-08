@@ -13,6 +13,8 @@ import Link from 'next/link';
 import { FC, useState } from 'react';
 
 import { footerColumns, socialLinks } from '@/utils/footerItems';
+import DownloadCurriculumButton from '../Shared/DownloadCurriculumButton';
+import BookTrackCounsellingButton from '../Shared/BookTrackCounsellingButton';
 
 const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
 
@@ -507,90 +509,13 @@ const Footer: FC = () => {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-3 sm:flex-row">
-                            <Link
-                                href={readinessCheckUrl ?? "#"}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="
-                                    group
-                                    inline-flex
-                                    min-h-12.5
-                                    w-full
-                                    items-center
-                                    justify-center
-                                    gap-2.5
-                                    rounded-lg
-                                    bg-(--footer-cta-primary-button-bg)
-                                    px-6
-                                    text-center
-                                    text-[14px]
-                                    font-semibold
-                                    text-(--footer-cta-primary-button-text)
-                                    transition-all
-                                    duration-200
-                                    hover:bg-(--footer-cta-primary-button-hover-bg)
-                                    focus-visible:outline-none
-                                    focus-visible:ring-4
-                                    focus-visible:ring-(--focus-ring-color)
-                                "
-                            >
-                                <CalendarDays
-                                    aria-hidden="true"
-                                    className="h-5 w-5"
-                                    strokeWidth={1.8}
-                                />
+                        {/* CTA */}
+                
+                <div className="mt-5 flex flex-col gap-3">
+                    <DownloadCurriculumButton />
 
-                                <span>Book a Track Counselling Call</span>
-
-                                <ArrowRight
-                                    aria-hidden="true"
-                                    className="h-4 w-4"
-                                    strokeWidth={2}
-                                />
-                            </Link>
-
-                            <Link
-                                href="#curriculum"
-                                className="
-                                    inline-flex
-                                    min-h-12.5
-                                    w-full
-                                    items-center
-                                    justify-center
-                                    gap-2.5
-                                    rounded-lg
-                                    border
-                                    border-(--footer-cta-secondary-button-border)
-                                    bg-(--footer-cta-secondary-button-bg)
-                                    px-6
-                                    text-center
-                                    text-[14px]
-                                    font-semibold
-                                    text-(--footer-cta-secondary-button-text)
-                                    transition-all
-                                    duration-200
-                                    hover:-translate-y-0.5
-                                    hover:bg-(--footer-cta-secondary-button-hover-bg)
-                                    focus-visible:outline-none
-                                    focus-visible:ring-4
-                                    focus-visible:ring-(--focus-ring-color)
-                                "
-                            >
-                                <Download
-                                aria-hidden="true"
-                                className="h-5 w-5 lg:h-7 lg:w-7"
-                                strokeWidth={1.9}
-                        />
-
-                            <span>Download Curriculum</span>
-                                <ArrowRight
-                                    aria-hidden="true"
-                                    className="h-4 w-4"
-                                    strokeWidth={2}
-                                />
-                            </Link>
-                        </div>
+                    <BookTrackCounsellingButton />
+                </div>
                     </div>
 
                     {/* Brand */}

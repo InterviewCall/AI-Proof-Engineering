@@ -1,15 +1,10 @@
 import { CalendarDays } from 'lucide-react';
 import Link from 'next/link';
 import { FC } from 'react';
+
 const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
 
-type BookTrackCounsellingButtonProps = {
-    readinessCheckUrl?: string | null;
-};
-
-const BookTrackCounsellingButton: FC<BookTrackCounsellingButtonProps> = ({
-    readinessCheckUrl,
-}) => {
+const BookTrackCounsellingButton: FC = () => {
     return (
         <Link
             href={readinessCheckUrl ?? "#"}

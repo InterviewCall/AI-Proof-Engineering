@@ -142,66 +142,8 @@ const AssessmentBanner: FC = () => {
                 </div>
 
                 {/* CTA */}
-<<<<<<< HEAD
                 
                 <div className="mt-5 flex flex-col gap-3">
-                    <DownloadCurriculumButton />
-=======
-                <div
-                    className="
-                        mt-8
-                        flex
-                        items-center
-                        justify-center
-                        xl:col-start-3
-                        xl:row-span-2
-                        xl:mt-0
-                        xl:h-full
-                        xl:border-l
-                        xl:border-(--assessment-banner-divider)
-                        xl:pl-10
-                    "
-                >
-                    <Link
-                        href={readinessCheckUrl ?? "#"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        
-                        className="
-                            group
-                            inline-flex
-                            min-h-17
-                            w-full
-                            items-center
-                            justify-center
-                            gap-2
-                            rounded-xl
-                            bg-(--assessment-banner-button-bg)
-                            px-6
-                            text-center
-                            text-[16px]
-                            font-medium
-                            text-(--assessment-banner-button-text)
-                            shadow-[0_12px_30px_rgba(0,67,251,0.16)]
-                            transition-all
-                            duration-200
-                            hover:-translate-y-0.5
-                            hover:bg-(--assessment-banner-button-hover-bg)
-                            hover:shadow-[0_16px_35px_rgba(0,67,251,0.24)]
-                            focus-visible:outline-none
-                            focus-visible:ring-4
-                            focus-visible:ring-(--focus-ring-color)
-                            sm:min-h-19.5
-                            sm:text-[18px]
-                            xl:min-h-14
-                            xl:max-w-[250px]
-                            xl:text-[16px]
-                        "
-                    >
-                        <span className="xl:hidden">
-                            Check Your AI-Proof Score
-                        </span>
->>>>>>> 3fd116e7e01573c407e32a6884f04e9504f101a9
 
                     <BookTrackCounsellingButton />
                 </div>

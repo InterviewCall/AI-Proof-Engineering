@@ -16,7 +16,8 @@ import {
 } from '@/utils/capstoneProofItems';
 
 import MentorReviewedBadge from './MentorReviewedBadge';
-const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
+import DownloadCurriculumButton from '@/components/Shared/DownloadCurriculumButton';
+import BookTrackCounsellingButton from '@/components/Shared/BookTrackCounsellingButton';
 
 const accentStyles: Record<CapstoneAccent, string> = {
     blue: 'bg-(--proof-section-blue-bg) text-(--proof-section-blue-text)',
@@ -405,59 +406,11 @@ const CapstoneMobileSection: FC = () => {
                 </div>
 
                 {/* CTA */}
-                <div className="mt-2 space-y-2">
-                    <Link
-                        href="#capstone-proof"
-                        className="
-                            flex
-                            min-h-10
-                            items-center
-                            justify-center
-                            gap-2
-                            rounded-lg
-                            bg-(--button-primary-bg)
-                            px-4
-                            text-[14px]
-                            font-semibold
-                            text-(--button-primary-text)
-                        "
-                    >
-                        <Download
-                            aria-hidden="true"
-                            className="h-4 w-4"
-                            strokeWidth={1.9}
-                        />
-                        <span>Download Curriculum</span>
-                    </Link>
+                
+                <div className="mt-5 flex flex-col gap-3">
+                    <DownloadCurriculumButton />
 
-                    <a
-                        href={readinessCheckUrl ?? "#"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        download
-                        className="
-                            flex
-                            min-h-10
-                            items-center
-                            justify-center
-                            gap-2
-                            rounded-lg
-                            border
-                            border-(--color-brand-300)
-                            bg-white
-                            px-4
-                            text-[14px]
-                            font-semibold
-                            text-(--color-brand-700)
-                        "
-                    >
-                        <CalendarDays
-                            aria-hidden="true"
-                            className="h-4 w-4"
-                            strokeWidth={1.9}
-                        />
-                        <span>Book a Track Counselling Call</span>
-                    </a>
+                    <BookTrackCounsellingButton />
                 </div>
             </div>
         </section>

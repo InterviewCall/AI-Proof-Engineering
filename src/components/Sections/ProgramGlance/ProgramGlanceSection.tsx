@@ -1,7 +1,8 @@
 import { Download, CalendarDays, CalendarCheck, CircleArrowRight, UsersRound } from 'lucide-react';
 import Link from 'next/link';
 import { FC } from 'react';
-const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
+import DownloadCurriculumButton from '@/components/Shared/DownloadCurriculumButton';
+import BookTrackCounsellingButton from '@/components/Shared/BookTrackCounsellingButton';
 
 import { glanceInfoCards, mobileGlanceInfoCards } from '@/utils/programGlanceItems';
 
@@ -10,6 +11,8 @@ import MobileProgramOverviewPanel from './MobileProgramOverviewPanel';
 import ProgramAudienceBand from './ProgramAudienceBand';
 import ProgramInfoCard from './ProgramInfoCard';
 import ProgramOverviewPanel from './ProgramOverviewPanel';
+
+const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
 
 const ProgramGlanceSection: FC = () => {
     return (
@@ -152,88 +155,13 @@ const ProgramGlanceSection: FC = () => {
                         <ProgramAudienceBand />
                     </div>
 
-                    <div className="mx-auto mt-5 grid max-w-[735px] gap-2.5 lg:mt-6 lg:grid-cols-[1.2fr_1fr] lg:gap-6">
-                        <Link
-                            href="#build-proof"
-                            className="
-                                group
-                                inline-flex
-                                min-h-11
-                                w-full
-                                items-center
-                                justify-center
-                                gap-2.5
-                                rounded-lg
-                                bg-(--button-primary-bg)
-                                px-4
-                                text-center
-                                text-[14px]
-                                font-semibold
-                                text-(--button-primary-text)
-                                transition-all
-                                duration-200
-                                hover:-translate-y-0.5
-                                hover:bg-(--button-primary-bg-hover)
-                                focus-visible:outline-none
-                                focus-visible:ring-4
-                                focus-visible:ring-(--focus-ring-color)
-                                lg:min-h-16
-                                lg:gap-4
-                                lg:px-6
-                                lg:text-[16px]
-                                whitespace-nowrap
-                            "
-                        >
-                            <Download
-                                aria-hidden="true"
-                                className="h-5 w-5 lg:h-7 lg:w-7"
-                                strokeWidth={1.9}
-                        />
+                    {/* CTA */}
+                    <div className="mt-3 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:shrink-0">
 
-                            <span>Download Curriculum</span>
-                        </Link>
+                        <DownloadCurriculumButton />
 
-                        <Link
-                            href={readinessCheckUrl ?? "#"}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="
-                                inline-flex
-                                min-h-11
-                                w-full
-                                items-center
-                                justify-center
-                                gap-2.5
-                                rounded-lg
-                                border
-                                border-(--color-brand-300)
-                                bg-white
-                                px-4
-                                text-center
-                                text-[14px]
-                                font-semibold
-                                text-(--color-brand-700)
-                                transition-colors
-                                hover:bg-(--color-brand-50)
-                                hover:-translate-y-0.5
-                                focus-visible:outline-none
-                                focus-visible:ring-4
-                                focus-visible:ring-(--focus-ring-color)
-                                lg:min-h-16
-                                lg:gap-4
-                                lg:px-6
-                                lg:text-[16px]
-                                whitespace-nowrap
-                            "
-                        >
-                            <CalendarDays
-                            aria-hidden="true"
-                            className="h-5 w-5"
-                            strokeWidth={1.8}
-                    />
-
-                            <span>Book a Track Counselling Call</span>
-                        </Link>
+                        <BookTrackCounsellingButton />
+                        
                     </div>
                 </div>
 

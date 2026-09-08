@@ -2,6 +2,8 @@ import { Download, CalendarDays, UsersRound } from 'lucide-react';
 import Link from 'next/link';
 import { FC } from 'react';
 const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
+import DownloadCurriculumButton from '@/components/Shared/DownloadCurriculumButton';
+import BookTrackCounsellingButton from '@/components/Shared/BookTrackCounsellingButton';
 
 const AlumniCtaBar: FC = () => {
     console.log("URL:", JSON.stringify(readinessCheckUrl));
@@ -75,87 +77,13 @@ const AlumniCtaBar: FC = () => {
                 </div>
             </div>
 
-            <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:shrink-0">
-                <Link
-                    href="#alumni"
-                    className="
-                        group
-                        inline-flex
-                        min-h-12.5
-                        w-full
-                        items-center
-                        justify-center
-                        gap-2.5
-                        rounded-lg
-                        border
-                        border-[#144EFE]
-                        bg-(--alumni-cta-secondary-button-bg)
-                        px-6
-                        text-center
-                        text-[14px]
-                        font-semibold
-                        whitespace-nowrap
-                        text-(--alumni-cta-secondary-button-text)
-                        transition-all
-                        duration-200
-                        hover:-translate-y-0.5
-                        hover:bg-(--alumni-cta-secondary-button-hover-bg)
-                        focus-visible:outline-none
-                        focus-visible:ring-4
-                        focus-visible:ring-(--focus-ring-color)
-                        sm:w-auto
-                        sm:min-w-[248px]
-                    "
-                >
-                    <Download
-                            aria-hidden="true"
-                            className="h-5 w-5 lg:h-7 lg:w-7"
-                            strokeWidth={1.9}
-                        />
+            {/* CTA */}
+                
+                <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:shrink-0">
+                    <DownloadCurriculumButton />
 
-                        <span>Download Curriculum</span>
-                </Link>
-
-                <Link
-                    href={readinessCheckUrl ?? "#"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="
-                        group
-                        inline-flex
-                        min-h-12.5
-                        w-full
-                        items-center
-                        justify-center
-                        gap-2.5
-                        rounded-lg
-                        bg-(--alumni-cta-primary-button-bg)
-                        px-6
-                        text-center
-                        text-[14px]
-                        font-semibold
-                        whitespace-nowrap
-                        text-(--alumni-cta-primary-button-text)
-                        transition-all
-                        duration-200
-                        hover:-translate-y-0.5
-                        hover:bg-(--alumni-cta-primary-button-hover-bg)
-                        focus-visible:outline-none
-                        focus-visible:ring-4
-                        focus-visible:ring-(--focus-ring-color)
-                        sm:w-auto
-                        sm:min-w-[248px]
-                    "
-                >
-                    <CalendarDays
-                        aria-hidden="true"
-                        className="h-5 w-5"
-                        strokeWidth={1.8}
-                    />
-
-                            <span>Book a Track Counselling Call</span>
-                </Link>
-            </div>
+                    <BookTrackCounsellingButton />
+                </div>
         </div>
     );
 };

@@ -9,6 +9,8 @@ import MobileProgressFeatureStrip from './MobileProgressFeatureStrip';
 import ProgressFeatureStrip from './ProgressFeatureStrip';
 import ProgressProofCard from './ProgressProofCard';
 import ProgressSidebarPanel from './ProgressSidebarPanel';
+import DownloadCurriculumButton from '@/components/Shared/DownloadCurriculumButton';
+import BookTrackCounsellingButton from '@/components/Shared/BookTrackCounsellingButton';
 
 const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
 
@@ -193,90 +195,14 @@ const RealProgressSection: FC = () => {
                 </div>
 
                 {/* Desktop CTA */}
-                <div className="mx-auto mt-5 hidden max-w-[735px] gap-2.5 lg:mt-6 lg:grid lg:grid-cols-[1.2fr_1fr] lg:gap-6">
-                    <Link
-                        href="#real-progress"
-                        className="
-                            group
-                            inline-flex
-                            min-h-11
-                            w-full
-                            items-center
-                            justify-center
-                            gap-3
-                            rounded-lg
-                            border
-                            border-[#144EFE]
-                            bg-(--button-primary-bg)
-                            px-4
-                            text-center
-                            text-[14px]
-                            font-semibold
-                            text-(--button-primary-text)
-                            transition-all
-                            duration-200
-                            hover:-translate-y-0.5
-                            hover:bg-(--button-primary-bg-hover)
-                            focus-visible:outline-none
-                            focus-visible:ring-4
-                            focus-visible:ring-(--focus-ring-color)
-                            lg:min-h-16
-                            lg:gap-4
-                            lg:px-6
-                            lg:text-[16px]
-                        "
-                    >
-                        <Download
-                            aria-hidden="true"
-                            className="h-5 w-5 lg:h-7 lg:w-7"
-                            strokeWidth={1.9}
-                        />
+                {/* CTA */}
+                    <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:shrink-0">
 
-                        <span>Download Curriculum</span>
-                    </Link>
+                        <DownloadCurriculumButton />
 
-                    <a
-                        href={readinessCheckUrl ?? "#"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        download
-                        className="
-                            inline-flex
-                            min-h-11
-                            w-full
-                            items-center
-                            justify-center
-                            gap-3
-                            rounded-lg
-                            border
-                            border-(--color-brand-300)
-                            bg-white
-                            px-4
-                            text-center
-                            text-[14px]
-                            font-semibold
-                            text-(--color-brand-700)
-                            transition-colors
-                            hover:bg-(--color-brand-50)
-                            hover:-translate-y-0.5
-                            focus-visible:outline-none
-                            focus-visible:ring-4
-                            focus-visible:ring-(--focus-ring-color)
-                            lg:min-h-16
-                            lg:gap-4
-                            lg:px-6
-                            lg:text-[16px]
-                        "
-                    >
-                        <CalendarDays
-                            aria-hidden="true"
-                            className="h-5 w-5"
-                            strokeWidth={1.8}
-                    />
-
-                        <span>Book a Track Counselling Call</span>
-                    </a>
-                </div>
+                        <BookTrackCounsellingButton />
+                        
+                    </div>
 
                 {/* Mobile / tablet CTA */}
                 <div className="mt-8 flex flex-col gap-3 lg:hidden">
