@@ -9,6 +9,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { FC } from 'react';
 
+const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
+
 const HeroSection: FC = () => {
     return (
         <section
@@ -209,7 +211,9 @@ const HeroSection: FC = () => {
                     >
                         {/* Main score button */}
                         <Link
-                            href="#assessment"
+                            href={readinessCheckUrl ?? "#"}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="
                                 group
                                 inline-flex

@@ -5,6 +5,8 @@ import { FC } from 'react';
 
 import { assessmentBenefits } from '@/utils/assessmentBenefits';
 
+const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
+
 const AssessmentBanner: FC = () => {
     return (
         <section
@@ -154,7 +156,10 @@ const AssessmentBanner: FC = () => {
                     "
                 >
                     <Link
-                        href="#assessment-form"
+                        href={readinessCheckUrl ?? "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        
                         className="
                             group
                             inline-flex
