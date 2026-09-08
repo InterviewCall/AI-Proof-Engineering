@@ -10,6 +10,7 @@ import FaqAccordionItem from './FaqAccordionItem';
 import FaqSidebar from './FaqSidebar';
 import FaqTrustBar from './FaqTrustBar';
 import MobileFaqAccordionItem from './MobileFaqAccordionItem';
+const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
 
 const FaqSection: FC = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -301,7 +302,9 @@ const FaqSection: FC = () => {
                             </Link>
 
                             <Link
-                                href="#curriculum"
+                                href={readinessCheckUrl ?? "#"}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="
                                     inline-flex
                                     min-h-12.5

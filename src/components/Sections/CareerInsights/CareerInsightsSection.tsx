@@ -13,6 +13,7 @@ import InsightArticleCard from './InsightArticleCard';
 import MobileCareerInsightsFeatureStrip from './MobileCareerInsightsFeatureStrip';
 import MobileFeaturedTalkCard from './MobileFeaturedTalkCard';
 import MobileInsightRow from './MobileInsightRow';
+const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
 
 const CareerInsightsSection: FC = () => {
     const defaultArticle = insightArticles[0];
@@ -229,7 +230,9 @@ const CareerInsightsSection: FC = () => {
                     </Link>
 
                     <Link
-                        href="#career-insights"
+                        href={readinessCheckUrl ?? "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="
                             inline-flex
                             min-h-11

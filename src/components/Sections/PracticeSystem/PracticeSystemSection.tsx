@@ -10,6 +10,7 @@ import {
     mobileFeatureStrip,
     practiceTaskByTab,
 } from "@/utils/practiceSystemItems";
+const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
 
 import FeatureStrip from "./FeatureStrip";
 import LabChecklistCard from "./LabChecklistCard";
@@ -271,7 +272,9 @@ const PracticeSystemSection: FC = () => {
 
                     {/* Download Curriculum */}
                     <a
-                        href="/documents/ai-engineering-curriculum.pdf"
+                        href={readinessCheckUrl ?? "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         download
                         className="
                             inline-flex

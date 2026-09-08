@@ -23,6 +23,8 @@ import {
 import Link from 'next/link';
 import { FC } from 'react';
 
+const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
+
 interface GuidedStep {
     id: string;
     title: string;
@@ -975,7 +977,9 @@ const GuidedSystemSection: FC = () => {
                     </Link>
 
                     <a
-                        href="/documents/ai-engineering-curriculum.pdf"
+                        href={readinessCheckUrl ?? "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         download
                         className="
                             group

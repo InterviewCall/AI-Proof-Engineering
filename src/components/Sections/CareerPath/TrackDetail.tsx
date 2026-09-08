@@ -15,6 +15,7 @@ import type { FC } from 'react';
 import { type TrackDetailProps } from '@/types/careerPath';
 
 import TrackMetaItem from './TrackMetaItem';
+const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
 
 const TrackDetail: FC<TrackDetailProps> = ({
     track,
@@ -195,7 +196,9 @@ const TrackDetail: FC<TrackDetailProps> = ({
                     </a>
 
                     <Link
-                        href="#callback"
+                        href={readinessCheckUrl ?? "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="
                             inline-flex
                             min-h-12.5
@@ -401,7 +404,9 @@ const TrackDetail: FC<TrackDetailProps> = ({
                 </a>
 
                 <Link
-                    href="#callback"
+                    href={readinessCheckUrl ?? "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="
                         inline-flex
                         min-h-14.5

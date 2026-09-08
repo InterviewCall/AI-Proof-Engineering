@@ -2,6 +2,9 @@ import { CalendarCheck, ChevronRight, UsersRound } from 'lucide-react';
 import Link from 'next/link';
 import { FC } from 'react';
 
+
+const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
+
 const CohortTrustBar: FC = () => {
     return (
         <div
@@ -71,7 +74,9 @@ const CohortTrustBar: FC = () => {
                 <span className="hidden h-10 w-px bg-(--build-proof-trust-bar-divider) lg:block" />
 
                 <Link
-                    href="#specialists"
+                    href={readinessCheckUrl ?? "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
                     className="
                         inline-flex
                         min-h-11

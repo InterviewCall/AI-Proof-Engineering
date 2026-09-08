@@ -10,6 +10,8 @@ import ProgressFeatureStrip from './ProgressFeatureStrip';
 import ProgressProofCard from './ProgressProofCard';
 import ProgressSidebarPanel from './ProgressSidebarPanel';
 
+const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
+
 const RealProgressSection: FC = () => {
     return (
         <section
@@ -234,7 +236,9 @@ const RealProgressSection: FC = () => {
                     </Link>
 
                     <a
-                        href="/documents/ai-engineering-curriculum.pdf"
+                        href={readinessCheckUrl ?? "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         download
                         className="
                             inline-flex
@@ -308,7 +312,9 @@ const RealProgressSection: FC = () => {
                     </Link>
 
                     <a
-                        href="/documents/ai-engineering-curriculum.pdf"
+                        href={readinessCheckUrl ?? "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         download
                         className="
                             inline-flex

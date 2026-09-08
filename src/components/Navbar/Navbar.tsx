@@ -11,6 +11,8 @@ import { ChevronDownIcon } from './ChevronDownIcon';
 import { CloseIcon } from './CloseIcon';
 import { MenuIcon } from './MenuIcon';
 
+const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
+
 const Navbar: FC = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] =
         useState<boolean>(false);
@@ -121,7 +123,9 @@ const Navbar: FC = () => {
                     </a>
 
                     <Link
-                        href="#assessment"
+                        href={readinessCheckUrl ?? "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex min-h-11 items-center justify-center rounded-md bg-(--navbar-button-bg) px-4 text-center text-sm font-semibold text-(--navbar-button-text) transition-colors hover:bg-(--navbar-button-hover-bg) xl:min-h-12 xl:px-8 xl:text-base"
                     >
                         Check Your AI-Proof Score
@@ -249,7 +253,9 @@ const Navbar: FC = () => {
                         </a>
 
                         <Link
-                            href="#assessment"
+                            href={readinessCheckUrl ?? "#"}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={closeMobileMenu}
                             className="inline-flex min-h-13 items-center justify-center rounded-xl bg-(--navbar-button-bg) px-5 text-center text-base font-semibold text-white transition-colors hover:bg-(--navbar-button-hover-bg)"
                         >

@@ -8,7 +8,8 @@ import CapstoneFeatureStrip from './CapstoneFeatureStrip';
 import CapstonePortfolioCard from './CapstonePortfolioCard'; 
 import ExampleProjectsPanel from './ExampleProjectsPanel'; 
 import CapstoneMobileSection from './CapstoneMobileSection'; 
- 
+const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
+
 const CapstoneProofSection: FC = () => { 
     return ( 
         <> 
@@ -187,7 +188,9 @@ const CapstoneProofSection: FC = () => {
  
                         {/* Download Curriculum */} 
                         <a 
-                            href="/documents/ai-engineering-curriculum.pdf" 
+                            href={readinessCheckUrl ?? "#"}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             download 
                             className=" 
                                 inline-flex 

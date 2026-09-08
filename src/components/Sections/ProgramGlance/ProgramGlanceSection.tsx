@@ -1,6 +1,7 @@
 import { Download, CalendarDays, CalendarCheck, CircleArrowRight, UsersRound } from 'lucide-react';
 import Link from 'next/link';
 import { FC } from 'react';
+const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
 
 import { glanceInfoCards, mobileGlanceInfoCards } from '@/utils/programGlanceItems';
 
@@ -193,7 +194,9 @@ const ProgramGlanceSection: FC = () => {
                         </Link>
 
                         <Link
-                            href="#program-glance"
+                            href={readinessCheckUrl ?? "#"}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="
                                 inline-flex
                                 min-h-11
@@ -324,7 +327,9 @@ const ProgramGlanceSection: FC = () => {
                         </Link>
 
                         <Link
-                            href="#program-glance"
+                            href={readinessCheckUrl ?? "#"}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="
                                 inline-flex
                                 items-center

@@ -12,6 +12,8 @@ import { careerTracks } from '@/utils/careerTracks';
 
 import TrackDetail from './TrackDetail';
 
+const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
+
 const CareerPathSection: FC = () => {
     const [activeTrackId, setActiveTrackId] =
         useState<TrackId>('growth');
@@ -583,7 +585,9 @@ const CareerPathSection: FC = () => {
                         "
                     >
                         <Link
-                            href="#assessment"
+                            href={readinessCheckUrl ?? "#"}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="
                                 group
                                 inline-flex
