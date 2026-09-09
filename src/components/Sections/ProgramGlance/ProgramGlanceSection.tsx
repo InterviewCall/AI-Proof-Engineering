@@ -268,13 +268,22 @@ const ProgramGlanceSection: FC = () => {
                             rel="noopener noreferrer"
                             className="
                                 inline-flex
+                                min-h-14
+                                w-full
                                 items-center
-                                gap-2
-                                text-[15px]
+                                justify-center
+                                gap-3
+                                rounded-lg
+                                border
+                                border-(--color-brand-300)
+                                bg-white
+                                px-7
+                                text-center
+                                text-[16px]
                                 font-semibold
                                 text-(--color-brand-700)
                                 transition-colors
-                                hover:text-(--color-brand-800)
+                                hover:bg-(--color-brand-50)
                                 focus-visible:outline-none
                                 focus-visible:ring-4
                                 focus-visible:ring-(--focus-ring-color)
