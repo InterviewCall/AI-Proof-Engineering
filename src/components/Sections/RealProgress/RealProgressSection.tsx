@@ -194,93 +194,23 @@ const RealProgressSection: FC = () => {
                     </div>
                 </div>
 
-                {/* Desktop CTA */}
                 {/* CTA */}
                 <div
                     className="
                         mx-auto
                         mt-5
-                        grid
-                        max-w-[735px]
+                        flex
+                        flex-col
                         gap-3
                         lg:mt-6
+                        lg:grid
+                        lg:max-w-[735px]
                         lg:grid-cols-[1.2fr_1fr]
                         lg:gap-3
                     "
                 >
                     <DownloadCurriculumButton />
                     <BookTrackCounsellingButton />
-                </div>
-
-                {/* Mobile / tablet CTA */}
-                <div className="mt-8 flex flex-col gap-3 lg:hidden">
-                    <Link
-                        href="#real-progress"
-                        className="
-                            inline-flex
-                            min-h-14
-                            items-center
-                            justify-center
-                            gap-3
-                            rounded-lg
-                            bg-(--button-primary-bg)
-                            px-7
-                            text-center
-                            text-[16px]
-                            font-semibold
-                            text-(--button-primary-text)
-                            transition-all
-                            duration-200
-                            hover:bg-(--button-primary-bg-hover)
-                            focus-visible:outline-none
-                            focus-visible:ring-4
-                            focus-visible:ring-(--focus-ring-color)
-                        "
-                    >
-                        <Download
-                            aria-hidden="true"
-                            className="h-5 w-5"
-                            strokeWidth={1.9}
-                        />
-                        <span>Download Curriculum</span>
-                    </Link>
-
-                    <a
-                        href={readinessCheckUrl ?? "#"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        download
-                        className="
-                            inline-flex
-                            min-h-14
-                            items-center
-                            justify-center
-                            gap-3
-                            rounded-lg
-                            border
-                            border-(--color-brand-300)
-                            bg-white
-                            px-7
-                            text-center
-                            text-[16px]
-                            font-semibold
-                            text-(--color-brand-700)
-                            transition-colors
-                            hover:bg-(--color-brand-50)
-                            focus-visible:outline-none
-                            focus-visible:ring-4
-                            focus-visible:ring-(--focus-ring-color)
-                        "
-                    >
-                        <CalendarDays
-                            aria-hidden="true"
-                            className="h-5 w-5"
-                            strokeWidth={1.9}
-                        />
-                        <span>Book a Track Counselling Call
-                            
-                        </span>
-                    </a>
                 </div>
             </div>
         </section>
