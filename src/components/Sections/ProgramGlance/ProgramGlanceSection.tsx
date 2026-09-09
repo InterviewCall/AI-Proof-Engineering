@@ -229,65 +229,21 @@ const ProgramGlanceSection: FC = () => {
                         </p>
                     </div>
 
-                    <div className="mt-5 flex flex-col items-center gap-4">
-                        <Link
-                            href="#build-proof"
-                            className="
-                                inline-flex
-                                min-h-14
-                                w-full
-                                items-center
-                                justify-center
-                                gap-3
-                                rounded-lg
-                                bg-(--button-primary-bg)
-                                px-7
-                                text-center
-                                text-[16px]
-                                font-semibold
-                                text-(--button-primary-text)
-                                transition-all
-                                duration-200
-                                hover:bg-(--button-primary-bg-hover)
-                                focus-visible:outline-none
-                                focus-visible:ring-4
-                                focus-visible:ring-(--focus-ring-color)
-                            "
-                        >
-                            <Download
-                                aria-hidden="true"
-                                className="h-5 w-5"
-                                strokeWidth={1.9}
-                            />
-                            <span>Download Curriculum</span>
-                        </Link>
-
-                        <Link
-                            href={readinessCheckUrl ?? "#"}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="
-                                inline-flex
-                                items-center
-                                gap-2
-                                text-[15px]
-                                font-semibold
-                                text-(--color-brand-700)
-                                transition-colors
-                                hover:text-(--color-brand-800)
-                                focus-visible:outline-none
-                                focus-visible:ring-4
-                                focus-visible:ring-(--focus-ring-color)
-                            "
-                        >
-                            <CalendarDays
-                                aria-hidden="true"
-                                className="h-5 w-5"
-                                strokeWidth={1.8}
-                            />
-
-                            <span>Book a Track Counselling Call</span>
-                        </Link>
+                    {/* CTA */}
+                    <div
+                        className="
+                            mx-auto
+                            mt-5
+                            grid
+                            max-w-[735px]
+                            gap-3
+                            lg:mt-6
+                            lg:grid-cols-[1.2fr_1fr]
+                            lg:gap-3
+                        "
+                    >
+                        <DownloadCurriculumButton />
+                        <BookTrackCounsellingButton />
                     </div>
                 </div>
             </div>
