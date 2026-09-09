@@ -24,6 +24,7 @@ import PracticeTabs from "./PracticeTabs";
 import PracticeTaskCard from "./PracticeTaskCard";
 import ReadinessProgressCard from "./ReadinessProgressCard";
 import MobilePracticeTabs from "./MobilePracticeTabs";
+import Badge from "@/components/Shared/Badge";
 
 const PracticeSystemSection: FC = () => {
     /*
@@ -55,38 +56,8 @@ const PracticeSystemSection: FC = () => {
             <div className="mx-auto w-full max-w-370">
                 {/* Header */}
                 <header className="mx-auto max-w-[1100px] text-center">
-                    <div
-                        className="
-                            mx-auto
-                            flex
-                            w-fit
-                            min-h-10
-                            items-center
-                            justify-center
-                            gap-2
-                            rounded-full
-                            border
-                            border-[#AFC7FF]
-                            bg-[#EEF4FF]
-                            px-6
-                            text-[clamp(0.875rem,1.1vw,1.0625rem)]
-                            font-semibold
-                            uppercase
-                            tracking-[0.015em]
-                            text-[#0a53f2]
-                            shadow-[0_7px_14px_rgba(1,17,57,0.18)]
-                            ring-1
-                            ring-[#a9c3fc]
-                        "
-                    >
-                        <Settings2
-                            aria-hidden="true"
-                            className="h-4 w-4"
-                            strokeWidth={1.8}
-                        />
 
-                        <span>Practice, Labs, Mocks, Reviews</span>
-                    </div>
+                    <Badge text="Practice , Lab ,Revies , Mocks" icon={Settings2} className="mx-auto" />
 
                     <h2
                         className="

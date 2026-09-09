@@ -25,6 +25,7 @@ import { FC } from 'react';
 
 import DownloadCurriculumButton from '@/components/Shared/DownloadCurriculumButton';
 import BookTrackCounsellingButton from '@/components/Shared/BookTrackCounsellingButton';
+import Badge from '@/components/Shared/Badge';
 
 interface GuidedStep {
     id: string;
@@ -194,38 +195,7 @@ const GuidedSystemSection: FC = () => {
             <div className="mx-auto w-full max-w-370">
                 {/* Header */}
                 <header className="mx-auto max-w-[900px] text-center">
-                    <div
-                        className="
-                            mx-auto
-                            flex
-                            w-fit
-                            min-h-10
-                            items-center
-                            justify-center
-                            gap-2.5
-                            rounded-full
-                            border
-                            border-[#AFC7FF]
-                            bg-[#EEF4FF]
-                            px-6
-                            text-[clamp(0.875rem,1.1vw,1.0625rem)]
-                            font-semibold
-                            uppercase
-                            tracking-[0.015em]
-                            text-[#0757F5]
-                            shadow-[0_7px_14px_rgba(1,17,57,0.18)]
-                            ring-1
-                            ring-[#a9c3fc]
-                        "
-                    >
-                        <PlayCircle
-                            aria-hidden="true"
-                            className="h-5 w-5"
-                            strokeWidth={2}
-                        />
-
-                        <span>How It Works</span>
-                    </div>
+                    <Badge text="How It Works" icon={PlayCircle} className="mx-auto" />
 
                     <h2
                         className="

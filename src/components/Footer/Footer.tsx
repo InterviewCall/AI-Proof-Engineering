@@ -413,7 +413,9 @@ const Footer: FC = () => {
                         </p>
 
                         <Link
-                            href="#callback"
+                            href={readinessCheckUrl ?? "#"}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="
                                 group
                                 mt-4
