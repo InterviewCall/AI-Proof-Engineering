@@ -19,6 +19,7 @@ import { journeyStats, phases } from '@/utils/structuredJourneyItems';
 import { PhaseDetails } from './PhaseDetails';
 import DownloadCurriculumButton from '@/components/Shared/DownloadCurriculumButton';
 import BookTrackCounsellingButton from '@/components/Shared/BookTrackCounsellingButton';
+import Badge from '@/components/Shared/Badge';
 
 const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
 
@@ -54,37 +55,8 @@ const StructuredJourneySection: FC = () => {
 
                 {/* Header */}
                 <header className="mx-auto max-w-[1100px] text-center">
-                    <div
-                        className="
-                            mx-auto
-                            flex
-                            w-fit
-                            min-h-10
-                            items-center
-                            justify-center
-                            gap-2
-                            rounded-full
-                            border
-                            border-(--hero-section-badge-border)
-                            bg-(--hero-section-badge-bg)
-                            px-6
-                            text-[clamp(0.875rem,1.1vw,1.0625rem)]
-                            font-semibold
-                            uppercase
-                            tracking-[0.015em]
-                            text-(--color-brand-700)
-                            shadow-[0_7px_14px_rgba(1,17,57,0.18)]
-                            ring-1
-                            ring-[#a9c3fc]
-                        "
-                    >
-                        <BookOpen
-                            aria-hidden="true"
-                            className="h-5 w-5"
-                            strokeWidth={1.8}
-                        />
-                        <span>10-Phase Curriculum</span>
-                    </div>
+
+                    <Badge text="10-phase Curriculum" icon={BookOpen} className="mx-auto" />
 
                     <h2
                         className="

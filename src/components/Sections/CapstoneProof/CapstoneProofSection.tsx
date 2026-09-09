@@ -10,6 +10,7 @@ import ExampleProjectsPanel from './ExampleProjectsPanel';
 import CapstoneMobileSection from './CapstoneMobileSection'; 
 import DownloadCurriculumButton from '@/components/Shared/DownloadCurriculumButton';
 import BookTrackCounsellingButton from '@/components/Shared/BookTrackCounsellingButton';
+import Badge from '@/components/Shared/Badge';
 
 const CapstoneProofSection: FC = () => { 
     return ( 
@@ -33,38 +34,10 @@ const CapstoneProofSection: FC = () => {
                 <div className="mx-auto w-full max-w-370"> 
                     {/* Header */} 
                     <header className="mx-auto max-w-260 text-center"> 
-                        <div 
-                            className=" 
-                                mx-auto 
-                                flex 
-                                w-fit 
-                                min-h-10 
-                                items-center 
-                                justify-center 
-                                gap-2 
-                                rounded-full 
-                                border 
-                                border-[#AFC7FF] 
-                                bg-[#EEF4FF] 
-                                px-6 
-                                text-[clamp(0.875rem,1.1vw,1.0625rem)] 
-                                font-semibold 
-                                uppercase 
-                                tracking-[0.015em] 
-                                text-(--proof-section-eyebrow-text) 
-                                shadow-[0_7px_14px_rgba(1,17,57,0.18)] 
-                                ring-1 
-                                ring-[#a9c3fc] 
-                            " 
-                        > 
-                            <Trophy 
-                                aria-hidden="true" 
-                                className="h-4.5 w-4.5" 
-                                strokeWidth={1.8} 
-                            /> 
-                            <span>Capstone Proof</span> 
-                        </div> 
- 
+
+                        {/* Badge */}
+                        <Badge text="Capstone Proof" icon={Trophy}  className="mx-auto" />
+
                         <h2 
                             className=" 
                                 mt-4 
@@ -131,6 +104,7 @@ const CapstoneProofSection: FC = () => {
                     <div className="mt-5"> 
                         <CapstoneFeatureStrip /> 
                     </div> 
+                    
                     {/* CTA */}
                     <div
                         className="
@@ -147,6 +121,7 @@ const CapstoneProofSection: FC = () => {
                         <DownloadCurriculumButton />
                         <BookTrackCounsellingButton />
                     </div>
+
                 </div>{/* closes mx-auto w-full max-w-370 */}
                 </section>
 

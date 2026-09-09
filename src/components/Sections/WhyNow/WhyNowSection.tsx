@@ -12,6 +12,7 @@ import Link from 'next/link';
 import type { FC } from 'react';
 
 import { aiProofPoints, executionOnlyPoints } from '@/utils/whyNowPoints';
+import Badge from '@/components/Shared/Badge';
 
 const WhyNowSection: FC = () => {
     return (
@@ -31,31 +32,11 @@ const WhyNowSection: FC = () => {
             '
         >
             <div className='mx-auto w-full max-w-370'>
+
                 {/* Section header */}
                 <div className='mx-auto max-w-240 text-center'>
-                    <div
-                        className='
-                            mx-auto
-                            flex
-                            w-fit
-                            min-h-10
-                            items-center
-                            justify-center
-                            rounded-full
-                            bg-(--why-now-section-header-bg)
-                            px-6
-                            text-[clamp(0.875rem,1.1vw,1.0625rem)]
-                            font-semibold
-                            uppercase
-                            tracking-[0.015em]
-                            text-(--why-now-section-header-text)
-                            shadow-[0_7px_14px_rgba(1,17,57,0.18)]
-                            ring-1
-                            ring-[#a9c3fc]
-                        '
-                    >
-                        Why This Program Now
-                    </div>
+
+                    <Badge text="Why This Program" className="mx-auto" />
 
                     <h2
                         className='

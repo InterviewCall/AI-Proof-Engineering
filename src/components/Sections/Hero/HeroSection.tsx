@@ -8,6 +8,7 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 import type { FC } from 'react';
+import Badge from '@/components/Shared/Badge';
 
 const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
 
@@ -58,54 +59,8 @@ const HeroSection: FC = () => {
                     "
                 >
                     {/* Program badge */}
-                    <div
-                        className="
-                            mx-auto
-                            mb-4
-                            inline-flex
-                            min-h-10
-                            items-center
-                            justify-center
-                            gap-2
-                            rounded-full
-                            border
-                            border-(--hero-section-badge-border)
-                            bg-(--hero-section-badge-bg)
-                            px-6
-                            text-[clamp(0.875rem,1.1vw,1.0625rem)]
-                            font-semibold
-                            uppercase
-                            tracking-[0.01em]
-                            text-(--hero-section-badge-text)
-                            sm:text-[15px]
-                            lg:mx-0
-                            xl:min-h-10
-                            xl:px-6
-                            xl:text-[16px]
-                        "
-                    >
-                        {/* <span
-                            aria-hidden="true"
-                            className="
-                                h-1.5
-                                w-1.5
-                                rounded-full
-                                bg-(--hero-section-badge-dot)
-                            "
-                        /> */}
-
-                        <span>AI-Proof Engineer Program</span>
-
-                        {/* <span
-                            aria-hidden="true"
-                            className="
-                                h-1.5
-                                w-1.5
-                                rounded-full
-                                bg-(--hero-section-badge-dot)
-                            "
-                        /> */}
-                    </div>
+                    {/* Badge */}
+                        <Badge text="AI-Proof Engineer Program"/>
 
                     {/* Main heading */}
                     <h1

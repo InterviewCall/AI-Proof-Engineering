@@ -497,9 +497,12 @@ const CareerPathSection: FC = () => {
                                     />
                                 )}
                             </article>
+                            
                         );
+                        
                     })}
                 </div>
+                
 
                 {/* =====================================================
                     ASSESSMENT CTA
@@ -624,22 +627,7 @@ const CareerPathSection: FC = () => {
                         </Link>
                     </div>
                 </div>
-                {/* CTA */}
-                <div
-                    className="
-                        mx-auto
-                        mt-5
-                        grid
-                        max-w-[735px]
-                        gap-3
-                        lg:mt-6
-                        lg:grid-cols-[1.2fr_1fr]
-                        lg:gap-3
-                    "
-                >
-                    <DownloadCurriculumButton />
-                    <BookTrackCounsellingButton />
-                </div>
+                
             </div>
         </section>
     );
