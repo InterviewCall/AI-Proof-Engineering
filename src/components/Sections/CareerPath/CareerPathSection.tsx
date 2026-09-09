@@ -9,8 +9,9 @@ import { FC, useState } from 'react';
 
 import { type TrackId } from '@/types/careerPath';
 import { careerTracks } from '@/utils/careerTracks';
-
 import TrackDetail from './TrackDetail';
+import DownloadCurriculumButton from '@/components/Shared/DownloadCurriculumButton';
+import BookTrackCounsellingButton from '@/components/Shared/BookTrackCounsellingButton';
 
 const readinessCheckUrl = process.env.NEXT_PUBLIC_PRODUCT_READINESS_CHECK_URL;
 
@@ -622,6 +623,22 @@ const CareerPathSection: FC = () => {
                             />
                         </Link>
                     </div>
+                </div>
+                {/* CTA */}
+                <div
+                    className="
+                        mx-auto
+                        mt-5
+                        grid
+                        max-w-[735px]
+                        gap-3
+                        lg:mt-6
+                        lg:grid-cols-[1.2fr_1fr]
+                        lg:gap-3
+                    "
+                >
+                    <DownloadCurriculumButton />
+                    <BookTrackCounsellingButton />
                 </div>
             </div>
         </section>

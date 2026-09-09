@@ -196,13 +196,21 @@ const RealProgressSection: FC = () => {
 
                 {/* Desktop CTA */}
                 {/* CTA */}
-                    <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:shrink-0">
-
-                        <DownloadCurriculumButton />
-
-                        <BookTrackCounsellingButton />
-                        
-                    </div>
+                <div
+                    className="
+                        mx-auto
+                        mt-5
+                        grid
+                        max-w-[735px]
+                        gap-3
+                        lg:mt-6
+                        lg:grid-cols-[1.2fr_1fr]
+                        lg:gap-3
+                    "
+                >
+                    <DownloadCurriculumButton />
+                    <BookTrackCounsellingButton />
+                </div>
 
                 {/* Mobile / tablet CTA */}
                 <div className="mt-8 flex flex-col gap-3 lg:hidden">

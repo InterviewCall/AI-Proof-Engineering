@@ -222,18 +222,14 @@ const PracticeSystemSection: FC = () => {
                         mt-5
                         grid
                         max-w-[735px]
-                        gap-2.5
+                        gap-3
                         lg:mt-6
                         lg:grid-cols-[1.2fr_1fr]
-                        lg:gap-1
+                        lg:gap-3
                     "
                 >
-                    {/* See How Practice Works */}
-                    {/* CTA */}
-                    <div className="mt-5 flex flex-col gap-3">
-                        <DownloadCurriculumButton />
-                        <BookTrackCounsellingButton />
-                    </div>
+                    <DownloadCurriculumButton />
+                    <BookTrackCounsellingButton />
                 </div>
             </div>
         </section>

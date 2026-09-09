@@ -189,10 +189,19 @@ const CareerInsightsSection: FC = () => {
                 </div>
 
                 {/* CTA */}
-                
-                <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:shrink-0">
+                <div
+                    className="
+                        mx-auto
+                        mt-5
+                        grid
+                        max-w-[735px]
+                        gap-3
+                        lg:mt-6
+                        lg:grid-cols-[1.2fr_1fr]
+                        lg:gap-3
+                    "
+                >
                     <DownloadCurriculumButton />
-
                     <BookTrackCounsellingButton />
                 </div>
             </div>
