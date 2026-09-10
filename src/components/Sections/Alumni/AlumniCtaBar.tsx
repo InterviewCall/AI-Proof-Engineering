@@ -79,7 +79,7 @@ const AlumniCtaBar: FC = () => {
 
             {/* CTA */}
                 
-                <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:shrink-0">
+                <div className="grid w-full grid-cols-1 gap-3 sm:w-auto sm:min-w-[420px] sm:grid-cols-2">
                     <DownloadCurriculumButton />
 
                     <BookTrackCounsellingButton />

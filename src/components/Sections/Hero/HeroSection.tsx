@@ -60,7 +60,7 @@ const HeroSection: FC = () => {
                 >
                     {/* Program badge */}
                     {/* Badge */}
-                        <Badge text="AI-Proof Engineer Program" className="mx-auto" />
+                        <Badge text="AI-Proof Engineer Program" className="mx-auto lg:mx-0" />
 
                     {/* Main heading */}
                     <h1

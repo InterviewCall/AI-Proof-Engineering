@@ -900,10 +900,10 @@ const GuidedSystemSection: FC = () => {
                         mt-5
                         grid
                         max-w-[735px]
-                        gap-2.5
+                        gap-3
                         lg:mt-6
                         lg:grid-cols-[1.2fr_1fr]
-                        lg:gap-6
+                        lg:gap-3
                         rounded-xl
                         
                         p-3">
